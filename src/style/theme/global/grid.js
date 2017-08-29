@@ -1,0 +1,5 @@
+module.exports =  {
+	// Grid system
+	'@grid-columns'     : '24',
+	'@grid-gutter-width': '0'
+};
