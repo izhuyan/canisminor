@@ -1,9 +1,18 @@
 @import "../../style/var";
 @import "intro-1";
 @import "intro-2";
+@import "intro-3";
+@import "intro-4";
+@import "intro-5";
+@import "intro-6";
+@import "intro-7";
+
 .intro > div {
+	padding: 0 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 88px;
+	padding-bottom: 88px;
 }
 

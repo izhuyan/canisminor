@@ -3,6 +3,12 @@
 $c-primary: #62e6ac;
 $c-font-dark: #323a45;
 $c-font-normal: #747c83;
+$c-split: #e3e3e3;
 
 // font
 $font-bold: "cm-font-bold" !important;
+
+// media-point
+$m-large: "<=720px";
+$m-middle: "<=540px";
+$m-small: "<=375px";

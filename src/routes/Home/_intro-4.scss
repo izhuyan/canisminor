@@ -1,0 +1,41 @@
+.intro-4 {
+	border-bottom: 1px solid $c-split;
+	.school-box {
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid $c-split;
+		padding-bottom: 6rem;
+		margin-bottom: 4rem;
+		@include media($m-large) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.school-img {
+		font-size: 72px;
+		color: $c-primary;
+		margin:0 3rem
+	}
+
+	.school-text {
+		@include media($m-large) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		> .title {
+			font-size: 2rem;
+			color: #333;
+
+		}
+		> .desc {
+			margin-top: 1.2rem;
+			line-height: 1.8;
+			letter-spacing: .5px;
+			max-width: 450px;
+			@include media($m-large) {
+				text-align: center;
+			}
+		}
+	}
+}

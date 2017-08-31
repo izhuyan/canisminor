@@ -1,25 +1,34 @@
 @import "../../style/var";
-
-
-.header{
+.header {
 	height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	color: #222;
-	@include media("width<=540"){
+	@include media ($m-large) {
 		padding: 0 24px;
 	}
+	@include media ($m-small) {
+		padding: 0 16px;
+	}
 }
-.header-logo{
-	font-size: 100px;
+.header-logo {
+	font-size: 88px;
+	@include media ($m-middle) {
+		font-size: 72px;
+	}
 }
-.header-navitem{
+.header-nav {
+	@include media ($m-middle) {
+		display: none !important;
+	}
+}
+.header-navitem {
 	color: #333;
 	font-weight: 600;
 	font-size: 1.2rem;
 	margin-left: 2rem;
-	&__active{
+	&__active {
 		color: $c-primary;
 	}
 }

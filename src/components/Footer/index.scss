@@ -15,10 +15,14 @@
 }
 .footer-text {
 	margin-top: 0.6rem;
+	text-align: center;
+	@include media($m-small){
+		font-size: .9rem;
+	}
 }
 .footer-note {
-	font-size: .95rem;
-	margin-left: 1rem;
+	font-size: .9em;
+	margin-left: .8rem;
 }
 .footer-logo {
 	display: block;

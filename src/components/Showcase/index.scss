@@ -1,0 +1,22 @@
+@import "../../style/var";
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.showcase-item {
+	margin:2rem;
+	width: 240px;
+	> div {
+		text-align: center;
+	}
+	.title {
+		font-size: 20px;
+	}
+	.desc {
+		font-family: $font-bold;
+		font-size: 24px;
+		color: #333;
+	}
+}

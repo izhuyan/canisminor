@@ -1,3 +1,37 @@
 .intro-2 {
 	background: $c-primary;
+	justify-content: center;
+	color: #fff;
+	div {
+		text-align: center;
+	}
+	> .box-title {
+		font-family: $font-bold;
+		font-size: 22px;
+		padding: 10px 32px;
+		border: 3px solid #fff;
+		letter-spacing: 1.8px;
+	}
+	> .title {
+		margin-top: 72px;
+		font-family: $font-bold;
+		font-size: 54px;
+		margin-bottom: 24px;
+		@include media($m-middle) {
+			font-size: 38px;
+		}
+	}
+	> .desc {
+		max-width: 375px - 32px;
+		line-height: 1.5;
+		margin-bottom: 54px;
+		@include media($m-small) {
+			font-size: .9rem;
+		}
+	}
+	> .doc {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }
