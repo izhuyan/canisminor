@@ -6,16 +6,16 @@ export default () => {
 	};
 	console.log(introHeight());
 
-	const intro_1 = ({style}) => {
+	const intro_1 = () => {
 		return (
-			<div className="intro-1" style={style}>
+			<div className="intro-1" style={introHeight(150)}>
 				<div className="title">CanisMinor</div>
 				<div className="desc">UI / UX Designer & FE Developer</div>
 			</div>
 		);
 	};
 
-	const intro_2 = ({introHeight}) => {
+	const intro_2 = () => {
 		return (
 			<div className="intro-2" style={introHeight()}>
 				<div className="box-title">Introduciton</div>
@@ -27,8 +27,8 @@ export default () => {
 
 	return (
 		<div className="intro">
-			<intro_1 style={introHeight(150)} />
-
+			{intro_1()}
+			{intro_2()}
 
 		</div>
 	);
