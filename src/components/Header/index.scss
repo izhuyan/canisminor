@@ -1,0 +1,21 @@
+@import "../../style/var";
+
+.header{
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #222;
+}
+.header-logo{
+	font-size: 100px;
+}
+.header-navitem{
+	color: #333;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-left: 2rem;
+	&__active{
+		color: $c-primary;
+	}
+}

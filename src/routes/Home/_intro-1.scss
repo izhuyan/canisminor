@@ -1,0 +1,37 @@
+.intro-1 {
+	padding: 0 5%;
+	height: 100%;
+	color: #333;
+	justify-content: center;
+	.title, .desc {
+		width: 100%;
+		word-wrap: break-word;
+		text-align: center;
+	}
+	.title {
+		$font-size: 120px;
+		font-family: $font-bold;
+		font-size: $font-size;
+		letter-spacing: -2px;
+		@include media ("<=720px") {
+			font-size: $font-size * .7;
+		}
+		@include media ("<=540px") {
+			font-size: $font-size * .55;
+		}
+		@include media ("<=375px") {
+			font-size: $font-size * .45;
+		}
+	}
+	.desc {
+		$font-size: 20px;
+		font-size: $font-size;
+		margin-bottom: 75px;
+		@include media ("<=720px") {
+			font-size: $font-size * .9;
+		}
+		@include media ("<=375px") {
+			font-size: $font-size * .8;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+@import "../../style/var";
+@import "intro-1";
+@import "intro-2";
+.intro > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
