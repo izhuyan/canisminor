@@ -1,0 +1,43 @@
+@import "../../style/var";
+.project > div {
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 88px;
+	padding-bottom: 88px;
+}
+.dev {
+	color: #333;
+	justify-content: center;
+	.title, .desc {
+		width: 100%;
+		text-align: center;
+	}
+	.title {
+		$font-size: 120px;
+		font-family: $font-bold;
+		font-size: $font-size;
+		letter-spacing: -2px;
+		@include media ($m-large) {
+			font-size: $font-size * .7;
+		}
+		@include media ($m-middle) {
+			font-size: $font-size * .55;
+		}
+		@include media ($m-small) {
+			font-size: $font-size * .45;
+		}
+	}
+	.desc {
+		$font-size: 20px;
+		font-size: $font-size;
+		margin-bottom: 75px;
+		@include media ($m-large) {
+			font-size: $font-size * .9;
+		}
+		@include media ($m-small) {
+			font-size: $font-size * .8;
+		}
+	}
+}

@@ -6,7 +6,7 @@ import './index.scss';
 export default ({children, url, to, ...other}) => {
 
 	return (
-		<Link to={to}>
+		<Link className="cm-btn-link" to={to}>
 			<Button
 				className='cm-btn'
 				type="primary"

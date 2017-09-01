@@ -22,7 +22,7 @@ export default () => {
 			<div className="footer-social">
 				<Popover content={<img width="325" src="/img/wechat.png"/>}
 				         trigger="click"
-				         placement="topLeft"
+				         placement="top"
 				>
 					<a><Icon className="footer-social-icon" type="social-wechat"/></a>
 				</Popover>

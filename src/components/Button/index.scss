@@ -10,6 +10,13 @@
 		font-size: .9em;
 	}
 	@include media($m-small){
+
 		width: 100%;
 	}
+}
+
+.cm-btn-link{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }

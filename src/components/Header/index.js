@@ -24,7 +24,7 @@ export default ({location}) => {
 			<div className="header-nav">
 				<NavItem title="Intro" to="/home"/>
 				<NavItem title="Project Story" to="/project"/>
-				<NavItem title="Let's talk" to="/contact"/>
+				{/*<NavItem title="Let's talk" to="/contact"/>*/}
 			</div>
 		</Header>
 	);

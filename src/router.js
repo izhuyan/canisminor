@@ -7,7 +7,8 @@ export default ({history}) => {
 		<Router history={history}>
 			<Route path="/" component={R.Splash}/>
 			<Route component={R.App}>
-			<Route path="/home" component={R.Home}/>
+				<Route path="/home" component={R.Home}/>
+				<Route path="/project" component={R.Project}/>
 			</Route>
 		</Router>
 	);
