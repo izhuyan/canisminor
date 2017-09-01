@@ -4520,10 +4520,10 @@ div {
       padding: 0 16px; } }
 
 .header-logo {
-  font-size: 88px; }
+  font-size: 88px !important; }
   @media (max-width: 540px) {
     .header-logo {
-      font-size: 72px; } }
+      font-size: 72px !important; } }
 
 @media (max-width: 540px) {
   .header-nav {

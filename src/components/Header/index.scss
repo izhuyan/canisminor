@@ -13,9 +13,9 @@
 	}
 }
 .header-logo {
-	font-size: 88px;
+	font-size: 88px !important;
 	@include media ($m-middle) {
-		font-size: 72px;
+		font-size: 72px !important;
 	}
 }
 .header-nav {
