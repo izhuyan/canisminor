@@ -1,13 +1,16 @@
 @import "../../style/var";
 .showcase {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	@include media($m-large){
+		flex-direction: column;
+	}
 }
 .showcase-item {
 	margin:2rem;
-	width: 240px;
+	width: 200px;
+
 	> div {
 		text-align: center;
 	}

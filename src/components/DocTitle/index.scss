@@ -32,6 +32,10 @@
 			font-size: 54px;
 			letter-spacing: 4px;
 		}
+		@include media($m-small) {
+			font-size: 44px;
+			letter-spacing: 3px;
+		}
 	}
 	> .desc {
 		margin-bottom: 8rem;

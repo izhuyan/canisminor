@@ -1,0 +1,57 @@
+@import "../../style/var";
+
+.exp-list-item {
+	margin-bottom: 100px;
+	display: flex;
+	@include media($m-middle) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.exp-list-img {
+	min-width: 120px;
+	width: 120px;
+	height: 120px;
+	background-size: 100%;
+	margin-right: 3rem;
+	@include media($m-middle) {
+		margin: 2rem 0;
+	}
+}
+
+.exp-list-text {
+	> div {
+		letter-spacing: .5px;
+		margin-bottom: .75rem;
+		@include media($m-middle) {
+			text-align: center;
+			margin-top: 1rem;
+		}
+	}
+	.title {
+		font-size: 24px;
+		font-family: $font-bold;
+		color: #333;
+	}
+	.time {
+		font-size: .9rem;
+		@include media($m-middle) {
+
+			margin-bottom: 2rem;
+		}
+	}
+	.desc {
+		font-size: .9rem;
+		> p {
+			line-height: 1.8;
+			@include media("<=800px") {
+
+				display: inline;
+				& + p:before {
+					content: "; ";
+				}
+			}
+		}
+	}
+}

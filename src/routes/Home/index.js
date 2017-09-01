@@ -1,12 +1,12 @@
-import { Icon, IntroIcon, DocTitle, Showcase } from '../../components';
+import {Icon, IntroIcon, DocTitle, Showcase, AwardList, ExpList,Button} from '../../components';
 import './index.scss';
 
 export default () => {
 	const introHeight = (min = 0) => {
 		return {minHeight: `${parseInt(window.innerHeight) - min}px`};
 	};
-
-	const docList = [
+	
+	const docData = [
 		{type: 'profile', text: 'profile', desc: '个人资料与简介'},
 		{type: 'edu', text: 'education', desc: '视觉传达系 2009-2013'},
 		{type: 'exp', text: 'experience', desc: '工作履历 2013-2017'},
@@ -15,7 +15,7 @@ export default () => {
 		{type: 'fe', text: 'fe skills', desc: '前端技术栈'},
 		{type: 'portfolio', text: 'portfolio', desc: 'Time to discover some recent projects'}
 	];
-
+	
 	const intro_1 = () => {
 		return (
 			<div className="intro-1" style={introHeight(150)}>
@@ -24,7 +24,7 @@ export default () => {
 			</div>
 		);
 	};
-
+	
 	const intro_2 = () => {
 		return (
 			<div className="intro-2" style={introHeight()}>
@@ -32,21 +32,21 @@ export default () => {
 				<div className="title">{'UI/UX Designer. FE Developer.'.toUpperCase()}</div>
 				<div className="desc">Hi,这里是杨昱帆，感谢您花时间浏览我的Resume.以下将会分7个版块阐述我的技术栈和知识构成</div>
 				<div className="doc">
-					{docList.map((doc, key) => <IntroIcon key={key} type={doc.type} text={doc.text}/>)}
+					{docData.map((doc, key) => <IntroIcon key={key} type={doc.type} text={doc.text}/>)}
 				</div>
 			</div>
 		);
 	};
-
+	
 	const intro_3 = () => {
-		let data = [
+		let showcaseData = [
 			{title: 'born:', desc: '1990.9.30'},
 			{title: 'mobile:', desc: '153-0585-3008'},
 			{title: 'e-mail:', desc: 'i@canisminor.cc'}
 		];
 		return (
 			<div className="intro-3">
-				<DocTitle content={docList[0]}/>
+				<DocTitle content={docData[0]}/>
 				<div className="avatar-box">
 					<div className="avatar-img"/>
 					<div className="avatar-text">
@@ -59,21 +59,46 @@ export default () => {
 				</div>
 				<div className="info-box">
 					<div className="info-box-img"/>
-					<Showcase content={data}/>
+					<Showcase content={showcaseData}/>
 				</div>
 			</div>
 		);
 	};
-
+	
 	const intro_4 = () => {
-		let data = [
+		let showcaseData = [
 			{title: 'MAJOR:', desc: 'Visual Design'},
 			{title: 'GPA:', desc: '3.58/4'},
 			{title: 'IELTS:', desc: '6.5/9'}
 		];
+		
+		let awardData = [
+			[
+				"中国美术学院学年奖学金|2009-2010，一等奖学金",
+				"中国美术学院|2009-2010，三好学生/优秀学生干部"
+			],
+			[
+				"中国美术学院学年奖学金|2010-2011，一等奖学金",
+				"中国美术学院|2010-2011，三好学生/优秀学生干部"
+			],
+			[
+				"中国国家奖学金|2012，15/23,000人",
+				"中国美术学院学年奖学金|2011-2012，一等奖学金",
+				"中国美术学院|2011-2012，三好学生/优秀学生干部",
+				"Accepted Works Trierenberg Super Circuit|2012, Acceptance Award",
+				"International Photographic Festival|11th Shanghai International|2012, Communication Award",
+				"Third BrotherWin Cup|International Originality Design Contest|2012, Excellence Award"
+			],
+			[
+				"中国浙江省|2013，省优秀毕业生",
+				"中国美术学院|2013，校优秀毕业生",
+				"中国美术学院|2013，毕业设计金奖",
+				"中国美术学院|2013，优秀毕业论文"
+			]
+		]
 		return (
 			<div className="intro-4">
-				<DocTitle content={docList[1]}/>
+				<DocTitle content={docData[1]}/>
 				<div className="school-box">
 					<Icon className="school-img" type="caa-logo
 						"/>
@@ -86,51 +111,84 @@ export default () => {
 						</div>
 					</div>
 				</div>
-				<Showcase content={data}/>
+				<Showcase content={showcaseData}/>
+				<div className="school-award">
+					<AwardList content={awardData}/>
+				</div>
+			
 			</div>
 		);
 	};
-
+	
 	const intro_5 = () => {
 		return (
 			<div className="intro-5">
-				<DocTitle content={docList[2]}/>
+				<DocTitle content={docData[2]}/>
+				<div className="exp-group">
+					<ExpList />
+				</div>
 			</div>
 		);
 	};
-
+	
 	const intro_6 = () => {
 		return (
 			<div className="intro-6">
-				<DocTitle content={docList[3]}/>
+				<DocTitle content={docData[3]}/>
+				<div className="spec-item">
+					<div className="spec-1"/>
+					<div className="spec-item-desc">XMUED Design Flow，目前熊猫金库UED团队设计流程技术选型，Atomic Design
+						原子设计模式项目实践，通过Airbnb开源插件react-sketchapp维护及迭代sketch/react/react-native三端组件库，并引入真实数据进行设计。
+					</div>
+					<Button>See react-sketchapp</Button>
+				</div>
+				<div className="spec-item">
+					<div className="spec-2"/>
+					<div className="spec-item-desc">
+						Sketch插件开发者，独立开发sketch-name-organizer/sketch-select/sketch-move-half-pixel，均被Sketc官方收录，marketch代码贡献者，阿里sketch插件开发讨论组成员
+					</div>
+					<Button>Discover more plugins</Button>
+				</div>
+				<div className="spec-item">
+					<div className="spec-3">
+						<div className="spec-3-1"/>
+						<div className="spec-3-2"/>
+					</div>
+					<div className="spec-item-desc">Minecraft第三方开发者，Canisminor Craft 资源包作者，迭代7个大版本，累计32w次下载，2012年设计Minecraft全球最大皮肤站skinme，注册用户破5000万，皮肤库存150万份，日均上传2000份，现已被收购。
+					</div>
+					<div className="spec-3-btn-group">
+						<Button>Canisminor Craft</Button>
+						<Button>Discover Skinme</Button>
+					</div>
+				</div>
 			</div>
 		);
 	};
-
+	
 	const intro_7 = () => {
 		return (
 			<div className="intro-7">
-				<DocTitle content={docList[4]}/>
+				<DocTitle content={docData[4]}/>
 			</div>
 		);
 	};
-
+	
 	const intro_8 = () => {
 		return (
 			<div className="intro-8">
-				<DocTitle content={docList[5]}/>
+				<DocTitle content={docData[5]}/>
 			</div>
 		);
 	};
-
+	
 	const intro_9 = () => {
 		return (
 			<div className="intro-9">
-				<DocTitle content={docList[6]}/>
+				<DocTitle content={docData[6]}/>
 			</div>
 		);
 	};
-
+	
 	return (
 		<div className="intro">
 			{intro_1()}
