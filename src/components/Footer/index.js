@@ -20,8 +20,11 @@ export default () => {
 				© CanisMinor 2017<span className="footer-note">京ICP备16055942号-1</span>
 			</div>
 			<div className="footer-social">
-				<Popover content={<img width="325" src="/img/wechat.png"/>} trigger="click">
-					<a><Icon className="footer-social-icon" type="social-wechat" /></a>
+				<Popover content={<img width="325" src="/img/wechat.png"/>}
+				         trigger="click"
+				         placement="topLeft"
+				>
+					<a><Icon className="footer-social-icon" type="social-wechat"/></a>
 				</Popover>
 				<SocialIcon type="linkedin" href="https://www.linkedin.com/in/%E6%98%B1%E5%B8%86-%E6%9D%A8-269087124/"/>
 				<SocialIcon type="github" href="https://github.com/canisminor1990"/>
