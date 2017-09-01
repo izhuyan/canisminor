@@ -3154,8 +3154,8 @@ div {
 
 .bg-box {
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
-  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
