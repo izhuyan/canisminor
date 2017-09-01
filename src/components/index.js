@@ -1,5 +1,6 @@
 // symbol
 export { default as Icon } from './Icon';
+export { default as SvgIcon } from './SvgIcon';
 export { default as DocTitle } from './DocTitle';
 export { default as IntroIcon } from './IntroIcon';
 export { default as Showcase } from './Showcase';

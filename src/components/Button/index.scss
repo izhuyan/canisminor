@@ -1,14 +1,15 @@
 @import "../../style/var";
-
-.cm-btn{
+.cm-btn {
 	display: inline-block;
 	line-height: 44px;
 	height: 44px;
 	border-radius: 22px;
 	padding: 0 24px;
-}
-
-.cm-btn-default{
-	background: $c-primary;
-	color: #fff;
+	margin: .5rem 1rem;
+	.anticon{
+		font-size: .9em;
+	}
+	@include media($m-small){
+		width: 100%;
+	}
 }
