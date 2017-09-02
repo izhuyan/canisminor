@@ -26,7 +26,7 @@ export default class extends React.Component {
 	render() {
 		return (
 				<div className="contact">
-					<Title className="contact-title" title="Let's talk" desc="can comment with github accounts"/>
+					<Title className="contact-title" title="Let's talk" desc="u can comment with github accounts"/>
 					<div id="comments" className="contact-comments"/>
 					<div id="editor" className="contact-comments"/>
 				</div>
