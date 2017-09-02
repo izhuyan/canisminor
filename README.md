@@ -17,6 +17,11 @@ $ yarn build:dll
 $ yarn build:img 
 ```
 
+### Comments system
+
+- **repo:** <https://github.com/canisminor1990/canisminor-comments>
+- **gitment:** <https://github.com/imsun/gitment>
+
 ### Link
 
 - **iconfont:** [iconfont.cn](http://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=399961)
