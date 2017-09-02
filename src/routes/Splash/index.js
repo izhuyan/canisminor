@@ -8,7 +8,7 @@ export default () => {
 			<Link className="splash" to="/home">
 				<div className="logo-gif"/>
 				<Typist className="splash-text">
-					<span className="splash-text-glow"/>The collection of curriculum vitae and<br/> rescent projects
+					<span className="splash-text-glow"/>The collection of curriculum vitae and<br/> recent projects
 				</Typist>
 			</Link>
 	);
