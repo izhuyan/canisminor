@@ -4462,6 +4462,10 @@ div {
   position: absolute;
   background-color: rgba(98, 230, 172, 0.7); }
 
+.sub-menu-bg:before {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); }
+
 .sub-menu-bg:after {
   -webkit-transform-origin: right top;
           transform-origin: right top;
