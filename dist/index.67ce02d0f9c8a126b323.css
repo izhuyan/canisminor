@@ -5450,55 +5450,73 @@ div {
   -webkit-align-items: center;
           align-items: center;
   padding-top: 88px;
-  padding-bottom: 88px; }
-
-.dev {
+  padding-bottom: 88px;
   color: #333;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center; }
+
+@media (max-width: 420px) {
+  .pro-1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+.pro-1 .title, .pro-1 .desc {
+  width: 100%;
+  text-align: center; }
+
+.pro-1 img {
+  max-width: 100%; }
+
+.pro-1 .title, .pro-1 .desc {
+  width: 100%;
+  text-align: center; }
+
+.pro-1 .title {
+  font-family: "cm-font-bold" !important;
+  font-size: 120px;
+  letter-spacing: -2px; }
+  @media (max-width: 720px) {
+    .pro-1 .title {
+      font-size: 84px; } }
+  @media (max-width: 580px) {
+    .pro-1 .title {
+      font-size: 66px; } }
   @media (max-width: 420px) {
-    .dev {
-      padding-left: 0 !important;
-      padding-right: 0 !important; } }
-  .dev .title, .dev .desc {
-    width: 100%;
-    text-align: center; }
-  .dev img {
-    max-width: 100%; }
-  .dev .title {
-    font-family: "cm-font-bold" !important;
-    font-size: 120px;
-    letter-spacing: -2px;
-    margin-bottom: 1rem; }
-    @media (max-width: 720px) {
-      .dev .title {
-        font-size: 84px; } }
-    @media (max-width: 580px) {
-      .dev .title {
-        font-size: 66px; } }
-    @media (max-width: 420px) {
-      .dev .title {
-        font-size: 54px; } }
-  .dev .desc {
-    font-size: 20px;
-    margin-bottom: 75px; }
-    @media (max-width: 720px) {
-      .dev .desc {
-        font-size: 18px; } }
-    @media (max-width: 420px) {
-      .dev .desc {
-        font-size: 16px; } }
+    .pro-1 .title {
+      font-size: 54px; } }
+
+.pro-1 .desc {
+  font-size: 20px;
+  margin-bottom: 75px; }
+  @media (max-width: 720px) {
+    .pro-1 .desc {
+      font-size: 18px; } }
+  @media (max-width: 420px) {
+    .pro-1 .desc {
+      font-size: 16px; } }
+
+.pro-item {
+  padding-bottom: 15rem !important;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .pro-title {
   width: 100%;
   max-width: 960px;
-  padding: 5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 2rem;
-  text-align: right; }
+  text-align: right;
+  position: relative; }
+  .pro-title:before {
+    content: "";
+    width: 2rem;
+    height: 4px;
+    position: absolute;
+    background: #62e6ac;
+    right: 0;
+    bottom: 0; }
   @media (max-width: 420px) {
     .pro-title {
       padding-left: 1rem;

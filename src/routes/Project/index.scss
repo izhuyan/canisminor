@@ -1,4 +1,5 @@
 @import "../../style/var";
+
 .project > div {
 	padding: 0 5%;
 	display: flex;
@@ -6,10 +7,12 @@
 	align-items: center;
 	padding-top: 88px;
 	padding-bottom: 88px;
-}
-.dev {
 	color: #333;
 	justify-content: center;
+}
+
+.pro-1 {
+
 	@include media($m-small) {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -21,12 +24,15 @@
 	img {
 		max-width: 100%;
 	}
+	.title, .desc {
+		width: 100%;
+		text-align: center;
+	}
 	.title {
 		$font-size: 120px;
 		font-family: $font-bold;
 		font-size: $font-size;
 		letter-spacing: -2px;
-		margin-bottom: 1rem;
 		@include media ($m-large) {
 			font-size: $font-size * .7;
 		}
@@ -49,19 +55,34 @@
 		}
 	}
 }
+
+.pro-item {
+	padding-bottom: 15rem !important;
+	margin-bottom: 5rem;
+	border-bottom: 1px solid $c-split;
+}
+
 .pro-title {
 	width: 100%;
 	max-width: 960px;
-	padding: 5rem 0;
-	border-bottom: 1px solid $c-split;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	padding-bottom: 2rem;
+	margin-bottom: 4rem;
 	font-size: 2rem;
 	text-align: right;
+	position: relative;
+	&:before {
+		content: "";
+		width: 2rem;
+		height: 4px;
+		position: absolute;
+		background: $c-primary;
+		right: 0;
+		bottom: 0;
+	}
 	@include media($m-small) {
-		padding-left: 1rem ;
+		padding-left: 1rem;
 		text-align: center;
-		padding-right: 1rem ;
+		padding-right: 1rem;
 	}
 	.num {
 		color: #ccc;

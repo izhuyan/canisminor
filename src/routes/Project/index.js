@@ -26,10 +26,14 @@ export default ({}) => {
 
 	return (
 			<div className="project">
-				<div className="dev">
-					<div className="title" style={proHeight(150)}>Sense & pixels</div>
+				<div className="pro-1" style={proHeight(150)}>
+					<div className="title">Sense & pixels</div>
 					<Typist className="desc">wanna see more ? coming soon...</Typist>
+				</div>
+				<div className="pro-item">
 					{imgLib("熊猫金库", 'p_xm/xm', 10)}
+				</div>
+				<div className="pro-item">
 					{imgLib("智子", 'p_zz/zz', 11)}
 				</div>
 			</div>
