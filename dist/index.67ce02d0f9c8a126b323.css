@@ -5496,6 +5496,8 @@ div {
     max-width: 100%; }
   @media (max-width: 420px) {
     .pro-item {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
       padding-left: 0 !important;
       padding-right: 0 !important; } }
 
