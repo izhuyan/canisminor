@@ -4,7 +4,7 @@ import * as R from './routes';
 
 export default ({history}) => {
 	return (
-		<Router history={history}>
+		<Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
 			<Route component={R.Root}>
 				<Route path="/" component={R.Splash}/>
 				<Route component={R.App}>
