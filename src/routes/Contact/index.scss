@@ -15,6 +15,9 @@
 	width: 100%;
 	max-width: 720px;
 	margin: 0;
+	.gitment-comment-main,gitment-editor-header{
+		background: #fff;
+	}
 	.gitment-editor-submit,.gitment-comments-init-btn {
 		background-color: #333;
 	}
