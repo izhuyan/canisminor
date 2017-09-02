@@ -4916,6 +4916,10 @@ div {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 580px) {
+    .bg-box {
+      width: 500px;
+      height: 500px; } }
 
 .bg-shape {
   width: 100%;
@@ -4927,14 +4931,14 @@ div {
     -webkit-transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1);
     transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1); }
   .bg-shape__intro {
-    -webkit-transform: translate3d(0, -80%, 0) scale(1.2) rotate(120deg);
-            transform: translate3d(0, -80%, 0) scale(1.2) rotate(120deg); }
+    -webkit-transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg);
+            transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg); }
   .bg-shape__project {
-    -webkit-transform: translate3d(-55%, 30%, 0) scale(1.5) rotate(-45deg);
-            transform: translate3d(-55%, 30%, 0) scale(1.5) rotate(-45deg); }
+    -webkit-transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg);
+            transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg); }
   .bg-shape__contact {
-    -webkit-transform: translate3d(55%, 10%, 0) scale(0.8) rotate(135deg);
-            transform: translate3d(55%, 10%, 0) scale(0.8) rotate(135deg); }
+    -webkit-transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg);
+            transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg); }
 @charset "UTF-8";
 .splash {
   width: 100%;
