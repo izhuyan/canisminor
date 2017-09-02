@@ -2,21 +2,25 @@ import classnames from 'classnames';
 import './index.scss';
 
 export default ({location, children}) => {
-	const pathname    = location.pathname;
+	const pathname = location.pathname;
 	const classConfig = classnames(
-		{
-			'bg-shape'           : true,
-			'bg-shape__animation': pathname !== '/',
-			'bg-shape__intro'    : pathname === '/home',
-			'bg-shape__project'  : pathname === '/project',
-			'bg-shape__contact'  : pathname === '/contact'
-		});
+			{
+				'bg-shape': true,
+				'bg-shape__animation': pathname !== '/',
+				'bg-shape__intro': pathname === '/home',
+				'bg-shape__project': pathname === '/project',
+				'bg-shape__contact': pathname === '/contact'
+			});
+
+	console.log("         %c", "padding:60px 80px;line-height:160px;background:url('http://canisminor.cc/img/loader.gif') no-repeat;background-size:120px auto;");
+	console.info("Hi there, welcome to %ccanisminor.cc", "color:#62e6ac");
+
 	return (
-		<div className="root">
-			<div className="bg-box">
-				<img className={classConfig} src="/img/bg.png"/>
+			<div className="root">
+				<div className="bg-box">
+					<img className={classConfig} src="/img/bg.png"/>
+				</div>
+				{children}
 			</div>
-			{children}
-		</div>
 	);
 }

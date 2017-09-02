@@ -183,8 +183,9 @@ export default () => {
 					<DocTitle content={docData[3]}/>
 					<div className="spec-group">
 						{
-							specData.map(item => (
+							specData.map((item,key) => (
 									<SpecItem
+											key={key}
 											img={item.img}
 											text={item.text}
 											btn={item.btn}

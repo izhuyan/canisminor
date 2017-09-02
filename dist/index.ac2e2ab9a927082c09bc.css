@@ -6665,7 +6665,7 @@ a.gitment-editor-footer-tip:hover {
   width: 100%;
   max-width: 720px;
   margin: 0; }
-  .contact-comments .gitment-comment-main, .contact-comments gitment-editor-header {
+  .contact-comments .gitment-comment-main, .contact-comments .gitment-editor-header {
     background: #fff; }
   .contact-comments .gitment-editor-submit, .contact-comments .gitment-comments-init-btn {
     background-color: #333; }
