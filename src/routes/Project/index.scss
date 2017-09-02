@@ -11,42 +11,7 @@
 	justify-content: center;
 }
 
-.pro-1 {
-	.title, .desc {
-		width: 100%;
-		text-align: center;
-	}
-	.title, .desc {
-		width: 100%;
-		text-align: center;
-	}
-	.title {
-		$font-size: 120px;
-		font-family: $font-bold;
-		font-size: $font-size;
-		letter-spacing: -2px;
-		@include media ($m-large) {
-			font-size: $font-size * .7;
-		}
-		@include media ($m-middle) {
-			font-size: $font-size * .55;
-		}
-		@include media ($m-small) {
-			font-size: $font-size * .45;
-		}
-	}
-	.desc {
-		$font-size: 20px;
-		font-size: $font-size;
-		margin-bottom: 75px;
-		@include media ($m-large) {
-			font-size: $font-size * .9;
-		}
-		@include media ($m-small) {
-			font-size: $font-size * .8;
-		}
-	}
-}
+
 
 .pro-item {
 	padding-bottom: 15rem !important;

@@ -1,4 +1,4 @@
-import {Typist, Icon, SvgIcon, IntroIcon, DocTitle, Showcase, AwardList, ExpList, Button} from '../../components';
+import {Title, Icon, SvgIcon, IntroIcon, DocTitle, Showcase, AwardList, ExpList, Button} from '../../components';
 import './index.scss';
 
 export default () => {
@@ -18,10 +18,7 @@ export default () => {
 
 	const intro_1 = () => {
 		return (
-				<div className="intro-1" style={introHeight(150)}>
-					<div className="title">CanisMinor</div>
-					<Typist className="desc">UI / UX Designer & FE Developer</Typist>
-				</div>
+				<Title className="intro-1" style={introHeight(150)} title="CanisMinor" desc="UI / UX Designer & FE Developer"/>
 		);
 	};
 

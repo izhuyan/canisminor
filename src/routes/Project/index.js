@@ -1,4 +1,4 @@
-import {Typist}from'../../components'
+import {Title}from'../../components'
 import './index.scss';
 
 export default ({}) => {
@@ -26,10 +26,9 @@ export default ({}) => {
 
 	return (
 			<div className="project">
-				<div className="pro-1" style={proHeight(150)}>
-					<div className="title">Sense & pixels</div>
-					<Typist className="desc">wanna see more ? coming soon...</Typist>
-				</div>
+				<Title style={proHeight(150)}
+				       title="Sense & pixels"
+				       desc="wanna see more ? coming soon..."/>
 				<div className="pro-item">
 					{imgLib("熊猫金库", 'p_xm/xm', 10)}
 				</div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Title} from '../../components'
 import Gitment from 'gitment'
 import 'gitment/style/default.css'
 import "./index.scss"
@@ -25,8 +26,9 @@ export default class extends React.Component {
 	render() {
 		return (
 				<div className="contact">
-					<div id="comments" className="contact-comments" />
-					<div id="editor" className="contact-comments" />
+					<Title className="contact-title" title="Let's talk" desc="can comment with github accounts"/>
+					<div id="comments" className="contact-comments"/>
+					<div id="editor" className="contact-comments"/>
 				</div>
 		)
 	}

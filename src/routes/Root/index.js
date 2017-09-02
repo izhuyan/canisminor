@@ -8,7 +8,8 @@ export default ({location, children}) => {
 			'bg-shape'           : true,
 			'bg-shape__animation': pathname !== '/',
 			'bg-shape__intro'    : pathname === '/home',
-			'bg-shape__project'  : pathname === '/project'
+			'bg-shape__project'  : pathname === '/project',
+			'bg-shape__contact'  : pathname === '/contact'
 		});
 	return (
 		<div className="root">

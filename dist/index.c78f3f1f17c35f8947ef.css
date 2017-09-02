@@ -3144,7 +3144,7 @@ div {
   -webkit-justify-content: center;
           justify-content: center;
   z-index: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0; }
 
@@ -3154,20 +3154,18 @@ div {
   height: auto;
   -webkit-transform: translate3d(-100%, 0, 0) scale(0.5) rotate(0);
           transform: translate3d(-100%, 0, 0) scale(0.5) rotate(0); }
-
-.bg-shape__animation {
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s; }
-
-.bg-shape__intro {
-  -webkit-transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg);
-          transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg); }
-
-.bg-shape__project {
-  -webkit-transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg);
-          transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg); }
+  .bg-shape__animation {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s; }
+  .bg-shape__intro {
+    -webkit-transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg);
+            transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg); }
+  .bg-shape__project {
+    -webkit-transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg);
+            transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg); }
+  .bg-shape__contact {
+    -webkit-transform: translate3d(55%, 30%, 0) scale(1) rotate(135deg);
+            transform: translate3d(55%, 30%, 0) scale(1) rotate(135deg); }
 .svg-icon {
   width: 1em;
   height: 1em;
@@ -4457,9 +4455,9 @@ div {
 .sub-menu-bg:before, .sub-menu-bg:after {
   display: block;
   content: "";
-  height: 25rem;
-  width: 25rem;
-  right: -10rem;
+  height: 28rem;
+  width: 28rem;
+  right: -12rem;
   top: -8rem;
   border-radius: 50%;
   position: absolute;
@@ -4503,6 +4501,37 @@ div {
 .menu-oppenned .cls:nth-child(3) {
   -webkit-transform: rotate(-45deg) translateY(-5px) translateX(5px);
           transform: rotate(-45deg) translateY(-5px) translateX(5px); }
+.contact-title {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center; }
+  .contact-title .title, .contact-title .desc {
+    width: 100%;
+    text-align: center;
+    color: #333; }
+  .contact-title .title {
+    font-family: "cm-font-bold" !important;
+    font-size: 120px;
+    letter-spacing: -2px;
+    margin-bottom: 1rem; }
+    @media (max-width: 720px) {
+      .contact-title .title {
+        font-size: 84px; } }
+    @media (max-width: 580px) {
+      .contact-title .title {
+        font-size: 66px; } }
+    @media (max-width: 420px) {
+      .contact-title .title {
+        font-size: 54px; } }
+  .contact-title .desc {
+    font-size: 20px;
+    margin-bottom: 75px; }
+    @media (max-width: 720px) {
+      .contact-title .desc {
+        font-size: 18px; } }
+    @media (max-width: 420px) {
+      .contact-title .desc {
+        font-size: 16px; } }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
 /* stylelint-disable declaration-bang-space-before */
@@ -5016,38 +5045,10 @@ div {
   background: #333;
   border-radius: 0; }
 .intro-1 {
-  color: #333;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center; }
-  .intro-1 .title, .intro-1 .desc {
-    width: 100%;
-    text-align: center; }
-  .intro-1 .title {
-    font-family: "cm-font-bold" !important;
-    font-size: 120px;
-    letter-spacing: -2px; }
-    @media (max-width: 720px) {
-      .intro-1 .title {
-        font-size: 84px; } }
-    @media (max-width: 580px) {
-      .intro-1 .title {
-        font-size: 66px; } }
-    @media (max-width: 420px) {
-      .intro-1 .title {
-        font-size: 54px; } }
-  .intro-1 .desc {
-    font-size: 20px;
-    margin-bottom: 75px; }
-    @media (max-width: 720px) {
-      .intro-1 .desc {
-        font-size: 18px; } }
-    @media (max-width: 420px) {
-      .intro-1 .desc {
-        font-size: 16px; } }
+  background: transparent !important; }
 
 .intro-2 {
-  background: #62e6ac;
+  background: #62e6ac !important;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
@@ -5436,7 +5437,8 @@ div {
   -webkit-align-items: center;
           align-items: center;
   padding-top: 88px;
-  padding-bottom: 88px; }
+  padding-bottom: 88px;
+  background: #fff; }
 .project > div {
   padding: 0 5%;
   display: -webkit-box;
@@ -5455,38 +5457,6 @@ div {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center; }
-
-.pro-1 .title, .pro-1 .desc {
-  width: 100%;
-  text-align: center; }
-
-.pro-1 .title, .pro-1 .desc {
-  width: 100%;
-  text-align: center; }
-
-.pro-1 .title {
-  font-family: "cm-font-bold" !important;
-  font-size: 120px;
-  letter-spacing: -2px; }
-  @media (max-width: 720px) {
-    .pro-1 .title {
-      font-size: 84px; } }
-  @media (max-width: 580px) {
-    .pro-1 .title {
-      font-size: 66px; } }
-  @media (max-width: 420px) {
-    .pro-1 .title {
-      font-size: 54px; } }
-
-.pro-1 .desc {
-  font-size: 20px;
-  margin-bottom: 75px; }
-  @media (max-width: 720px) {
-    .pro-1 .desc {
-      font-size: 18px; } }
-  @media (max-width: 420px) {
-    .pro-1 .desc {
-      font-size: 16px; } }
 
 .pro-item {
   padding-bottom: 15rem !important;
@@ -6686,6 +6656,9 @@ a.gitment-editor-footer-tip:hover {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center; }
+
+.contact-title {
+  margin: 2rem 0; }
 
 .contact-comments {
   padding: 1rem;

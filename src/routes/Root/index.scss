@@ -3,6 +3,7 @@
 	height: 100%;
 	position: relative;
 }
+
 .bg-box {
 	width: 100%;
 	height: auto;
@@ -11,25 +12,27 @@
 	align-items: center;
 	justify-content: center;
 	z-index: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 }
+
 .bg-shape {
 	width: 100%;
 	max-width: 1400px;
 	height: auto;
-	transform: translate3d(-100%, 0,0) scale(.5) rotate(0);
+	transform: translate3d(-100%, 0, 0) scale(.5) rotate(0);
+	&__animation {
+		transition-duration: 1s;
+	}
+	&__intro {
+		transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg);
+	}
+	&__project {
+		transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg);
+	}
+	&__contact {
+		transform: translate3d(55%, 30%, 0) scale(1) rotate(135deg);
+	}
 }
-.bg-shape__animation {
-	transition-delay: .5s;
-	transition-duration: 1s;
-}
-.bg-shape__intro {
-	transform: translate3d(0, -90%,0) scale(1.2) rotate(90deg);
-}
-.bg-shape__project {
-	transform: translate3d(-55%, 30%,0) scale(1) rotate(-45deg);
-}
-
 
