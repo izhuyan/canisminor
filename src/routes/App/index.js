@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Layout,BackTop } from 'antd';
 import { Header, Footer } from '../../components';
 
 import './index.scss';
@@ -9,8 +9,9 @@ export default ({location, children}) => {
 
 	return (
 		<Layout className="app-layout">
+			<BackTop />
 			<Header location={location}/>
-			<Content children={children}/>
+			<Content className="content" children={children}/>
 			<Footer/>
 		</Layout>
 	);

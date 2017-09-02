@@ -4956,6 +4956,37 @@ div {
   top: 1.5rem;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out; }
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable declaration-bang-space-before */
+/* stylelint-disable declaration-bang-space-before */
+.ant-back-top {
+  z-index: 10;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.ant-back-top-content {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgba(64, 64, 64, 0.4);
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-back-top-content:hover {
+  background-color: rgba(64, 64, 64, 0.6);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-back-top-icon {
+  font-size: 20px;
+  margin-top: 10px;
+}
 .app-layout {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4967,9 +4998,20 @@ div {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center; }
-  .app-layout > div {
+  .app-layout > .header, .app-layout .footer, .app-layout .content {
     width: 100%;
     z-index: 1; }
+
+.ant-back-top {
+  right: 4rem;
+  bottom: 4rem; }
+  @media (max-width: 580px) {
+    .ant-back-top {
+      display: none !important; } }
+
+.ant-back-top-content {
+  background: #333;
+  border-radius: 0; }
 .intro-1 {
   color: #333;
   -webkit-box-pack: center;
