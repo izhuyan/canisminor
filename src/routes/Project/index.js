@@ -2,6 +2,11 @@ import {Typist}from'../../components'
 import './index.scss';
 
 export default ({}) => {
+
+	const proHeight = (min = 0) => {
+		return {minHeight: `${parseInt(window.innerHeight) - min}px`};
+	};
+
 	let num = 0
 
 	const imgLib = (title, path, count) => {
@@ -22,7 +27,7 @@ export default ({}) => {
 	return (
 			<div className="project">
 				<div className="dev">
-					<div className="title">Sense & pixels</div>
+					<div className="title" style={proHeight(150)}>Sense & pixels</div>
 					<Typist className="desc">wanna see more ? coming soon...</Typist>
 					{imgLib("熊猫金库", 'p_xm/xm', 10)}
 					{imgLib("智子", 'p_zz/zz', 11)}
