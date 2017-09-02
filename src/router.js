@@ -10,6 +10,7 @@ export default ({history}) => {
 				<Route component={R.App}>
 					<Route path="/home" component={R.Home}/>
 					<Route path="/project" component={R.Project}/>
+					<Route path="/contact" component={R.Contact}/>
 				</Route>
 			</Route>
 		</Router>

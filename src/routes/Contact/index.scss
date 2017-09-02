@@ -1,0 +1,35 @@
+@import "../../style/var";
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-comments {
+	padding: 1rem;
+	width: 100%;
+	max-width: 720px;
+	margin: 0;
+	.gitment-editor-submit {
+		background-color: #333;
+	}
+	a {
+		&.gitment-footer-project-link,
+		&.gitment-footer-project-link:visited,
+		&.gitment-editor-login-link,
+		&.gitment-editor-login-link:visited {
+			color: $c-primary;
+		}
+	}
+	@include media($m-small) {
+		.gitment-editor-submit {
+			width: 100%;
+		}
+		.gitment-editor-footer-tip {
+			display: none;
+		}
+	}
+
+}
+

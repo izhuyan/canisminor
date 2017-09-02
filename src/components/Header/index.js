@@ -11,7 +11,7 @@ export default ({location}) => {
 	const content = [
 		{title: "Intro", to: "/home"},
 		{title: "Project Story", to: "/project"},
-		// {title: "Let's talk", to: "/contact"}
+		{title: "Let's talk", to: "/contact"}
 	]
 	const NavItem = ({title, to}) => {
 		let classConfig = classname({
