@@ -2,7 +2,8 @@ import dva from 'dva';
 import createLoading from 'dva-loading';
 import { browserHistory } from 'dva/router';
 import { message } from 'antd';
-
+import BaiduPush from './utils/baiduPush';
+import Console from './utils/console';
 import './index.scss';
 
 const ERROR_MSG_DURATION = 3; // 3 秒
@@ -26,3 +27,10 @@ app.router(require('./router'));
 
 // 5. Start
 app.start('#root');
+
+
+// 6. Other
+BaiduPush()
+Console()
+
+
