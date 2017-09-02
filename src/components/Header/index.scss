@@ -1,5 +1,7 @@
 @import "../../style/var";
+
 .header {
+	z-index: 999 !important;
 	background: transparent;
 	height: 150px;
 	display: flex;
@@ -9,21 +11,33 @@
 	@include media ($m-large) {
 		padding: 0 24px;
 	}
-	@include media ($m-small) {
+	@include media ($m-middle) {
+		height: 120px;
 		padding: 0 16px;
+		margin-bottom: 30px;
 	}
 }
+
 .header-logo {
 	font-size: 88px !important;
 	@include media ($m-middle) {
 		font-size: 72px !important;
 	}
 }
-.header-nav {
+
+.header-desktop {
 	@include media ($m-middle) {
 		display: none !important;
 	}
 }
+
+.header-phone {
+	display: none;
+	@include media ($m-middle) {
+		display: block;
+	}
+}
+
 .header-navitem {
 	color: #333;
 	font-weight: 600;

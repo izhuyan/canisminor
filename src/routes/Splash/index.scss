@@ -37,6 +37,8 @@
 		}
 	}
 }
+
+
 .splash-text-glow:before {
 	display: block;
 	opacity: 0;
@@ -46,6 +48,5 @@
 	position: absolute;
 	right: 0.8rem;
 	top: 1.5rem;
-	z-index: -1;
 	transition: 0.25s ease-in-out;
 }

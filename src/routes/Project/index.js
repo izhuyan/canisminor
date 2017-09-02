@@ -1,9 +1,18 @@
+import {Typist}from'../../components'
 import './index.scss';
 
 export default ({}) => {
+	let num = 0
 
-	const imgLib = (path, count) => {
+	const imgLib = (title, path, count) => {
 		let list = [];
+		num++
+		const numTilte = (num.toString().length > 1) ? num : `0${num}`
+		list.push(
+				<div className="pro-title">
+					<span className="num">{numTilte}</span>{title}
+				</div>
+		)
 		for (let i = 1; i <= count; i++) {
 			list.push(<img src={`img/${path}_${i}.png`} width="960"/>);
 		}
@@ -11,19 +20,13 @@ export default ({}) => {
 	};
 
 	return (
-		<div className="project">
-			<div className="dev">
-				<div className="title">Sense & pixels</div>
-				<div className="desc">want see more ? coming soon..</div>
-				<div className="pro-title">
-					<span className="num">01</span>熊猫金库
+			<div className="project">
+				<div className="dev">
+					<div className="title">Sense & pixels</div>
+					<Typist className="desc">wanna see more ? coming soon...</Typist>
+					{imgLib("熊猫金库", 'p_xm/xm', 10)}
+					{imgLib("智子", 'p_zz/zz', 11)}
 				</div>
-				{imgLib('p_xm/xm', 10)}
-				<div className="pro-title">
-					<span className="num">02</span>智子
-				</div>
-				{imgLib('p_zz/zz', 11)}
 			</div>
-		</div>
 	);
 }
