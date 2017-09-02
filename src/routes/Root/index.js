@@ -1,3 +1,4 @@
+import {SvgIcon} from "../../components"
 import classnames from 'classnames';
 import './index.scss';
 
@@ -17,7 +18,7 @@ export default ({location, children}) => {
 	return (
 			<div className="root">
 				<div className="bg-box">
-					<img className={classConfig} src="/img/bg.png"/>
+					<SvgIcon className={classConfig} type="bg-shape"/>
 				</div>
 				{children}
 			</div>

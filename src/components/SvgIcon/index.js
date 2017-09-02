@@ -1,10 +1,11 @@
 import './index.scss';
-
-export default ({type}) => {
+import classnames from "classnames"
+export default ({type,className,...other}) => {
 	const useTag = `<use xlink:href="#icon-${type}" />`;
 	return <svg
-		className="svg-icon"
+		className={classnames("svg-icon",className)}
 		aria-hidden={true}
 		dangerouslySetInnerHTML={{__html: useTag}}
+		{...other}
 	/>;
 };

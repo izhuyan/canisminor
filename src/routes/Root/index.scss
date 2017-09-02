@@ -6,7 +6,7 @@
 
 .bg-box {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	overflow: visible;
 	display: flex;
 	align-items: center;
@@ -20,19 +20,19 @@
 .bg-shape {
 	width: 100%;
 	max-width: 1400px;
-	height: auto;
-	transform: translate3d(-100%, 0, 0) scale(.5) rotate(0);
+	height: 100%;
+	transform: translate3d(-100%, 0, 0) scale(1) rotate(0);
 	&__animation {
-		transition-duration: 1s;
+		transition: all .8s cubic-bezier(.5,0,.47,1);
 	}
 	&__intro {
-		transform: translate3d(0, -90%, 0) scale(1.2) rotate(90deg);
+		transform: translate3d(0, -80%, 0) scale(1.2) rotate(120deg);
 	}
 	&__project {
-		transform: translate3d(-55%, 30%, 0) scale(1) rotate(-45deg);
+		transform: translate3d(-55%, 30%, 0) scale(1.5) rotate(-45deg);
 	}
 	&__contact {
-		transform: translate3d(55%, 30%, 0) scale(1) rotate(135deg);
+		transform: translate3d(55%, 10%, 0) scale(.8) rotate(135deg);
 	}
 }
 
