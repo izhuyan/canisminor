@@ -68,7 +68,7 @@ export default () => {
 			<div className="project">
 				<Title style={proHeight(150)}
 				       title="Sense & pixels"
-				       desc="wanna see more ? coming soon..."/>
+				       desc="wanna see more ? updating soon..."/>
 				<Collapse defaultActiveKey={['01']}>
 					{libData.map(item => imgLib(item))}
 				</Collapse>
