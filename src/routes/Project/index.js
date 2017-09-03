@@ -7,7 +7,7 @@ import './index.scss';
 const Panel = Collapse.Panel;
 
 const VPlayer = ({src}) => <Player>
-	<source src={src}/>
+	<source src={`http://ovp0fxang.bkt.clouddn.com/${src}`}/>
 </Player>
 
 const imgLib = ({num, title, path, page, footer}) => {
@@ -48,8 +48,7 @@ export default () => {
 		{
 			num: num++,
 			title: "沪江LOGO演绎",
-			footer: <VPlayer
-					src="http://ovp0fxang.bkt.clouddn.com/%E6%B2%AA%E6%B1%9FLogo%E6%BC%94%E7%BB%8E%E5%8A%A8%E7%94%BB.mp4"/>
+			footer: <VPlayer src="hujiang.mp4"/>
 		},
 		{
 			num: num++,
