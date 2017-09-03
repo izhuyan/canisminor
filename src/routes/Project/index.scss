@@ -63,11 +63,8 @@
 	img {
 		max-width: 100%;
 	}
-	@include media($m-small) {
-		padding-bottom: 0 !important;
-		margin-bottom: 2 !important;
-		padding-left: 0 !important;
-		padding-right: 0 !important;
+	.cm-btn-link{
+		margin: 5rem 0;
 	}
 	@include media($m-small) {
 		padding-bottom: 0 !important;
@@ -75,6 +72,13 @@
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
+	@include media($m-small) {
+		padding-bottom: 0 !important;
+		margin-bottom: 2 !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
 }
 
 .pro-title {

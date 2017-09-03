@@ -5648,6 +5648,8 @@ div {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
   .ant-collapse-content-box img {
     max-width: 100%; }
+  .ant-collapse-content-box .cm-btn-link {
+    margin: 5rem 0; }
   @media (max-width: 420px) {
     .ant-collapse-content-box {
       padding-bottom: 0 !important;
