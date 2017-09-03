@@ -52,6 +52,11 @@ export default () => {
 		},
 		{
 			num: num++,
+			title: "须臾映社VD",
+			footer: <VPlayer src="instant-zine.mp4"/>
+		},
+		{
+			num: num++,
 			title: "须臾映社",
 			path: 'iz',
 			page: 53,
