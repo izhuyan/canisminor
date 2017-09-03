@@ -1,5 +1,8 @@
 import {Title}from'../../components'
+import {Collapse} from 'antd';
 import './index.scss';
+
+const Panel = Collapse.Panel;
 
 export default ({}) => {
 
@@ -13,15 +16,19 @@ export default ({}) => {
 		let list = [];
 		num++
 		const numTilte = (num.toString().length > 1) ? num : `0${num}`
-		list.push(
-				<div className="pro-title">
-					<span className="num">{numTilte}</span>{title}
-				</div>
-		)
+
 		for (let i = 1; i <= count; i++) {
 			list.push(<img src={`img/${path}_${i}.png`} width="960"/>);
 		}
-		return (<div className="pro-item">{list}</div>)
+		return (<Panel
+				key={numTilte}
+				header={
+					<div className="pro-title">
+						<span className="num">{numTilte}</span>
+						{title}
+					</div>
+				}
+		>{list}</Panel>)
 	};
 
 	return (
@@ -29,9 +36,12 @@ export default ({}) => {
 				<Title style={proHeight(150)}
 				       title="Sense & pixels"
 				       desc="wanna see more ? coming soon..."/>
+				<Collapse defaultActiveKey={['01']}>
 					{imgLib("熊猫金库", 'p_xm/xm', 10)}
 					{imgLib("智子", 'p_zz/zz', 11)}
 					{imgLib("沪江学习", 'p_hj/hj', 10)}
+					{imgLib("须臾映社", 'p_iz/iz', 53)}
+				</Collapse>
 			</div>
 	);
 }
