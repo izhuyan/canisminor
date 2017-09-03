@@ -1,15 +1,24 @@
-import {Title,Button}from'../../components'
+import {Title, Button}from'../../components'
 import {Collapse} from 'antd';
+import {Player} from 'video-react';
+import "video-react/dist/video-react.css"
 import './index.scss';
 
 const Panel = Collapse.Panel;
 
-const imgLib = (num, title, path, page,footer) => {
+const VPlayer = ({src}) => <Player>
+	<source src={src}/>
+</Player>
+
+const imgLib = ({num, title, path, page, footer}) => {
 	const list = [];
 	const numTilte = (num.toString().length > 1) ? num : `0${num}`
 	const header = (<div className="pro-title"><span className="num">{numTilte}</span>{title}</div>)
-	for (let i = 1; i <= page; i++) list.push(<img src={`img/p_${path}/${path}_${i}.png`} width="960"/>);
-	return (<Panel key={numTilte} header={header}>{list}{footer}</Panel>)
+	if (path) {
+		for (let i = 1; i <= page; i++) list.push(<img src={`img/p_${path}/${path}_${i}.png`} width="960"/>);
+	}
+	list.push(footer)
+	return (<Panel key={numTilte} header={header}>{list}</Panel>)
 };
 
 export default () => {
@@ -20,16 +29,44 @@ export default () => {
 
 	let num = 1
 
+	const libData = [
+		{num: num++, title: "熊猫金库", path: 'xm', page: 10},
+		{
+			num: num++,
+			title: "智子",
+			path: 'zz',
+			page: 11,
+			footer: <Button url="http://www.zhizigroup.com/">智子 Wisman</Button>
+		},
+		{
+			num: num++,
+			title: "沪江学习",
+			path: 'hj',
+			page: 10,
+			footer: <Button url="http://www.hujiang.com/app/hujiang/">沪江学习</Button>
+		},
+		{
+			num: num++,
+			title: "沪江LOGO演绎",
+			footer: <VPlayer
+					src="http://ovp0fxang.bkt.clouddn.com/%E6%B2%AA%E6%B1%9FLogo%E6%BC%94%E7%BB%8E%E5%8A%A8%E7%94%BB.mp4"/>
+		},
+		{
+			num: num++,
+			title: "须臾映社",
+			path: 'iz',
+			page: 53,
+			footer: <Button url="http://instant-zine.lofter.com/">Instant-Zine</Button>
+		}
+	]
+
 	return (
 			<div className="project">
 				<Title style={proHeight(150)}
 				       title="Sense & pixels"
 				       desc="wanna see more ? coming soon..."/>
 				<Collapse defaultActiveKey={['01']}>
-					{imgLib(num++, "熊猫金库", 'xm', 10)}
-					{imgLib(num++, "智子", 'zz', 11,<Button url="http://www.zhizigroup.com/">智子 Wisman</Button>)}
-					{imgLib(num++, "沪江学习", 'hj', 10,<Button url="http://www.hujiang.com/app/hujiang/">沪江学习</Button>)}
-					{imgLib(num++, "须臾映社", 'iz', 53,<Button url="http://instant-zine.lofter.com/">Instant-Zine</Button>)}
+					{libData.map(item => imgLib(item))}
 				</Collapse>
 			</div>
 	);
