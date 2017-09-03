@@ -21,7 +21,7 @@ export default ({}) => {
 		for (let i = 1; i <= count; i++) {
 			list.push(<img src={`img/${path}_${i}.png`} width="960"/>);
 		}
-		return list;
+		return (<div className="pro-item">{list}</div>)
 	};
 
 	return (
@@ -29,12 +29,9 @@ export default ({}) => {
 				<Title style={proHeight(150)}
 				       title="Sense & pixels"
 				       desc="wanna see more ? coming soon..."/>
-				<div className="pro-item">
 					{imgLib("熊猫金库", 'p_xm/xm', 10)}
-				</div>
-				<div className="pro-item">
 					{imgLib("智子", 'p_zz/zz', 11)}
-				</div>
+					{imgLib("沪江学习", 'p_hj/hj', 10)}
 			</div>
 	);
 }
