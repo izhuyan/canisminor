@@ -4902,7 +4902,6 @@ div {
 .bg-box {
   width: 100%;
   height: 100%;
-  overflow: visible;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -4918,7 +4917,6 @@ div {
   left: 0; }
   @media (max-width: 580px) {
     .bg-box {
-      width: 500px;
       height: 500px; } }
 
 .bg-shape {
