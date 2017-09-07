@@ -10,6 +10,7 @@ export { default as ExpList } from './ExpList';
 export { default as Button } from './Button';
 export { default as Menu } from './Menu';
 export { default as Title } from './Title';
+export { default as LazyLoad } from './LazyLoad';
 // layout
 export { default as Header } from './Header';
 export { default as Footer } from './Footer';

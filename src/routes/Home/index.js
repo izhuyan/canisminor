@@ -1,4 +1,4 @@
-import {Title, Icon, SvgIcon, IntroIcon, DocTitle, Showcase, AwardList, ExpList, Button} from '../../components';
+import {LazyLoad,Title, Icon, SvgIcon, IntroIcon, DocTitle, Showcase, AwardList, ExpList, Button} from '../../components';
 import './index.scss';
 
 export default () => {
@@ -183,7 +183,7 @@ export default () => {
 					<DocTitle content={docData[3]}/>
 					<div className="spec-group">
 						{
-							specData.map((item,key) => (
+							specData.map((item, key) => (
 									<SpecItem
 											key={key}
 											img={item.img}
@@ -296,17 +296,19 @@ export default () => {
 		);
 	};
 
+
+
 	return (
 			<div className="intro">
 				{intro_1()}
 				{intro_2()}
-				{intro_3()}
-				{intro_4()}
-				{intro_5()}
-				{intro_6()}
-				{intro_7()}
-				{intro_8()}
-				{intro_9()}
+				<LazyLoad children={intro_3()}/>
+				<LazyLoad children={intro_4()}/>
+				<LazyLoad children={intro_5()}/>
+				<LazyLoad children={intro_6()}/>
+				<LazyLoad children={intro_7()}/>
+				<LazyLoad children={intro_8()}/>
+				<LazyLoad children={intro_9()}/>
 			</div>
 	);
 }

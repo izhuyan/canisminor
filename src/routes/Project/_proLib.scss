@@ -1,10 +1,7 @@
-
 .ant-collapse {
-
 	background: transparent;
 	border-radius: 0;
 	border: 0;
-
 	@include media($m-small) {
 		padding-bottom: 0 !important;
 		margin-bottom: 0 !important;
@@ -21,7 +18,7 @@
 		> .ant-collapse-header {
 			width: 100%;
 			max-width: 960px;
-			&:active{
+			&:active {
 				background-color: transparent !important;
 			}
 			> .arrow:before {
@@ -52,10 +49,14 @@
 	padding-bottom: 15rem !important;
 	margin-bottom: 5rem;
 	border-bottom: 1px solid $c-split;
+	.ant-btn {
+		margin-top: 4rem;
+	}
 	img {
 		max-width: 100%;
+		min-height: 100px;
 	}
-	.cm-btn-link{
+	.cm-btn-link {
 		margin: 5rem 0;
 	}
 	@include media($m-small) {
@@ -63,12 +64,11 @@
 		margin-bottom: 2 !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
-	}
-	@include media($m-small) {
-		padding-bottom: 0 !important;
-		margin-bottom: 2 !important;
-		padding-left: 0 !important;
-		padding-right: 0 !important;
+		.ant-btn {
+			display: block;
+			margin: 4rem auto;
+			width: 90%;
+		}
 	}
 
 }
