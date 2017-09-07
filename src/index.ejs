@@ -30,7 +30,10 @@
 <body>
 
 <div id="root"></div>
-<!--<script type="text/javascript" src="/roadhog.dll.js"></script>-->
-
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/service-worker.js');
+	}
+</script>
 </body>
 </html>

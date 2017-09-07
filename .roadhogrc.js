@@ -1,10 +1,14 @@
 export default {
-	'entry'            : 'src/index.js',
-	'publicPath'       : '/',
+	'entry': {
+		"index": "./src/index.js",
+		"common": "./src/vendor.js"
+	},
+	"multipage": true,
+	'publicPath': '/',
 	'disableCSSModules': true,
-	'sass'             : true,
-	'hash'             : true,
-	'theme'            : 'src/style/theme.js',
+	'sass': true,
+	'hash': true,
+	'theme': 'src/style/theme.js',
 	'extraBabelPlugins': [
 		'transform-runtime',
 		'lodash',
@@ -13,25 +17,25 @@ export default {
 			[
 				{
 					'libraryName': 'antd',
-					'style'      : true
+					'style': true
 				}
 			]
 		]
 	],
-	'autoprefixer'     : {
+	'autoprefixer': {
 		'browsers': [
 			'iOS >= 8',
 			'Android >= 4'
 		]
 	},
-	'env'              : {
+	'env': {
 		'development': {
 			'extraBabelPlugins': [
 				'dva-hmr'
 			]
 		}
 	},
-	'xdllPlugin'        : {
+	'xdllPlugin': {
 		'exclude': [
 			'babel-runtime'
 		],
