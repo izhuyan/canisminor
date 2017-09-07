@@ -5,15 +5,17 @@ import './index.scss';
 
 export default ({children, url, to, ...other}) => {
 
-	return (
-		<Link className="cm-btn-link" to={to}>
-			<Button
-				className='cm-btn'
-				type="primary"
-				onClick={url ? () => window.open(url) : null}
-				{...other}>
-				{children}<Icon type="caret-right"/>
-			</Button>
-		</Link>
-	);
+	let Btn = (
+		<Button
+			className='cm-btn'
+			type="primary"
+			onClick={url ? () => window.open(url) : null}
+			{...other}>
+			{children}<Icon type="caret-right"/>
+		</Button>
+	)
+
+	if (to) Btn = (<Link className="cm-btn-link" to={to}>{Btn}</Link>)
+
+	return Btn
 }

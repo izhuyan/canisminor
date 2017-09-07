@@ -1,6 +1,6 @@
 import dva from 'dva';
 import createLoading from 'dva-loading';
-import { browserHistory } from 'dva/router';
+import createHistory from 'history/createBrowserHistory';
 import { message } from 'antd';
 import BaiduPush from './utils/baiduPush';
 import Console from './utils/console';
@@ -10,10 +10,10 @@ const ERROR_MSG_DURATION = 3; // 3 秒
 
 // 1. Initialize
 const app = dva({
-	                history: browserHistory,
+	                history: createHistory(),
 	                onError(e) {
 		                message.error(e.message, ERROR_MSG_DURATION);
-	                }
+	                },
                 });
 
 // 2. Plugins

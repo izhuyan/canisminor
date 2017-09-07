@@ -1,6 +1,10 @@
-export { default as Root } from './Root';
-export { default as Splash } from './Splash';
-export { default as App } from './App';
-export { default as Home } from './Home';
-export { default as Project } from './Project';
-export { default as Contact } from './Contact';
+import dynamic from 'dva/dynamic';
+
+const Splash  = dynamic({component: () => import('./Splash')});
+const Home    = dynamic({component: () => import('./Home')});
+const Project = dynamic({component: () => import('./Project')});
+const Contact = dynamic({component: () => import('./Contact')});
+const Root    = dynamic({component: () => import('./Root')});
+const App     = dynamic({component: () => import('./App')});
+
+export { Splash, Home, Project, Contact, Root, App };

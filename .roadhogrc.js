@@ -31,7 +31,7 @@ export default {
 			]
 		}
 	},
-	'dllPlugin'        : {
+	'xdllPlugin'        : {
 		'exclude': [
 			'babel-runtime'
 		],

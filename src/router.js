@@ -1,18 +1,14 @@
+import { Route, Router, Switch } from 'dva/router';
+import {Root} from './routes'
 import React from 'react';
-import { Router, Route } from 'dva/router';
-import * as R from './routes';
 
-export default ({history}) => {
+export default ({history, app}) => {
+
 	return (
 		<Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
-			<Route component={R.Root}>
-				<Route path="/" component={R.Splash}/>
-				<Route component={R.App}>
-					<Route path="/home" component={R.Home}/>
-					<Route path="/project" component={R.Project}/>
-					<Route path="/contact" component={R.Contact}/>
-				</Route>
-			</Route>
+			<Switch>
+				<Route exact component={Root}/>
+			</Switch>
 		</Router>
 	);
 }

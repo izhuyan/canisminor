@@ -18,7 +18,7 @@ const imgLib = ({num, title, path, page, footer}) => {
 		for (let i = 1; i <= page; i++) list.push(<img src={`img/p_${path}/${path}_${i}.png`} width="960"/>);
 	}
 	list.push(footer)
-	return (<Panel key={numTilte} header={header}>{list}</Panel>)
+	return (<Panel key={num} header={header}>{list}</Panel>)
 };
 
 export default () => {
@@ -69,8 +69,8 @@ export default () => {
 				<Title style={proHeight(150)}
 				       title="Sense & pixels"
 				       desc="wanna see more ? updating soon..."/>
-				<Collapse defaultActiveKey={['01']}>
-					{libData.map(item => imgLib(item))}
+				<Collapse defaultActiveKey={["1"]}>
+					{libData.map((item,key) => imgLib(item))}
 				</Collapse>
 			</div>
 	);

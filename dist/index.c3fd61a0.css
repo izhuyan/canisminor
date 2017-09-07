@@ -3128,6 +3128,13 @@ div {
 
 *:focus {
   outline: none; }
+
+#nprogress .bar {
+  background: #62e6ac; }
+
+#nprogress .spinner-icon {
+  border-top-color: #62e6ac;
+  border-left-color: #62e6ac; }
 .svg-icon {
   width: 1em;
   height: 1em;
@@ -4897,49 +4904,6 @@ div {
 
 .footer-social-icon {
   font-size: 32px; }
-.root {
-  width: 100%;
-  position: relative;
-  overflow: hidden; }
-
-.bg-box {
-  width: 100%;
-  height: 1024px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0; }
-  @media (max-width: 580px) {
-    .bg-box {
-      height: 500px; } }
-
-.bg-shape {
-  width: 100%;
-  max-width: 1400px;
-  height: 100%;
-  -webkit-transform: translate3d(-100%, 0, 0) scale(1) rotate(0);
-          transform: translate3d(-100%, 0, 0) scale(1) rotate(0); }
-  .bg-shape__animation {
-    -webkit-transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1); }
-  .bg-shape__intro {
-    -webkit-transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg);
-            transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg); }
-  .bg-shape__project {
-    -webkit-transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg);
-            transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg); }
-  .bg-shape__contact {
-    -webkit-transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg);
-            transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg); }
 @charset "UTF-8";
 .splash {
   position: fixed;
@@ -4994,62 +4958,6 @@ div {
   top: 1.5rem;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out; }
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable declaration-bang-space-before */
-/* stylelint-disable declaration-bang-space-before */
-.ant-back-top {
-  z-index: 10;
-  position: fixed;
-  right: 100px;
-  bottom: 50px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-.ant-back-top-content {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  background-color: rgba(64, 64, 64, 0.4);
-  color: #fff;
-  text-align: center;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.ant-back-top-content:hover {
-  background-color: rgba(64, 64, 64, 0.6);
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.ant-back-top-icon {
-  font-size: 20px;
-  margin-top: 10px;
-}
-.app-layout {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center; }
-  .app-layout > .header, .app-layout .footer, .app-layout .content {
-    width: 100%;
-    z-index: 1; }
-
-.ant-back-top {
-  right: 4rem;
-  bottom: 4rem; }
-  @media (max-width: 580px) {
-    .ant-back-top {
-      display: none !important; } }
-
-.ant-back-top-content {
-  background: #333;
-  border-radius: 0; }
 .intro-1 {
   background: transparent !important; }
 
@@ -6924,3 +6832,102 @@ a.gitment-editor-footer-tip:hover {
       width: 100%; }
     .contact-comments .gitment-editor-footer-tip {
       display: none; } }
+.root {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.bg-box {
+  width: 100%;
+  height: 1024px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  @media (max-width: 580px) {
+    .bg-box {
+      height: 500px; } }
+
+.bg-shape {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  -webkit-transform: translate3d(-100%, 0, 0) scale(1) rotate(0);
+          transform: translate3d(-100%, 0, 0) scale(1) rotate(0); }
+  .bg-shape__animation {
+    -webkit-transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0.47, 1); }
+  .bg-shape__intro {
+    -webkit-transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg);
+            transform: translate3d(-10%, -92%, 0) scale(1.7) rotate(0deg); }
+  .bg-shape__project {
+    -webkit-transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg);
+            transform: translate3d(-70%, 50%, 0) scale(1.5) rotate(450deg); }
+  .bg-shape__contact {
+    -webkit-transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg);
+            transform: translate3d(55%, 20%, 0) scale(1.2) rotate(55deg); }
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable declaration-bang-space-before */
+/* stylelint-disable declaration-bang-space-before */
+.ant-back-top {
+  z-index: 10;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.ant-back-top-content {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgba(64, 64, 64, 0.4);
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-back-top-content:hover {
+  background-color: rgba(64, 64, 64, 0.6);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-back-top-icon {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.app-layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center; }
+  .app-layout > .header, .app-layout .footer, .app-layout .content {
+    width: 100%;
+    z-index: 1; }
+
+.ant-back-top {
+  right: 4rem;
+  bottom: 4rem; }
+  @media (max-width: 580px) {
+    .ant-back-top {
+      display: none !important; } }
+
+.ant-back-top-content {
+  background: #333;
+  border-radius: 0; }
