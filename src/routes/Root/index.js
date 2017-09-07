@@ -31,6 +31,7 @@ class Root extends React.Component {
 		const href = window.location.href;
 
 		if (lastHref !== href) {
+			window.scrollTo(0, 0)
 			NProgress.start();
 			if (!loading.global) {
 				NProgress.done();

@@ -1,11 +1,11 @@
 import { Route, Router, Switch } from 'dva/router';
-import {Root} from './routes'
 import React from 'react';
+import { Root } from './routes';
 
 export default ({history, app}) => {
 
 	return (
-		<Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
+		<Router history={history}>
 			<Switch>
 				<Route exact component={Root}/>
 			</Switch>
