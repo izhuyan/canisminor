@@ -1,10 +1,10 @@
 import classnames from 'classnames';
 import { Route } from 'dva/router';
 import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 import React from 'react';
 import { SvgIcon } from '../../components';
 import { App, Splash } from '../../routes';
-
 import './index.scss';
 
 export default class extends React.Component {

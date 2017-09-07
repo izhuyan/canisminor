@@ -1,5 +1,5 @@
 @import "style/index";
-@import "style/var";
+
 html, body, :global(#root) {
 	height: 100%;
 }
@@ -12,12 +12,4 @@ div {
 *:focus {
 	outline: none;
 }
-#nprogress {
-	.bar {
-		background: $c-primary;
-	}
-	.spinner-icon {
-		border-top-color: $c-primary;;
-		border-left-color: $c-primary;;
-	}
-}
+
