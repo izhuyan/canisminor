@@ -1,9 +1,8 @@
 module.exports = {
 	stripPrefix: 'dist/',
 	staticFileGlobs: [
-		'dist/manifest.json',
-		'dist/favicon/**/*',
 		'dist/img/**/*',
+		'dist/favicon/*',
 		'dist/font/*',
 		'dist/*common*'
 	],
