@@ -26,14 +26,10 @@
 	<!--http://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=399961&keyword=-->
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_399961_ceij53eslhpmygb9.css"/>
 	<script src="//at.alicdn.com/t/font_399961_ceij53eslhpmygb9.js"></script>
+	<!--Progressive Web App-->
+	<script type="text/javascript" src="/register-service-worker.js"></script>
 </head>
 <body>
-
 <div id="root"></div>
-<script>
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service-worker.js');
-	}
-</script>
 </body>
 </html>
