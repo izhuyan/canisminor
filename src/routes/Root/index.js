@@ -17,6 +17,7 @@ class Root extends React.Component {
 		const {location, loading} = this.props;
 
 		NProgress.start();
+		window.scrollTo(0, 0)
 		!loading.global && NProgress.done();
 
 		const pathname    = location.pathname;
