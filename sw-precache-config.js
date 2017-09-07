@@ -8,5 +8,5 @@ module.exports = {
 		'dist/*common*'
 	],
 	dontCacheBustUrlsMatching: /./,
-	swFilePath: 'dist/service-worker.js'
+	swFilePath: 'dist/sw-precache.js'
 };
