@@ -48,8 +48,8 @@ $(document).ready(function () {
 		const shareOpt = {
 			title: 'CanisMinor',
 			desc: 'UI/UX Designer & FE Developer',
-			link: window.location.href,
-			imgUrl: window.location.origin + '/favicons/share.png',
+			link: window.location.origin,
+			imgUrl: window.location.origin + '/share.png',
 			success: function () {},
 			cancel: function () {}
 		}
