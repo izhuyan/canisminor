@@ -6,11 +6,11 @@ export default () => {
 
 	const shareConfig = {
 		title: 'CanisMinor',
-		desc: 'UI/UX Designer & FE Developer',
+		desc: 'test',
 		link: window.location.href,
 		imgUrl: 'https://canisminor.cc/favicons/share.png',
-		success: () => message.success('Share success'),
-		cancel: () => message.error('Share cancel'),
+		success: () => {},
+		cancel: () => {}
 	}
 
 	fetch(`https://canisminor.cc/api/wechat`, {
