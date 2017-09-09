@@ -1,5 +1,7 @@
+import wx from 'weixin-jsapi'
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
+
 
 const shareConfig = {
 	title: 'CanisMinor', // 分享标题

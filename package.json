@@ -21,7 +21,8 @@
 		"query-string": "^5.0.0",
 		"react": "^15.6.1",
 		"react-dom": "^15.6.1",
-		"react-lazyload": "^2.2.7"
+		"react-lazyload": "^2.2.7",
+		"weixin-jsapi": "^1.1.0"
 	},
 	"devDependencies": {
 		"babel-plugin-dva-hmr": "^0.3.2",
