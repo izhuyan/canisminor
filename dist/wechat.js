@@ -46,10 +46,10 @@ $(document).ready(function () {
 		});
 
 		const shareOpt = {
-			title: '标题',
-			desc: '介绍',
-			link: 'https://canisminor.cc',
-			imgUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3581375796,1724948983&fm=27&gp=0.jpg',
+			title: 'CanisMinor',
+			desc: 'UI/UX Designer & FE Developer',
+			link: window.location.origin,
+			imgUrl: window.location.origin + '/share.png',
 			success: function () {},
 			cancel: function () {}
 		}
@@ -78,6 +78,6 @@ $(document).ready(function () {
 
 	var dataPost = JSON.stringify({'url': location.href.split('#')[0]});
 
-	$.post(window.location.origin + '/api/wechat/sign', dataPost, successCallback);
+	$.post('https://www.xiongmaojinku.com/wx/weixin_jsapi', dataPost, successCallback);
 
 })
