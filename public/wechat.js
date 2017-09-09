@@ -48,7 +48,7 @@ $(document).ready(function () {
 		const shareOpt = {
 			title: 'CanisMinor',
 			desc: 'UI/UX Designer & FE Developer',
-			link: window.location.origin,
+			link: "canisminor.cc",
 			imgUrl: window.location.origin + '/share.png',
 			success: function () {},
 			cancel: function () {}
