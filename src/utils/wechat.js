@@ -41,8 +41,22 @@ export default () => {
 					success: (res) =>{checkJsApi:ok}
 				});
 
-				wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-				wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+				wx.onMenuShareTimeline({
+					title: 'CanisMinor',
+					desc: 'test',
+					link: window.location.href,
+					imgUrl: 'https://canisminor.cc/favicons/share.png',
+					success: () => alert("success"),
+					cancel: () => alert("cancel")
+				}); // 分享到朋友圈
+				wx.onMenuShareAppMessage({
+					title: 'CanisMinor',
+					desc: 'test',
+					link: window.location.href,
+					imgUrl: 'https://canisminor.cc/favicons/share.png',
+					success: () => alert("success"),
+					cancel: () => alert("cancel")
+				}); // 分享给微信好友
 
 			})
 
