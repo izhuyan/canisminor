@@ -14,7 +14,7 @@ const shareConfig = {
 let data = new FormData();
 data.append("json", JSON.stringify({url: "https://canisminor.cc"}));
 
-fetch('https://canisminor.cc/api/wechat/', {
+fetch('https://canisminor.cc/api/wechat', {
 	method: "POST",
 	headers: {
 		'Accept': 'application/json',
