@@ -18,11 +18,11 @@ fetch('https://canisminor.cc/api/wechat', {
 		'Accept': 'application/json',
 		'Content-Type': 'application/json'
 	},
-	body: JSON.stringify({url: "https://canisminor.cc"})
+	data: JSON.stringify({url: "https://canisminor.cc"})
 }).then(response => {
-	const r = response.json()
+	const r = response.body()
 	console.log(response)
-	console.log(response.json())
+	console.log(response.body())
 	wx.config({
 		appId: r.appid, // 必填，公众号的唯一标识
 		timestamp: r.timestamp, // 必填，生成签名的时间戳
