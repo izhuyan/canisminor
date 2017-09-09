@@ -9,8 +9,8 @@ export default () => {
 		desc: 'test',
 		link: window.location.href,
 		imgUrl: 'https://canisminor.cc/favicons/share.png',
-		success: () => {},
-		cancel: () => {}
+		success: () => alert("success"),
+		cancel: () => alert("cancel")
 	}
 
 	fetch(`https://canisminor.cc/api/wechat`, {
@@ -39,10 +39,7 @@ export default () => {
 				wx.checkJsApi({
 					jsApiList: ['onMenuShareTimeline',
 					            'onMenuShareAppMessage',], // 需要检测的JS接口列表，所有JS接口列表见附录2,
-					success: (res) =>{
-						alert(res)
-						message.info(res)
-					}
+					success: (res) =>{}
 				});
 
 				wx.ready(()=>{
