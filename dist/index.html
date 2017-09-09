@@ -35,20 +35,19 @@
 <body>
 <div id="root"></div>
 <script>
-	alert('no ready')
 	wx.ready(function () {
 		alert('ready')
 		var shareConfig = {
 			title: 'CanisMinor',
-			desc: 'test',
+			desc: 'UI/UX Designer & FE Developer',
 			link: window.location.href,
 			imgUrl: 'https://canisminor.cc/favicons/share.png',
-			success: () => function() {},
-			cancel: () => function() {}
+			success: () => function() {alert('success')},
+			cancel: () => function() {alert('cancel')}
 		}
 		wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
 		wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
 	})
 </script>
-<script type="text/javascript" src="/common.47aa94b6e46e8cfe2a5c.js"></script><script type="text/javascript" src="/index.dcf3997b.js"></script></body>
+<script type="text/javascript" src="/common.59964b1e278f55fd1648.js"></script><script type="text/javascript" src="/index.dcf3997b.js"></script></body>
 </html>
