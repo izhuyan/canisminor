@@ -4,7 +4,7 @@ import createHistory from 'history/createBrowserHistory';
 import { message } from 'antd';
 import BaiduPush from './utils/baiduPush';
 import Console from './utils/console';
-import Wechat from './utils/wechat';
+// import Wechat from './utils/wechat';
 import './index.scss';
 
 const ERROR_MSG_DURATION = 3; // 3 秒
@@ -31,6 +31,6 @@ app.start('#root');
 
 
 // 6. Other
-Wechat()
+// Wechat()
 BaiduPush()
 Console()
