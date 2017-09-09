@@ -34,5 +34,18 @@
 <link href="/common.7c7aa603.css" rel="stylesheet"><link href="/index.04fed0be.css" rel="stylesheet"></head>
 <body>
 <div id="root"></div>
-<script type="text/javascript" src="/common.e4ef06cf3ab1283c154f.js"></script><script type="text/javascript" src="/index.47a1f36a.js"></script></body>
+<script>
+	var shareConfig = {
+		title: 'CanisMinor',
+		desc: 'test',
+		link: window.location.href,
+		imgUrl: 'https://canisminor.cc/favicons/share.png',
+		success: () => alert("success"),
+		cancel: () => alert("cancel")
+	}
+
+	wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+	wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+</script>
+<script type="text/javascript" src="/common.8e8ad73474dfc81482fc.js"></script><script type="text/javascript" src="/index.dcf3997b.js"></script></body>
 </html>

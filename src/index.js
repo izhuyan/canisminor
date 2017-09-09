@@ -34,16 +34,3 @@ app.start('#root');
 Wechat()
 BaiduPush()
 Console()
-
-
-var shareConfig = {
-	title: 'CanisMinor',
-	desc: 'test',
-	link: window.location.href,
-	imgUrl: 'https://canisminor.cc/favicons/share.png',
-	success: () => alert("success"),
-	cancel: () => alert("cancel")
-}
-
-wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
