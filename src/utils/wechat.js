@@ -40,17 +40,11 @@ export default () => {
 						'onMenuShareQZone',
 					]
 				})
-				wx.ready(() => {
-					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
-					wx.onMenuShareQQ(shareConfig); // 分享到QQ
-					wx.onMenuShareWeibo(shareConfig); // 分享到微博
-					wx.onMenuShareQZone(shareConfig); // 分享到QQ空间
-				})
-
-				wx.error((res) => {
-					message.error(res)
-				});
+				wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+				wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+				wx.onMenuShareQQ(shareConfig); // 分享到QQ
+				wx.onMenuShareWeibo(shareConfig); // 分享到微博
+				wx.onMenuShareQZone(shareConfig); // 分享到QQ空间
 			})
 
 
