@@ -16,25 +16,23 @@ export default () => {
 			.then(data => configWX(data.appid, data.timestamp, data.nonceStr, data.signature))
 }
 
-export function configWX(appId, timestamp, nonceStr, signature) {
-	const jsApiList = [
-		'onMenuShareTimeline',
-		'onMenuShareAppMessage'
-	]
-
+function configWX(appId, timestamp, nonceStr, signature) {
 	wx.config({
-		debug: false,
+		debug: true,
 		appId: appId,
 		timestamp: timestamp,
 		nonceStr: nonceStr,
 		signature: signature,
-		jsApiList: jsApiList
+		jsApiList: [
+			'onMenuShareTimeline',
+			'onMenuShareAppMessage'
+		]
 	})
 
 	setShareInfo()
 }
 
-export function setShareInfo() {
+function setShareInfo() {
 
 	const shareConfig = {
 		title: 'CanisMinor',
