@@ -23,10 +23,11 @@ function configWX(appId, timestamp, nonceStr, signature) {
 		timestamp: timestamp,
 		nonceStr: nonceStr,
 		signature: signature,
-		jsApiList: [
-			'onMenuShareTimeline',
-			'onMenuShareAppMessage'
-		]
+		jsApiList: ['onMenuShareTimeline',
+		            'onMenuShareAppMessage',
+		            'onMenuShareQQ',
+		            'onMenuShareWeibo',
+		            'onMenuShareQZone']
 	})
 
 	setShareInfo()
@@ -45,8 +46,19 @@ function setShareInfo() {
 	}
 
 	wx.ready(() => {
-		wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-		wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+		wx.onMenuShareTimeline({
+			title: shareConfig.title,
+			link: shareConfig.link,
+			imgUrl: shareConfig.imgUrl,
+			success: shareConfig.success
+		});
+		wx.onMenuShareAppMessage({
+			title: shareConfig.title,
+			desc: shareConfig.desc,
+			link: shareConfig.link,
+			imgUrl: shareConfig.imgUrl,
+			success: shareConfig.success
+		});
 	})
 }
 
