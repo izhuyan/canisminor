@@ -20,7 +20,8 @@ export default () => {
 		headers: {
 			'Accept': 'application/json',
 			'Content-Type': 'application/json'
-		}
+		},
+		body: JSON.stringify({url: window.location.href})
 	}).then(checkStatus)
 			.then(parseJSON)
 			.then(data => {
