@@ -32,13 +32,12 @@ $(document).ready(function () {
 	});
 
 	var successCallback = function (data) {
-		console.log(data)
 		wx.config({
 			debug: false,
-			appId: data.data.appid,
-			timestamp: data.data.timestamp,
-			nonceStr: data.data.nonceStr,
-			signature: data.data.signature,
+			appId: data.appid,
+			timestamp: data.timestamp,
+			nonceStr: data.nonceStr,
+			signature: data.signature,
 			jsApiList: ['onMenuShareTimeline',
 			            'onMenuShareAppMessage',
 			            'onMenuShareQQ',
