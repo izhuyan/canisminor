@@ -11,24 +11,28 @@ const shareConfig = {
 	cancel: () => console.log('[wechat] Share Cancel'),
 }
 
-fetch('https://canisminor.cc/api/wechat/')
-		.then(resp => {
-			console.log(resp)
-			const r = resp.result;
-			wx.config({
-				appId: r.appid, // 必填，公众号的唯一标识
-				timestamp: r.timestamp, // 必填，生成签名的时间戳
-				nonceStr: r.nonceStr, // 必填，生成签名的随机串
-				signature: r.signature, // 必填，签名，见附录1
-				jsApiList: [ // 必填，需要使用的JS接口列表
-					'checkJsApi',
-					'onMenuShareTimeline',
-					'onMenuShareAppMessage',
-					'onMenuShareQQ',
-					'onMenuShareWeibo',
-				]
-			})
-		})
+fetch('https://canisminor.cc/api/wechat/', {
+	method: "POST",
+	headers: {
+		'Content-Type': 'application/x-www-form-urlencoded'
+	}
+}).then(resp => {
+	console.log(resp)
+	const r = resp.result;
+	wx.config({
+		appId: r.appid, // 必填，公众号的唯一标识
+		timestamp: r.timestamp, // 必填，生成签名的时间戳
+		nonceStr: r.nonceStr, // 必填，生成签名的随机串
+		signature: r.signature, // 必填，签名，见附录1
+		jsApiList: [ // 必填，需要使用的JS接口列表
+			'checkJsApi',
+			'onMenuShareTimeline',
+			'onMenuShareAppMessage',
+			'onMenuShareQQ',
+			'onMenuShareWeibo',
+		]
+	})
+})
 
 wx.ready(() => {
 	wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
