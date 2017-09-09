@@ -62,7 +62,7 @@ $(document).ready(function () {
 		});
 	};
 
-	var dataPost = {'url': location.href.split('#')[0]};
+	var dataPost = JSON.stringify({'url': location.href.split('#')[0]});
 
 	$.post(window.location.origin + '/api/wechat/sign', dataPost, successCallback);
 
