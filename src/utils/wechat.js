@@ -1,6 +1,6 @@
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
-import  './wechat-sdk'
+
 
 const shareConfig = {
 	title: 'CanisMinor', // 分享标题
