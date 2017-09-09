@@ -11,7 +11,7 @@ const shareConfig = {
 	cancel: () => console.log('[wechat] Share Cancel'),
 }
 
-fetch('https://wechat.canisminor.cc')
+fetch('https://canisminor.cc/api/wechat/')
 		.then(resp => {
 			console.log(resp)
 			const r = resp.result;
