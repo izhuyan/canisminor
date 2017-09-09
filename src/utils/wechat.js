@@ -19,7 +19,7 @@ export default () => {
 	}).then(checkStatus)
 			.then(parseJSON)
 			.then(data => {
-				wx.config({
+				window.wx.config({
 					debug: true,
 					appId: data.appid, // 必填，公众号的唯一标识
 					timestamp: data.timestamp, // 必填，生成签名的时间戳
@@ -27,6 +27,25 @@ export default () => {
 					signature: data.signature, // 必填，签名，见附录1
 					jsApiList: jsApiList
 				})
+				setShareInfo()
 			})
-
 }
+
+export function setShareInfo() {
+	const shareConfig = {
+		title: 'CanisMinor',
+		desc: 'UI/UX Designer & FE Developer',
+		link: window.location.href,
+		imgUrl: 'https://canisminor.cc/favicons/share.png',
+		fail: () => alert('fail'),
+		success: () => alert('success'),
+		cancel: () => alert('cancel')
+	}
+
+	wx.ready(() => {
+		wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+		wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+	})
+}
+
+
