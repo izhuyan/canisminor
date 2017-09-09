@@ -2,7 +2,7 @@
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
 
-function configWX(data) {
+function wxConfig(data) {
 	window.wx.config({
 		debug: false,
 		appId: "wx8418a1c9c6dd04a3",
@@ -18,10 +18,22 @@ function configWX(data) {
 		            'uploadImage',
 		            'previewImage',]
 	})
-	setShareInfo()
+	wxShareInfo()
 }
 
-function setShareInfo() {
+function wxShareInfo() {
+
+	let ERROR_COUNT = 0;
+
+	window.wx.error(() => {
+		ERROR_COUNT += 1;
+		// 最多重试10次
+		if (ERROR_COUNT > 10) {
+			return;
+		}
+		wxSign();
+	});
+	
 	const shareOpt = {
 		title: 'CanisMinor',
 		desc: 'UI/UX Designer & FE Developer',
@@ -54,19 +66,21 @@ function setShareInfo() {
 	})
 }
 
-export default () => {
+const wxSign= () => {
 	const fetchOpt = {
 		method: "POST",
 		headers: {
 			'Accept': 'application/json',
 			'Content-Type': 'application/json'
 		},
-		body: JSON.stringify({url: location.href.split('#')[0]})
+		body: JSON.stringify({url: window.location.href.split('#')[0]})
 	}
 
-	fetch(`https://canisminor.cc/api/wechat`, fetchOpt)
+	fetch(`https://canisminor.cc/api/wechat/sign`, fetchOpt)
 			.then(checkStatus)
 			.then(parseJSON)
-			.then(data => configWX(data))
+			.then(data => wxConfig(data))
 			.catch(err => console.error(err));
 }
+
+export default wxSign;
