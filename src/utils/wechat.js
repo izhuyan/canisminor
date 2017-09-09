@@ -1,7 +1,7 @@
 import wx from 'weixin-jsapi'
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
-
+import { message } from 'antd';
 export default () => {
 
 	const shareConfig = {
@@ -11,8 +11,8 @@ export default () => {
 		imgUrl: 'https://canisminor.cc/favicons/share.png', // 分享图标
 		type: '', // 分享类型,music、video或link，不填默认为link
 		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-		success: () => console.log('[wechat] Share Success'),
-		cancel: () => console.log('[wechat] Share Cancel'),
+		success: () => message.success('Share success'),
+		cancel: () => message.error('Share cancel'),
 	}
 
 	fetch(`https://canisminor.cc/api/wechat`, {
@@ -49,7 +49,7 @@ export default () => {
 				})
 
 				wx.error((res) => {
-					console.error(res)
+					message.error(res)
 				});
 			})
 
