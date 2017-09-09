@@ -15,10 +15,13 @@ fetch('https://canisminor.cc/api/wechat/', {
 	method: "POST",
 	headers: {
 		'Content-Type': 'application/x-www-form-urlencoded'
+	},
+	body: {
+		url: "https://canisminor.cc"
 	}
-}).then(resp => {
-	const r = resp.body;
-	console.log(JSON.stringify(r))
+}).then(response => {
+	const r = response.body;
+	console.log(response)
 	wx.config({
 		appId: r.appid, // 必填，公众号的唯一标识
 		timestamp: r.timestamp, // 必填，生成签名的时间戳
