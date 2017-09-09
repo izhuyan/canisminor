@@ -1,5 +1,5 @@
 import fetch from 'dva/fetch';
-
+import {checkStatus, parseJSON} from "./request"
 const shareConfig = {
 	title: 'CanisMinor', // 分享标题
 	desc: 'UI / UX Designer & FE Developer', // 分享描述
@@ -11,32 +11,30 @@ const shareConfig = {
 	cancel: () => console.log('[wechat] Share Cancel'),
 }
 
-
-fetch('https://canisminor.cc/api/wechat', {
+fetch(`https://canisminor.cc/api/wechat?url=${shareConfig.link}`, {
 	method: "POST",
 	headers: {
 		'Accept': 'application/json',
 		'Content-Type': 'application/json'
-	},
-	data: JSON.stringify({url: "https://canisminor.cc"})
-}).then(response => {
-	const r = response.body()
-	console.log(response)
-	console.log(response.body())
-	wx.config({
-		appId: r.appid, // 必填，公众号的唯一标识
-		timestamp: r.timestamp, // 必填，生成签名的时间戳
-		nonceStr: r.nonceStr, // 必填，生成签名的随机串
-		signature: r.signature, // 必填，签名，见附录1
-		jsApiList: [ // 必填，需要使用的JS接口列表
-			'checkJsApi',
-			'onMenuShareTimeline',
-			'onMenuShareAppMessage',
-			'onMenuShareQQ',
-			'onMenuShareWeibo',
-		]
-	})
-})
+	}
+}).then(checkStatus)
+		.then(parseJSON)
+		.then(data => {
+			console.log(data)
+			wx.config({
+				appId: data.appid, // 必填，公众号的唯一标识
+				timestamp: data.timestamp, // 必填，生成签名的时间戳
+				nonceStr: data.nonceStr, // 必填，生成签名的随机串
+				signature: data.signature, // 必填，签名，见附录1
+				jsApiList: [ // 必填，需要使用的JS接口列表
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+				]
+			})
+		})
 
 wx.ready(() => {
 	wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
