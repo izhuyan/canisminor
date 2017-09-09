@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 	var successCallback = function (data) {
 		wx.config({
-			debug: false,
+			debug: true,
 			appId: data.appid,
 			timestamp: data.timestamp,
 			nonceStr: data.nonceStr,
