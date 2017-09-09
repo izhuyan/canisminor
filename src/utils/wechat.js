@@ -18,7 +18,7 @@ fetch('https://canisminor.cc/api/wechat/', {
 	}
 }).then(resp => {
 	console.log(resp)
-	const r = resp.result;
+	const r = resp.body;
 	wx.config({
 		appId: r.appid, // 必填，公众号的唯一标识
 		timestamp: r.timestamp, // 必填，生成签名的时间戳
