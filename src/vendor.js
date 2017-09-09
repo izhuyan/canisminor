@@ -8,6 +8,7 @@ import 'react-lazyload'
 import 'video-react'
 import 'classnames'
 import 'nprogress'
+import 'weixin-jsapi'
 
 // antd
 
