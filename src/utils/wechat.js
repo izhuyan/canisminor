@@ -32,6 +32,8 @@ export default () => {
 }
 
 export function setShareInfo() {
+	let wx = window.wx
+
 	const shareConfig = {
 		title: 'CanisMinor',
 		desc: 'UI/UX Designer & FE Developer',
