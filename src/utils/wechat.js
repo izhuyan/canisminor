@@ -35,13 +35,13 @@ export default () => {
 
 					]
 				})
-
+				wx.ready(()=>{
+					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+				})
 
 			})
 
-	wx.ready(()=>{
-		wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-		wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
-	})
+
 
 }
