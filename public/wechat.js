@@ -48,7 +48,7 @@ $(document).ready(function () {
 		const shareOpt = {
 			title: 'CanisMinor',
 			desc: 'UI/UX Designer & FE Developer',
-			link: "canisminor.cc",
+			link: window.location.origin,
 			imgUrl: window.location.origin + '/share.png',
 			success: function () {},
 			cancel: function () {}
@@ -56,14 +56,14 @@ $(document).ready(function () {
 
 		wx.ready(function () {
 
-			window.wx.onMenuShareTimeline({
+			wx.onMenuShareTimeline({
 				title: shareOpt.title,
 				link: shareOpt.link,
 				imgUrl: shareOpt.imgUrl,
 				success: function () {},
 				cancel: function () {}
 			});
-			window.wx.onMenuShareAppMessage({
+			wx.onMenuShareAppMessage({
 				title: shareOpt.title,
 				desc: shareOpt.desc,
 				link: shareOpt.link,
