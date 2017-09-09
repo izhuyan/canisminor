@@ -4,14 +4,6 @@ import {checkStatus, parseJSON} from "./request"
 
 export default () => {
 
-	const shareConfig = {
-		title: 'CanisMinor',
-		desc: 'test',
-		link: window.location.href,
-		imgUrl: 'https://canisminor.cc/favicons/share.png',
-		success: () => alert("success"),
-		cancel: () => alert("cancel")
-	}
 	const jsApiList = [
 		'onMenuShareTimeline',
 		'onMenuShareAppMessage'
@@ -35,19 +27,6 @@ export default () => {
 					signature: data.signature, // 必填，签名，见附录1
 					jsApiList: jsApiList
 				})
-
-				wx.checkJsApi({
-					jsApiList: jsApiList,
-					success: (res) => {
-						checkJsApi:ok
-					}
-				});
-
-				wx.ready(() => {
-					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
-				})
-
 			})
 
 }
