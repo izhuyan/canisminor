@@ -11,17 +11,20 @@ const shareConfig = {
 	cancel: () => console.log('[wechat] Share Cancel'),
 }
 
+let data = new FormData();
+data.append("json", JSON.stringify({url: "https://canisminor.cc"}));
+
 fetch('https://canisminor.cc/api/wechat/', {
 	method: "POST",
 	headers: {
-		'Content-Type': 'application/x-www-form-urlencoded'
+		'Accept': 'application/json',
+		'Content-Type': 'application/json'
 	},
-	body: {
-		url: "https://canisminor.cc"
-	}
+	body: data
 }).then(response => {
-	const r = response.body;
+	const r = response.json()
 	console.log(response)
+	console.log(response.json())
 	wx.config({
 		appId: r.appid, // 必填，公众号的唯一标识
 		timestamp: r.timestamp, // 必填，生成签名的时间戳
