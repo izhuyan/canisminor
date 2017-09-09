@@ -12,6 +12,10 @@ export default () => {
 		success: () => alert("success"),
 		cancel: () => alert("cancel")
 	}
+	const jsApiList = [
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage'
+	]
 
 	fetch(`https://canisminor.cc/api/wechat`, {
 		method: "POST",
@@ -29,23 +33,16 @@ export default () => {
 					timestamp: data.timestamp, // 必填，生成签名的时间戳
 					nonceStr: data.nonceStr, // 必填，生成签名的随机串
 					signature: data.signature, // 必填，签名，见附录1
-					jsApiList: [ // 必填，需要使用的JS接口列表
-						'onMenuShareTimeline',
-						'onMenuShareAppMessage',
-
-					]
+					jsApiList: jsApiList
 				})
 
 				wx.checkJsApi({
-					jsApiList: ['onMenuShareTimeline',
-					            'onMenuShareAppMessage',], // 需要检测的JS接口列表，所有JS接口列表见附录2,
-					success: (res) =>{}
+					jsApiList: jsApiList,
+					success: (res) =>{checkJsApi:ok}
 				});
 
-				wx.ready(()=>{
-					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
-					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
-				})
+				wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+				wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
 
 			})
 
