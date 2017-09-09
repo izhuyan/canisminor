@@ -36,12 +36,13 @@
 <div id="root"></div>
 <script>
 	wx.ready(function () {
-		alert('ready')
+
 		var shareConfig = {
 			title: 'CanisMinor',
 			desc: 'UI/UX Designer & FE Developer',
 			link: window.location.href,
 			imgUrl: 'https://canisminor.cc/favicons/share.png',
+			fail: () => function() {alert('fail')},
 			success: () => function() {alert('success')},
 			cancel: () => function() {alert('cancel')}
 		}

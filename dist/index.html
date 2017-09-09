@@ -36,12 +36,13 @@
 <div id="root"></div>
 <script>
 	wx.ready(function () {
-		alert('ready')
+
 		var shareConfig = {
 			title: 'CanisMinor',
 			desc: 'UI/UX Designer & FE Developer',
 			link: window.location.href,
 			imgUrl: 'https://canisminor.cc/favicons/share.png',
+			fail: () => function() {alert('fail')},
 			success: () => function() {alert('success')},
 			cancel: () => function() {alert('cancel')}
 		}
@@ -49,5 +50,5 @@
 		wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
 	})
 </script>
-<script type="text/javascript" src="/common.59964b1e278f55fd1648.js"></script><script type="text/javascript" src="/index.dcf3997b.js"></script></body>
+<script type="text/javascript" src="/common.201c134db8c043c2746c.js"></script><script type="text/javascript" src="/index.dcf3997b.js"></script></body>
 </html>
