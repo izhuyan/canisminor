@@ -35,6 +35,15 @@ export default () => {
 
 					]
 				})
+
+				wx.checkJsApi({
+					jsApiList: ['onMenuShareTimeline',
+					            'onMenuShareAppMessage',], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+					success: (res) =>{
+						message.info(res)
+					}
+				});
+
 				wx.ready(()=>{
 					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
 					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
