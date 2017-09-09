@@ -1,7 +1,7 @@
-import wx from 'weixin-jsapi'
+// import wx from 'weixin-jsapi'
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
-import { message } from 'antd';
+
 export default () => {
 
 	const shareConfig = {
@@ -38,28 +38,16 @@ export default () => {
 
 				wx.checkJsApi({
 					jsApiList: jsApiList,
-					success: (res) =>{checkJsApi:ok}
+					success: (res) => {
+						checkJsApi:ok
+					}
 				});
 
-				wx.onMenuShareTimeline({
-					title: 'CanisMinor',
-					desc: 'test',
-					link: window.location.href,
-					imgUrl: 'https://canisminor.cc/favicons/share.png',
-					success: () => alert("success"),
-					cancel: () => alert("cancel")
-				}); // 分享到朋友圈
-				wx.onMenuShareAppMessage({
-					title: 'CanisMinor',
-					desc: 'test',
-					link: window.location.href,
-					imgUrl: 'https://canisminor.cc/favicons/share.png',
-					success: () => alert("success"),
-					cancel: () => alert("cancel")
-				}); // 分享给微信好友
+				wx.ready(() => {
+					wx.onMenuShareTimeline(shareConfig); // 分享到朋友圈
+					wx.onMenuShareAppMessage(shareConfig); // 分享给微信好友
+				})
 
 			})
-
-
 
 }
