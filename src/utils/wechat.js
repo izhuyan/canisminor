@@ -1,5 +1,7 @@
 import fetch from 'dva/fetch';
 import {checkStatus, parseJSON} from "./request"
+import  './wechat-sdk'
+
 const shareConfig = {
 	title: 'CanisMinor', // 分享标题
 	desc: 'UI / UX Designer & FE Developer', // 分享描述
@@ -20,7 +22,6 @@ fetch(`https://canisminor.cc/api/wechat?url=${shareConfig.link}`, {
 }).then(checkStatus)
 		.then(parseJSON)
 		.then(data => {
-			console.log(data)
 			wx.config({
 				appId: data.appid, // 必填，公众号的唯一标识
 				timestamp: data.timestamp, // 必填，生成签名的时间戳
