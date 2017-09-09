@@ -32,6 +32,7 @@ $(document).ready(function () {
 	});
 
 	var successCallback = function (data) {
+		console.log(data)
 		wx.config({
 			debug: false,
 			appId: data.data.appid,
