@@ -45,20 +45,34 @@ $(document).ready(function () {
 			            'onMenuShareQZone']
 		});
 
+		const shareOpt = {
+			title: 'CanisMinor',
+			desc: 'UI/UX Designer & FE Developer',
+			link: window.location.href,
+			imgUrl: window.location.origin + '/favicons/share.png',
+			success: function () {},
+			cancel: function () {}
+		}
+
 		wx.ready(function () {
-			const ShareConfig = {
-				title: 'CanisMinor',
-				desc: 'UI/UX Designer & FE Developer',
-				link: window.location.href,
-				imgUrl: window.location.origin + '/favicons/share.png',
+
+			window.wx.onMenuShareTimeline({
+				title: shareOpt.title,
+				link: shareOpt.link,
+				imgUrl: shareOpt.imgUrl,
 				success: function () {},
 				cancel: function () {}
-			}
-			wx.onMenuShareTimeline(ShareConfig);
-			wx.onMenuShareAppMessage(ShareConfig);
-			wx.onMenuShareQQ(ShareConfig);
-			wx.onMenuShareWeibo(ShareConfig);
-			wx.onMenuShareQZone(ShareConfig);
+			});
+			window.wx.onMenuShareAppMessage({
+				title: shareOpt.title,
+				desc: shareOpt.desc,
+				link: shareOpt.link,
+				imgUrl: shareOpt.imgUrl,
+				type: 'link',
+				dataUrl: '',
+				success: function () {},
+				cancel: function () {}
+			});
 		});
 	};
 
