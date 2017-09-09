@@ -11,8 +11,6 @@ const shareConfig = {
 	cancel: () => console.log('[wechat] Share Cancel'),
 }
 
-let data = new FormData();
-data.append("json", JSON.stringify({url: "https://canisminor.cc"}));
 
 fetch('https://canisminor.cc/api/wechat', {
 	method: "POST",
@@ -20,7 +18,7 @@ fetch('https://canisminor.cc/api/wechat', {
 		'Accept': 'application/json',
 		'Content-Type': 'application/json'
 	},
-	body: data
+	body: JSON.stringify({url: "https://canisminor.cc"})
 }).then(response => {
 	const r = response.json()
 	console.log(response)
