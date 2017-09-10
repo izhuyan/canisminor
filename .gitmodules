@@ -1,0 +1,3 @@
+[submodule "canisminor-blog"]
+    path = blog
+    url = git@github.com:canisminor1990/canisminor-blog.git

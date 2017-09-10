@@ -8,9 +8,10 @@ import 'react-lazyload'
 import 'video-react'
 import 'classnames'
 import 'nprogress'
-
+import 'gitment'
 
 // antd
 
 import antd from 'antd'
+
 const {Icon, Layout, Button, Popover, Collapse, BackTop, message} = antd

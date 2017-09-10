@@ -1,11 +1,16 @@
 import classnames from 'classnames';
-import { connect } from 'dva';
-import { Route } from 'dva/router';
+import {connect} from 'dva';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import React from 'react';
-import { SvgIcon } from '../../components';
+import {SvgIcon} from '../../components';
 import './index.scss';
+
+function mapStateToProps(state) {
+	return {
+		loading: state.loading.global
+	};
+}
 
 class Root extends React.Component {
 
@@ -13,29 +18,39 @@ class Root extends React.Component {
 		super(props);
 	}
 
+	componentWillMount() {
+		NProgress.start();
+	}
+
+	componentDidMount() {
+		NProgress.done();
+	}
+
 	render() {
 		const {location, loading} = this.props;
 
-		NProgress.start();
-		window.scrollTo(0, 0)
-		!loading.global && NProgress.done();
+		console.log(loading)
 
-		const pathname    = location.pathname;
+		if (loading) NProgress.start();
+		if (!loading) NProgress.done();
+
+		const pathname = location.pathname;
 		const classConfig = classnames(
-			{
-				'bg-shape'           : true,
-				'bg-shape__animation': pathname !== '/',
-				'bg-shape__intro'    : pathname === '/home',
-				'bg-shape__project'  : pathname === '/project',
-				'bg-shape__contact'  : pathname === '/contact'
-			});
+				{
+					'bg-shape': true,
+					'bg-shape__animation': pathname !== '/',
+					'bg-shape__intro': pathname === '/home',
+					'bg-shape__blog': pathname === '/blog',
+					'bg-shape__project': pathname === '/project',
+					'bg-shape__contact': pathname === '/contact'
+				});
 
 		return (
-			<div className="bg-box">
-				<SvgIcon className={classConfig} type="bg-shape"/>
-			</div>
+				<div className="bg-box">
+					<SvgIcon className={classConfig} type="bg-shape"/>
+				</div>
 		);
 	}
 }
 
-export default connect(({loading}) => {return {loading};})(Root);
+export default connect(mapStateToProps)(Root);

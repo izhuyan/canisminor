@@ -60,7 +60,6 @@ export default () => {
 			for (let i = 1; i <= item.imgPage; i++) imgList.push(`img/p_${item.imgPath}/${item.imgPath}_${i}.png`);
 			imgListView = imgList.map((imgSrc, imgCount) => (
 					<LazyLoad key={imgSrc}
-					          background="#f8f8f8"
 					          width="960px"
 					          offset={-100}
 					          children={<img width="960" src={imgSrc}/>}

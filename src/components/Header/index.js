@@ -2,17 +2,14 @@ import {Icon, Menu} from '../../components';
 import {Layout} from 'antd';
 import {Link} from 'dva/router';
 import classname from 'classnames';
+import {navBar} from '../../config'
 import './index.scss';
 
 const {Header} = Layout;
 
 export default ({location}) => {
 
-	const content = [
-		{title: "Intro", to: "/home"},
-		{title: "Project Story", to: "/project"},
-		{title: "Let's talk", to: "/contact"}
-	]
+	const content = navBar;
 	const NavItem = ({title, to}) => {
 		let classConfig = classname({
 			'header-navitem': true,
