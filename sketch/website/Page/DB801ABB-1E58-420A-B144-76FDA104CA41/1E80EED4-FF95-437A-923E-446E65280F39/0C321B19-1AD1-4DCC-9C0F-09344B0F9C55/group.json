@@ -1,0 +1,83 @@
+{
+  "_class": "group",
+  "do_objectID": "0C321B19-1AD1-4DCC-9C0F-09344B0F9C55",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "height": 56,
+    "width": 413,
+    "x": 494,
+    "y": 812
+  },
+  "hasClickThrough": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 2,
+  "layers": [
+    {
+      "class": "shapeGroup",
+      "id": "391834A4-6BC9-49DE-AF42-80086056A750"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "8E710B92-A7AE-438E-A405-614EC7A05F3D"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "8CB76613-9FFD-4A4D-ACB7-30BAD2F116A2"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "14A19D0B-A6F7-4C6B-9478-FE4FF8C835E7"
+    }
+  ],
+  "name": "Group 20",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "endDecorationType": 0,
+    "miterLimit": 10,
+    "startDecorationType": 0
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "align": 0,
+        "constraints": {
+          "aspectRatio": {
+            "constant": 56,
+            "enabled": 1,
+            "modelID": "constraint_75784ece-847c-42a8-a798-beba2a64b0a8",
+            "model_class": "ADModelConstraint",
+            "model_version": 0.1,
+            "multiplier": 413
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_5e9d01c5-3b26-48c6-b6b2-1fad16834502",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0.1,
+          "scaleFactor": 1
+        },
+        "isCollapsing": 1,
+        "spacing": 66,
+        "type": 1
+      },
+      "kViewTypeKey": "ADModelStackView"
+    }
+  }
+}

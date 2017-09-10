@@ -1,0 +1,123 @@
+{
+  "_class": "artboard",
+  "backgroundColor": {
+    "_class": "color",
+    "alpha": 1,
+    "blue": 1,
+    "green": 1,
+    "red": 1
+  },
+  "do_objectID": "DB801ABB-1E58-420A-B144-76FDA104CA41",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": false,
+    "height": 13508,
+    "width": 1400,
+    "x": 3568,
+    "y": 916
+  },
+  "hasBackgroundColor": false,
+  "hasClickThrough": true,
+  "horizontalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": [
+    ]
+  },
+  "includeBackgroundColorInExport": true,
+  "includeInCloudUpload": true,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 2,
+  "layers": [
+    {
+      "class": "group",
+      "id": "91EF814E-7E3A-49D2-80E2-CF00A304CA96"
+    },
+    {
+      "class": "group",
+      "id": "C246984E-F69A-4700-A39F-398A128E3BCC"
+    },
+    {
+      "class": "group",
+      "id": "04560876-2DDF-4318-ABEF-E3EEC01B8962"
+    },
+    {
+      "class": "group",
+      "id": "E6B63360-3598-48CD-BEB2-F0CAD4F8F55E"
+    },
+    {
+      "class": "group",
+      "id": "E0A833F3-F265-4660-B4B2-0CEAED30E164"
+    },
+    {
+      "class": "group",
+      "id": "634B92F1-D787-43F5-A809-2ECCC1857E39"
+    },
+    {
+      "class": "group",
+      "id": "F2F7719E-C595-4E5B-BE0D-AD0D8A308B0E"
+    },
+    {
+      "class": "group",
+      "id": "D9D8EE8E-4FFB-45C9-8077-8CF68346D9FF"
+    },
+    {
+      "class": "group",
+      "id": "1E80EED4-FF95-437A-923E-446E65280F39"
+    },
+    {
+      "class": "group",
+      "id": "83CE4519-A83C-4C93-B799-3362BEF0330B"
+    },
+    {
+      "class": "group",
+      "id": "4F488078-0FFB-4673-A3B7-14F1DF828731"
+    }
+  ],
+  "layout": {
+    "_class": "layoutGrid",
+    "columnWidth": 99.55555555555556,
+    "drawHorizontal": false,
+    "drawHorizontalLines": false,
+    "drawVertical": true,
+    "gutterHeight": 12,
+    "gutterWidth": 16,
+    "guttersOutside": false,
+    "horizontalOffset": 188,
+    "isEnabled": false,
+    "numberOfColumns": 9,
+    "rowHeightMultiplication": 5,
+    "totalWidth": 1024
+  },
+  "name": "Home",
+  "nameIsFixed": true,
+  "resizesContent": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "endDecorationType": 0,
+    "miterLimit": 10,
+    "startDecorationType": 0
+  },
+  "verticalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": [
+    ]
+  }
+}
