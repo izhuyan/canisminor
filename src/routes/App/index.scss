@@ -1,24 +1,21 @@
-@import "../../style/var";
-.app-layout {
+@import "var";
+.layout {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	> .header,.footer,.content {
-		width: 100%;
-		z-index: 1;
-	}
 }
-
-.ant-back-top{
-	right:4rem;
-	bottom:4rem;
-	@include media($m-middle){
+.content {
+	width: 100%;
+	z-index: 1;
+}
+:global(.ant-back-top) {
+	right: 4rem;
+	bottom: 4rem;
+	@include media($m-middle) {
 		display: none !important;
 	}
 }
-
-.ant-back-top-content{
+:global(.ant-back-top-content) {
 	background: #333;
 	border-radius: 0;
 }

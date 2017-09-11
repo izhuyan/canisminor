@@ -1,14 +1,14 @@
 import { Icon } from '../';
-import './index.scss';
+import styles from './index.scss';
 
 export default ({content}) => {
 	return (
-		<div className="doc-title">
-			<div className="icon">
+		<div className={styles.header}>
+			<div className={styles.icon}>
 				<Icon type={`doc-${content.type}`}/>
 			</div>
-			<div className="title">{content.text.toUpperCase()}</div>
-			<div className="desc">{content.desc}</div>
+			<div className={styles.title}>{content.text.toUpperCase()}</div>
+			<div className={styles.desc}>{content.desc}</div>
 		</div>
 	)
 		;

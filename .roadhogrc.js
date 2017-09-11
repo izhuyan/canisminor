@@ -1,14 +1,22 @@
+import path from 'path';
+
 export default {
-	entry: {
-		"index": "./src/index.js",
-		"common": "./src/vendor.js"
+	entry            : {
+		'index' : './src/index.js',
+		'common': './src/vendor.js'
 	},
-	multipage: true,
-	publicPath: '/',
-	disableCSSModules: true,
-	sass: true,
-	hash: true,
-	theme: 'src/style/theme.js',
+	multipage        : true,
+	publicPath       : '/',
+	disableCSSModules: false,
+	hash             : true,
+	sass             : {
+		sourceMap   : process.env.NODE_ENV === 'development',
+		includePaths: [
+			'node_modules',
+			'src/style'
+		]
+	},
+	theme            : 'src/style/theme.js',
 	extraBabelPlugins: [
 		'transform-runtime',
 		'lodash',
@@ -17,25 +25,25 @@ export default {
 			[
 				{
 					'libraryName': 'antd',
-					'style': true
+					'style'      : true
 				}
 			]
 		]
 	],
-	autoprefixer: {
+	autoprefixer     : {
 		browsers: [
 			'iOS >= 8',
 			'Android >= 4'
 		]
 	},
-	env: {
+	env              : {
 		development: {
 			'extraBabelPlugins': [
 				'dva-hmr'
 			]
 		}
 	},
-	dllPlugin: {
+	dllPlugin        : {
 		exclude: [
 			'babel-runtime'
 		],
@@ -46,3 +54,4 @@ export default {
 		]
 	}
 };
+

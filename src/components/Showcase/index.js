@@ -1,11 +1,11 @@
-import './index.scss';
+import styles from './index.scss';
 
 export default ({content}) => (
-	<div className="showcase">
+	<div className={styles.showcase}>
 		{content.map((item, key) =>
-			             <div key={key} className="showcase-item">
-				             <div className="title">{item.title}</div>
-				             <div className="desc">{item.desc}</div>
+			             <div key={key} className={styles.item}>
+				             <div className={styles.title}>{item.title}</div>
+				             <div className={styles.desc}>{item.desc}</div>
 			             </div>)}
 	</div>
 )

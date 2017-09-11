@@ -1,11 +1,9 @@
-@import "../../style/var";
-
-.award-list-group {
+@import "var";
+.list {
 	max-width: 480px;
 	margin-bottom: 2rem;
 }
-
-.award-list-item {
+.item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 0.75rem;
@@ -13,21 +11,21 @@
 		font-size: 24px;
 		color: $c-primary
 	}
-	> .desc {
-		margin-left: 3rem;
-		color: #666;
-		letter-spacing: 1px;
-		font-size: .9rem;
-		font-weight: 400;
-		> p {
-			margin-bottom: .3rem;
-		}
-		@include media($m-middle) {
-			font-size: .85rem;
-			margin-left: 1rem;
-		}
-		@include media($m-small) {
-			font-size: .8rem;
-		}
+}
+.desc {
+	margin-left: 3rem;
+	color: #666;
+	letter-spacing: 1px;
+	font-size: .9rem;
+	font-weight: 400;
+	> p {
+		margin-bottom: .3rem;
+	}
+	@include media($m-middle) {
+		font-size: .85rem;
+		margin-left: 1rem;
+	}
+	@include media($m-small) {
+		font-size: .8rem;
 	}
 }

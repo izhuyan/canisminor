@@ -1,10 +1,8 @@
-import classnames from 'classnames';
-import {connect} from 'dva';
+import { connect } from 'dva';
+import {Background} from '../../components';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import React from 'react';
-import {SvgIcon} from '../../components';
-import './index.scss';
 
 function mapStateToProps(state) {
 	return {
@@ -27,29 +25,12 @@ class Root extends React.Component {
 	}
 
 	render() {
-		const {location, loading} = this.props;
-
-		console.log(loading)
+		const {loading,location} = this.props;
 
 		if (loading) NProgress.start();
 		if (!loading) NProgress.done();
 
-		const pathname = location.pathname;
-		const classConfig = classnames(
-				{
-					'bg-shape': true,
-					'bg-shape__animation': pathname !== '/',
-					'bg-shape__intro': pathname === '/home',
-					'bg-shape__blog': pathname === '/blog',
-					'bg-shape__project': pathname === '/project',
-					'bg-shape__contact': pathname === '/contact'
-				});
-
-		return (
-				<div className="bg-box">
-					<SvgIcon className={classConfig} type="bg-shape"/>
-				</div>
-		);
+		return <Background location={location} />
 	}
 }
 

@@ -1,14 +1,15 @@
 import {Link} from 'dva/router';
 import {Typist} from '../../components';
-import './index.scss';
+import styles from "./index.scss"
 
 export default () => {
 
 	return (
-			<Link className="splash" to="/home">
-				<div className="logo-gif"/>
-				<Typist className="splash-text">
-					<span className="splash-text-glow"/>The collection of curriculum vitae and<br/> recent projects
+			<Link className={styles.splash} to="/home">
+				<div className={styles.logo}/>
+				<Typist className={styles.text}>
+					<span className={styles.shape}/>
+					The collection of curriculum vitae and<br/> recent projects
 				</Typist>
 			</Link>
 	);

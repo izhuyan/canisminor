@@ -1,12 +1,12 @@
-import React from 'react'
-import {Link} from 'dva/router'
-import classnames from 'classnames';
-import "./index.scss"
+import classnames from 'classnames/bind';
+import { Link } from 'dva/router';
+import React from 'react';
+import styles from './index.scss';
 
 export default class extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {open: false};
+		this.state   = {open: false};
 		this.onClick = this.onClick.bind(this);
 	}
 
@@ -17,28 +17,31 @@ export default class extends React.Component {
 	render() {
 
 		const {content} = this.props;
+		const menuList  = content.map((item, key) => (
+			<Link key={key}
+			      className={styles.item}
+			      to={item.to}
+			      children={item.title}
+			/>
+		));
 
-		const menuList = this.props.content.map((item, key) => (
-				<Link key={key}
-				      className="menu-item"
-				      to={item.to}
-				>
-					{item.title}
-				</Link>
-		))
+		const classConfig = classnames.bind(styles)(
+			'menu', {'menu__oppenned': this.state.open}
+		);
 
 		return (
-				<div className={classnames('menu-open', {'menu-oppenned': this.state.open})} onClick={this.onClick}>
-					<div className="sub-menu">
-						<div className="sub-menu-bg"/>
-						{menuList}
-					</div>
-					<div className="menu-icon">
-						<div className="cls"/>
-						<div className="cls"/>
-						<div className="cls"/>
-					</div>
+			<div className={classConfig}
+			     onClick={this.onClick}>
+				<div className={styles.list}>
+					<div className={styles.bg}/>
+					{menuList}
 				</div>
-		)
+				<div className={styles.icon}>
+					<div className={styles.cls}/>
+					<div className={styles.cls}/>
+					<div className={styles.cls}/>
+				</div>
+			</div>
+		);
 	}
 }

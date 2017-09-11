@@ -1,6 +1,7 @@
-@import "../../style/var";
+@import "var";
 
 .header {
+	width: 100%;
 	z-index: 999 !important;
 	background: transparent;
 	height: 150px;
@@ -18,32 +19,35 @@
 	}
 }
 
-.header-logo {
+.logo {
 	font-size: 88px !important;
 	@include media ($m-middle) {
 		font-size: 72px !important;
 	}
 }
 
-.header-desktop {
-	@include media ($m-middle) {
-		display: none !important;
-	}
-}
 
-.header-phone {
-	display: none;
-	@include media ($m-middle) {
-		display: block;
-	}
-}
 
-.header-navitem {
+.item {
 	color: #333;
 	font-weight: 600;
 	font-size: 1.2rem;
 	margin-left: 2rem;
 	&__active {
 		color: $c-primary;
+	}
+}
+
+
+.showDesktop {
+	@include media ($m-middle) {
+		display: none !important;
+	}
+}
+
+.showPhone {
+	display: none;
+	@include media ($m-middle) {
+		display: block;
 	}
 }

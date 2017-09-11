@@ -1,5 +1,5 @@
 import {connect} from 'dva';
-import './index.scss'
+import styles from './index.scss'
 
 function mapStateToProps(state) {
 	return {
@@ -12,7 +12,7 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps)(({loading,blogToc,blogPage}) => {
 
 	return (
-			<div>
+			<div className={styles.page}>
 				{blogPage}
 			</div>
 	);

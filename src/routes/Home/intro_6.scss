@@ -1,0 +1,49 @@
+@import "var";
+.intro {
+	border-bottom: 1px solid $c-split;
+	img {
+		max-width: 90%;
+		@include media($m-small) {
+			min-width: 90%;
+			height: auto;
+		}
+	}
+}
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 16rem;
+	@include media($m-middle) {
+		margin-bottom: 10rem;
+	}
+	@include media($m-small) {
+		margin-bottom: 8rem;
+	}
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	> img {
+		background: #fff;
+		box-shadow: 0 14px 48px 0 rgba(0, 0, 0, 0.06);
+		margin: 1rem;
+	}
+}
+.desc {
+	color: #666;
+	line-height: 1.5;
+	letter-spacing: .8px;
+	max-width: 640px;
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 3rem;
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}

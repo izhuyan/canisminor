@@ -1,4 +1,4 @@
-.Typist .Cursor--blinking {
+:global(.Typist .Cursor--blinking) {
 	animation: blink 1s ease-in-out infinite;
 	color: #aaa;
 	opacity: 1;

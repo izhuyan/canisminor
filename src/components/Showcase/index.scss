@@ -1,4 +1,4 @@
-@import "../../style/var";
+@import "var";
 .showcase {
 	display: flex;
 	align-items: center;
@@ -7,19 +7,19 @@
 		flex-direction: column;
 	}
 }
-.showcase-item {
+.item {
 	margin:2rem;
 	width: 200px;
-
 	> div {
 		text-align: center;
 	}
-	.title {
-		font-size: 20px;
-	}
-	.desc {
-		font-family: $font-bold;
-		font-size: 24px;
-		color: #333;
-	}
+}
+
+.title {
+	font-size: 20px;
+}
+.desc {
+	font-family: $font-bold;
+	font-size: 24px;
+	color: #333;
 }

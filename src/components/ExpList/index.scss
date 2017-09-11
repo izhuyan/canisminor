@@ -1,6 +1,5 @@
-@import "../../style/var";
-
-.exp-list-item {
+@import "var";
+.item {
 	margin-bottom: 100px;
 	display: flex;
 	@include media($m-middle) {
@@ -8,8 +7,7 @@
 		align-items: center;
 	}
 }
-
-.exp-list-img {
+.img {
 	min-width: 120px;
 	width: 120px;
 	height: 120px;
@@ -19,8 +17,7 @@
 		margin: 2rem 0;
 	}
 }
-
-.exp-list-text {
+.content {
 	> div {
 		letter-spacing: .5px;
 		margin-bottom: .75rem;
@@ -29,28 +26,26 @@
 			margin-top: 1rem;
 		}
 	}
-	.title {
-		font-size: 24px;
-		font-family: $font-bold;
-		color: #333;
+}
+.title {
+	font-size: 24px;
+	font-family: $font-bold;
+	color: #333;
+}
+.time {
+	font-size: .9rem;
+	@include media($m-middle) {
+		margin-bottom: 2rem;
 	}
-	.time {
-		font-size: .9rem;
-		@include media($m-middle) {
-
-			margin-bottom: 2rem;
-		}
-	}
-	.desc {
-		font-size: .9rem;
-		> p {
-			line-height: 1.8;
-			@include media("<=800px") {
-
-				display: inline;
-				& + p:before {
-					content: "; ";
-				}
+}
+.desc {
+	font-size: .9rem;
+	> p {
+		line-height: 1.8;
+		@include media("<=800px") {
+			display: inline;
+			& + p:before {
+				content: "; ";
 			}
 		}
 	}

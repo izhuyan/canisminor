@@ -1,7 +1,7 @@
 import {connect} from 'dva';
 import {Link} from 'dva/router';
 import {Table} from 'antd'
-import './index.scss'
+import styles from './index.scss'
 
 function mapStateToProps(state) {
 	return {
@@ -37,7 +37,7 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 	]
 
 	return (
-			<div className="blog">
+			<div className={styles.blog}>
 				<Table
 						showHeader={false}
 						columns={columns}

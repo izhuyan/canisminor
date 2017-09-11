@@ -1,12 +1,12 @@
-@import "../../style/var";
-.intro-icon {
+@import "var";
+.box {
 	width: 120px;
 	margin: 1.5rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.intro-icon-box {
+.icon {
 	width: 80px;
 	height: 80px;
 	border: 3px solid #fff;
@@ -18,7 +18,7 @@
 		font-size: 64px;
 	}
 }
-.intro-icon-text {
+.text {
 	font-family: $font-bold;
 	letter-spacing: 1px;
 }

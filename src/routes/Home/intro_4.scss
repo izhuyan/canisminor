@@ -1,0 +1,57 @@
+@import "var";
+.intro {
+	border-bottom: 1px solid $c-split;
+}
+.school {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 4rem;
+	@include media($m-middle) {
+		flex-direction: column;
+	}
+}
+.logo {
+	font-size: 72px;
+	color: $c-primary;
+	margin-right: 3rem;
+	@include media($m-middle) {
+		margin-right: 0;
+	}
+}
+.content {
+	@include media($m-middle) {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.title {
+	font-size: 2rem;
+	color: #333;
+
+}
+.desc {
+	margin-top: .5rem;
+	line-height: 1.4;
+	letter-spacing: .2px;
+	max-width: 450px;
+	@include media($m-middle) {
+		text-align: center;
+	}
+}
+.awards {
+	margin: 4rem auto;
+	border-top: 1px solid $c-split;
+	padding-top: 6rem;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	@include media($m-middle) {
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

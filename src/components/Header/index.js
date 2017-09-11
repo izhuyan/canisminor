@@ -1,37 +1,33 @@
-import {Icon, Menu} from '../../components';
-import {Layout} from 'antd';
-import {Link} from 'dva/router';
-import classname from 'classnames';
-import {navBar} from '../../config'
-import './index.scss';
+import { Layout } from 'antd';
+import classnames from 'classnames/bind';
+import { Link } from 'dva/router';
+import { Icon, Menu } from '../../components';
+import { navBar } from '../../config';
+import styles from './index.scss';
 
 const {Header} = Layout;
 
 export default ({location}) => {
 
-	const content = navBar;
 	const NavItem = ({title, to}) => {
-		let classConfig = classname({
-			'header-navitem': true,
-			'header-navitem__active': location.pathname == to
-		});
-		return (
-				<Link className={classConfig} to={to}>
-					{title}
-				</Link>
+		const classConfig = classnames.bind(styles)(
+			'item',
+			{'item__active': location.pathname == to}
 		);
+		return <Link className={classConfig} to={to} children={title}/>;
 	};
+
+	const showPhone   = <Menu content={navBar}/>;
+	const showDesktop = navBar.map((item, key) => (
+		<NavItem key={key} title={item.title} to={item.to}/>
+	));
 	return (
-			<Header className="header">
-				<Icon className="header-logo" type="logo"/>
-				<div className="header-nav">
-					<div className="header-phone">
-						<Menu content={content}/>
-					</div>
-					<div className="header-desktop">
-						{content.map((item, key) => <NavItem key={key} title={item.title} to={item.to}/>)}
-					</div>
-				</div>
-			</Header>
+		<Header className={styles.header}>
+			<Icon className={styles.logo} type="logo"/>
+			<div className={styles.nav}>
+				<div className={styles.showPhone} children={showPhone}/>
+				<div className={styles.showDesktop} children={showDesktop}/>
+			</div>
+		</Header>
 	);
 }

@@ -1,0 +1,28 @@
+@import "var";
+.intro {
+	border-bottom: 1px solid $c-split;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8rem;
+	max-width: 900px;
+}
+.item {
+	font-size: 20px;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	padding-left: .5rem;
+	padding-right: 1.5rem;
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+	margin: 20px 12px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	margin-right: .5rem;
+}
