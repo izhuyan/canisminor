@@ -9,6 +9,7 @@ export { default as LazyLoad } from './LazyLoad';
 export { default as Command } from './Command';
 export { default as Player } from './Player';
 export { default as Background } from './Background';
+export { default as Markdown } from './Markdown';
 // layout
 export { default as Header } from './Header';
 export { default as Footer } from './Footer';
