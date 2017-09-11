@@ -3,6 +3,8 @@ import {Link} from 'dva/router';
 import {Table} from 'antd'
 import styles from './index.scss'
 
+// TODO: https://quilljs.com/blog/
+
 function mapStateToProps(state) {
 	return {
 		loading: state.loading.models.blogToc,
@@ -16,29 +18,26 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 		{
 			title: 'title',
 			dataIndex: 'title',
-			className: 'blog-title'
+			className: styles.title
 		},
 		{
-			title: 'cover',
-			dataIndex: 'cover',
-			className: 'blog-cover'
-		},
-		{
-			title: 'tag',
-			dataIndex: 'tag',
-			className: 'tag'
+			title: 'desc',
+			dataIndex: 'desc',
+			className: styles.desc
 		},
 		{
 			title: 'filename',
 			dataIndex: 'filename',
 			className: 'filename',
-			render: (text, record, index) => <Link to={text}>sds</Link>
+			render: (text, record, index) => <Link to={text}>Read more</Link>
 		}
 	]
 
 	return (
 			<div className={styles.blog}>
 				<Table
+					className={styles.table}
+					rowClassName={()=>styles.row}
 						showHeader={false}
 						columns={columns}
 						dataSource={blogToc}

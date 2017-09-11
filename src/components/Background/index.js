@@ -9,7 +9,7 @@ export default ({location}) => {
 		'shape',
 		{
 			'shape__animation': pathname !== '/',
-			'shape__intro'    : pathname === '/home',
+			'shape__about'    : pathname === '/about',
 			'shape__blog'     : pathname === '/blog',
 			'shape__project'  : pathname === '/project',
 			'shape__contact'  : pathname === '/contact'

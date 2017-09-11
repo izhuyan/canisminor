@@ -1,14 +1,12 @@
 import { ProList, Title } from '../../components';
-import {proList} from '../../config'
+import { proList } from '../../config';
+import { Height } from '../../utils/window';
 import styles from './index.scss';
 
 export default () => {
-
-	const proHeight = (min) => {minHeight: `${parseInt(window.innerHeight) - min}px`;};
-
 	return (
 		<div className={styles.project}>
-			<Title style={proHeight(150)}
+			<Title style={Height(150)}
 			       title="Sense & pixels"
 			       desc="wanna see more ? updating soon..."/>
 			<ProList content={proList}/>

@@ -1,6 +1,8 @@
+const indexPage = '/about';
+
 const navBar = [
-	{title: 'Intro', to: '/home'},
-	//{title: 'Blog', to: '/blog'},
+	{title: 'Intro', to: '/about'},
+	{title: 'Blog', to: '/blog'},
 	{title: 'Project Story', to: '/project'},
 	{title: 'Let\'s talk', to: '/contact'}
 ];
@@ -202,6 +204,7 @@ const gitment = {
 };
 
 export default {
+	indexPage,
 	navBar,
 	homeToc,
 	awardList,

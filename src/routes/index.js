@@ -4,9 +4,9 @@ export {default as Root} from './Root'
 
 const App = dynamic({component: () => import('./App')});
 const Splash = dynamic({component: () => import('./Splash')});
-const Home = dynamic({component: () => import('./Home')});
+const About = dynamic({component: () => import('./About')});
 const Project = dynamic({component: () => import('./Project')});
 const Contact = dynamic({component: () => import('./Contact')});
 const Blog = dynamic({component: () => import('./Blog')});
 const BlogPage = dynamic({component: () => import('./BlogPage')});
-export {App, Splash, Home, Project, Contact, Blog, BlogPage};
+export {App, Splash, About, Project, Contact, Blog, BlogPage};
