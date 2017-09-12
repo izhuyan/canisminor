@@ -1,6 +1,7 @@
 const monthEN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 export default (str) => {
+	if (str === "") return
 	let date
 	let year = str.substring(0, 4),
 			month = str.substring(4, 6),

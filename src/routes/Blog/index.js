@@ -15,6 +15,8 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading, blogToc}) => {
+	let data;
+	if (!loading) data = blogToc
 	const columns = [
 		{
 			title: 'post',
@@ -38,7 +40,7 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 						rowClassName={() => styles.row}
 						showHeader={false}
 						columns={columns}
-						dataSource={blogToc}
+						dataSource={data}
 						rowKey={(record) => record.filename}
 						loading={loading}
 				/>

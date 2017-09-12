@@ -19,7 +19,7 @@ marked.setOptions({
 	                  highlight  : (code) => highlightAuto(code).value
                   });
 
-export default ({data, ...other}) => {
+export default ({data={title:"",body:"",filename:""}, ...other}) => {
 	let body = data.body
 	return (
 		<div {...other}>

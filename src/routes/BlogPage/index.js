@@ -11,10 +11,11 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading,blogToc,blogPage}) => {
-console.log(blogPage)
+	let data;
+	if (!loading) data = blogPage
 	return (
 			<div className={styles.page}>
-				<Markdown data={blogPage}/>
+				<Markdown data={data}/>
 			</div>
 	);
 });
