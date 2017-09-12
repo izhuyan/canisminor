@@ -40,6 +40,7 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 						columns={columns}
 						dataSource={blogToc}
 						rowKey={(record) => record.filename}
+						loading={loading}
 				/>
 			</div>
 	);
