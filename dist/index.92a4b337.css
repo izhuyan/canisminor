@@ -1616,11 +1616,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .markdown___2GE1n {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  font-size: 1.1rem;
+  letter-spacing: 1px; }
   .markdown___2GE1n * {
     box-sizing: border-box; }
-  .markdown___2GE1n > p, .markdown___2GE1n pre, .markdown___2GE1n img, .markdown___2GE1n blockquote {
-    margin-bottom: 2rem; }
+  .markdown___2GE1n > p, .markdown___2GE1n pre, .markdown___2GE1n img, .markdown___2GE1n blockquote, .markdown___2GE1n ul, .markdown___2GE1n ol {
+    margin-bottom: 1.5rem; }
   .markdown___2GE1n p, .markdown___2GE1n li {
     line-height: 1.8; }
   .markdown___2GE1n li:before {
@@ -1629,14 +1631,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     font-size: .5em; }
   .markdown___2GE1n li + li {
     margin-top: .5rem; }
+  .markdown___2GE1n strong {
+    color: #333; }
   .markdown___2GE1n img {
     max-width: 100%;
-    height: auto;
-    marign-left: auto;
-    marign-rgiht: auto; }
+    height: auto; }
   .markdown___2GE1n code {
     font-size: .8em;
-    font-family: Hack, Menlo, Consolas, Courier, monospace;
+    font-family: Hack, Menlo, Consolas, Courier, monospace !important;
     font-weight: 400;
     border-radius: 3px;
     background: rgba(153, 175, 165, 0.12);
@@ -1672,26 +1674,40 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   .markdown___2GE1n h4,
   .markdown___2GE1n h5,
   .markdown___2GE1n h6 {
-    margin-bottom: 3rem; }
-    .markdown___2GE1n h1:after,
-    .markdown___2GE1n h2:after,
-    .markdown___2GE1n h3:after,
-    .markdown___2GE1n h4:after,
-    .markdown___2GE1n h5:after,
-    .markdown___2GE1n h6:after {
-      content: " #";
-      color: #e3e3e3; }
-    .markdown___2GE1n h1:hover:after,
-    .markdown___2GE1n h2:hover:after,
-    .markdown___2GE1n h3:hover:after,
-    .markdown___2GE1n h4:hover:after,
-    .markdown___2GE1n h5:hover:after,
-    .markdown___2GE1n h6:hover:after {
-      color: #62e6ac; }
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #222; }
   .markdown___2GE1n h1, .markdown___2GE1n h2 {
     margin-top: 6rem; }
   .markdown___2GE1n h3, .markdown___2GE1n h4 {
     margin-top: 4rem; }
+  .markdown___2GE1n h1 {
+    font-size: 2.1rem; }
+  .markdown___2GE1n h2 {
+    font-size: 1.9rem; }
+    .markdown___2GE1n h2:after {
+      content: " #";
+      color: #e3e3e3; }
+  .markdown___2GE1n h3 {
+    font-size: 1.6rem; }
+  .markdown___2GE1n h4 {
+    font-size: 1.4rem; }
+  .markdown___2GE1n h5 {
+    font-size: 1.2rem; }
+  .markdown___2GE1n h6 {
+    font-size: 1rem; }
+  .markdown___2GE1n kbd {
+    display: inline-block;
+    font-size: .9em;
+    height: 1.2em;
+    line-height: 1.2em;
+    padding: 0 .4em 1.3em;
+    font-family: Hack, Menlo, Consolas, Courier, monospace !important;
+    background-color: #fafbfc;
+    border: solid 1px #c6cbd1;
+    border-bottom-color: #959da5;
+    box-shadow: inset 0 -1px 0 #959da5;
+    border-radius: 2px; }
 
 .lang-white {
   background: #fff !important;
