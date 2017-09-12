@@ -1,23 +1,85 @@
 @import "var";
-
+.title {
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	border: none !important;
+	font-size: 2.4rem;
+	color: #222;
+	margin-bottom: .5rem;
+	@include media($m-middle) {
+		font-size: 1.8rem;
+	}
+}
+.time {
+	font-size: 1.1rem;
+	color: #999;
+	text-align: center;
+	margin-bottom: 4rem;
+	> span {
+		font-size: .9em;
+	}
+}
 .markdown {
-	> p,pre {
+	position: relative;
+	width: 100%;
+	* {
+		box-sizing: border-box;
+	}
+	> p, pre, img, blockquote {
 		margin-bottom: 2rem;
 	}
-
-	p {
-		font-size: 1.1rem;
-		line-height: 1.8;
+	p, li {
+		line-height: 2;
 	}
 
+	ul {
+
+	}
+
+	li {
+		& + li {
+			margin-bottom: 1rem;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		marign-left: auto;
+		marign-rgiht: auto;
+	}
 	code {
-		font-size: .9rem;
+		$code-color: desaturate($c-primary, 60%);
+		font-size: .8em;
+		font-family: Hack, Menlo, Consolas, Courier, monospace;
+		font-weight: 400;
+		border-radius: 3px;
+		background: rgba($code-color, 0.12);
+		color: darken($code-color, 40%);
+		padding: .2em .4em
 	}
 
-	pre{
-		color: #ddd;
-		background: #333;
+	blockquote {
+		border-left: 4px solid $c-primary;
+		padding-left: 1.5rem;
+		width: 100%;
+		font-size: .9em;
+		* {
+			color: #888;
+		}
+	}
+
+	pre {
+		overflow: hidden;
+		overflow-x: scroll;
+		background: #222;
 		padding: 1rem;
+		code {
+			padding: 0;
+			line-height: 1.8;
+			color: #ddd;
+			background: transparent;
+		}
 	}
 
 	h1,
@@ -28,5 +90,14 @@
 	h6 {
 		margin-top: 3rem;
 		margin-bottom: 2rem;
+		&:after {
+			content: " #";
+			color: #e3e3e3
+		}
+		&:hover {
+			&:after {
+				color: $c-primary
+			}
+		}
 	}
 }

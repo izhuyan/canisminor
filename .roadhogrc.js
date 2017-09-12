@@ -45,7 +45,7 @@ export default {
 	},
 	dllPlugin        : {
 		exclude: [
-			'babel-runtime'
+			'babel-runtime',
 		],
 		include: [
 			'dva/router',

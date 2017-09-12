@@ -12,7 +12,7 @@ export default ({location}) => {
 	const NavItem = ({title, to}) => {
 		const classConfig = classnames.bind(styles)(
 			'item',
-			{'item__active': location.pathname == to}
+			{'item__active': location.pathname.indexOf(to) !== -1}
 		);
 		return <Link className={classConfig} to={to} children={title}/>;
 	};

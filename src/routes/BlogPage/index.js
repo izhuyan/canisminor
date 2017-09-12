@@ -1,4 +1,5 @@
 import {connect} from 'dva';
+import {Markdown} from '../../components'
 import styles from './index.scss'
 
 function mapStateToProps(state) {
@@ -10,10 +11,10 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading,blogToc,blogPage}) => {
-
+console.log(blogPage)
 	return (
 			<div className={styles.page}>
-				{blogPage}
+				<Markdown data={blogPage}/>
 			</div>
 	);
 });

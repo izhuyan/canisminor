@@ -10,7 +10,7 @@ module.exports = {
 	'c-gold-bg-dark' : '#FAF7F4',
 	'c-gold-bg'      : '#FCFBF9',
 
-	'c-font-dark'    : '#333',
+	'c-font-dark'    : '#222',
 	'c-font-normal'  : '#666',
 	'c-font-light'   : '#999',
 	'c-font-lightest': '#c2c2c2',

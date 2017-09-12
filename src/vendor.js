@@ -9,9 +9,11 @@ import 'video-react'
 import 'classnames'
 import 'nprogress'
 import 'gitment'
+import 'highlight.js'
+import 'path'
 
 // antd
 
 import antd from 'antd'
 
-const {Icon, Layout, Button, Popover, Collapse, BackTop, message} = antd
+const {Table, Icon, Layout, Button, Popover, Collapse, BackTop, message} = antd

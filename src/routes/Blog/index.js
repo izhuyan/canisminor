@@ -2,7 +2,7 @@ import {connect} from 'dva';
 import {Link} from 'dva/router';
 import {Table} from 'antd'
 import {Markdown} from '../../components'
-import timeFormat from '../../utils/timeFormat'
+import path from 'path';
 import styles from './index.scss'
 
 // TODO: https://quilljs.com/blog/
@@ -22,15 +22,9 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 			className: styles.post,
 			render: (text, record, index) => (
 					<div>
-						<Link className={styles.title}
-						      to={record.filename}
-						      children={text}/>
-						<div className={styles.time}>
-							<span>{timeFormat(record.filename)}</span> - CanisMinor
-						</div>
-						<Markdown body={record.desc}/>
+						<Markdown data={record}/>
 						<Link className={styles.readmore}
-						      to={record.filename}
+						      to={path.join('blog',record.filename)}
 						      children="Read more"/>
 					</div>
 			)

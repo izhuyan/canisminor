@@ -1,58 +1,39 @@
 @import "var";
-
 .blog {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
 .table {
 	max-width: 800px;
 	width: 100%;
 	padding: 1rem;
 }
-
 .row {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem 0;
 	margin: 2rem 0;
 	background: transparent !important;
-	> td{
+	> td {
 		background: transparent !important;
+		padding: 0 !important;
 	}
 
 }
-
 .post {
-border-bottom: 1px solid $c-split !important;
+	border-bottom: 1px solid $c-split !important;
 }
-
-.title {
-	font-weight: 600;
-	display: block;
-	text-align: center;
-	border: none !important;
-	font-size: 2.4rem;
-	color: #333;
-	margin-bottom: .5rem;
-	@include media($m-middle) {
-		font-size: 1.8rem;
-	}
-}
-
-.time {
-	font-size: 1.1rem;
-	color: #999;
-	text-align: center;
-	margin-bottom: 2rem;
-	> span {
-		font-size: .9em;
-	}
-}
-
 .readmore {
 	display: block;
 	font-size: 1.2rem;
 	margin: 2rem 0;
+}
+:global {
+	.ant-table-body > table {
+		display: block;
+	}
+	.ant-table-tbody{
+		display: block;
+	}
 }
