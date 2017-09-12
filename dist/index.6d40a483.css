@@ -1593,6 +1593,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-meta {
   color: #75715e;
 }
+@charset "UTF-8";
 .title___2V4YI {
   font-weight: 600;
   display: block;
@@ -1621,9 +1622,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   .markdown___2GE1n > p, .markdown___2GE1n pre, .markdown___2GE1n img, .markdown___2GE1n blockquote {
     margin-bottom: 2rem; }
   .markdown___2GE1n p, .markdown___2GE1n li {
-    line-height: 2; }
+    line-height: 1.8; }
+  .markdown___2GE1n li:before {
+    content: "\25CC";
+    margin-right: 1rem;
+    font-size: .5em; }
   .markdown___2GE1n li + li {
-    margin-bottom: 1rem; }
+    margin-top: .5rem; }
   .markdown___2GE1n img {
     max-width: 100%;
     height: auto;
@@ -1645,23 +1650,30 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     .markdown___2GE1n blockquote * {
       color: #888; }
   .markdown___2GE1n pre {
-    overflow: hidden;
-    overflow-x: scroll;
-    background: #222;
-    padding: 1rem; }
-    .markdown___2GE1n pre code {
-      padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+    .markdown___2GE1n pre > code {
+      border-radius: 0;
+      overflow: hidden;
+      overflow-x: scroll;
+      background: #222;
+      padding: 1rem;
       line-height: 1.8;
       color: #ddd;
-      background: transparent; }
+      width: 100%; }
   .markdown___2GE1n h1,
   .markdown___2GE1n h2,
   .markdown___2GE1n h3,
   .markdown___2GE1n h4,
   .markdown___2GE1n h5,
   .markdown___2GE1n h6 {
-    margin-top: 3rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
     .markdown___2GE1n h1:after,
     .markdown___2GE1n h2:after,
     .markdown___2GE1n h3:after,
@@ -1677,6 +1689,17 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     .markdown___2GE1n h5:hover:after,
     .markdown___2GE1n h6:hover:after {
       color: #62e6ac; }
+  .markdown___2GE1n h1, .markdown___2GE1n h2 {
+    margin-top: 6rem; }
+  .markdown___2GE1n h3, .markdown___2GE1n h4 {
+    margin-top: 4rem; }
+
+.lang-white {
+  background: #fff !important;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
+  color: #666 !important; }
+  .lang-white * {
+    color: #666 !important; }
 .header___qrS2B {
   width: 100%;
   z-index: 999 !important;
