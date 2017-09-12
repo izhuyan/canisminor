@@ -30,7 +30,7 @@
 	margin: 2rem 0;
 }
 :global {
-	.ant-table-body > table {
+	.ant-table,.ant-table-body > table {
 		overflow: visible !important;
 		display: block;
 	}

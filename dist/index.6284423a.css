@@ -2748,7 +2748,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   font-size: 1.2rem;
   margin: 2rem 0; }
 
-.ant-table-body > table {
+.ant-table, .ant-table-body > table {
   overflow: visible !important;
   display: block; }
 
