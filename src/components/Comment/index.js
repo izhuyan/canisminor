@@ -11,7 +11,11 @@ export default class extends React.Component {
 	}
 
 	componentDidMount() {
-		const gitment = new Gitment(config);
+		const Config  = {
+			id: window.location.pathname,
+			...config
+		};
+		const gitment = new Gitment(Config);
 		gitment.renderComments('comments');
 		gitment.renderEditor('editor');
 	}

@@ -6,7 +6,7 @@ export { default as IntroIcon } from './IntroIcon';
 export { default as Button } from './Button';
 export { default as Menu } from './Menu';
 export { default as LazyLoad } from './LazyLoad';
-export { default as Command } from './Command';
+export { default as Comment } from './Comment';
 export { default as Player } from './Player';
 export { default as Background } from './Background';
 export { default as Markdown } from './Markdown';

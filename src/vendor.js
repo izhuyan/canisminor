@@ -1,6 +1,7 @@
 import 'classnames';
 import 'dva';
 import 'dva-loading';
+import 'nprogress/nprogress.css';
 import 'gitment';
 import 'highlight.js';
 import 'history';

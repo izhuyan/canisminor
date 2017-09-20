@@ -1,4 +1,4 @@
-import { Command, Title } from '../../components';
+import { Comment, Title } from '../../components';
 import styles from './index.scss';
 
 export default () => (
@@ -6,6 +6,6 @@ export default () => (
 		<Title className={styles.title}
 		       title="Let's talk"
 		       desc="u can comment with github accounts"/>
-		<Command/>
+		<Comment/>
 	</div>
 )
