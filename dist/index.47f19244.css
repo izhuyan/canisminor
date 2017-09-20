@@ -2665,10 +2665,49 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .post___2txIu {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; }
 
+.footer___2MBFf {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 4rem 0; }
+  @media (max-width: 580px) {
+    .footer___2MBFf {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column; } }
+
 .readmore___17XgT {
-  display: block;
-  font-size: 1.2rem;
-  margin: 2rem 0; }
+  background: #222;
+  color: #fff;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out; }
+  .readmore___17XgT:hover {
+    color: #fff;
+    opacity: .5; }
+  .readmore___17XgT > i {
+    margin-left: 1rem; }
+
+.tag___1fdB- > span {
+  display: inline-block;
+  background: #fff;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 1.5rem;
+  margin-left: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08); }
+
+@media (max-width: 580px) {
+  .tag___1fdB- {
+    margin-bottom: 2rem; } }
 
 .ant-table, .ant-table-body > table {
   overflow: visible !important;
@@ -2709,6 +2748,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .title___3kcwr {
   margin: 2rem 0; }
 .page___2Bi8b {
+  margin-top: 3rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -2724,6 +2764,21 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     max-width: 800px;
     padding: 1rem; }
 
+.footer___iOSay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 2rem 0; }
+  @media (max-width: 580px) {
+    .footer___iOSay {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+
 .back___1XpuF {
   background: #222;
   color: #fff;
@@ -2732,7 +2787,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   text-align: center;
   padding-left: 2rem;
   padding-right: 3rem;
-  margin-bottom: 2rem;
   -webkit-transition: opacity .5s ease-out;
   transition: opacity .5s ease-out; }
   .back___1XpuF:hover {
@@ -2740,3 +2794,16 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     opacity: .5; }
   .back___1XpuF > i {
     margin-right: 1rem; }
+
+.tag___25bWY > span {
+  display: inline-block;
+  background: #fff;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 1.5rem;
+  margin-left: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08); }
+
+@media (max-width: 580px) {
+  .tag___25bWY {
+    margin-bottom: 2rem; } }

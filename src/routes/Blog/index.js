@@ -1,4 +1,4 @@
-import { Spin, Table } from 'antd';
+import { Icon, Spin, Table } from 'antd';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
 import path from 'path';
@@ -25,9 +25,17 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 			render   : (text, record, index) => (
 				<div>
 					<Markdown data={record}/>
-					<Link className={styles.readmore}
-					      to={path.join('blog', record.filename)}
-					      children="Read more"/>
+					<div className={styles.footer}>
+						<div className={styles.tag}>
+							Tags:
+							{loading
+								? ''
+								: record.tag.map((item, key) => <span key={key}>{item}</span>)
+							}
+						</div>
+						<Link to={path.join('blog', record.filename)}
+						      className={styles.readmore}>Read More<Icon type="right"/></Link>
+					</div>
 				</div>
 			)
 		}

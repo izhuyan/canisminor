@@ -24,17 +24,51 @@
 .post {
 	border-bottom: 1px solid $c-split !important;
 }
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 4rem 0;
+	@include media($m-middle){
+		flex-direction: column;
+	}
+}
 .readmore {
-	display: block;
-	font-size: 1.2rem;
-	margin: 2rem 0;
+	background: #222;
+	color: #fff;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 1.5rem;
+	transition: opacity .5s ease-out;
+	&:hover {
+		color: #fff;
+		opacity: .5;
+	}
+	> i {
+		margin-left: 1rem;
+	}
+}
+.tag {
+	> span {
+		display: inline-block;
+		background: #fff;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 1.5rem;
+		margin-left: 1rem;
+		box-shadow: 0 2px 12px 0 rgba(#000, .08);
+	}
+	@include media($m-middle){
+		margin-bottom: 2rem;
+	}
 }
 :global {
-	.ant-table,.ant-table-body > table {
+	.ant-table, .ant-table-body > table {
 		overflow: visible !important;
 		display: block;
 	}
-	.ant-table-tbody{
+	.ant-table-tbody {
 		display: block;
 	}
 }

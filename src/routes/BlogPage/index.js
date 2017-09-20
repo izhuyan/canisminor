@@ -21,7 +21,16 @@ export default connect(mapStateToProps)(({loading, blogToc, blogPage}) => {
 				? <Spin spinning={loading} size="large" style={{width: '100%', lineHeight: '720px'}}/>
 				: <Markdown data={blogPage}/>
 			}
-			<Link to="/blog" className={styles.back}><Icon type="left"/> Go Back</Link>
+			<div className={styles.footer}>
+				<Link to="/blog" className={styles.back}><Icon type="left"/>Go Back</Link>
+				<div className={styles.tag}>
+					Tags:
+					{loading
+						? ""
+						: blogPage.tag.map((item,key) => <span key={key}>{item}</span>)
+					}
+				</div>
+			</div>
 			<Comment/>
 		</div>
 	);
