@@ -9,7 +9,7 @@ import styles from './index.scss';
 
 function mapStateToProps(state) {
 	return {
-		loading: state.loading.models.global,
+		loading: state.loading.global,
 		blogToc: state.blogToc
 	};
 }
