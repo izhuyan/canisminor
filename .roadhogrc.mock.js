@@ -9,4 +9,4 @@ const mockBlog = (src) => {
 	return mockData
 }
 
-export default mockBlog('/api/blog')
+//export default mockBlog('/api/blog')

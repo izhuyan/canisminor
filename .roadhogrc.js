@@ -17,6 +17,14 @@ export default {
 		]
 	},
 	theme            : 'src/style/theme.js',
+	proxy            : {
+		'/api': {
+			target      : 'https://canisminor.cc',
+			changeOrigin: true,
+			xfwd        : true,
+			secure      : true
+		}
+	},
 	extraBabelPlugins: [
 		'transform-runtime',
 		'lodash',

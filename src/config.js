@@ -151,49 +151,6 @@ const feSkillList = [
 	{icon: 'hexo', title: 'Hexp'}
 ];
 
-const proList = [
-	{
-		title  : '熊猫金库',
-		imgPath: 'xm',
-		imgPage: 10
-	},
-	{
-		title  : '智子',
-		imgPath: 'zz',
-		imgPage: 11,
-		btn    : {
-			title: '智子 Wisman',
-			url  : 'http://www.zhizigroup.com/'
-		}
-	},
-	{
-		title  : '沪江学习',
-		imgPath: 'hj',
-		imgPage: 10,
-		btn    : {
-			title: '沪江学习',
-			url  : 'http://www.hujiang.com/app/hujiang/'
-		}
-	},
-	{
-		title: '沪江LOGO演绎',
-		video: 'hujiang.mp4'
-	},
-	{
-		title  : '须臾映社',
-		imgPath: 'iz',
-		imgPage: 53,
-		btn    : {
-			title: 'Instant-Zine',
-			url  : 'http://instant-zine.lofter.com/'
-		}
-	},
-	{
-		title: '须臾映社VD',
-		video: 'instant-zine.mp4'
-	}
-];
-
 const gitment = {
 	owner: 'canisminor1990',
 	repo : 'canisminor-comments',
@@ -212,6 +169,5 @@ export default {
 	specList,
 	vdSkillList,
 	feSkillList,
-	proList,
 	gitment
 };

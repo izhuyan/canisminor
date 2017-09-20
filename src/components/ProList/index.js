@@ -1,6 +1,7 @@
 import { Collapse } from 'antd';
 import { Button, LazyLoad, Player } from '../../components';
 import styles from './index.scss';
+import path from 'path'
 
 const Panel = Collapse.Panel;
 
@@ -27,7 +28,8 @@ export default ({activeKey = ['0'], content}) => {
 		if (item.imgPath && item.imgPage) {
 			let imgList = [];
 			for (let i = 1; i <= item.imgPage; i++) {
-				imgList.push(`img/p_${item.imgPath}/${item.imgPath}_${i}.png`);
+				const imgPath = path.join('api/project/',item.imgPath,`${item.imgPath}_${i}.png`)
+				imgList.push(imgPath);
 			}
 			imgListView = imgList.map(loadImg);
 		}
