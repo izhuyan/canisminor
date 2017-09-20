@@ -2144,32 +2144,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
         display: block;
         margin: 4rem auto;
         width: 90%; } }
-.layout___3o1Ow {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center; }
-
-.content___2fYTF {
-  width: 100%;
-  z-index: 1; }
-
-.ant-back-top {
-  right: 4rem;
-  bottom: 4rem; }
-  @media (max-width: 580px) {
-    .ant-back-top {
-      display: none !important; } }
-
-.ant-back-top-content {
-  background: #222;
-  border-radius: 0; }
 @charset "UTF-8";
 .splash___3OdpQ {
   position: fixed;
@@ -2224,6 +2198,32 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   top: 1.5rem;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out; }
+.layout___3o1Ow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center; }
+
+.content___2fYTF {
+  width: 100%;
+  z-index: 1; }
+
+.ant-back-top {
+  right: 4rem;
+  bottom: 4rem; }
+  @media (max-width: 580px) {
+    .ant-back-top {
+      display: none !important; } }
+
+.ant-back-top-content {
+  background: #222;
+  border-radius: 0; }
 .intro___3XAja > div {
   padding: 0 5%;
   display: -webkit-box;
@@ -2630,38 +2630,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.12);
   margin-top: 2rem;
   margin-bottom: 4rem; }
-.project___1iE9X > div {
-  padding: 0 5%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  padding-top: 88px;
-  padding-bottom: 88px;
-  color: #222;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center; }
-.contact___31C1A {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center; }
-
-.title___3kcwr {
-  margin: 2rem 0; }
 .blog___JS5-W {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2708,6 +2676,38 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .ant-table-tbody {
   display: block; }
+.project___1iE9X > div {
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  color: #222;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center; }
+.contact___31C1A {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center; }
+
+.title___3kcwr {
+  margin: 2rem 0; }
 .page___2Bi8b {
   display: -webkit-box;
   display: -webkit-flex;

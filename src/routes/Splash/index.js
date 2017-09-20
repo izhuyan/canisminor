@@ -1,14 +1,17 @@
-import { Link } from 'dva/router';
+import { Link, Redirect } from 'dva/router';
 import { Typist } from '../../components';
 import { indexPage } from '../../config';
 import styles from './index.scss';
-import { Redirect } from 'dva/router';
+
 export default () => {
+
+	const toIndex = () => window.location.href = '/about';
+
 	return (
 		<Link className={styles.splash} to={indexPage}>
 			<div className={styles.logo}/>
 			<Typist className={styles.text}
-			        onTypingDone={() => window.location.href='/about'}>
+			        onTypingDone={() => setTimeout(toIndex, 3000)}>
 				<span className={styles.shape}/>
 				The collection of curriculum vitae and<br/> recent projects
 			</Typist>
