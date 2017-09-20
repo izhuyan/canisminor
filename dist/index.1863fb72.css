@@ -2723,3 +2723,20 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     width: 100%;
     max-width: 800px;
     padding: 1rem; }
+
+.back___1XpuF {
+  background: #222;
+  color: #fff;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  margin-bottom: 2rem;
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out; }
+  .back___1XpuF:hover {
+    color: #fff;
+    opacity: .5; }
+  .back___1XpuF > i {
+    margin-right: 1rem; }
