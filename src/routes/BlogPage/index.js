@@ -1,5 +1,5 @@
 import {connect} from 'dva';
-import {Markdown} from '../../components'
+import {Markdown,Comment} from '../../components'
 import styles from './index.scss'
 
 function mapStateToProps(state) {
@@ -16,6 +16,7 @@ export default connect(mapStateToProps)(({loading,blogToc,blogPage}) => {
 	return (
 			<div className={styles.page}>
 				<Markdown data={data}/>
+				<Comment />
 			</div>
 	);
 });
