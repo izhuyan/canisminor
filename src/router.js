@@ -1,11 +1,16 @@
 import { Route, Router, Switch } from 'dva/router';
 import React from 'react';
-import { App, Root, Splash } from './routes';
+import { Background } from './components';
+import App from './routes/App';
+import Loading from './routes/Loading';
+import Splash from './routes/Splash';
+
 
 const PrimaryLayout = () => {
 	return (
 		<div style={{width: '100%', position: 'relative', overflow: 'hidden'}}>
-			<Route path="/" component={Root}/>
+			<Route path="/" component={Loading}/>
+			<Background location={window.location}/>
 			<Switch>
 				<Route exact path="/" component={Splash}/>
 				<Route path="/:name" component={App}/>

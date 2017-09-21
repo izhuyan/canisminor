@@ -1,8 +1,8 @@
 import { connect } from 'dva';
-import {Background} from '../../components';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import React from 'react';
+import './index.scss'
 
 function mapStateToProps(state) {
 	return {
@@ -30,7 +30,7 @@ class Root extends React.Component {
 		if (loading) NProgress.start();
 		if (!loading) NProgress.done();
 
-		return <Background location={location} />
+		return <div />
 	}
 }
 

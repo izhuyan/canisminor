@@ -1,0 +1,16 @@
+@import "var";
+:global {
+	#root {
+		height: 100%;
+	}
+
+	#nprogress {
+		.bar {
+			background: $c-primary !important;
+		}
+		.spinner-icon {
+			border-top-color: $c-primary !important;
+			border-left-color: $c-primary !important;
+		}
+	}
+}
