@@ -1,35 +1,3 @@
-@font-face {
-  font-family: "cm-font";
-  src: url("/font/Futura.ttf"); }
-
-@font-face {
-  font-family: "cm-font-bold";
-  src: url("/font/FuturaBold.ttf"); }
-
-body {
-  font-family: "cm-font", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
-
-#nprogress .bar {
-  background: #62e6ac !important; }
-
-#nprogress .spinner-icon {
-  border-top-color: #62e6ac !important;
-  border-left-color: #62e6ac !important; }
-
-html, body, #root {
-  height: 100%; }
-
-a:focus {
-  text-decoration: none; }
-
-div {
-  word-wrap: break-word; }
-
-* {
-  -webkit-font-smoothing: antialiased; }
-
-*:focus {
-  outline: none; }
 .svg___3VLv1 {
   width: 1em;
   height: 1em;

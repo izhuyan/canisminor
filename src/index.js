@@ -1,21 +1,20 @@
+import { message } from 'antd';
 import dva from 'dva';
 import createLoading from 'dva-loading';
 import createHistory from 'history/createBrowserHistory';
-import {message} from 'antd';
 import BaiduPush from './utils/baiduPush';
 import Console from './utils/console';
-// import Wechat from './utils/wechat';
-import styles from "./index.scss"
+import Wechat from './utils/wechat';
 
 const ERROR_MSG_DURATION = 3; // 3 秒
 
 // 1. Initialize
 const app = dva({
-	history: createHistory(),
-	onError(e) {
-		message.error(e.message, ERROR_MSG_DURATION);
-	},
-});
+	                history: createHistory(),
+	                onError(e) {
+		                message.error(e.message, ERROR_MSG_DURATION);
+	                }
+                });
 
 // 2. Plugins
 app.use(createLoading());
@@ -33,6 +32,6 @@ app.start('#root');
 
 // 6. Other
 // 个人公众号不自持分享接口
-// Wechat()
-BaiduPush()
-Console()
+Wechat();
+BaiduPush();
+Console();

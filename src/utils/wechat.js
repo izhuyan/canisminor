@@ -4,8 +4,8 @@ import {checkStatus, parseJSON} from "./request"
 
 function wxConfig(data) {
 	window.wx.config({
-		debug: false,
-		appId: "wx8418a1c9c6dd04a3",
+		debug: true,
+		appId: "wxf64c59768aa51ce0",
 		timestamp: data.timestamp,
 		nonceStr: data.nonceStr,
 		signature: data.signature,
