@@ -1,9 +1,25 @@
-import { Player } from 'video-react';
-import 'video-react/dist/video-react.css';
-import styles from './index.scss';
+import Plyr from 'plyr';
+import React from 'react';
+import "./index.scss"
 
-export default ({src}) => (
-	<Player classNames={styles.player}>
-		<source src={`http://qn-video.canisminor.cc/${src}`}/>
-	</Player>
-)
+export default class extends React.Component {
+
+	constructor() {
+		super();
+	}
+
+	componentDidMount() {Plyr.setup();}
+
+	render() {
+
+		const {src} = this.props
+
+		return (
+			(
+				<video controls>
+					<source src={`http://qn-video.canisminor.cc/${src}`} type="video/mp4"/>
+				</video>
+			)
+		);
+	}
+}

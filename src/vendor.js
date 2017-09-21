@@ -8,6 +8,7 @@ import 'react-dom';
 import 'react-lazyload';
 import 'react-typist';
 import 'weixin-jsapi';
+import 'plyr';
 
 // components
 import 'nprogress';
@@ -16,8 +17,7 @@ import 'highlight.js';
 import 'highlight.js/styles/monokai-sublime.css';
 import 'gitment';
 import 'gitment/style/default.css';
-import 'video-react';
-import 'video-react/dist/video-react.css';
+
 
 // antd
 import antd from 'antd';
