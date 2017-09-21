@@ -1,29 +1,29 @@
 import { LazyLoad } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
-import intro_1 from './intro_1';
-import intro_2 from './intro_2';
-import intro_3 from './intro_3';
-import intro_4 from './intro_4';
-import intro_5 from './intro_5';
-import intro_6 from './intro_6';
-import intro_7 from './intro_7';
-import intro_8 from './intro_8';
-import intro_9 from './intro_9';
+import Intro1 from './intro_1';
+import Intro2 from './intro_2';
+import Intro3 from './intro_3';
+import Intro4 from './intro_4';
+import Intro5 from './intro_5';
+import Intro6 from './intro_6';
+import Intro7 from './intro_7';
+import Intro8 from './intro_8';
+import Intro9 from './intro_9';
 
 export default () => {
 	setTitle('About');
 	return (
 		<div className={styles.intro}>
-			{intro_1()}
-			{intro_2()}
-			<LazyLoad children={intro_3()}/>
-			<LazyLoad children={intro_4()}/>
-			<LazyLoad children={intro_5()}/>
-			<LazyLoad children={intro_6()}/>
-			<LazyLoad children={intro_7()}/>
-			<LazyLoad children={intro_8()}/>
-			<LazyLoad children={intro_9()}/>
+			<Intro1/>
+			<Intro2/>
+			<LazyLoad children={<Intro3/>}/>
+			<LazyLoad children={<Intro4/>}/>
+			<LazyLoad children={<Intro5/>}/>
+			<LazyLoad children={<Intro6/>}/>
+			<LazyLoad children={<Intro7/>}/>
+			<LazyLoad children={<Intro8/>}/>
+			<LazyLoad children={<Intro9/>}/>
 		</div>
 	);
 }

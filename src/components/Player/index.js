@@ -1,25 +1,20 @@
 import Plyr from 'plyr';
 import React from 'react';
-import "./index.scss"
+import './index.scss';
 
 export default class extends React.Component {
-
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 	}
 
 	componentDidMount() {Plyr.setup();}
 
 	render() {
-
-		const {src} = this.props
-
+		const {src} = this.props;
 		return (
-			(
-				<video controls>
-					<source src={`http://qn-video.canisminor.cc/${src}`} type="video/mp4"/>
-				</video>
-			)
+			<video controls>
+				<source src={`http://qn-video.canisminor.cc/${src}`} type="video/mp4"/>
+			</video>
 		);
 	}
 }

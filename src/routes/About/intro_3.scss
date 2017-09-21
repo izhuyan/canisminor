@@ -57,9 +57,15 @@
 	background-position: 420px center, center;
 	background-image: url("/img/logo.gif"), url("/img/pro-1.png");
 	@include media($m-middle) {
-		zoom: .8;
+		width: 600px * .8;
+		height: 300px * .8;
+		background-size: 92px * .8 auto, 600px * .8 auto;
+		background-position: 420px * .8 center, center;
 	}
 	@include media($m-small) {
-		zoom: .6;
+		width: 600px * .6;
+		height: 300px * .6;
+		background-size: 92px * .6 auto, 600px * .6 auto;
+		background-position: 420px * .6 center, center;
 	}
 }

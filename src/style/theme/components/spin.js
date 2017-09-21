@@ -1,7 +1,0 @@
-module.exports = {
-	// Spin
-	// ---
-	'@spin-dot-size-sm': '14px',
-	'@spin-dot-size'   : '20px',
-	'@spin-dot-size-lg': '32px'
-};
