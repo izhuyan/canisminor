@@ -9,10 +9,9 @@ import 'react-lazyload';
 import 'react-typist';
 import 'weixin-jsapi';
 import 'plyr';
+import 'nprogress';
 
 // components
-import 'nprogress';
-import 'nprogress/nprogress.css';
 import 'highlight.js';
 import 'highlight.js/styles/monokai-sublime.css';
 import 'gitment';
