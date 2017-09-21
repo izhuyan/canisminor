@@ -1,7 +1,8 @@
 import { connect } from 'dva';
 import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 import React from 'react';
-import './index.scss'
+import './index.scss';
 
 function mapStateToProps(state) {
 	return {
@@ -19,17 +20,28 @@ class Root extends React.Component {
 		NProgress.start();
 	}
 
+	componentWillUnmount() {
+		NProgress.start();
+	}
+
 	componentDidMount() {
 		NProgress.done();
 	}
 
+	componentWillReceiveProps(nextProps) {
+		const {loading} = nextProps;
+		(loading)
+			? NProgress.start()
+			: NProgress.done();
+	}
+
 	render() {
-		const {loading,location} = this.props;
+		const {loading} = this.props;
+		(loading)
+			? NProgress.start()
+			: NProgress.done();
 
-		if (loading) NProgress.start();
-		if (!loading) NProgress.done();
-
-		return <div />
+		return null;
 	}
 }
 
