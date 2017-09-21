@@ -1,3 +1,4 @@
-//root
-@import "root/font";
-@import "root/nprogress";
+:global {
+	@import "root/font";
+	@import "root/nprogress";
+}

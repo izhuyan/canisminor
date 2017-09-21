@@ -31,7 +31,8 @@ app.router(require('./router'));
 app.start('#root');
 
 // 6. Other
-// 个人公众号不自持分享接口
-Wechat();
-BaiduPush();
-Console();
+if (process.env.NODE_ENV !== 'development') {
+	Wechat();
+	BaiduPush();
+	Console();
+}

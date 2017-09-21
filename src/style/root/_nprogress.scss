@@ -1,12 +1,10 @@
 @import "var";
-:global {
-	#nprogress {
-		.bar {
-			background: $c-primary !important;
-		}
-		.spinner-icon {
-			border-top-color: $c-primary !important;
-			border-left-color: $c-primary !important;
-		}
+#nprogress {
+	.bar {
+		background: $c-primary !important;
+	}
+	.spinner-icon {
+		border-top-color: $c-primary !important;
+		border-left-color: $c-primary !important;
 	}
 }
