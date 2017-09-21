@@ -16,6 +16,7 @@ const BaiduZhanzhang = () => {
 };
 
 const BaiduTongji = () => {
+	var _hmt = _hmt || [];
 	const hm = document.createElement('script');
 	hm.src   = 'https://hm.baidu.com/hm.js?f801b0b6f344318a503552f12bcd55c7';
 	const s  = document.getElementsByTagName('script')[0];
