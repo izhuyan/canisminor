@@ -2,6 +2,7 @@ import { Icon, Spin } from 'antd';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
 import { Comment, Markdown } from '../../components';
+import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
 function mapStateToProps(state) {
@@ -13,8 +14,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading, blogToc, blogPage}) => {
-	let data;
-	if (!loading) data = blogPage;
+	if (!loading) setTitle(blogPage.title);
 	return (
 		<div className={styles.page}>
 			{loading
@@ -26,8 +26,8 @@ export default connect(mapStateToProps)(({loading, blogToc, blogPage}) => {
 				<div className={styles.tag}>
 					Tags:
 					{loading
-						? ""
-						: blogPage.tag.map((item,key) => <span key={key}>{item}</span>)
+						? ''
+						: blogPage.tag.map((item, key) => <span key={key}>{item}</span>)
 					}
 				</div>
 			</div>

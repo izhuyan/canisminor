@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import { Link } from 'dva/router';
 import path from 'path';
 import { Markdown } from '../../components';
+import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
 // TODO: https://quilljs.com/blog/
@@ -15,8 +16,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading, blogToc}) => {
-	let data;
-	if (!loading) data = blogToc;
+	setTitle('Blog');
 	const columns = [
 		{
 			title    : 'post',
@@ -50,7 +50,7 @@ export default connect(mapStateToProps)(({loading, blogToc}) => {
 				 rowClassName={() => styles.row}
 				 showHeader={false}
 				 columns={columns}
-				 dataSource={data}
+				 dataSource={blogToc}
 				 rowKey={(record) => record.filename}
 			 />
 			}

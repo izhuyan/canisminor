@@ -1,6 +1,7 @@
 import { Spin } from 'antd';
 import { connect } from 'dva';
 import { ProList, Title } from '../../components';
+import setTitle from '../../utils/setTitle';
 import { Height } from '../../utils/window';
 import styles from './index.scss';
 
@@ -12,6 +13,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(({loading, blogToc}) => {
+	setTitle('Projects');
 	return (
 		<div className={styles.project}>
 			<Title style={Height(150)}

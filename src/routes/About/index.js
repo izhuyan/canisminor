@@ -1,4 +1,5 @@
 import { LazyLoad } from '../../components';
+import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 import intro_1 from './intro_1';
 import intro_2 from './intro_2';
@@ -11,6 +12,7 @@ import intro_8 from './intro_8';
 import intro_9 from './intro_9';
 
 export default () => {
+	setTitle('About');
 	return (
 		<div className={styles.intro}>
 			{intro_1()}
