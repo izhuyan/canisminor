@@ -4,8 +4,9 @@
 	src: url('/font/Futura.ttf')
 }
 @font-face {
-	font-family: "cm-font-bold";
-	src: url('/font/FuturaBold.ttf')
+	font-family: "cm-font";
+	src: url('/font/FuturaBold.ttf');
+	font-weight: 700;
 }
 body {
 	font-family: "cm-font", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
