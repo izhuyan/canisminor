@@ -4,6 +4,6 @@ import styles from './index.scss';
 
 export default ({src}) => (
 	<Player classNames={styles.player}>
-		<source src={`http://ovp0fxang.bkt.clouddn.com/${src}`}/>
+		<source src={`http://qn-video.canisminor.cc/${src}`}/>
 	</Player>
 )
