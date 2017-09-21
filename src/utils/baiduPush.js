@@ -20,5 +20,4 @@ const BaiduTongji = () => {
 	hm.src = "https://hm.baidu.com/hm.js?7085397f155d2c882d7a996e5042b14d";
 	const s = document.getElementsByTagName("script")[0];
 	s.parentNode.insertBefore(hm, s);
-
 };

@@ -2,7 +2,6 @@ import { message } from 'antd';
 import dva from 'dva';
 import createLoading from 'dva-loading';
 import createHistory from 'history/createBrowserHistory';
-import BaiduPush from './utils/baiduPush';
 import Console from './utils/console';
 import Wechat from './utils/wechat';
 import './index.scss'
@@ -34,6 +33,5 @@ app.start('#root');
 // 6. Other
 if (process.env.NODE_ENV !== 'development') {
 	Wechat();
-	BaiduPush();
 	Console();
 }
