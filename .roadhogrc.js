@@ -1,23 +1,24 @@
-import path from 'path';
+import cssnano from 'cssnano';
+import pxtorem from 'postcss-pxtorem';
 
 export default {
-	entry            : {
+	entry              : {
 		'index' : './src/index.js',
 		'common': './src/vendor.js'
 	},
-	multipage        : true,
-	publicPath       : '/',
-	disableCSSModules: false,
-	hash             : true,
-	sass             : {
+	multipage          : true,
+	publicPath         : '/',
+	disableCSSModules  : false,
+	hash               : true,
+	sass               : {
 		sourceMap   : process.env.NODE_ENV === 'development',
 		includePaths: [
 			'node_modules',
 			'src/style'
 		]
 	},
-	theme            : 'src/style/theme.js',
-	proxy            : {
+	theme              : 'src/style/theme.js',
+	proxy              : {
 		'/api': {
 			target      : 'https://canisminor.cc',
 			changeOrigin: true,
@@ -25,35 +26,51 @@ export default {
 			secure      : true
 		}
 	},
-	extraBabelPlugins: [
+	extraPostCSSPlugins: [
+		pxtorem({
+			        rootValue    : 16,
+			        propWhiteList: []
+		        })
+	],
+	extraBabelPlugins  : [
 		'transform-runtime',
 		'lodash',
 		[
 			'import',
 			[
 				{
-					'libraryName': 'antd',
-					'style'      : true
+					libraryName: 'antd',
+					style      : true
 				}
 			]
 		]
 	],
-	autoprefixer     : {
+	autoprefixer       : {
 		browsers: [
 			'iOS >= 8',
 			'Android >= 4'
 		]
 	},
-	env              : {
+	env                : {
 		development: {
-			'extraBabelPlugins': [
+			extraBabelPlugins: [
 				'dva-hmr'
+			]
+		},
+		production : {
+			extraPostCSSPlugins: [
+				cssnano({
+					        preset: [
+						        'default',
+						        {discardComments: {removeAll: true}}
+					        ]
+				        })
 			]
 		}
 	},
-	dllPlugin        : {
+	dllPlugin          : {
 		exclude: [
-			'babel-runtime',
+			'babel-runtime'
 		],
 		include: [
 			'dva/router',
