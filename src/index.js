@@ -4,7 +4,7 @@ import createLoading from 'dva-loading';
 import createHistory from 'history/createBrowserHistory';
 import Console from './utils/console';
 import Wechat from './utils/wechat';
-import './index.scss'
+import style from './index.scss'
 
 const ERROR_MSG_DURATION = 3; // 3 秒
 

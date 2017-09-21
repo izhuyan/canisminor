@@ -22,7 +22,7 @@ export default ({location}) => {
 		<NavItem key={key} title={item.title} to={item.to}/>
 	));
 	return (
-		<Header className={styles.header}>
+		<Header className={styles.header} style={{zIndex: 999}}>
 			<Icon className={styles.logo} type="logo"/>
 			<div className={styles.nav}>
 				<div className={styles.showPhone} children={showPhone}/>
