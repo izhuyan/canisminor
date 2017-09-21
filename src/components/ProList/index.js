@@ -28,7 +28,7 @@ export default ({activeKey = ['0'], content}) => {
 		if (item.imgPath && item.imgPage) {
 			let imgList = [];
 			for (let i = 1; i <= item.imgPage; i++) {
-				const imgPath = path.join('api/project/',item.imgPath,`${item.imgPath}_${i}.png`)
+				const imgPath = "http://" + path.join('qn.canisminor.cc/project/',item.imgPath,`${item.imgPath}_${i}.png`)
 				imgList.push(imgPath);
 			}
 			imgListView = imgList.map(loadImg);
