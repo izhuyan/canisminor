@@ -31,12 +31,15 @@
 	<!--baidu-->
 	<script type="text/javascript" src="//zz.bdstatic.com/linksubmit/push.js"></script>
 	<script type="text/javascript" src="//hm.baidu.com/hm.js?7085397f155d2c882d7a996e5042b14d"></script>
-	<!--progressive-web-app-->
-	<script type="text/javascript" src="/precache.js"></script>
 	
 <link href="/common.541733df.css" rel="stylesheet"><link href="/index.6e708571.css" rel="stylesheet"></head>
 <body>
 <div id="root"></div>
 
-<script type="text/javascript" src="/common.af357c0a1f6ce824f584.js"></script><script type="text/javascript" src="/index.7ba6048c.js"></script></body>
+<script>
+	if ('serviceWorker' in navigator) navigator.serviceWorker.register('/precache.js');
+</script>
+
+
+<script type="text/javascript" src="/common.f673bd3ae3f6ff125141.js"></script><script type="text/javascript" src="/index.7ba6048c.js"></script></body>
 </html>

@@ -12,11 +12,6 @@
             "src": "favicons/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
-        },
-        {
-            "src": "share.png",
-            "sizes": "300x300",
-            "type": "image/png"
         }
     ],
     "theme_color": "#62e6ac",
