@@ -5,7 +5,7 @@ import {checkStatus, parseJSON} from "./request"
 function wxConfig(data) {
 	window.wx.config({
 		debug: true,
-		appId: "wxf64c59768aa51ce0",
+		appId: "wx8418a1c9c6dd04a3",
 		timestamp: data.timestamp,
 		nonceStr: data.nonceStr,
 		signature: data.signature,
@@ -38,7 +38,7 @@ function wxShareInfo() {
 		title: 'CanisMinor',
 		desc: 'UI/UX Designer & FE Developer',
 		link: window.location.href,
-		imgUrl: 'https://canisminor.cc/favicons/share.png',
+		imgUrl: 'https://canisminor.cc/share.png',
 	}
 
 	window.wx.ready(() => {
