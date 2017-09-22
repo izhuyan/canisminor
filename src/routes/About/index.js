@@ -12,18 +12,32 @@ import Intro8 from './intro_8';
 import Intro9 from './intro_9';
 
 export default () => {
-	setTitle('About');
-	return (
-		<div className={styles.intro}>
-			<Intro1/>
-			<Intro2/>
-			<LazyLoad children={<Intro3/>}/>
-			<LazyLoad children={<Intro4/>}/>
-			<LazyLoad children={<Intro5/>}/>
-			<LazyLoad children={<Intro6/>}/>
-			<LazyLoad children={<Intro7/>}/>
-			<LazyLoad children={<Intro8/>}/>
-			<LazyLoad children={<Intro9/>}/>
-		</div>
-	);
-}
+  setTitle('About');
+  return (
+    <div className={styles.intro}>
+      <Intro1 />
+      <Intro2 />
+      <LazyLoad>
+        <Intro3 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro4 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro5 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro6 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro7 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro8 />
+      </LazyLoad>
+      <LazyLoad>
+        <Intro9 />
+      </LazyLoad>
+    </div>
+  );
+};

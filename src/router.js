@@ -5,27 +5,25 @@ import App from './routes/App';
 import Loading from './routes/Loading';
 import Splash from './routes/Splash';
 
-
 const PrimaryLayout = () => {
-	return (
-		<div style={{width: '100%', position: 'relative', overflow: 'hidden'}}>
-			<Route path="/" component={Loading}/>
-			<Background location={window.location}/>
-			<Switch>
-				<Route exact path="/" component={Splash}/>
-				<Route path="/:name" component={App}/>
-			</Switch>
-		</div>
-	);
+  return (
+    <div style={{ width: '100%', position: 'relative', overflow: 'hidden' }}>
+      <Route path="/" component={Loading} />
+      <Background location={window.location} />
+      <Switch>
+        <Route exact path="/" component={Splash} />
+        <Route path="/:name" component={App} />
+      </Switch>
+    </div>
+  );
 };
 
-export default ({history}) => {
+export default ({ history }) => {
+  history.listen(() => window.scrollTo(0, 0));
 
-	history.listen((location, action) => window.scrollTo(0, 0));
-
-	return (
-		<Router history={history}>
-			<PrimaryLayout/>
-		</Router>
-	);
-}
+  return (
+    <Router history={history}>
+      <PrimaryLayout />
+    </Router>
+  );
+};

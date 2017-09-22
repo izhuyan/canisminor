@@ -5,44 +5,35 @@ import React from 'react';
 import './index.scss';
 
 function mapStateToProps(state) {
-	return {
-		loading: state.loading.global
-	};
+  return {
+    loading: state.loading.global,
+  };
 }
 
 class Root extends React.Component {
+  componentWillMount() {
+    NProgress.start();
+  }
 
-	constructor(props) {
-		super(props);
-	}
+  componentDidMount() {
+    NProgress.done();
+  }
 
-	componentWillMount() {
-		NProgress.start();
-	}
+  componentWillReceiveProps(nextProps) {
+    const { loading } = nextProps;
+    loading ? NProgress.start() : NProgress.done();
+  }
 
-	componentWillUnmount() {
-		NProgress.start();
-	}
+  componentWillUnmount() {
+    NProgress.start();
+  }
 
-	componentDidMount() {
-		NProgress.done();
-	}
+  render() {
+    const { loading } = this.props;
+    loading ? NProgress.start() : NProgress.done();
 
-	componentWillReceiveProps(nextProps) {
-		const {loading} = nextProps;
-		(loading)
-			? NProgress.start()
-			: NProgress.done();
-	}
-
-	render() {
-		const {loading} = this.props;
-		(loading)
-			? NProgress.start()
-			: NProgress.done();
-
-		return null;
-	}
+    return null;
+  }
 }
 
 export default connect(mapStateToProps)(Root);
