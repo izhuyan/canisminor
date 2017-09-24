@@ -1,3 +1,5 @@
+@import "var";
+
 .placeholder{
 	display: flex;
 	align-items: center;
@@ -5,9 +7,9 @@
 }
 .lazyload{
 	margin-bottom: -.3rem;
-	div,p,img{
-		animation: showup 0.8s forwards ease-out;
-	}
+
+@include showup
+
 }
 
 

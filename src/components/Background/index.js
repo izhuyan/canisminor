@@ -8,6 +8,7 @@ export default ({ location }) => {
   const classConfig = classnames.bind(styles)('shape', {
     shape__animation: pathname !== '/',
     shape__about: pathname === '/about',
+    shape__blog: pathname === '/blog',
     shape__project: pathname === '/project',
     shape__contact: pathname === '/contact',
   });

@@ -1,11 +1,11 @@
-import { IntroIcon } from '../../components';
+import { IntroIcon, LazyLoad } from '../../components';
 import { Height } from '../../utils/window';
 import { homeToc } from '../../config';
 import styles from './intro_2.scss';
 
 export default () => {
   return (
-    <div className={styles.intro} style={Height()}>
+    <LazyLoad className={styles.intro} style={Height()}>
       <div className={styles.title}>Introduciton</div>
       <div className={styles.subtitle}>
         {'UI/UX Designer. FE Developer.'.toUpperCase()}
@@ -18,6 +18,6 @@ export default () => {
           <IntroIcon key={key} type={doc.type} text={doc.text} />
         ))}
       </div>
-    </div>
+    </LazyLoad>
   );
 };

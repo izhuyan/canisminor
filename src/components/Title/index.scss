@@ -1,6 +1,7 @@
 @import "var";
-.contact {
+:global(.contact) {
 	justify-content: center;
+	@include showup
 }
 .title, .desc {
 	width: 100%;

@@ -3,7 +3,7 @@
 $c-primary: #62e6ac;
 $c-font-dark: #323a45;
 $c-font-normal: #747c83;
-$c-split: rgba(0,0,0,.05);
+$c-split: rgba(0, 0, 0, .05);
 
 // font
 $font-code: Hack, Menlo, Consolas, Courier, monospace !important;
@@ -12,3 +12,24 @@ $font-code: Hack, Menlo, Consolas, Courier, monospace !important;
 $m-large: "<=720px";
 $m-middle: "<=580px";
 $m-small: "<=420px";
+
+$anim-showup: showup 0.8s forwards ease-out;
+
+@mixin showup {
+	> div {
+		animation: showup 0.8s forwards ease-out;
+	}
+	.showup, img, p, h1, h2, blockquote, pre {
+		animation: showup 0.8s forwards ease-out;
+	}
+}
+@keyframes showup {
+	0% {
+		opacity: 0.4;
+		transform: translate3d(0, 80px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
