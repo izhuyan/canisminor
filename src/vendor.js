@@ -10,10 +10,9 @@ import 'react-typist';
 import 'weixin-jsapi';
 import 'plyr';
 import 'nprogress';
+import 'prismjs';
 
 // components
-import 'highlight.js';
-import 'highlight.js/styles/monokai-sublime.css';
 import 'gitment';
 import 'gitment/style/default.css';
 

@@ -1,4 +1,15 @@
 @import "var";
+:global {
+	@import "prism";
+	.lang-white {
+		background: #fff !important;
+		box-shadow: 0 8px 24px 0 rgba(#000, 0.08);
+		color: #666 !important;
+		* {
+			color: #666 !important;
+		}
+	}
+}
 .title {
 	font-weight: 600;
 	display: block;
@@ -28,11 +39,11 @@
 	* {
 		box-sizing: border-box;
 	}
-	a{
-		color:darken($c-primary,15%);
-		translate: color .5s  ease-out;
-		&:hover{
-			color:$c-primary;
+	a {
+		color: darken($c-primary, 15%);
+		translate: color .5s ease-out;
+		&:hover {
+			color: $c-primary;
 		}
 	}
 	> p, pre, img, blockquote, ul, ol {
@@ -54,12 +65,12 @@
 		& + li {
 			margin-top: .5rem;
 		}
-		&:hover{
+		&:hover {
 			&:before {
 				opacity: 1;
 			}
 		}
-		> p{
+		> p {
 			display: inline;
 		}
 	}
@@ -177,16 +188,5 @@
 		padding: 1rem;
 		border: .5px solid #f8f8f8;
 
-	}
-}
-:global {
-
-	.lang-white {
-		background: #fff !important;
-		box-shadow: 0 8px 24px 0 rgba(#000, 0.08);
-		color: #666 !important;
-		* {
-			color: #666 !important;
-		}
 	}
 }
