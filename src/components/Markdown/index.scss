@@ -84,9 +84,13 @@
 	img[alt=full] {
 		margin-left:-1rem;
 		margin-right:-1rem;
-		width: 100%;
+		width: 100vw;
+		max-width: 100vw;
 	}
-
+	img[alt=center] {
+		margin-left:auto;
+		margin-right:auto;
+	}
 	img[alt=shadow] {
 		box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
 	 }
