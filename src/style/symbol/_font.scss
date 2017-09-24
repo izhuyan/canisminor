@@ -11,3 +11,11 @@
 body {
 	font-family: "cm-font", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
+
+* {
+	-webkit-font-smoothing: antialiased
+}
+
+div {
+	word-wrap: break-word
+}

@@ -82,18 +82,20 @@
 		height: auto;
 	}
 	img[alt=full] {
-		margin-left:-1rem;
-		margin-right:-1rem;
-		width: 100vw;
-		max-width: 100vw;
+		@include media($m-middle) {
+			margin-left: -1rem;
+			margin-right: -1rem;
+			width: 100vw;
+			max-width: 100vw;
+		}
 	}
 	img[alt=center] {
-		margin-left:auto;
-		margin-right:auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	img[alt=shadow] {
 		box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
-	 }
+	}
 	code {
 		$code-color: desaturate($c-primary, 60%);
 		font-size: .8em;
@@ -123,14 +125,14 @@
 			overflow: hidden;
 			overflow-x: auto;
 			background: #222;
-			padding: 1rem;
+			padding: 1.5rem 1rem;
 			line-height: 1.8;
 			color: #ddd;
 			width: 100%;
 		}
-		@include media($m-middle){
-			margin-left:-1rem;
-			margin-right:-1rem;
+		@include media($m-middle) {
+			margin-left: -1rem;
+			margin-right: -1rem;
 		}
 	}
 

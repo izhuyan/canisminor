@@ -1,0 +1,9 @@
+@import "symbol/font";
+@import "symbol/scroll";
+a:focus {
+	text-decoration: none;
+}
+
+*:focus {
+	outline: none;
+}

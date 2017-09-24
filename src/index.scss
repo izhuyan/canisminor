@@ -1,21 +1,10 @@
 @import "var";
-@import "font";
+@import "root";
 
 html, body, :global(#root) {
 	height: 100%;
 }
-a:focus {
-	text-decoration: none;
-}
-div {
-	word-wrap: break-word
-}
-* {
-	-webkit-font-smoothing: antialiased
-}
-*:focus {
-	outline: none;
-}
+
 
 
 
