@@ -15,7 +15,9 @@
 		"eslint": "eslint --fix --ext .js src",
 		"lint": "lint-staged"
 	},
-	"pre-commit": ["lint"],
+	"pre-commit": [
+		"lint"
+	],
 	"lint-staged": {
 		"*.js": [
 			"prettier --trailing-comma es5 --single-quote --write",
@@ -39,6 +41,7 @@
 		"prismjs": "^1.8.1",
 		"react": "^15.6.1",
 		"react-dom": "^15.6.1",
+		"react-lazy-html-view": "^1.0.1",
 		"react-lazyload": "^2.2.7",
 		"react-typist": "^1.1.1",
 		"weixin-jsapi": "^1.1.0"

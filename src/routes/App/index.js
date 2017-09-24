@@ -15,7 +15,7 @@ export default ({ location }) => {
 
   return (
     <Layout className={styles.layout}>
-      <BackTop />
+      <BackTop style={{ zIndex: 999 }} />
       <Header location={location} />
       <Content className={styles.content}>
         <Route exact path="/about" component={About} />

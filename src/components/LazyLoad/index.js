@@ -1,10 +1,12 @@
+import React from 'react';
 import { Spin } from 'antd';
 import LazyLoad from 'react-lazyload';
 import styles from './index.scss';
 
 export default ({
   children,
-  offset = 100,
+  className,
+  offset = 0,
   width = '100%',
   height = 500,
   background = 'transparent',
@@ -19,13 +21,10 @@ export default ({
   );
 
   return (
-    <LazyLoad
-      height={height}
-      offset={offset}
-      placeholder={placeholder}
-      children={children}
-      once
-      {...other}
-    />
+    <LazyLoad height={height} offset={offset} placeholder={placeholder} once>
+      <div className={[styles.lazyload, className].join(' ')} {...other}>
+        {children}
+      </div>
+    </LazyLoad>
   );
 };

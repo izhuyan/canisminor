@@ -16,16 +16,16 @@ webpackJsonp([3], {
       c = l(r),
       i = a(105),
       s = a(40),
-      g = a(24),
-      _ = a(724),
-      m = l(_),
+      g = a(22),
+      m = a(724),
+      _ = l(m),
       p = a(748),
       b = l(p);
     (t.default = (0, i.connect)(n)(function(e) {
       var t = e.loading,
         a = e.blogPage;
       return (
-        t || (0, m.default)(a.title),
+        t || (0, _.default)(a.title),
         c.default.createElement(
           'div',
           { className: b.default.page },
@@ -37,7 +37,7 @@ webpackJsonp([3], {
               })
             : c.default.createElement(g.Markdown, { data: a }),
           c.default.createElement(
-            'div',
+            g.LazyLoad,
             { className: b.default.footer },
             c.default.createElement(
               s.Link,
@@ -56,7 +56,11 @@ webpackJsonp([3], {
                   })
             )
           ),
-          c.default.createElement(g.Comment, null)
+          c.default.createElement(
+            g.LazyLoad,
+            null,
+            c.default.createElement(g.Comment, null)
+          )
         )
       );
     })),
