@@ -2363,49 +2363,50 @@ webpackJsonp(
         h = n(258),
         m = r(h),
         g = n(0),
-        y = r(g);
-      n(557);
-      var b = (function(e) {
-        function t() {
+        y = r(g),
+        b = n(557),
+        v = r(b),
+        _ = (function(e) {
+          function t() {
+            return (
+              (0, s.default)(this, t),
+              (0, d.default)(
+                this,
+                (t.__proto__ || (0, a.default)(t)).apply(this, arguments)
+              )
+            );
+          }
           return (
-            (0, s.default)(this, t),
-            (0, d.default)(
-              this,
-              (t.__proto__ || (0, a.default)(t)).apply(this, arguments)
-            )
+            (0, p.default)(t, e),
+            (0, u.default)(t, [
+              {
+                key: 'componentDidMount',
+                value: function() {
+                  m.default.setup();
+                },
+              },
+              {
+                key: 'render',
+                value: function() {
+                  var e = this.props.src;
+                  return y.default.createElement(
+                    'video',
+                    { className: v.default.video, controls: !0 },
+                    y.default.createElement('source', {
+                      src: 'http://qn-video.canisminor.cc/' + e,
+                      type: 'video/mp4',
+                    })
+                  );
+                },
+              },
+            ]),
+            t
           );
-        }
-        return (
-          (0, p.default)(t, e),
-          (0, u.default)(t, [
-            {
-              key: 'componentDidMount',
-              value: function() {
-                m.default.setup();
-              },
-            },
-            {
-              key: 'render',
-              value: function() {
-                var e = this.props.src;
-                return y.default.createElement(
-                  'video',
-                  { controls: !0 },
-                  y.default.createElement('source', {
-                    src: 'http://qn-video.canisminor.cc/' + e,
-                    type: 'video/mp4',
-                  })
-                );
-              },
-            },
-          ]),
-          t
-        );
-      })(y.default.Component);
-      (t.default = b), (e.exports = t.default);
+        })(y.default.Component);
+      (t.default = _), (e.exports = t.default);
     },
     557: function(e, t) {
-      e.exports = { a: 'a___P6jaL' };
+      e.exports = { video: 'video___1H9M1', a: 'a___P6jaL' };
     },
     558: function(e, t, n) {
       'use strict';
