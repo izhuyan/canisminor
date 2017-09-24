@@ -3,7 +3,7 @@
 	@import "prism";
 	.lang-white {
 		background: #fff !important;
-		box-shadow: 0 8px 24px 0 rgba(#000, 0.08);
+		box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
 		color: #666 !important;
 		* {
 			color: #666 !important;
@@ -81,6 +81,15 @@
 		max-width: 100%;
 		height: auto;
 	}
+	img[alt=full] {
+		margin-left:-1rem;
+		margin-right:-1rem;
+		width: 100%;
+	}
+
+	img[alt=shadow] {
+		box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
+	 }
 	code {
 		$code-color: desaturate($c-primary, 60%);
 		font-size: .8em;
@@ -114,6 +123,10 @@
 			line-height: 1.8;
 			color: #ddd;
 			width: 100%;
+		}
+		@include media($m-middle){
+			margin-left:-1rem;
+			margin-right:-1rem;
 		}
 	}
 

@@ -15,10 +15,7 @@
 		"eslint": "eslint --fix --ext .js src",
 		"lint": "lint-staged"
 	},
-	"pre-commit": [
-		"eslint",
-		"lint"
-	],
+	"pre-commit": ["lint"],
 	"lint-staged": {
 		"*.js": [
 			"prettier --trailing-comma es5 --single-quote --write",

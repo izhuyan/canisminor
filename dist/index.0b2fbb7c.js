@@ -2441,37 +2441,37 @@ webpackJsonp(
         o = r(a),
         i = n(0),
         s = r(i),
-        u = n(40),
-        l = n(565),
-        c = r(l),
-        d = n(108),
-        f = r(d),
-        p = n(566),
-        h = r(p),
-        m = n(567),
-        g = r(m),
-        y = n(259),
-        b = r(y),
-        v = n(568),
-        _ = r(v),
-        x = n(569),
-        k = r(x),
-        w = n(570),
-        E = r(w),
-        P = n(571),
-        j = r(P),
+        u = n(565),
+        l = r(u),
+        c = n(108),
+        d = r(c),
+        f = n(259),
+        p = r(f),
+        h = n(566),
+        m = r(h),
+        g = n(567),
+        y = r(g),
+        b = n(568),
+        v = r(b),
+        _ = n(569),
+        x = r(_),
+        k = n(570),
+        w = r(k),
+        E = n(571),
+        P = r(E),
+        j = n(40),
         O = n(572),
         S = r(O),
         M = n(573),
         C = r(M),
         T = {
-          bash: _.default,
-          js: j.default,
-          scss: k.default,
-          sass: k.default,
-          json: E.default,
-          md: S.default,
-          yaml: C.default,
+          bash: m.default,
+          js: x.default,
+          scss: y.default,
+          sass: y.default,
+          json: v.default,
+          md: w.default,
+          yaml: P.default,
           html: 'markup',
           ejs: 'markup',
           svg: 'markup',
@@ -2479,8 +2479,8 @@ webpackJsonp(
           py: 'python',
           rb: 'ruby',
         };
-      c.default.setOptions({
-        renderer: new c.default.Renderer(),
+      l.default.setOptions({
+        renderer: new l.default.Renderer(),
         gfm: !0,
         tables: !0,
         breaks: !1,
@@ -2489,10 +2489,8 @@ webpackJsonp(
         smartLists: !0,
         smartypants: !1,
         highlight: function(e, t) {
-          return (
-            b.default.languages.hasOwnProperty(t) || (t = T[t] || 'markup'),
-            b.default.highlight(e, b.default.languages[t])
-          );
+          var n = p.default.languages.hasOwnProperty(t) ? t : T[t] || 'markup';
+          return p.default.highlight(e, p.default.languages[n]);
         },
       }),
         (t.default = function(e) {
@@ -2505,27 +2503,27 @@ webpackJsonp(
             r,
             '/blog' === window.location.pathname
               ? s.default.createElement(
-                  u.Link,
+                  j.Link,
                   {
-                    className: g.default.title,
-                    to: f.default.join('blog', n.filename),
+                    className: C.default.title,
+                    to: d.default.join('blog', n.filename),
                   },
                   n.title
                 )
               : s.default.createElement(
                   'div',
-                  { className: g.default.title },
+                  { className: C.default.title },
                   n.title
                 ),
             s.default.createElement(
               'div',
-              { className: g.default.time },
-              s.default.createElement('span', null, (0, h.default)(n.filename)),
+              { className: C.default.time },
+              s.default.createElement('span', null, (0, S.default)(n.filename)),
               ' - CanisMinor'
             ),
             s.default.createElement('div', {
-              className: g.default.markdown,
-              dangerouslySetInnerHTML: { __html: (0, c.default)(a) },
+              className: C.default.markdown,
+              dangerouslySetInnerHTML: { __html: (0, l.default)(a) },
             })
           );
         }),
@@ -3314,73 +3312,7 @@ webpackJsonp(
         ));
       }.call(t, n(37)));
     },
-    566: function(e, t, n) {
-      'use strict';
-      Object.defineProperty(t, '__esModule', { value: !0 });
-      var r = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ];
-      (t.default = function(e) {
-        if ('' !== e) {
-          var t = void 0,
-            n = e.substring(0, 4),
-            a = e.substring(4, 6),
-            o = e.substring(6, 8),
-            i = e.substring(8, 10),
-            s = e.substring(10, 12),
-            u = e.substring(12, 14),
-            l = new Date(n, a - 1, o, i, s, u).getTime(),
-            c = new Date().getTime(),
-            d = parseInt((c - l) / 1e3, 10),
-            f = Math.abs(d),
-            p = {
-              sec: '%d \u79d2\u524d',
-              min: '%d \u5206\u949f\u524d',
-              hour: '%d \u5c0f\u65f6\u524d',
-              day: '%d \u5929\u524d',
-              week: '%d \u5468\u524d',
-            },
-            h = f;
-          return (
-            f < 60
-              ? ((h = f), (t = p.sec.replace('%d', parseInt(h, 10))))
-              : f < 3600
-                ? ((h = f / 60), (t = p.min.replace('%d', parseInt(h, 10))))
-                : f < 86400
-                  ? ((h = f / 3600),
-                    (t = p.hour.replace('%d', parseInt(h, 10))))
-                  : f < 604800
-                    ? ((h = f / 86400),
-                      (t = p.day.replace('%d', parseInt(h, 10))))
-                    : f < 2592e3
-                      ? ((h = f / 604800),
-                        (t = p.week.replace('%d', parseInt(h, 10))))
-                      : (t = [o, r[a - 1], n].join(' ')),
-            t
-          );
-        }
-      }),
-        (e.exports = t.default);
-    },
-    567: function(e, t) {
-      e.exports = {
-        title: 'title___2V4YI',
-        time: 'time___2_wjP',
-        markdown: 'markdown___2GE1n',
-      };
-    },
-    568: function(e, t) {
+    566: function(e, t) {
       !(function(e) {
         var t = {
           variable: [
@@ -3442,7 +3374,7 @@ webpackJsonp(
           (n.punctuation = e.languages.bash.punctuation);
       })(Prism);
     },
-    569: function(e, t) {
+    567: function(e, t) {
       !(function(e) {
         (e.languages.sass = e.languages.extend('css', {
           comment: {
@@ -3492,7 +3424,7 @@ webpackJsonp(
           });
       })(Prism);
     },
-    570: function(e, t) {
+    568: function(e, t) {
       (Prism.languages.json = {
         property: /"(?:\\.|[^\\"])*"(?=\s*:)/gi,
         string: /"(?!:)(?:\\.|[^\\"])*"(?!:)/g,
@@ -3504,7 +3436,7 @@ webpackJsonp(
       }),
         (Prism.languages.jsonp = Prism.languages.json);
     },
-    571: function(e, t) {
+    569: function(e, t) {
       !(function(e) {
         var t = e.util.clone(e.languages.javascript);
         (e.languages.jsx = e.languages.extend('markup', t)),
@@ -3545,7 +3477,7 @@ webpackJsonp(
           );
       })(Prism);
     },
-    572: function(e, t) {
+    570: function(e, t) {
       (Prism.languages.markdown = Prism.languages.extend('markup', {})),
         Prism.languages.insertBefore('markdown', 'prolog', {
           blockquote: { pattern: /^>(?:[\t ]*>)*/m, alias: 'punctuation' },
@@ -3616,7 +3548,7 @@ webpackJsonp(
           Prism.languages.markdown.bold
         ));
     },
-    573: function(e, t) {
+    571: function(e, t) {
       Prism.languages.yaml = {
         scalar: {
           pattern: /([\-:]\s*(![^\s]+)?[ \t]*[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)[^\r\n]+(?:\3[^\r\n]+)*)/,
@@ -3661,6 +3593,72 @@ webpackJsonp(
         tag: /![^\s]+/,
         important: /[&*][\w]+/,
         punctuation: /---|[:[\]{}\-,|>?]|\.\.\./,
+      };
+    },
+    572: function(e, t, n) {
+      'use strict';
+      Object.defineProperty(t, '__esModule', { value: !0 });
+      var r = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+      ];
+      (t.default = function(e) {
+        if ('' !== e) {
+          var t = void 0,
+            n = e.substring(0, 4),
+            a = e.substring(4, 6),
+            o = e.substring(6, 8),
+            i = e.substring(8, 10),
+            s = e.substring(10, 12),
+            u = e.substring(12, 14),
+            l = new Date(n, a - 1, o, i, s, u).getTime(),
+            c = new Date().getTime(),
+            d = parseInt((c - l) / 1e3, 10),
+            f = Math.abs(d),
+            p = {
+              sec: '%d \u79d2\u524d',
+              min: '%d \u5206\u949f\u524d',
+              hour: '%d \u5c0f\u65f6\u524d',
+              day: '%d \u5929\u524d',
+              week: '%d \u5468\u524d',
+            },
+            h = f;
+          return (
+            f < 60
+              ? ((h = f), (t = p.sec.replace('%d', parseInt(h, 10))))
+              : f < 3600
+                ? ((h = f / 60), (t = p.min.replace('%d', parseInt(h, 10))))
+                : f < 86400
+                  ? ((h = f / 3600),
+                    (t = p.hour.replace('%d', parseInt(h, 10))))
+                  : f < 604800
+                    ? ((h = f / 86400),
+                      (t = p.day.replace('%d', parseInt(h, 10))))
+                    : f < 2592e3
+                      ? ((h = f / 604800),
+                        (t = p.week.replace('%d', parseInt(h, 10))))
+                      : (t = [o, r[a - 1], n].join(' ')),
+            t
+          );
+        }
+      }),
+        (e.exports = t.default);
+    },
+    573: function(e, t) {
+      e.exports = {
+        title: 'title___2V4YI',
+        time: 'time___2_wjP',
+        markdown: 'markdown___2GE1n',
       };
     },
     574: function(e, t, n) {
