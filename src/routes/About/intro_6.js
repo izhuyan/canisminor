@@ -1,4 +1,4 @@
-import { Button, DocTitle } from '../../components';
+import { Button, DocTitle, LazyLoad } from '../../components';
 import { homeToc, specList } from '../../config';
 import styles from './intro_6.scss';
 
@@ -20,7 +20,7 @@ export default () => {
   );
 
   const Item = (item, key) => (
-    <div key={key} className={styles.item}>
+    <LazyLoad key={key} className={styles.item}>
       {item.img.length === 1 ? (
         item.img.map(Img)
       ) : (
@@ -32,7 +32,7 @@ export default () => {
       ) : (
         <div className={styles.btn}>{item.btn.map(Btn)}</div>
       )}
-    </div>
+    </LazyLoad>
   );
 
   return (

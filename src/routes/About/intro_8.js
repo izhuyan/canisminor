@@ -1,4 +1,4 @@
-import { DocTitle, SvgIcon } from '../../components';
+import { DocTitle, SvgIcon, LazyLoad } from '../../components';
 import { feSkillList, homeToc } from '../../config';
 import styles from './intro_8.scss';
 
@@ -12,7 +12,7 @@ export default () => {
   return (
     <div className={styles.intro}>
       <DocTitle content={homeToc[5]} />
-      <div className={styles.box}>{feSkillList.map(Item)}</div>
+      <LazyLoad className={styles.box}>{feSkillList.map(Item)}</LazyLoad>
     </div>
   );
 };

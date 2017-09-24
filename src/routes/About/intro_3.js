@@ -1,4 +1,4 @@
-import { DocTitle, Icon, Showcase } from '../../components';
+import { DocTitle, Icon, Showcase, LazyLoad } from '../../components';
 import { homeToc } from '../../config';
 import styles from './intro_3.scss';
 
@@ -11,7 +11,7 @@ export default () => {
   return (
     <div className={styles.intro}>
       <DocTitle content={homeToc[0]} />
-      <div className={styles.avatar}>
+      <LazyLoad className={styles.avatar}>
         <div className={styles.img} />
         <div className={styles.text}>
           <Icon className={styles.title} type="name" />
@@ -21,11 +21,11 @@ export default () => {
             }
           </div>
         </div>
-      </div>
-      <div className={styles.info}>
+      </LazyLoad>
+      <LazyLoad className={styles.info}>
         <div className={styles.logo} />
         <Showcase content={showcaseData} />
-      </div>
+      </LazyLoad>
     </div>
   );
 };

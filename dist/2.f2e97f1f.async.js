@@ -7,7 +7,7 @@ webpackJsonp([2], {
     Object.defineProperty(e, '__esModule', { value: !0 });
     var a = n(0),
       c = u(a),
-      l = n(24),
+      l = n(22),
       o = n(724),
       i = u(o),
       d = n(746),

@@ -16,12 +16,7 @@ $m-small: "<=420px";
 $anim-showup: showup 0.8s forwards ease-out;
 
 @mixin showup {
-	> div {
-		animation: showup 0.8s forwards ease-out;
-	}
-	.showup, img, p, h1, h2, blockquote, pre {
-		animation: showup 0.8s forwards ease-out;
-	}
+	animation: showup 0.8s forwards ease-out;
 }
 @keyframes showup {
 	0% {

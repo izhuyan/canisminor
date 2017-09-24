@@ -16,9 +16,9 @@ webpackJsonp([3], {
       r = l(c),
       i = a(105),
       s = a(40),
-      _ = a(24),
-      g = a(724),
-      m = l(g),
+      g = a(22),
+      _ = a(724),
+      m = l(_),
       p = a(748),
       b = l(p);
     (t.default = (0, i.connect)(n)(function(e) {
@@ -35,9 +35,9 @@ webpackJsonp([3], {
                 size: 'large',
                 style: { width: '100%', lineHeight: '720px' },
               })
-            : r.default.createElement(_.Markdown, { data: a }),
+            : r.default.createElement(g.Markdown, { data: a }),
           r.default.createElement(
-            _.LazyLoad,
+            g.LazyLoad,
             { className: b.default.footer },
             r.default.createElement(
               s.Link,
@@ -57,9 +57,9 @@ webpackJsonp([3], {
             )
           ),
           r.default.createElement(
-            _.LazyLoad,
+            g.LazyLoad,
             null,
-            r.default.createElement(_.Comment, null)
+            r.default.createElement(g.Comment, null)
           )
         )
       );
@@ -77,7 +77,6 @@ webpackJsonp([3], {
   748: function(e, t) {
     e.exports = {
       page: 'page___2Bi8b',
-      showup: 'showup___2Y6GB',
       a: 'a___3ojcI',
       footer: 'footer___iOSay',
       back: 'back___1XpuF',

@@ -1,8 +1,9 @@
+import { LazyLoad } from '../';
 import styles from './index.scss';
 
 export default ({ content }) => {
   const Item = (item, key) => (
-    <div className={styles.item} key={key}>
+    <LazyLoad className={styles.item} key={key}>
       <div
         className={styles.img}
         style={{
@@ -17,7 +18,7 @@ export default ({ content }) => {
           {item.desc.split('|').map((str, i) => <p key={i}>{str}</p>)}
         </div>
       </div>
-    </div>
+    </LazyLoad>
   );
   return <div className={styles.list}>{content.map(Item)}</div>;
 };

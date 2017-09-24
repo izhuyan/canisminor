@@ -6,7 +6,7 @@ import styles from './index.scss';
 export default ({
   children,
   className,
-  offset = 0,
+  offset = -200,
   width = '100%',
   height = 500,
   background = 'transparent',
