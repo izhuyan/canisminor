@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import {sketch2json, json2sketch} from './scripts/sketch'
+import img from './scripts/img';
 
-gulp.task('sketch2json', sketch2json);
-gulp.task('json2sketch', json2sketch);
+gulp.task('build:img', img);
