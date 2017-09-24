@@ -7,7 +7,7 @@ const { Footer } = Layout;
 export default () => {
   const SocialIcon = ({ type, href }) => {
     return (
-      <a href={href} rel="noopener">
+      <a href={href} target="_blank" rel="noopener">
         <Icon className={styles.icon} type={`social-${type}`} />
       </a>
     );

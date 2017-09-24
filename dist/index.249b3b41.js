@@ -3445,7 +3445,7 @@ webpackJsonp(
             n = e.href;
           return l.default.createElement(
             'a',
-            { href: n, rel: 'noopener' },
+            { href: n, target: '_blank', rel: 'noopener' },
             l.default.createElement(c.Icon, {
               className: d.default.icon,
               type: 'social-' + t,
