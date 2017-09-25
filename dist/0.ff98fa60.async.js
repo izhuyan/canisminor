@@ -22,9 +22,9 @@ webpackJsonp([0], {
       h = a(635),
       b = l(h),
       N = a(637),
-      x = l(N),
-      y = a(639),
-      w = l(y),
+      w = l(N),
+      x = a(639),
+      y = l(x),
       g = a(641),
       L = l(g),
       M = a(643),
@@ -40,8 +40,8 @@ webpackJsonp([0], {
           u.default.createElement(p.default, null),
           u.default.createElement(v.default, null),
           u.default.createElement(b.default, null),
-          u.default.createElement(x.default, null),
           u.default.createElement(w.default, null),
+          u.default.createElement(y.default, null),
           u.default.createElement(L.default, null),
           u.default.createElement(D.default, null)
         )
@@ -281,7 +281,7 @@ webpackJsonp([0], {
                   ),
                   p.default.createElement(
                     E.LazyLoad,
-                    null,
+                    { className: b.default.row },
                     p.default.createElement(E.Showcase, { content: e }),
                     this.state.show
                       ? p.default.createElement(
@@ -318,6 +318,7 @@ webpackJsonp([0], {
       title: 'title___nC0hJ',
       desc: 'desc___3DBTP',
       awards: 'awards___RrEon',
+      row: 'row___2SOij',
       button: 'button___3Ukd2',
       showup: 'showup___2WFvr',
     };

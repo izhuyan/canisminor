@@ -39,7 +39,7 @@ export default class extends React.Component {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad>
+        <LazyLoad className={styles.row}>
           <Showcase content={showcaseData} />
           {this.state.show ? (
             <div className={styles.awards}>
