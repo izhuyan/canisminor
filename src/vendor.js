@@ -15,8 +15,3 @@ import 'prismjs';
 // components
 import 'gitment';
 import 'gitment/style/default.css';
-
-// antd
-import antd from 'antd';
-
-const { Table, Spin, Icon, Layout, Button, Popover, Collapse, message } = antd;

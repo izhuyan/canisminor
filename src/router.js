@@ -8,7 +8,7 @@ import Splash from './routes/Splash';
 const PrimaryLayout = () => {
   return (
     <div style={{ width: '100%', position: 'relative', overflow: 'hidden' }}>
-      <Route path="/" component={Loading} />
+      <Route component={Loading} />
       <Background location={window.location} />
       <Switch>
         <Route exact path="/" component={Splash} />

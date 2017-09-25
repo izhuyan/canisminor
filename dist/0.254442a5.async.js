@@ -1,5 +1,5 @@
 webpackJsonp([0], {
-  719: function(e, t, a) {
+  620: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -7,31 +7,31 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(724),
-      o = l(c),
-      d = a(726),
-      r = l(d),
-      i = a(727),
+      c = a(625),
+      d = l(c),
+      o = a(626),
+      r = l(o),
+      i = a(627),
       f = l(i),
-      s = a(729),
+      s = a(629),
       _ = l(s),
-      m = a(731),
+      m = a(631),
       E = l(m),
-      v = a(733),
+      v = a(633),
       p = l(v),
-      b = a(735),
+      b = a(635),
       N = l(b),
-      h = a(737),
-      x = l(h),
-      y = a(739),
+      x = a(637),
+      h = l(x),
+      y = a(639),
       g = l(y),
-      L = a(741),
+      L = a(641),
       M = l(L),
-      D = a(743),
-      w = l(D);
+      D = a(643),
+      k = l(D);
     (t.default = function() {
       return (
-        (0, o.default)('About'),
+        (0, d.default)('About'),
         u.default.createElement(
           'div',
           { className: r.default.intro },
@@ -40,16 +40,16 @@ webpackJsonp([0], {
           u.default.createElement(E.default, null),
           u.default.createElement(p.default, null),
           u.default.createElement(N.default, null),
-          u.default.createElement(x.default, null),
+          u.default.createElement(h.default, null),
           u.default.createElement(g.default, null),
           u.default.createElement(M.default, null),
-          u.default.createElement(w.default, null)
+          u.default.createElement(k.default, null)
         )
       );
     }),
       (e.exports = t.default);
   },
-  724: function(e, t, a) {
+  625: function(e, t, a) {
     'use strict';
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.default = function(e) {
@@ -57,20 +57,10 @@ webpackJsonp([0], {
       }),
       (e.exports = t.default);
   },
-  725: function(e, t, a) {
-    'use strict';
-    Object.defineProperty(t, '__esModule', { value: !0 });
-    var l = function() {
-      var e =
-        arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-      return { minHeight: parseInt(window.innerHeight, 10) - e + 'px' };
-    };
-    t.Height = l;
-  },
-  726: function(e, t) {
+  626: function(e, t) {
     e.exports = { intro: 'intro___3XAja', a: 'a___3aZIN' };
   },
-  727: function(e, t, a) {
+  627: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -78,24 +68,22 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(725),
-      d = a(728),
-      r = l(d);
+      c = a(20),
+      d = a(628),
+      o = l(d);
     (t.default = function() {
       return u.default.createElement(c.Title, {
-        className: r.default.intro,
-        style: (0, o.Height)(150),
+        className: o.default.intro,
         title: 'CanisMinor',
         desc: 'UI / UX Designer & FE Developer',
       });
     }),
       (e.exports = t.default);
   },
-  728: function(e, t) {
+  628: function(e, t) {
     e.exports = { intro: 'intro___Jjbtb' };
   },
-  729: function(e, t, a) {
+  629: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -103,33 +91,32 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(725),
-      d = a(104),
-      r = a(730),
-      i = l(r);
+      c = a(20),
+      d = a(95),
+      o = a(630),
+      r = l(o);
     (t.default = function() {
       return u.default.createElement(
         c.LazyLoad,
-        { className: i.default.intro, style: (0, o.Height)() },
+        { className: r.default.intro },
         u.default.createElement(
           'div',
-          { className: i.default.title },
+          { className: r.default.title },
           'Introduciton'
         ),
         u.default.createElement(
           'div',
-          { className: i.default.subtitle },
+          { className: r.default.subtitle },
           'UI/UX Designer. FE Developer.'.toUpperCase()
         ),
         u.default.createElement(
           'div',
-          { className: i.default.desc },
+          { className: r.default.desc },
           'Hi,\u8fd9\u91cc\u662f\u6768\u6631\u5e06\uff0c\u611f\u8c22\u60a8\u82b1\u65f6\u95f4\u6d4f\u89c8\u6211\u7684Resume.\u4ee5\u4e0b\u5c06\u4f1a\u52067\u4e2a\u7248\u5757\u9610\u8ff0\u6211\u7684\u6280\u672f\u6808\u548c\u77e5\u8bc6\u6784\u6210'
         ),
         u.default.createElement(
           'div',
-          { className: i.default.doc },
+          { className: r.default.doc },
           d.homeToc.map(function(e, t) {
             return u.default.createElement(c.IntroIcon, {
               key: t,
@@ -142,7 +129,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  730: function(e, t) {
+  630: function(e, t) {
     e.exports = {
       intro: 'intro___37VAv',
       title: 'title___1i5wn',
@@ -151,7 +138,7 @@ webpackJsonp([0], {
       doc: 'doc___K9b3z',
     };
   },
-  731: function(e, t, a) {
+  631: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -159,10 +146,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(732),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(632),
+      r = l(o);
     (t.default = function() {
       var e = [
         { title: 'born:', desc: '1990.9.30' },
@@ -172,7 +159,7 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[0] }),
+        u.default.createElement(c.DocTitle, { content: d.homeToc[0] }),
         u.default.createElement(
           c.LazyLoad,
           { className: r.default.avatar },
@@ -201,7 +188,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  732: function(e, t) {
+  632: function(e, t) {
     e.exports = {
       intro: 'intro___26I6R',
       avatar: 'avatar___2Gx1I',
@@ -213,31 +200,31 @@ webpackJsonp([0], {
       logo: 'logo___3D5gx',
     };
   },
-  733: function(e, t, a) {
+  633: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
     }
     Object.defineProperty(t, '__esModule', { value: !0 });
-    var n = a(79),
+    var n = a(75),
       u = l(n),
-      c = a(3),
-      o = l(c),
-      d = a(6),
-      r = l(d),
-      i = a(4),
+      c = a(7),
+      d = l(c),
+      o = a(8),
+      r = l(o),
+      i = a(11),
       f = l(i),
-      s = a(5),
+      s = a(12),
       _ = l(s),
       m = a(0),
       E = l(m),
-      v = a(22),
-      p = a(104),
-      b = a(734),
+      v = a(20),
+      p = a(95),
+      b = a(634),
       N = l(b),
-      h = (function(e) {
+      x = (function(e) {
         function t(e) {
-          (0, o.default)(this, t);
+          (0, d.default)(this, t);
           var a = (0, f.default)(
             this,
             (t.__proto__ || (0, u.default)(t)).call(this, e)
@@ -318,9 +305,9 @@ webpackJsonp([0], {
           t
         );
       })(E.default.Component);
-    (t.default = h), (e.exports = t.default);
+    (t.default = x), (e.exports = t.default);
   },
-  734: function(e, t) {
+  634: function(e, t) {
     e.exports = {
       intro: 'intro___3bDwP',
       school: 'school___JV61F',
@@ -332,7 +319,7 @@ webpackJsonp([0], {
       button: 'button___3Ukd2',
     };
   },
-  735: function(e, t, a) {
+  635: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -340,28 +327,28 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(736),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(636),
+      r = l(o);
     (t.default = function() {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[2] }),
+        u.default.createElement(c.DocTitle, { content: d.homeToc[2] }),
         u.default.createElement(
           'div',
           null,
-          u.default.createElement(c.ExpList, { content: o.expList })
+          u.default.createElement(c.ExpList, { content: d.expList })
         )
       );
     }),
       (e.exports = t.default);
   },
-  736: function(e, t) {
+  636: function(e, t) {
     e.exports = { intro: 'intro___Jfo98' };
   },
-  737: function(e, t, a) {
+  637: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -369,10 +356,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(738),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(638),
+      r = l(o);
     (t.default = function() {
       var e = function(e, t) {
           return u.default.createElement('img', {
@@ -418,13 +405,13 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[3] }),
-        o.specList.map(a)
+        u.default.createElement(c.DocTitle, { content: d.homeToc[3] }),
+        d.specList.map(a)
       );
     }),
       (e.exports = t.default);
   },
-  738: function(e, t) {
+  638: function(e, t) {
     e.exports = {
       intro: 'intro___2l7Di',
       item: 'item___1NdsI',
@@ -433,7 +420,7 @@ webpackJsonp([0], {
       btn: 'btn___9V7-I',
     };
   },
-  739: function(e, t, a) {
+  639: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -441,10 +428,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(740),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(640),
+      r = l(o);
     (t.default = function() {
       var e = function(e, t) {
         return u.default.createElement(
@@ -467,11 +454,11 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[4] }),
+        u.default.createElement(c.DocTitle, { content: d.homeToc[4] }),
         u.default.createElement(
           c.LazyLoad,
           { className: r.default.box },
-          o.vdSkillList.map(e)
+          d.vdSkillList.map(e)
         ),
         u.default.createElement(
           c.LazyLoad,
@@ -485,7 +472,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  740: function(e, t) {
+  640: function(e, t) {
     e.exports = {
       intro: 'intro___3wTlo',
       box: 'box___82mro',
@@ -496,7 +483,7 @@ webpackJsonp([0], {
       item: 'item___3X3bA',
     };
   },
-  741: function(e, t, a) {
+  641: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -504,10 +491,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(742),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(642),
+      r = l(o);
     (t.default = function() {
       var e = function(e, t) {
         return u.default.createElement(
@@ -523,17 +510,17 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[5] }),
+        u.default.createElement(c.DocTitle, { content: d.homeToc[5] }),
         u.default.createElement(
           c.LazyLoad,
           { className: r.default.box },
-          o.feSkillList.map(e)
+          d.feSkillList.map(e)
         )
       );
     }),
       (e.exports = t.default);
   },
-  742: function(e, t) {
+  642: function(e, t) {
     e.exports = {
       intro: 'intro___1N4Wi',
       box: 'box___9CbIU',
@@ -541,7 +528,7 @@ webpackJsonp([0], {
       icon: 'icon___BhjC7',
     };
   },
-  743: function(e, t, a) {
+  643: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -549,15 +536,15 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(22),
-      o = a(104),
-      d = a(744),
-      r = l(d);
+      c = a(20),
+      d = a(95),
+      o = a(644),
+      r = l(o);
     (t.default = function() {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: o.homeToc[6] }),
+        u.default.createElement(c.DocTitle, { content: d.homeToc[6] }),
         u.default.createElement(
           c.LazyLoad,
           { className: r.default.box },
@@ -577,7 +564,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  744: function(e, t) {
+  644: function(e, t) {
     e.exports = {
       intro: 'intro___1nozI',
       box: 'box___2CJvy',

@@ -1,4 +1,5 @@
 @import "var";
 .intro {
+	min-height: calc(100vh - 150px);
 	background: transparent !important;
 }

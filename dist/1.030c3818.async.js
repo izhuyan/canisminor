@@ -1,50 +1,48 @@
 webpackJsonp([1], {
-  720: function(e, t, n) {
+  621: function(e, t, n) {
     'use strict';
     function o(e) {
       return e && e.__esModule ? e : { default: e };
     }
-    function i(e) {
+    function l(e) {
       return { loading: e.loading.global, blogToc: e.projectToc };
     }
     Object.defineProperty(t, '__esModule', { value: !0 });
-    var l = (n(106), n(107)),
-      r = o(l),
-      u = n(0),
-      a = o(u),
-      c = n(105),
-      d = n(22),
-      s = n(724),
+    var a = (n(248), n(249)),
+      u = o(a),
+      c = n(0),
+      i = o(c),
+      r = n(96),
+      d = n(20),
+      s = n(625),
       f = o(s),
-      p = n(725),
-      g = n(745),
-      _ = o(g);
-    (t.default = (0, c.connect)(i)(function(e) {
+      p = n(645),
+      g = o(p);
+    (t.default = (0, r.connect)(l)(function(e) {
       var t = e.loading,
         n = e.blogToc;
       return (
         (0, f.default)('Projects'),
-        a.default.createElement(
+        i.default.createElement(
           'div',
-          { className: _.default.project },
-          a.default.createElement(d.Title, {
-            style: (0, p.Height)(150),
+          { className: g.default.project },
+          i.default.createElement(d.Title, {
             title: 'Sense & pixels',
             desc: 'wanna see more ? updating soon...',
           }),
           t
-            ? a.default.createElement(r.default, {
+            ? i.default.createElement(u.default, {
                 spinning: t,
                 size: 'large',
                 style: { width: '100%', lineHeight: '720px' },
               })
-            : a.default.createElement(d.ProList, { content: n })
+            : i.default.createElement(d.ProList, { content: n })
         )
       );
     })),
       (e.exports = t.default);
   },
-  724: function(e, t, n) {
+  625: function(e, t, n) {
     'use strict';
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.default = function(e) {
@@ -52,17 +50,7 @@ webpackJsonp([1], {
       }),
       (e.exports = t.default);
   },
-  725: function(e, t, n) {
-    'use strict';
-    Object.defineProperty(t, '__esModule', { value: !0 });
-    var o = function() {
-      var e =
-        arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-      return { minHeight: parseInt(window.innerHeight, 10) - e + 'px' };
-    };
-    t.Height = o;
-  },
-  745: function(e, t) {
+  645: function(e, t) {
     e.exports = { project: 'project___1iE9X' };
   },
 });
