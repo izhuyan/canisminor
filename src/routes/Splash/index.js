@@ -13,7 +13,7 @@ export default () => {
       <div className={styles.logo} />
       <Typist
         className={styles.text}
-        onTypingDone={() => setTimeout(toIndex, 3000)}
+        onTypingDone={() => setTimeout(toIndex, 2000)}
       >
         <span className={styles.shape} />
         The collection of curriculum vitae and<br /> recent projects
