@@ -1970,9 +1970,6 @@ webpackJsonp(
                     _.default.createElement(
                       'div',
                       { className: v.default.list },
-                      _.default.createElement('div', {
-                        className: v.default.bg,
-                      }),
                       t
                     ),
                     _.default.createElement(
@@ -2014,7 +2011,6 @@ webpackJsonp(
         list: 'list___1ZTTW',
         icon: 'icon___1qbIH',
         cls: 'cls___3SAJg',
-        bg: 'bg___1TXox',
         item: 'item___2bGx4',
         menu__oppenned: 'menu__oppenned___2gHdc',
         showup: 'showup___1GqRM',
