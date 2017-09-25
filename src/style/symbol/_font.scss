@@ -1,21 +1,26 @@
 @font-face {
 	font-family: "cm-font";
-	src: url('/font/Futura.ttf');
+	src: url('/font/Futura.eot');
+	src:
+			url('/font/Futura.eot?#font-spider') format('embedded-opentype'),
+			url('/font/Futura.woff2') format('woff2'),
+			url('/font/Futura.woff') format('woff'),
+			url('/font/Futura.ttf') format('truetype'),
+			url('/font/Futura.svg') format('svg');
+	font-weight: normal;
 }
 @font-face {
 	font-family: "cm-font";
-	src: url('/font/FuturaBold.ttf');
-	font-weight: 700;
+	src: url('/font/FuturaBold.eot');
+	src:
+			url('/font/FuturaBold.eot?#font-spider') format('embedded-opentype'),
+			url('/font/FuturaBold.woff2') format('woff2'),
+			url('/font/FuturaBold.woff') format('woff'),
+			url('/font/FuturaBold.ttf') format('truetype'),
+			url('/font/FuturaBold.svg') format('svg');
+	font-weight: bold;
 }
 
 body {
 	font-family: "cm-font", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-}
-
-* {
-	-webkit-font-smoothing: antialiased
-}
-
-div {
-	word-wrap: break-word
 }

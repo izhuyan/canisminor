@@ -38,19 +38,3 @@
 		margin-right: 1rem;
 	}
 }
-
-
-.tag{
-	> span{
-		display: inline-block;
-		background: #fff;
-		height: 44px;
-		line-height: 44px;
-		padding: 0 1.5rem;
-		margin-left: 1rem;
-		box-shadow: 0 2px 12px 0 rgba(#000,.08);
-	}
-	@include media($m-middle){
-		margin-bottom: 2rem;
-	}
-}

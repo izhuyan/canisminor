@@ -1,5 +1,5 @@
 webpackJsonp([0], {
-  620: function(e, t, a) {
+  622: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -7,27 +7,27 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      o = a(625),
+      o = a(627),
       c = l(o),
-      d = a(626),
+      d = a(628),
       r = l(d),
-      s = a(627),
+      s = a(629),
       i = l(s),
-      f = a(629),
+      f = a(631),
       _ = l(f),
-      m = a(631),
+      m = a(633),
       p = l(m),
-      E = a(633),
+      E = a(635),
       v = l(E),
-      h = a(635),
+      h = a(637),
       b = l(h),
-      N = a(637),
+      N = a(639),
       w = l(N),
-      x = a(639),
+      x = a(641),
       y = l(x),
-      g = a(641),
+      g = a(643),
       L = l(g),
-      M = a(643),
+      M = a(645),
       D = l(M);
     (t.default = function() {
       return (
@@ -49,7 +49,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  625: function(e, t, a) {
+  627: function(e, t, a) {
     'use strict';
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.default = function(e) {
@@ -57,31 +57,8 @@ webpackJsonp([0], {
       }),
       (e.exports = t.default);
   },
-  626: function(e, t) {
-    e.exports = { intro: 'intro___3XAja', showup: 'showup___3uCFL' };
-  },
-  627: function(e, t, a) {
-    'use strict';
-    function l(e) {
-      return e && e.__esModule ? e : { default: e };
-    }
-    Object.defineProperty(t, '__esModule', { value: !0 });
-    var n = a(0),
-      u = l(n),
-      o = a(20),
-      c = a(628),
-      d = l(c);
-    (t.default = function() {
-      return u.default.createElement(o.Title, {
-        className: d.default.intro,
-        title: 'CanisMinor',
-        desc: 'UI / UX Designer & FE Developer',
-      });
-    }),
-      (e.exports = t.default);
-  },
   628: function(e, t) {
-    e.exports = { intro: 'intro___Jjbtb', showup: 'showup___3oVud' };
+    e.exports = { intro: 'intro___3XAja', showup: 'showup___3uCFL' };
   },
   629: function(e, t, a) {
     'use strict';
@@ -92,8 +69,31 @@ webpackJsonp([0], {
     var n = a(0),
       u = l(n),
       o = a(20),
+      c = a(630),
+      d = l(c);
+    (t.default = function() {
+      return u.default.createElement(o.Title, {
+        className: d.default.intro,
+        title: 'CanisMinor',
+        desc: 'UI / UX Designer & FE Developer',
+      });
+    }),
+      (e.exports = t.default);
+  },
+  630: function(e, t) {
+    e.exports = { intro: 'intro___Jjbtb', showup: 'showup___3oVud' };
+  },
+  631: function(e, t, a) {
+    'use strict';
+    function l(e) {
+      return e && e.__esModule ? e : { default: e };
+    }
+    Object.defineProperty(t, '__esModule', { value: !0 });
+    var n = a(0),
+      u = l(n),
+      o = a(20),
       c = a(97),
-      d = a(630),
+      d = a(632),
       r = l(d);
     (t.default = function() {
       return u.default.createElement(
@@ -129,7 +129,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  630: function(e, t) {
+  632: function(e, t) {
     e.exports = {
       intro: 'intro___37VAv',
       title: 'title___1i5wn',
@@ -139,7 +139,7 @@ webpackJsonp([0], {
       showup: 'showup___2J0Gy',
     };
   },
-  631: function(e, t, a) {
+  633: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -149,7 +149,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(632),
+      d = a(634),
       r = l(d);
     (t.default = function() {
       var e = [
@@ -189,7 +189,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  632: function(e, t) {
+  634: function(e, t) {
     e.exports = {
       intro: 'intro___26I6R',
       avatar: 'avatar___2Gx1I',
@@ -202,7 +202,7 @@ webpackJsonp([0], {
       showup: 'showup___2ZtwO',
     };
   },
-  633: function(e, t, a) {
+  635: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -222,7 +222,7 @@ webpackJsonp([0], {
       p = l(m),
       E = a(20),
       v = a(97),
-      h = a(634),
+      h = a(636),
       b = l(h),
       N = (function(e) {
         function t(e) {
@@ -309,7 +309,7 @@ webpackJsonp([0], {
       })(p.default.Component);
     (t.default = N), (e.exports = t.default);
   },
-  634: function(e, t) {
+  636: function(e, t) {
     e.exports = {
       intro: 'intro___3bDwP',
       school: 'school___JV61F',
@@ -323,7 +323,7 @@ webpackJsonp([0], {
       showup: 'showup___2WFvr',
     };
   },
-  635: function(e, t, a) {
+  637: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -333,7 +333,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(636),
+      d = a(638),
       r = l(d);
     (t.default = function() {
       return u.default.createElement(
@@ -349,10 +349,10 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  636: function(e, t) {
+  638: function(e, t) {
     e.exports = { intro: 'intro___Jfo98', showup: 'showup___2Hnl_' };
   },
-  637: function(e, t, a) {
+  639: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -362,7 +362,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(638),
+      d = a(640),
       r = l(d);
     (t.default = function() {
       var e = function(e, t) {
@@ -415,7 +415,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  638: function(e, t) {
+  640: function(e, t) {
     e.exports = {
       intro: 'intro___2l7Di',
       showup: 'showup___1e2ys',
@@ -425,7 +425,7 @@ webpackJsonp([0], {
       btn: 'btn___9V7-I',
     };
   },
-  639: function(e, t, a) {
+  641: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -435,7 +435,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(640),
+      d = a(642),
       r = l(d);
     (t.default = function() {
       var e = function(e, t) {
@@ -477,7 +477,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  640: function(e, t) {
+  642: function(e, t) {
     e.exports = {
       intro: 'intro___3wTlo',
       box: 'box___82mro',
@@ -489,7 +489,7 @@ webpackJsonp([0], {
       showup: 'showup___rmavm',
     };
   },
-  641: function(e, t, a) {
+  643: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -499,7 +499,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(642),
+      d = a(644),
       r = l(d);
     (t.default = function() {
       var e = function(e, t) {
@@ -526,7 +526,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  642: function(e, t) {
+  644: function(e, t) {
     e.exports = {
       intro: 'intro___1N4Wi',
       box: 'box___9CbIU',
@@ -535,7 +535,7 @@ webpackJsonp([0], {
       showup: 'showup___1jLt5',
     };
   },
-  643: function(e, t, a) {
+  645: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -545,7 +545,7 @@ webpackJsonp([0], {
       u = l(n),
       o = a(20),
       c = a(97),
-      d = a(644),
+      d = a(646),
       r = l(d);
     (t.default = function() {
       return u.default.createElement(
@@ -571,7 +571,7 @@ webpackJsonp([0], {
     }),
       (e.exports = t.default);
   },
-  644: function(e, t) {
+  646: function(e, t) {
     e.exports = {
       intro: 'intro___1nozI',
       box: 'box___2CJvy',

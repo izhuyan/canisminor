@@ -3,7 +3,12 @@
 a:focus {
 	text-decoration: none;
 }
-
 *:focus {
 	outline: none;
+}
+* {
+	-webkit-font-smoothing: antialiased
+}
+div {
+	word-wrap: break-word
 }

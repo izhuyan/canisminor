@@ -2,7 +2,7 @@ import { Icon, Spin } from 'antd';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
 import path from 'path';
-import { Markdown, LazyLoad } from '../../components';
+import { Markdown, LazyLoad, Tags } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
@@ -21,12 +21,7 @@ export default connect(mapStateToProps)(({ loading, blogToc }) => {
     <LazyLoad key={key} offset={-100} className={styles.post}>
       <Markdown data={record} />
       <div className={styles.footer}>
-        <div className={styles.tag}>
-          Tags:
-          {loading
-            ? ''
-            : record.tag.map((item, key) => <span key={key}>{item}</span>)}
-        </div>
+        {loading ? '' : <Tags data={record.tag} />}
         <Link
           to={path.join('blog', record.filename)}
           className={styles.readmore}

@@ -10,6 +10,7 @@ export { default as Comment } from './Comment';
 export { default as Player } from './Player';
 export { default as Background } from './Background';
 export { default as Markdown } from './Markdown';
+export { default as Tags } from './Tags';
 // layout
 export { default as Header } from './Header';
 export { default as Footer } from './Footer';

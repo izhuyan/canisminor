@@ -1,5 +1,5 @@
 webpackJsonp([4], {
-  623: function(e, t, a) {
+  625: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -9,9 +9,9 @@ webpackJsonp([4], {
     }
     Object.defineProperty(t, '__esModule', { value: !0 });
     var u = (a(148), a(149)),
-      n = l(u),
-      d = (a(150), a(42)),
-      r = l(d),
+      d = l(u),
+      n = (a(150), a(42)),
+      r = l(n),
       f = a(0),
       s = l(f),
       c = a(98),
@@ -19,9 +19,9 @@ webpackJsonp([4], {
       _ = a(99),
       m = l(_),
       g = a(20),
-      p = a(625),
+      p = a(627),
       b = l(p),
-      E = a(647),
+      E = a(649),
       v = l(E);
     (t.default = (0, c.connect)(o)(function(e) {
       var t = e.loading,
@@ -35,16 +35,7 @@ webpackJsonp([4], {
           s.default.createElement(
             'div',
             { className: v.default.footer },
-            s.default.createElement(
-              'div',
-              { className: v.default.tag },
-              'Tags:',
-              t
-                ? ''
-                : e.tag.map(function(e, t) {
-                    return s.default.createElement('span', { key: t }, e);
-                  })
-            ),
+            t ? '' : s.default.createElement(g.Tags, { data: e.tag }),
             s.default.createElement(
               i.Link,
               {
@@ -63,13 +54,13 @@ webpackJsonp([4], {
         s.default.createElement(
           'div',
           { className: v.default.list },
-          t ? s.default.createElement(n.default, { size: 'large' }) : a.map(l)
+          t ? s.default.createElement(d.default, { size: 'large' }) : a.map(l)
         )
       );
     })),
       (e.exports = t.default);
   },
-  625: function(e, t, a) {
+  627: function(e, t, a) {
     'use strict';
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.default = function(e) {
@@ -77,7 +68,7 @@ webpackJsonp([4], {
       }),
       (e.exports = t.default);
   },
-  647: function(e, t) {
+  649: function(e, t) {
     e.exports = {
       blog: 'blog___JS5-W',
       list: 'list___1PJtj',

@@ -1,5 +1,5 @@
 webpackJsonp([3], {
-  624: function(e, t, a) {
+  626: function(e, t, a) {
     'use strict';
     function l(e) {
       return e && e.__esModule ? e : { default: e };
@@ -17,15 +17,15 @@ webpackJsonp([3], {
       i = a(98),
       s = a(34),
       g = a(20),
-      _ = a(625),
-      m = l(_),
-      p = a(648),
-      b = l(p);
+      _ = a(627),
+      p = l(_),
+      m = a(650),
+      b = l(m);
     (t.default = (0, i.connect)(n)(function(e) {
       var t = e.loading,
         a = e.blogPage;
       return (
-        t || (0, m.default)(a.title),
+        t || (0, p.default)(a.title),
         c.default.createElement(
           'div',
           { className: b.default.page },
@@ -45,16 +45,7 @@ webpackJsonp([3], {
               c.default.createElement(o.default, { type: 'left' }),
               'Go Back'
             ),
-            c.default.createElement(
-              'div',
-              { className: b.default.tag },
-              'Tags:',
-              t
-                ? ''
-                : a.tag.map(function(e, t) {
-                    return c.default.createElement('span', { key: t }, e);
-                  })
-            )
+            t ? '' : c.default.createElement(g.Tags, { data: a.tag })
           ),
           c.default.createElement(
             g.LazyLoad,
@@ -66,7 +57,7 @@ webpackJsonp([3], {
     })),
       (e.exports = t.default);
   },
-  625: function(e, t, a) {
+  627: function(e, t, a) {
     'use strict';
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.default = function(e) {
@@ -74,13 +65,12 @@ webpackJsonp([3], {
       }),
       (e.exports = t.default);
   },
-  648: function(e, t) {
+  650: function(e, t) {
     e.exports = {
       page: 'page___2Bi8b',
       showup: 'showup___2Y6GB',
       footer: 'footer___iOSay',
       back: 'back___1XpuF',
-      tag: 'tag___25bWY',
     };
   },
 });
