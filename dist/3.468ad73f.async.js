@@ -12,8 +12,8 @@ webpackJsonp([3], {
       o = l(u),
       d = (a(148), a(149)),
       f = l(d),
-      c = a(0),
-      r = l(c),
+      r = a(0),
+      c = l(r),
       i = a(98),
       s = a(34),
       g = a(20),
@@ -26,40 +26,40 @@ webpackJsonp([3], {
         a = e.blogPage;
       return (
         t || (0, m.default)(a.title),
-        r.default.createElement(
+        c.default.createElement(
           'div',
           { className: b.default.page },
           t
-            ? r.default.createElement(f.default, {
+            ? c.default.createElement(f.default, {
                 spinning: t,
                 size: 'large',
                 style: { width: '100%', lineHeight: '720px' },
               })
-            : r.default.createElement(g.Markdown, { data: a }),
-          r.default.createElement(
+            : c.default.createElement(g.Markdown, { data: a }),
+          c.default.createElement(
             g.LazyLoad,
             { className: b.default.footer },
-            r.default.createElement(
+            c.default.createElement(
               s.Link,
               { to: '/blog', className: b.default.back },
-              r.default.createElement(o.default, { type: 'left' }),
+              c.default.createElement(o.default, { type: 'left' }),
               'Go Back'
             ),
-            r.default.createElement(
+            c.default.createElement(
               'div',
               { className: b.default.tag },
               'Tags:',
               t
                 ? ''
                 : a.tag.map(function(e, t) {
-                    return r.default.createElement('span', { key: t }, e);
+                    return c.default.createElement('span', { key: t }, e);
                   })
             )
           ),
-          r.default.createElement(
+          c.default.createElement(
             g.LazyLoad,
             null,
-            r.default.createElement(g.Comment, null)
+            c.default.createElement(g.Comment, null)
           )
         )
       );
@@ -77,7 +77,7 @@ webpackJsonp([3], {
   648: function(e, t) {
     e.exports = {
       page: 'page___2Bi8b',
-      a: 'a___3ojcI',
+      showup: 'showup___2Y6GB',
       footer: 'footer___iOSay',
       back: 'back___1XpuF',
       tag: 'tag___25bWY',

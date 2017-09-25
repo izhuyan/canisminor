@@ -7,43 +7,43 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(625),
-      d = l(c),
-      o = a(626),
-      r = l(o),
-      i = a(627),
-      f = l(i),
-      s = a(629),
-      _ = l(s),
+      o = a(625),
+      c = l(o),
+      d = a(626),
+      r = l(d),
+      s = a(627),
+      i = l(s),
+      f = a(629),
+      _ = l(f),
       m = a(631),
-      E = l(m),
-      v = a(633),
-      p = l(v),
-      b = a(635),
-      N = l(b),
-      x = a(637),
-      h = l(x),
+      p = l(m),
+      E = a(633),
+      v = l(E),
+      h = a(635),
+      b = l(h),
+      N = a(637),
+      x = l(N),
       y = a(639),
-      g = l(y),
-      L = a(641),
-      M = l(L),
-      D = a(643),
-      k = l(D);
+      w = l(y),
+      g = a(641),
+      L = l(g),
+      M = a(643),
+      D = l(M);
     (t.default = function() {
       return (
-        (0, d.default)('About'),
+        (0, c.default)('About'),
         u.default.createElement(
           'div',
           { className: r.default.intro },
-          u.default.createElement(f.default, null),
+          u.default.createElement(i.default, null),
           u.default.createElement(_.default, null),
-          u.default.createElement(E.default, null),
           u.default.createElement(p.default, null),
-          u.default.createElement(N.default, null),
-          u.default.createElement(h.default, null),
-          u.default.createElement(g.default, null),
-          u.default.createElement(M.default, null),
-          u.default.createElement(k.default, null)
+          u.default.createElement(v.default, null),
+          u.default.createElement(b.default, null),
+          u.default.createElement(x.default, null),
+          u.default.createElement(w.default, null),
+          u.default.createElement(L.default, null),
+          u.default.createElement(D.default, null)
         )
       );
     }),
@@ -58,7 +58,7 @@ webpackJsonp([0], {
       (e.exports = t.default);
   },
   626: function(e, t) {
-    e.exports = { intro: 'intro___3XAja', a: 'a___3aZIN' };
+    e.exports = { intro: 'intro___3XAja', showup: 'showup___3uCFL' };
   },
   627: function(e, t, a) {
     'use strict';
@@ -68,12 +68,12 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(628),
-      o = l(d);
+      o = a(20),
+      c = a(628),
+      d = l(c);
     (t.default = function() {
-      return u.default.createElement(c.Title, {
-        className: o.default.intro,
+      return u.default.createElement(o.Title, {
+        className: d.default.intro,
         title: 'CanisMinor',
         desc: 'UI / UX Designer & FE Developer',
       });
@@ -81,7 +81,7 @@ webpackJsonp([0], {
       (e.exports = t.default);
   },
   628: function(e, t) {
-    e.exports = { intro: 'intro___Jjbtb' };
+    e.exports = { intro: 'intro___Jjbtb', showup: 'showup___3oVud' };
   },
   629: function(e, t, a) {
     'use strict';
@@ -91,13 +91,13 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(630),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(630),
+      r = l(d);
     (t.default = function() {
       return u.default.createElement(
-        c.LazyLoad,
+        o.LazyLoad,
         { className: r.default.intro },
         u.default.createElement(
           'div',
@@ -117,8 +117,8 @@ webpackJsonp([0], {
         u.default.createElement(
           'div',
           { className: r.default.doc },
-          d.homeToc.map(function(e, t) {
-            return u.default.createElement(c.IntroIcon, {
+          c.homeToc.map(function(e, t) {
+            return u.default.createElement(o.IntroIcon, {
               key: t,
               type: e.type,
               text: e.text,
@@ -136,6 +136,7 @@ webpackJsonp([0], {
       subtitle: 'subtitle___2ccsb',
       desc: 'desc___DfFnU',
       doc: 'doc___K9b3z',
+      showup: 'showup___2J0Gy',
     };
   },
   631: function(e, t, a) {
@@ -146,10 +147,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(632),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(632),
+      r = l(d);
     (t.default = function() {
       var e = [
         { title: 'born:', desc: '1990.9.30' },
@@ -159,15 +160,15 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[0] }),
+        u.default.createElement(o.DocTitle, { content: c.homeToc[0] }),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.avatar },
           u.default.createElement('div', { className: r.default.img }),
           u.default.createElement(
             'div',
             { className: r.default.text },
-            u.default.createElement(c.Icon, {
+            u.default.createElement(o.Icon, {
               className: r.default.title,
               type: 'name',
             }),
@@ -179,10 +180,10 @@ webpackJsonp([0], {
           )
         ),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.info },
           u.default.createElement('div', { className: r.default.logo }),
-          u.default.createElement(c.Showcase, { content: e })
+          u.default.createElement(o.Showcase, { content: e })
         )
       );
     }),
@@ -198,6 +199,7 @@ webpackJsonp([0], {
       desc: 'desc___cDTQU',
       info: 'info___d5IKy',
       logo: 'logo___3D5gx',
+      showup: 'showup___2ZtwO',
     };
   },
   633: function(e, t, a) {
@@ -208,24 +210,24 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(75),
       u = l(n),
-      c = a(7),
-      d = l(c),
-      o = a(8),
-      r = l(o),
-      i = a(11),
-      f = l(i),
-      s = a(12),
-      _ = l(s),
+      o = a(7),
+      c = l(o),
+      d = a(8),
+      r = l(d),
+      s = a(11),
+      i = l(s),
+      f = a(12),
+      _ = l(f),
       m = a(0),
-      E = l(m),
-      v = a(20),
-      p = a(97),
-      b = a(634),
-      N = l(b),
-      x = (function(e) {
+      p = l(m),
+      E = a(20),
+      v = a(97),
+      h = a(634),
+      b = l(h),
+      N = (function(e) {
         function t(e) {
-          (0, d.default)(this, t);
-          var a = (0, f.default)(
+          (0, c.default)(this, t);
+          var a = (0, i.default)(
             this,
             (t.__proto__ || (0, u.default)(t)).call(this, e)
           );
@@ -248,51 +250,51 @@ webpackJsonp([0], {
                   { title: 'DUR:', desc: '2009 \xbb 13' },
                   { title: 'GPA:', desc: '3.58/4' },
                 ];
-                return E.default.createElement(
+                return p.default.createElement(
                   'div',
-                  { className: N.default.intro },
-                  E.default.createElement(v.DocTitle, {
-                    content: p.homeToc[1],
+                  { className: b.default.intro },
+                  p.default.createElement(E.DocTitle, {
+                    content: v.homeToc[1],
                   }),
-                  E.default.createElement(
-                    v.LazyLoad,
-                    { className: N.default.school },
-                    E.default.createElement(v.Icon, {
-                      className: N.default.logo,
+                  p.default.createElement(
+                    E.LazyLoad,
+                    { className: b.default.school },
+                    p.default.createElement(E.Icon, {
+                      className: b.default.logo,
                       type: 'caa-logo',
                     }),
-                    E.default.createElement(
+                    p.default.createElement(
                       'div',
-                      { className: N.default.content },
-                      E.default.createElement(v.Icon, {
-                        className: N.default.title,
+                      { className: b.default.content },
+                      p.default.createElement(E.Icon, {
+                        className: b.default.title,
                         type: 'caa-text',
                       }),
-                      E.default.createElement(
+                      p.default.createElement(
                         'div',
-                        { className: N.default.desc },
+                        { className: b.default.desc },
                         'China Academy of Art',
-                        E.default.createElement('br', null),
+                        p.default.createElement('br', null),
                         'Top Art School World Ranking: 7th'
                       )
                     )
                   ),
-                  E.default.createElement(
-                    v.LazyLoad,
+                  p.default.createElement(
+                    E.LazyLoad,
                     null,
-                    E.default.createElement(v.Showcase, { content: e }),
+                    p.default.createElement(E.Showcase, { content: e }),
                     this.state.show
-                      ? E.default.createElement(
+                      ? p.default.createElement(
                           'div',
-                          { className: N.default.awards },
-                          E.default.createElement(v.AwardList, {
-                            content: p.awardList,
+                          { className: b.default.awards },
+                          p.default.createElement(E.AwardList, {
+                            content: v.awardList,
                           })
                         )
-                      : E.default.createElement(
+                      : p.default.createElement(
                           'div',
                           {
-                            className: N.default.button,
+                            className: b.default.button,
                             onClick: this.onClick,
                           },
                           'Show Awards'
@@ -304,8 +306,8 @@ webpackJsonp([0], {
           ]),
           t
         );
-      })(E.default.Component);
-    (t.default = x), (e.exports = t.default);
+      })(p.default.Component);
+    (t.default = N), (e.exports = t.default);
   },
   634: function(e, t) {
     e.exports = {
@@ -317,6 +319,7 @@ webpackJsonp([0], {
       desc: 'desc___3DBTP',
       awards: 'awards___RrEon',
       button: 'button___3Ukd2',
+      showup: 'showup___2WFvr',
     };
   },
   635: function(e, t, a) {
@@ -327,26 +330,26 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(636),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(636),
+      r = l(d);
     (t.default = function() {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[2] }),
+        u.default.createElement(o.DocTitle, { content: c.homeToc[2] }),
         u.default.createElement(
           'div',
           null,
-          u.default.createElement(c.ExpList, { content: d.expList })
+          u.default.createElement(o.ExpList, { content: c.expList })
         )
       );
     }),
       (e.exports = t.default);
   },
   636: function(e, t) {
-    e.exports = { intro: 'intro___Jfo98' };
+    e.exports = { intro: 'intro___Jfo98', showup: 'showup___2Hnl_' };
   },
   637: function(e, t, a) {
     'use strict';
@@ -356,10 +359,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(638),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(638),
+      r = l(d);
     (t.default = function() {
       var e = function(e, t) {
           return u.default.createElement('img', {
@@ -372,14 +375,14 @@ webpackJsonp([0], {
         },
         t = function(e, t) {
           return u.default.createElement(
-            c.Button,
+            o.Button,
             { key: t, url: e.url, ghost: t > 0 },
             e.title
           );
         },
         a = function(a, l) {
           return u.default.createElement(
-            c.LazyLoad,
+            o.LazyLoad,
             { key: l, className: r.default.item },
             1 === a.img.length
               ? a.img.map(e)
@@ -405,8 +408,8 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[3] }),
-        d.specList.map(a)
+        u.default.createElement(o.DocTitle, { content: c.homeToc[3] }),
+        c.specList.map(a)
       );
     }),
       (e.exports = t.default);
@@ -414,6 +417,7 @@ webpackJsonp([0], {
   638: function(e, t) {
     e.exports = {
       intro: 'intro___2l7Di',
+      showup: 'showup___1e2ys',
       item: 'item___1NdsI',
       box: 'box___2U3v5',
       desc: 'desc___2LHWc',
@@ -428,10 +432,10 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(640),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(640),
+      r = l(d);
     (t.default = function() {
       var e = function(e, t) {
         return u.default.createElement(
@@ -454,14 +458,14 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[4] }),
+        u.default.createElement(o.DocTitle, { content: c.homeToc[4] }),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.box },
-          d.vdSkillList.map(e)
+          c.vdSkillList.map(e)
         ),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.color },
           u.default.createElement('div', { className: r.default.item }),
           u.default.createElement('div', { className: r.default.item }),
@@ -481,6 +485,7 @@ webpackJsonp([0], {
       desc: 'desc___ANoMv',
       color: 'color___2abVW',
       item: 'item___3X3bA',
+      showup: 'showup___rmavm',
     };
   },
   641: function(e, t, a) {
@@ -491,16 +496,16 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(642),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(642),
+      r = l(d);
     (t.default = function() {
       var e = function(e, t) {
         return u.default.createElement(
           'div',
           { className: r.default.item, key: t },
-          u.default.createElement(c.SvgIcon, {
+          u.default.createElement(o.SvgIcon, {
             className: r.default.icon,
             type: 'fe-' + e.icon,
           }),
@@ -510,11 +515,11 @@ webpackJsonp([0], {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[5] }),
+        u.default.createElement(o.DocTitle, { content: c.homeToc[5] }),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.box },
-          d.feSkillList.map(e)
+          c.feSkillList.map(e)
         )
       );
     }),
@@ -526,6 +531,7 @@ webpackJsonp([0], {
       box: 'box___9CbIU',
       item: 'item___35B-Y',
       icon: 'icon___BhjC7',
+      showup: 'showup___1jLt5',
     };
   },
   643: function(e, t, a) {
@@ -536,17 +542,17 @@ webpackJsonp([0], {
     Object.defineProperty(t, '__esModule', { value: !0 });
     var n = a(0),
       u = l(n),
-      c = a(20),
-      d = a(97),
-      o = a(644),
-      r = l(o);
+      o = a(20),
+      c = a(97),
+      d = a(644),
+      r = l(d);
     (t.default = function() {
       return u.default.createElement(
         'div',
         { className: r.default.intro },
-        u.default.createElement(c.DocTitle, { content: d.homeToc[6] }),
+        u.default.createElement(o.DocTitle, { content: c.homeToc[6] }),
         u.default.createElement(
-          c.LazyLoad,
+          o.LazyLoad,
           { className: r.default.box },
           u.default.createElement('img', {
             alt: 'Project',
@@ -555,7 +561,7 @@ webpackJsonp([0], {
             width: '940',
           }),
           u.default.createElement(
-            c.Button,
+            o.Button,
             { to: '/project' },
             'Discover project story'
           )
@@ -569,6 +575,7 @@ webpackJsonp([0], {
       intro: 'intro___1nozI',
       box: 'box___2CJvy',
       img: 'img___2VHY5',
+      showup: 'showup___2Ke77',
     };
   },
 });

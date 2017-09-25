@@ -8,13 +8,13 @@ webpackJsonp([4], {
       return { loading: e.loading.global, blogToc: e.blogToc };
     }
     Object.defineProperty(t, '__esModule', { value: !0 });
-    var n = (a(148), a(149)),
-      u = l(n),
+    var u = (a(148), a(149)),
+      n = l(u),
       d = (a(150), a(42)),
       r = l(d),
       f = a(0),
-      c = l(f),
-      s = a(98),
+      s = l(f),
+      c = a(98),
       i = a(34),
       _ = a(99),
       m = l(_),
@@ -23,47 +23,47 @@ webpackJsonp([4], {
       b = l(p),
       E = a(647),
       v = l(E);
-    (t.default = (0, s.connect)(o)(function(e) {
+    (t.default = (0, c.connect)(o)(function(e) {
       var t = e.loading,
         a = e.blogToc;
       (0, b.default)('Blog');
       var l = function(e, a) {
-        return c.default.createElement(
+        return s.default.createElement(
           g.LazyLoad,
           { key: a, offset: -100, className: v.default.post },
-          c.default.createElement(g.Markdown, { data: e }),
-          c.default.createElement(
+          s.default.createElement(g.Markdown, { data: e }),
+          s.default.createElement(
             'div',
             { className: v.default.footer },
-            c.default.createElement(
+            s.default.createElement(
               'div',
               { className: v.default.tag },
               'Tags:',
               t
                 ? ''
                 : e.tag.map(function(e, t) {
-                    return c.default.createElement('span', { key: t }, e);
+                    return s.default.createElement('span', { key: t }, e);
                   })
             ),
-            c.default.createElement(
+            s.default.createElement(
               i.Link,
               {
                 to: m.default.join('blog', e.filename),
                 className: v.default.readmore,
               },
               'Read More',
-              c.default.createElement(r.default, { type: 'right' })
+              s.default.createElement(r.default, { type: 'right' })
             )
           )
         );
       };
-      return c.default.createElement(
+      return s.default.createElement(
         'div',
         { className: v.default.blog },
-        c.default.createElement(
+        s.default.createElement(
           'div',
           { className: v.default.list },
-          t ? c.default.createElement(u.default, { size: 'large' }) : a.map(l)
+          t ? s.default.createElement(n.default, { size: 'large' }) : a.map(l)
         )
       );
     })),
@@ -85,6 +85,7 @@ webpackJsonp([4], {
       footer: 'footer___2MBFf',
       readmore: 'readmore___17XgT',
       tag: 'tag___1fdB-',
+      showup: 'showup___1ys9V',
     };
   },
 });
