@@ -203,91 +203,91 @@ webpackJsonp(
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = n(525);
+      var o = n(526);
       Object.defineProperty(t, 'Icon', {
         enumerable: !0,
         get: function() {
           return r(o).default;
         },
       });
-      var a = n(526);
+      var a = n(527);
       Object.defineProperty(t, 'SvgIcon', {
         enumerable: !0,
         get: function() {
           return r(a).default;
         },
       });
-      var i = n(528);
+      var i = n(529);
       Object.defineProperty(t, 'Typist', {
         enumerable: !0,
         get: function() {
           return r(i).default;
         },
       });
-      var s = n(530);
+      var s = n(531);
       Object.defineProperty(t, 'IntroIcon', {
         enumerable: !0,
         get: function() {
           return r(s).default;
         },
       });
-      var l = n(532);
+      var l = n(533);
       Object.defineProperty(t, 'Button', {
         enumerable: !0,
         get: function() {
           return r(l).default;
         },
       });
-      var u = n(537);
+      var u = n(538);
       Object.defineProperty(t, 'Menu', {
         enumerable: !0,
         get: function() {
           return r(u).default;
         },
       });
-      var c = n(541);
+      var c = n(542);
       Object.defineProperty(t, 'LazyLoad', {
         enumerable: !0,
         get: function() {
           return r(c).default;
         },
       });
-      var d = n(550);
+      var d = n(551);
       Object.defineProperty(t, 'Comment', {
         enumerable: !0,
         get: function() {
           return r(d).default;
         },
       });
-      var f = n(556);
+      var f = n(557);
       Object.defineProperty(t, 'Player', {
         enumerable: !0,
         get: function() {
           return r(f).default;
         },
       });
-      var p = n(558);
+      var p = n(559);
       Object.defineProperty(t, 'Background', {
         enumerable: !0,
         get: function() {
           return r(p).default;
         },
       });
-      var h = n(560);
+      var h = n(561);
       Object.defineProperty(t, 'Markdown', {
         enumerable: !0,
         get: function() {
           return r(h).default;
         },
       });
-      var m = n(570);
+      var m = n(571);
       Object.defineProperty(t, 'Header', {
         enumerable: !0,
         get: function() {
           return r(m).default;
         },
       });
-      var g = n(575);
+      var g = n(576);
       Object.defineProperty(t, 'Footer', {
         enumerable: !0,
         get: function() {
@@ -371,7 +371,7 @@ webpackJsonp(
         l = n(17),
         u = r(l),
         c = n(142),
-        d = n(70),
+        d = n(69),
         f = n(143),
         p = r(f),
         h = n(217),
@@ -586,7 +586,7 @@ webpackJsonp(
       t.default = g;
     },
     251: function(e, t, n) {
-      e.exports = n(508);
+      e.exports = n(509);
     },
     253: function(e, t, n) {
       'use strict';
@@ -769,10 +769,10 @@ webpackJsonp(
         u = r(l),
         c = n(250),
         d = r(c);
-      n(503);
-      var f = n(504),
+      n(504);
+      var f = n(505),
         p = r(f),
-        h = n(505),
+        h = n(506),
         m = r(h),
         g = (0, s.default)({
           history: (0, d.default)(),
@@ -781,19 +781,19 @@ webpackJsonp(
           },
         });
       g.use((0, u.default)()),
-        g.model(n(510)),
         g.model(n(511)),
         g.model(n(512)),
-        g.router(n(513)),
+        g.model(n(513)),
+        g.router(n(514)),
         g.start('#root'),
         (0, m.default)(),
         (0, p.default)();
     },
     40: function(e, t, n) {
-      (e.exports = n(514)), (e.exports.routerRedux = n(218));
+      (e.exports = n(515)), (e.exports.routerRedux = n(218));
     },
-    503: function(e, t) {},
-    504: function(e, t, n) {
+    504: function(e, t) {},
+    505: function(e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function() {
@@ -808,7 +808,7 @@ webpackJsonp(
         }),
         (e.exports = t.default);
     },
-    505: function(e, t, n) {
+    506: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -852,7 +852,7 @@ webpackJsonp(
         });
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var i = n(506),
+      var i = n(507),
         s = r(i),
         l = n(251),
         u = r(l),
@@ -880,20 +880,20 @@ webpackJsonp(
         };
       (t.default = p), (e.exports = t.default);
     },
-    506: function(e, t, n) {
-      e.exports = { default: n(507), __esModule: !0 };
-    },
     507: function(e, t, n) {
+      e.exports = { default: n(508), __esModule: !0 };
+    },
+    508: function(e, t, n) {
       var r = n(15),
         o = r.JSON || (r.JSON = { stringify: JSON.stringify });
       e.exports = function(e) {
         return o.stringify.apply(o, arguments);
       };
     },
-    508: function(e, t, n) {
-      n(509), (e.exports = self.fetch.bind(self));
+    509: function(e, t, n) {
+      n(510), (e.exports = self.fetch.bind(self));
     },
-    509: function(e, t) {
+    510: function(e, t) {
       !(function(e) {
         'use strict';
         function t(e) {
@@ -1269,13 +1269,13 @@ webpackJsonp(
         }
       })('undefined' != typeof self ? self : this);
     },
-    510: function(e, t, n) {
+    511: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = n(75),
+      var o = n(74),
         a = r(o),
         i = n(2),
         s = r(i),
@@ -1333,13 +1333,13 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    511: function(e, t, n) {
+    512: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = n(75),
+      var o = n(74),
         a = r(o),
         i = n(2),
         s = r(i),
@@ -1400,13 +1400,13 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    512: function(e, t, n) {
+    513: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = n(75),
+      var o = n(74),
         a = r(o),
         i = n(2),
         s = r(i),
@@ -1464,7 +1464,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    513: function(e, t, n) {
+    514: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1527,14 +1527,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    514: function(e, t, n) {
+    515: function(e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var r = n(515);
+      var r = n(516);
       n.d(t, 'BrowserRouter', function() {
         return r.a;
       });
-      var o = n(516);
+      var o = n(517);
       n.d(t, 'HashRouter', function() {
         return o.a;
       });
@@ -1542,19 +1542,19 @@ webpackJsonp(
       n.d(t, 'Link', function() {
         return a.a;
       });
-      var i = n(517);
+      var i = n(518);
       n.d(t, 'MemoryRouter', function() {
         return i.a;
       });
-      var s = n(518);
+      var s = n(519);
       n.d(t, 'NavLink', function() {
         return s.a;
       });
-      var l = n(519);
+      var l = n(520);
       n.d(t, 'Prompt', function() {
         return l.a;
       });
-      var u = n(520);
+      var u = n(521);
       n.d(t, 'Redirect', function() {
         return u.a;
       });
@@ -1566,24 +1566,24 @@ webpackJsonp(
       n.d(t, 'Router', function() {
         return d.a;
       });
-      var f = n(521);
+      var f = n(522);
       n.d(t, 'StaticRouter', function() {
         return f.a;
       });
-      var p = n(522);
+      var p = n(523);
       n.d(t, 'Switch', function() {
         return p.a;
       });
-      var h = n(523);
+      var h = n(524);
       n.d(t, 'matchPath', function() {
         return h.a;
       });
-      var m = n(524);
+      var m = n(525);
       n.d(t, 'withRouter', function() {
         return m.a;
       });
     },
-    515: function(e, t, n) {
+    516: function(e, t, n) {
       'use strict';
       function r(e, t) {
         if (!(e instanceof t))
@@ -1663,7 +1663,7 @@ webpackJsonp(
       }),
         (t.a = m);
     },
-    516: function(e, t, n) {
+    517: function(e, t, n) {
       'use strict';
       function r(e, t) {
         if (!(e instanceof t))
@@ -1742,12 +1742,12 @@ webpackJsonp(
       }),
         (t.a = m);
     },
-    517: function(e, t, n) {
+    518: function(e, t, n) {
       'use strict';
       var r = n(219);
       t.a = r.a;
     },
-    518: function(e, t, n) {
+    519: function(e, t, n) {
       'use strict';
       function r(e, t) {
         var n = {};
@@ -1854,37 +1854,37 @@ webpackJsonp(
         (f.defaultProps = { activeClassName: 'active', ariaCurrent: 'true' }),
         (t.a = f);
     },
-    519: function(e, t, n) {
+    520: function(e, t, n) {
       'use strict';
       var r = n(220);
       t.a = r.a;
     },
-    520: function(e, t, n) {
+    521: function(e, t, n) {
       'use strict';
       var r = n(221);
       t.a = r.a;
     },
-    521: function(e, t, n) {
+    522: function(e, t, n) {
       'use strict';
       var r = n(224);
       t.a = r.a;
     },
-    522: function(e, t, n) {
+    523: function(e, t, n) {
       'use strict';
       var r = n(225);
       t.a = r.a;
     },
-    523: function(e, t, n) {
+    524: function(e, t, n) {
       'use strict';
       var r = n(95);
       t.a = r.a;
     },
-    524: function(e, t, n) {
+    525: function(e, t, n) {
       'use strict';
       var r = n(226);
       t.a = r.a;
     },
-    525: function(e, t, n) {
+    526: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1919,7 +1919,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    526: function(e, t, n) {
+    527: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1931,9 +1931,9 @@ webpackJsonp(
         s = r(i),
         l = n(0),
         u = r(l),
-        c = n(76),
+        c = n(75),
         d = r(c),
-        f = n(527),
+        f = n(528),
         p = r(f);
       (t.default = function(e) {
         var t = e.type,
@@ -1954,10 +1954,10 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    527: function(e, t) {
+    528: function(e, t) {
       e.exports = { svg: 'svg___3VLv1' };
     },
-    528: function(e, t, n) {
+    529: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1971,7 +1971,7 @@ webpackJsonp(
         u = r(l),
         c = n(255),
         d = r(c);
-      n(529),
+      n(530),
         (t.default = function(e) {
           var t = e.children,
             n = e.className,
@@ -1987,10 +1987,10 @@ webpackJsonp(
         }),
         (e.exports = t.default);
     },
-    529: function(e, t) {
+    530: function(e, t) {
       e.exports = { a: 'a___14is7' };
     },
-    530: function(e, t, n) {
+    531: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1999,7 +1999,7 @@ webpackJsonp(
       var o = n(0),
         a = r(o),
         i = n(22),
-        s = n(531),
+        s = n(532),
         l = r(s);
       (t.default = function(e) {
         var t = e.type,
@@ -2021,7 +2021,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    531: function(e, t) {
+    532: function(e, t) {
       e.exports = {
         box: 'box___gbRsg',
         a: 'a___2hs9I',
@@ -2029,7 +2029,7 @@ webpackJsonp(
         text: 'text___iVRdx',
       };
     },
-    532: function(e, t, n) {
+    533: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2046,7 +2046,7 @@ webpackJsonp(
         f = n(0),
         p = r(f),
         h = n(40),
-        m = n(536),
+        m = n(537),
         g = r(m);
       (t.default = function(e) {
         var t = e.children,
@@ -2082,14 +2082,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    536: function(e, t) {
+    537: function(e, t) {
       e.exports = {
         btn: 'btn___1AT52',
         anticon: 'anticon___VPXfS',
         link: 'link___VKNdX',
       };
     },
-    537: function(e, t, n) {
+    538: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2105,12 +2105,12 @@ webpackJsonp(
         d = r(c),
         f = n(5),
         p = r(f),
-        h = n(76),
+        h = n(75),
         m = r(h),
         g = n(40),
         y = n(0),
         b = r(y),
-        v = n(540),
+        v = n(541),
         _ = r(v),
         w = (function(e) {
           function t(e) {
@@ -2178,11 +2178,11 @@ webpackJsonp(
         })(b.default.Component);
       (t.default = w), (e.exports = t.default);
     },
-    538: function(e, t, n) {
-      n(539), (e.exports = n(15).Object.getPrototypeOf);
-    },
     539: function(e, t, n) {
-      var r = n(63),
+      n(540), (e.exports = n(15).Object.getPrototypeOf);
+    },
+    540: function(e, t, n) {
+      var r = n(62),
         o = n(180);
       n(239)('getPrototypeOf', function() {
         return function(e) {
@@ -2190,7 +2190,7 @@ webpackJsonp(
         };
       });
     },
-    540: function(e, t) {
+    541: function(e, t) {
       e.exports = {
         list: 'list___1ZTTW',
         icon: 'icon___1qbIH',
@@ -2200,7 +2200,7 @@ webpackJsonp(
         menu__oppenned: 'menu__oppenned___2gHdc',
       };
     },
-    541: function(e, t, n) {
+    542: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2216,7 +2216,7 @@ webpackJsonp(
         d = r(c),
         f = n(157),
         p = r(f),
-        h = n(549),
+        h = n(550),
         m = r(h);
       (t.default = function(e) {
         var t = e.children,
@@ -2254,14 +2254,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    549: function(e, t) {
+    550: function(e, t) {
       e.exports = {
         placeholder: 'placeholder___1pljn',
         lazyload: 'lazyload___1WSBN',
         a: 'a___37FqM',
       };
     },
-    550: function(e, t, n) {
+    551: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2285,7 +2285,7 @@ webpackJsonp(
       var b = n(0),
         v = r(b),
         _ = n(104),
-        w = n(555),
+        w = n(556),
         x = r(w),
         k = (function(e) {
           function t() {
@@ -2334,14 +2334,14 @@ webpackJsonp(
         })(v.default.Component);
       (t.default = k), (e.exports = t.default);
     },
-    555: function(e, t) {
+    556: function(e, t) {
       e.exports = {
         command: 'command___1wVL5',
         a: 'a___1ftaP',
         item: 'item___2wxzh',
       };
     },
-    556: function(e, t, n) {
+    557: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2361,7 +2361,7 @@ webpackJsonp(
         m = r(h),
         g = n(0),
         y = r(g),
-        b = n(557),
+        b = n(558),
         v = r(b),
         _ = (function(e) {
           function t() {
@@ -2402,21 +2402,21 @@ webpackJsonp(
         })(y.default.Component);
       (t.default = _), (e.exports = t.default);
     },
-    557: function(e, t) {
+    558: function(e, t) {
       e.exports = { video: 'video___1H9M1', a: 'a___P6jaL' };
     },
-    558: function(e, t, n) {
+    559: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = n(76),
+      var o = n(75),
         a = r(o),
         i = n(0),
         s = r(i),
         l = n(22),
-        u = n(559),
+        u = n(560),
         c = r(u);
       (t.default = function(e) {
         var t = e.location,
@@ -2436,7 +2436,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    559: function(e, t) {
+    560: function(e, t) {
       e.exports = {
         box: 'box___MV2pt',
         shape: 'shape___2Jz-V',
@@ -2447,7 +2447,7 @@ webpackJsonp(
         shape__contact: 'shape__contact___3GTll',
       };
     },
-    560: function(e, t, n) {
+    561: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2457,28 +2457,28 @@ webpackJsonp(
         a = r(o),
         i = n(0),
         s = r(i),
-        l = n(561),
+        l = n(562),
         u = r(l),
         c = n(108),
         d = r(c),
         f = n(259),
         p = r(f),
-        h = n(562),
+        h = n(563),
         m = r(h),
-        g = n(563),
+        g = n(564),
         y = r(g),
-        b = n(564),
+        b = n(565),
         v = r(b),
-        _ = n(565),
+        _ = n(566),
         w = r(_),
-        x = n(566),
+        x = n(567),
         k = r(x),
-        E = n(567),
+        E = n(568),
         P = r(E),
         j = n(40),
-        O = n(568),
+        O = n(569),
         S = r(O),
-        M = n(569),
+        M = n(570),
         C = r(M),
         T = {
           bash: m.default,
@@ -2545,7 +2545,7 @@ webpackJsonp(
         }),
         (e.exports = t.default);
     },
-    561: function(e, t, n) {
+    562: function(e, t, n) {
       (function(t) {
         (function() {
           function t(e) {
@@ -3328,7 +3328,7 @@ webpackJsonp(
         ));
       }.call(t, n(37)));
     },
-    562: function(e, t) {
+    563: function(e, t) {
       !(function(e) {
         var t = {
           variable: [
@@ -3390,7 +3390,7 @@ webpackJsonp(
           (n.punctuation = e.languages.bash.punctuation);
       })(Prism);
     },
-    563: function(e, t) {
+    564: function(e, t) {
       !(function(e) {
         (e.languages.sass = e.languages.extend('css', {
           comment: {
@@ -3440,7 +3440,7 @@ webpackJsonp(
           });
       })(Prism);
     },
-    564: function(e, t) {
+    565: function(e, t) {
       (Prism.languages.json = {
         property: /"(?:\\.|[^\\"])*"(?=\s*:)/gi,
         string: /"(?!:)(?:\\.|[^\\"])*"(?!:)/g,
@@ -3452,7 +3452,7 @@ webpackJsonp(
       }),
         (Prism.languages.jsonp = Prism.languages.json);
     },
-    565: function(e, t) {
+    566: function(e, t) {
       !(function(e) {
         var t = e.util.clone(e.languages.javascript);
         (e.languages.jsx = e.languages.extend('markup', t)),
@@ -3493,7 +3493,7 @@ webpackJsonp(
           );
       })(Prism);
     },
-    566: function(e, t) {
+    567: function(e, t) {
       (Prism.languages.markdown = Prism.languages.extend('markup', {})),
         Prism.languages.insertBefore('markdown', 'prolog', {
           blockquote: { pattern: /^>(?:[\t ]*>)*/m, alias: 'punctuation' },
@@ -3564,7 +3564,7 @@ webpackJsonp(
           Prism.languages.markdown.bold
         ));
     },
-    567: function(e, t) {
+    568: function(e, t) {
       Prism.languages.yaml = {
         scalar: {
           pattern: /([\-:]\s*(![^\s]+)?[ \t]*[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)[^\r\n]+(?:\3[^\r\n]+)*)/,
@@ -3611,7 +3611,7 @@ webpackJsonp(
         punctuation: /---|[:[\]{}\-,|>?]|\.\.\./,
       };
     },
-    568: function(e, t, n) {
+    569: function(e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 });
       var r = [
@@ -3670,7 +3670,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    569: function(e, t) {
+    570: function(e, t) {
       e.exports = {
         title: 'title___2V4YI',
         time: 'time___2_wjP',
@@ -3678,7 +3678,7 @@ webpackJsonp(
         a: 'a___A8HU2',
       };
     },
-    570: function(e, t, n) {
+    571: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3688,12 +3688,12 @@ webpackJsonp(
         a = r(o),
         i = n(0),
         s = r(i),
-        l = n(76),
+        l = n(75),
         u = r(l),
         c = n(40),
         d = n(22),
         f = n(104),
-        p = n(574),
+        p = n(575),
         h = r(p),
         m = a.default.Header;
       (t.default = function(e) {
@@ -3741,7 +3741,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    574: function(e, t) {
+    575: function(e, t) {
       e.exports = {
         header: 'header___qrS2B',
         logo: 'logo___3yoIG',
@@ -3751,7 +3751,7 @@ webpackJsonp(
         showPhone: 'showPhone___3390M',
       };
     },
-    575: function(e, t, n) {
+    576: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3864,7 +3864,7 @@ webpackJsonp(
         s = r(i),
         l = n(0),
         u = r(l),
-        c = n(76),
+        c = n(75),
         d = r(c),
         f = n(22),
         p = n(601),
@@ -4299,7 +4299,7 @@ webpackJsonp(
         w = r(_),
         x = n(8),
         k = r(x),
-        E = n(69),
+        E = n(68),
         P = r(E),
         j = n(27),
         O = r(j),
@@ -5050,7 +5050,7 @@ webpackJsonp(
         shape: 'shape___2Gtyu',
       };
     },
-    76: function(e, t, n) {
+    75: function(e, t, n) {
       var r, o;
       !(function() {
         'use strict';
@@ -5080,7 +5080,7 @@ webpackJsonp(
       })();
     },
     79: function(e, t, n) {
-      e.exports = { default: n(538), __esModule: !0 };
+      e.exports = { default: n(539), __esModule: !0 };
     },
     98: function(e, t, n) {
       'use strict';

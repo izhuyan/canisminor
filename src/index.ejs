@@ -25,6 +25,10 @@
 	<meta name="apple-mobile-web-app-title" content="CanisMinor">
 	<meta name="application-name" content="CanisMinor">
 	<meta name="theme-color" content="#ffffff">
+	<% if (process.env.NODE_ENV === 'production') { %>
+	<!--upgrade-https-->
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<% } %>
 	<!-- iconfont -->
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_399961_ceij53eslhpmygb9.css"/>
 </head>
