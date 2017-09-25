@@ -79,8 +79,9 @@ pre {
 		line-height: 1.8;
 		color: #ddd;
 		width: 100%;
+		white-space: nowrap;
 		> *{
-			white-space: nowrap;
+			white-space: inherit;
 		}
 	}
 	@include media($m-middle) {
