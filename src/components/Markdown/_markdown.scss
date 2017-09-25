@@ -68,18 +68,18 @@ pre {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-
 	> code {
 		border-radius: 0;
 		overflow: hidden;
 		overflow-x: auto;
-		-webkit-overflow-scrolling : touch;
+		-webkit-overflow-scrolling: touch;
 		background: #222;
 		padding: 1.5rem 1rem;
 		line-height: 1.8;
 		color: #ddd;
 		width: 100%;
-		*{
+		> * {
+			display: inline;
 			white-space: nowrap;
 		}
 	}
