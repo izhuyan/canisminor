@@ -2,6 +2,7 @@
 .intro {
 	border-bottom: 1px solid $c-split;
 	img {
+		@include showup;
 		max-width: 90%;
 		@include media($m-small) {
 			min-width: 90%;
