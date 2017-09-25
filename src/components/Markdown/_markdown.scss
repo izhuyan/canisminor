@@ -68,9 +68,7 @@ pre {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	* {
-		white-space: pre;
-	}
+
 	> code {
 		border-radius: 0;
 		overflow: hidden;
@@ -81,6 +79,9 @@ pre {
 		line-height: 1.8;
 		color: #ddd;
 		width: 100%;
+		> span{
+			white-space: nowrap;
+		}
 	}
 	@include media($m-middle) {
 		margin-left: -1rem;
