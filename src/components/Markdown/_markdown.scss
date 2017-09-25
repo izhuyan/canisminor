@@ -69,12 +69,13 @@ pre {
 	flex-direction: column;
 	position: relative;
 	* {
-		white-space: nowrap;
+		white-space: pre;
 	}
 	> code {
 		border-radius: 0;
 		overflow: hidden;
 		overflow-x: auto;
+		-webkit-overflow-scrolling : touch;
 		background: #222;
 		padding: 1.5rem 1rem;
 		line-height: 1.8;
