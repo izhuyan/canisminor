@@ -1,4 +1,4 @@
-import { BackTop, Layout } from 'antd';
+import { Layout } from 'antd';
 import dynamic from 'dva/dynamic';
 import { Route, Switch } from 'dva/router';
 import { Footer, Header } from '../../components';
@@ -16,7 +16,6 @@ export default ({ location }) => {
 
   return (
     <Layout className={styles.layout}>
-      <BackTop style={{ zIndex: 999 }} />
       <Header location={location} />
       <Content className={styles.content}>
         <Switch>

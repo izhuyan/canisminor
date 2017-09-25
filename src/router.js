@@ -1,5 +1,6 @@
 import { Route, Router, Switch } from 'dva/router';
 import React from 'react';
+import { BackTop } from 'antd';
 import { Background } from './components';
 import App from './routes/App';
 import Loading from './routes/Loading';
@@ -9,6 +10,7 @@ const PrimaryLayout = () => {
   return (
     <div style={{ width: '100%', position: 'relative', overflow: 'hidden' }}>
       <Route component={Loading} />
+      <BackTop style={{ zIndex: 999 }} />
       <Background location={window.location} />
       <Switch>
         <Route exact path="/" component={Splash} />

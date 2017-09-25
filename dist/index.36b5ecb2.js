@@ -1,7 +1,7 @@
 webpackJsonp(
   [5],
   {
-    144: function(e, t, n) {
+    145: function(e, t, n) {
       'use strict';
       var r = n(89);
       t.a = r.a;
@@ -12,133 +12,133 @@ webpackJsonp(
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = n(504);
+      var a = n(509);
       Object.defineProperty(t, 'Icon', {
         enumerable: !0,
         get: function() {
           return r(a).default;
         },
       });
-      var o = n(505);
+      var o = n(510);
       Object.defineProperty(t, 'SvgIcon', {
         enumerable: !0,
         get: function() {
           return r(o).default;
         },
       });
-      var i = n(507);
+      var i = n(512);
       Object.defineProperty(t, 'Typist', {
         enumerable: !0,
         get: function() {
           return r(i).default;
         },
       });
-      var s = n(509);
+      var s = n(514);
       Object.defineProperty(t, 'IntroIcon', {
         enumerable: !0,
         get: function() {
           return r(s).default;
         },
       });
-      var l = n(511);
+      var l = n(516);
       Object.defineProperty(t, 'Button', {
         enumerable: !0,
         get: function() {
           return r(l).default;
         },
       });
-      var u = n(516);
+      var u = n(521);
       Object.defineProperty(t, 'Menu', {
         enumerable: !0,
         get: function() {
           return r(u).default;
         },
       });
-      var c = n(520);
+      var c = n(525);
       Object.defineProperty(t, 'LazyLoad', {
         enumerable: !0,
         get: function() {
           return r(c).default;
         },
       });
-      var d = n(529);
+      var d = n(534);
       Object.defineProperty(t, 'Comment', {
         enumerable: !0,
         get: function() {
           return r(d).default;
         },
       });
-      var f = n(535);
+      var f = n(540);
       Object.defineProperty(t, 'Player', {
         enumerable: !0,
         get: function() {
           return r(f).default;
         },
       });
-      var p = n(537);
+      var p = n(542);
       Object.defineProperty(t, 'Background', {
         enumerable: !0,
         get: function() {
           return r(p).default;
         },
       });
-      var h = n(539);
+      var h = n(544);
       Object.defineProperty(t, 'Markdown', {
         enumerable: !0,
         get: function() {
           return r(h).default;
         },
       });
-      var m = n(549);
+      var m = n(554);
       Object.defineProperty(t, 'Header', {
         enumerable: !0,
         get: function() {
           return r(m).default;
         },
       });
-      var g = n(554);
+      var g = n(559);
       Object.defineProperty(t, 'Footer', {
         enumerable: !0,
         get: function() {
           return r(g).default;
         },
       });
-      var y = n(583);
+      var y = n(585);
       Object.defineProperty(t, 'Title', {
         enumerable: !0,
         get: function() {
           return r(y).default;
         },
       });
-      var b = n(585);
+      var b = n(587);
       Object.defineProperty(t, 'DocTitle', {
         enumerable: !0,
         get: function() {
           return r(b).default;
         },
       });
-      var _ = n(587);
+      var _ = n(589);
       Object.defineProperty(t, 'Showcase', {
         enumerable: !0,
         get: function() {
           return r(_).default;
         },
       });
-      var v = n(589);
+      var v = n(591);
       Object.defineProperty(t, 'AwardList', {
         enumerable: !0,
         get: function() {
           return r(v).default;
         },
       });
-      var x = n(591);
+      var x = n(593);
       Object.defineProperty(t, 'ExpList', {
         enumerable: !0,
         get: function() {
           return r(x).default;
         },
       });
-      var k = n(593);
+      var k = n(595);
       Object.defineProperty(t, 'ProList', {
         enumerable: !0,
         get: function() {
@@ -397,7 +397,7 @@ webpackJsonp(
     238: function(e, t, n) {
       e.exports = n(487);
     },
-    240: function(e, t, n) {
+    243: function(e, t, n) {
       'use strict';
       function r(e, t) {
         var n = {};
@@ -524,7 +524,7 @@ webpackJsonp(
         }),
         (t.a = m);
     },
-    241: function(e, t, n) {
+    244: function(e, t, n) {
       'use strict';
       var r = n(135);
       t.a = r.a;
@@ -599,7 +599,7 @@ webpackJsonp(
         (0, p.default)();
     },
     34: function(e, t, n) {
-      (e.exports = n(493)), (e.exports.routerRedux = n(205));
+      (e.exports = n(498)), (e.exports.routerRedux = n(205));
     },
     482: function(e, t) {},
     483: function(e, t, n) {
@@ -1279,18 +1279,20 @@ webpackJsonp(
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = n(34),
-        o = n(0),
-        i = r(o),
-        s = n(20),
-        l = n(603),
-        u = r(l),
-        c = n(614),
+      var a = (n(240), n(241)),
+        o = r(a),
+        i = n(34),
+        s = n(0),
+        l = r(s),
+        u = n(20),
+        c = n(605),
         d = r(c),
-        f = n(617),
+        f = n(614),
         p = r(f),
-        h = function() {
-          return i.default.createElement(
+        h = n(617),
+        m = r(h),
+        g = function() {
+          return l.default.createElement(
             'div',
             {
               style: {
@@ -1299,21 +1301,22 @@ webpackJsonp(
                 overflow: 'hidden',
               },
             },
-            i.default.createElement(a.Route, { component: d.default }),
-            i.default.createElement(s.Background, {
+            l.default.createElement(i.Route, { component: p.default }),
+            l.default.createElement(o.default, { style: { zIndex: 999 } }),
+            l.default.createElement(u.Background, {
               location: window.location,
             }),
-            i.default.createElement(
-              a.Switch,
+            l.default.createElement(
+              i.Switch,
               null,
-              i.default.createElement(a.Route, {
+              l.default.createElement(i.Route, {
                 exact: !0,
                 path: '/',
-                component: p.default,
+                component: m.default,
               }),
-              i.default.createElement(a.Route, {
+              l.default.createElement(i.Route, {
                 path: '/:name',
-                component: u.default,
+                component: d.default,
               })
             )
           );
@@ -1324,72 +1327,72 @@ webpackJsonp(
           t.listen(function() {
             return window.scrollTo(0, 0);
           }),
-          i.default.createElement(
-            a.Router,
+          l.default.createElement(
+            i.Router,
             { history: t },
-            i.default.createElement(h, null)
+            l.default.createElement(g, null)
           )
         );
       }),
         (e.exports = t.default);
     },
-    493: function(e, t, n) {
+    498: function(e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var r = n(494);
+      var r = n(499);
       n.d(t, 'BrowserRouter', function() {
         return r.a;
       });
-      var a = n(495);
+      var a = n(500);
       n.d(t, 'HashRouter', function() {
         return a.a;
       });
-      var o = n(240);
+      var o = n(243);
       n.d(t, 'Link', function() {
         return o.a;
       });
-      var i = n(496);
+      var i = n(501);
       n.d(t, 'MemoryRouter', function() {
         return i.a;
       });
-      var s = n(497);
+      var s = n(502);
       n.d(t, 'NavLink', function() {
         return s.a;
       });
-      var l = n(498);
+      var l = n(503);
       n.d(t, 'Prompt', function() {
         return l.a;
       });
-      var u = n(499);
+      var u = n(504);
       n.d(t, 'Redirect', function() {
         return u.a;
       });
-      var c = n(241);
+      var c = n(244);
       n.d(t, 'Route', function() {
         return c.a;
       });
-      var d = n(144);
+      var d = n(145);
       n.d(t, 'Router', function() {
         return d.a;
       });
-      var f = n(500);
+      var f = n(505);
       n.d(t, 'StaticRouter', function() {
         return f.a;
       });
-      var p = n(501);
+      var p = n(506);
       n.d(t, 'Switch', function() {
         return p.a;
       });
-      var h = n(502);
+      var h = n(507);
       n.d(t, 'matchPath', function() {
         return h.a;
       });
-      var m = n(503);
+      var m = n(508);
       n.d(t, 'withRouter', function() {
         return m.a;
       });
     },
-    494: function(e, t, n) {
+    499: function(e, t, n) {
       'use strict';
       function r(e, t) {
         if (!(e instanceof t))
@@ -1429,7 +1432,7 @@ webpackJsonp(
         d = n.n(c),
         f = n(237),
         p = n.n(f),
-        h = n(144),
+        h = n(145),
         m = (function(e) {
           function t() {
             var n, o, i;
@@ -1469,7 +1472,7 @@ webpackJsonp(
       }),
         (t.a = m);
     },
-    495: function(e, t, n) {
+    500: function(e, t, n) {
       'use strict';
       function r(e, t) {
         if (!(e instanceof t))
@@ -1509,7 +1512,7 @@ webpackJsonp(
         d = n.n(c),
         f = n(201),
         p = n.n(f),
-        h = n(144),
+        h = n(145),
         m = (function(e) {
           function t() {
             var n, o, i;
@@ -1548,12 +1551,12 @@ webpackJsonp(
       }),
         (t.a = m);
     },
-    496: function(e, t, n) {
+    501: function(e, t, n) {
       'use strict';
       var r = n(206);
       t.a = r.a;
     },
-    497: function(e, t, n) {
+    502: function(e, t, n) {
       'use strict';
       function r(e, t) {
         var n = {};
@@ -1566,8 +1569,8 @@ webpackJsonp(
         o = n.n(a),
         i = n(3),
         s = n.n(i),
-        l = n(241),
-        u = n(240),
+        l = n(244),
+        u = n(243),
         c =
           Object.assign ||
           function(e) {
@@ -1660,37 +1663,37 @@ webpackJsonp(
         (f.defaultProps = { activeClassName: 'active', ariaCurrent: 'true' }),
         (t.a = f);
     },
-    498: function(e, t, n) {
+    503: function(e, t, n) {
       'use strict';
       var r = n(207);
       t.a = r.a;
     },
-    499: function(e, t, n) {
+    504: function(e, t, n) {
       'use strict';
       var r = n(208);
       t.a = r.a;
     },
-    500: function(e, t, n) {
+    505: function(e, t, n) {
       'use strict';
       var r = n(211);
       t.a = r.a;
     },
-    501: function(e, t, n) {
+    506: function(e, t, n) {
       'use strict';
       var r = n(212);
       t.a = r.a;
     },
-    502: function(e, t, n) {
+    507: function(e, t, n) {
       'use strict';
       var r = n(91);
       t.a = r.a;
     },
-    503: function(e, t, n) {
+    508: function(e, t, n) {
       'use strict';
       var r = n(213);
       t.a = r.a;
     },
-    504: function(e, t, n) {
+    509: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1725,7 +1728,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    505: function(e, t, n) {
+    510: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1739,7 +1742,7 @@ webpackJsonp(
         u = r(l),
         c = n(73),
         d = r(c),
-        f = n(506),
+        f = n(511),
         p = r(f);
       (t.default = function(e) {
         var t = e.type,
@@ -1760,10 +1763,10 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    506: function(e, t) {
+    511: function(e, t) {
       e.exports = { svg: 'svg___3VLv1' };
     },
-    507: function(e, t, n) {
+    512: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1775,9 +1778,9 @@ webpackJsonp(
         s = r(i),
         l = n(0),
         u = r(l),
-        c = n(242),
+        c = n(245),
         d = r(c);
-      n(508),
+      n(513),
         (t.default = function(e) {
           var t = e.children,
             n = e.className,
@@ -1793,10 +1796,10 @@ webpackJsonp(
         }),
         (e.exports = t.default);
     },
-    508: function(e, t) {
+    513: function(e, t) {
       e.exports = { a: 'a___14is7' };
     },
-    509: function(e, t, n) {
+    514: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1805,7 +1808,7 @@ webpackJsonp(
       var a = n(0),
         o = r(a),
         i = n(20),
-        s = n(510),
+        s = n(515),
         l = r(s);
       (t.default = function(e) {
         var t = e.type,
@@ -1827,7 +1830,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    510: function(e, t) {
+    515: function(e, t) {
       e.exports = {
         box: 'box___gbRsg',
         a: 'a___2hs9I',
@@ -1835,13 +1838,13 @@ webpackJsonp(
         text: 'text___iVRdx',
       };
     },
-    511: function(e, t, n) {
+    516: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = (n(243), n(244)),
+      var a = (n(246), n(247)),
         o = r(a),
         i = n(2),
         s = r(i),
@@ -1852,7 +1855,7 @@ webpackJsonp(
         f = n(0),
         p = r(f),
         h = n(34),
-        m = n(515),
+        m = n(520),
         g = r(m);
       (t.default = function(e) {
         var t = e.children,
@@ -1888,14 +1891,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    515: function(e, t) {
+    520: function(e, t) {
       e.exports = {
         btn: 'btn___1AT52',
         anticon: 'anticon___VPXfS',
         link: 'link___VKNdX',
       };
     },
-    516: function(e, t, n) {
+    521: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -1916,7 +1919,7 @@ webpackJsonp(
         g = n(34),
         y = n(0),
         b = r(y),
-        _ = n(519),
+        _ = n(524),
         v = r(_),
         x = (function(e) {
           function t(e) {
@@ -1984,10 +1987,10 @@ webpackJsonp(
         })(b.default.Component);
       (t.default = x), (e.exports = t.default);
     },
-    517: function(e, t, n) {
-      n(518), (e.exports = n(13).Object.getPrototypeOf);
+    522: function(e, t, n) {
+      n(523), (e.exports = n(13).Object.getPrototypeOf);
     },
-    518: function(e, t, n) {
+    523: function(e, t, n) {
       var r = n(58),
         a = n(167);
       n(226)('getPrototypeOf', function() {
@@ -1996,7 +1999,7 @@ webpackJsonp(
         };
       });
     },
-    519: function(e, t) {
+    524: function(e, t) {
       e.exports = {
         list: 'list___1ZTTW',
         icon: 'icon___1qbIH',
@@ -2006,7 +2009,7 @@ webpackJsonp(
         menu__oppenned: 'menu__oppenned___2gHdc',
       };
     },
-    520: function(e, t, n) {
+    525: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2020,9 +2023,9 @@ webpackJsonp(
         u = r(l),
         c = n(0),
         d = r(c),
-        f = n(145),
+        f = n(146),
         p = r(f),
-        h = n(528),
+        h = n(533),
         m = r(h);
       (t.default = function(e) {
         var t = e.children,
@@ -2060,14 +2063,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    528: function(e, t) {
+    533: function(e, t) {
       e.exports = {
         placeholder: 'placeholder___1pljn',
         lazyload: 'lazyload___1WSBN',
         a: 'a___37FqM',
       };
     },
-    529: function(e, t, n) {
+    534: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2085,13 +2088,13 @@ webpackJsonp(
         p = r(f),
         h = n(12),
         m = r(h),
-        g = n(245),
+        g = n(248),
         y = r(g);
-      n(246);
+      n(249);
       var b = n(0),
         _ = r(b),
         v = n(97),
-        x = n(534),
+        x = n(539),
         k = r(x),
         w = (function(e) {
           function t() {
@@ -2140,14 +2143,14 @@ webpackJsonp(
         })(_.default.Component);
       (t.default = w), (e.exports = t.default);
     },
-    534: function(e, t) {
+    539: function(e, t) {
       e.exports = {
         command: 'command___1wVL5',
         a: 'a___1ftaP',
         item: 'item___2wxzh',
       };
     },
-    535: function(e, t, n) {
+    540: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2163,11 +2166,11 @@ webpackJsonp(
         d = r(c),
         f = n(12),
         p = r(f),
-        h = n(247),
+        h = n(250),
         m = r(h),
         g = n(0),
         y = r(g),
-        b = n(536),
+        b = n(541),
         _ = r(b),
         v = (function(e) {
           function t() {
@@ -2208,10 +2211,10 @@ webpackJsonp(
         })(y.default.Component);
       (t.default = v), (e.exports = t.default);
     },
-    536: function(e, t) {
+    541: function(e, t) {
       e.exports = { video: 'video___1H9M1', a: 'a___P6jaL' };
     },
-    537: function(e, t, n) {
+    542: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2222,7 +2225,7 @@ webpackJsonp(
         i = n(0),
         s = r(i),
         l = n(20),
-        u = n(538),
+        u = n(543),
         c = r(u);
       (t.default = function(e) {
         var t = e.location,
@@ -2242,7 +2245,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    538: function(e, t) {
+    543: function(e, t) {
       e.exports = {
         box: 'box___MV2pt',
         shape: 'shape___2Jz-V',
@@ -2253,7 +2256,7 @@ webpackJsonp(
         shape__contact: 'shape__contact___3GTll',
       };
     },
-    539: function(e, t, n) {
+    544: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -2263,28 +2266,28 @@ webpackJsonp(
         o = r(a),
         i = n(0),
         s = r(i),
-        l = n(540),
+        l = n(545),
         u = r(l),
         c = n(99),
         d = r(c),
-        f = n(248),
+        f = n(251),
         p = r(f),
-        h = n(541),
+        h = n(546),
         m = r(h),
-        g = n(542),
+        g = n(547),
         y = r(g),
-        b = n(543),
+        b = n(548),
         _ = r(b),
-        v = n(544),
+        v = n(549),
         x = r(v),
-        k = n(545),
+        k = n(550),
         w = r(k),
-        E = n(546),
+        E = n(551),
         P = r(E),
         j = n(34),
-        O = n(547),
+        O = n(552),
         S = r(O),
-        M = n(548),
+        M = n(553),
         C = r(M),
         N = {
           bash: m.default,
@@ -2351,7 +2354,7 @@ webpackJsonp(
         }),
         (e.exports = t.default);
     },
-    540: function(e, t, n) {
+    545: function(e, t, n) {
       (function(t) {
         (function() {
           function t(e) {
@@ -3134,7 +3137,7 @@ webpackJsonp(
         ));
       }.call(t, n(40)));
     },
-    541: function(e, t) {
+    546: function(e, t) {
       !(function(e) {
         var t = {
           variable: [
@@ -3196,7 +3199,7 @@ webpackJsonp(
           (n.punctuation = e.languages.bash.punctuation);
       })(Prism);
     },
-    542: function(e, t) {
+    547: function(e, t) {
       !(function(e) {
         (e.languages.sass = e.languages.extend('css', {
           comment: {
@@ -3246,7 +3249,7 @@ webpackJsonp(
           });
       })(Prism);
     },
-    543: function(e, t) {
+    548: function(e, t) {
       (Prism.languages.json = {
         property: /"(?:\\.|[^\\"])*"(?=\s*:)/gi,
         string: /"(?!:)(?:\\.|[^\\"])*"(?!:)/g,
@@ -3258,7 +3261,7 @@ webpackJsonp(
       }),
         (Prism.languages.jsonp = Prism.languages.json);
     },
-    544: function(e, t) {
+    549: function(e, t) {
       !(function(e) {
         var t = e.util.clone(e.languages.javascript);
         (e.languages.jsx = e.languages.extend('markup', t)),
@@ -3299,7 +3302,7 @@ webpackJsonp(
           );
       })(Prism);
     },
-    545: function(e, t) {
+    550: function(e, t) {
       (Prism.languages.markdown = Prism.languages.extend('markup', {})),
         Prism.languages.insertBefore('markdown', 'prolog', {
           blockquote: { pattern: /^>(?:[\t ]*>)*/m, alias: 'punctuation' },
@@ -3370,7 +3373,7 @@ webpackJsonp(
           Prism.languages.markdown.bold
         ));
     },
-    546: function(e, t) {
+    551: function(e, t) {
       Prism.languages.yaml = {
         scalar: {
           pattern: /([\-:]\s*(![^\s]+)?[ \t]*[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)[^\r\n]+(?:\3[^\r\n]+)*)/,
@@ -3417,7 +3420,7 @@ webpackJsonp(
         punctuation: /---|[:[\]{}\-,|>?]|\.\.\./,
       };
     },
-    547: function(e, t, n) {
+    552: function(e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 });
       var r = [
@@ -3476,7 +3479,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    548: function(e, t) {
+    553: function(e, t) {
       e.exports = {
         title: 'title___2V4YI',
         time: 'time___2_wjP',
@@ -3484,7 +3487,7 @@ webpackJsonp(
         a: 'a___A8HU2',
       };
     },
-    549: function(e, t, n) {
+    554: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3499,7 +3502,7 @@ webpackJsonp(
         c = n(34),
         d = n(20),
         f = n(97),
-        p = n(553),
+        p = n(558),
         h = r(p),
         m = o.default.Header;
       (t.default = function(e) {
@@ -3547,7 +3550,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    553: function(e, t) {
+    558: function(e, t) {
       e.exports = {
         header: 'header___qrS2B',
         logo: 'logo___3yoIG',
@@ -3557,20 +3560,20 @@ webpackJsonp(
         showPhone: 'showPhone___3390M',
       };
     },
-    554: function(e, t, n) {
+    559: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = (n(249), n(250)),
+      var a = (n(252), n(253)),
         o = r(a),
         i = (n(95), n(96)),
         s = r(i),
         l = n(0),
         u = r(l),
         c = n(20),
-        d = n(582),
+        d = n(584),
         f = r(d),
         p = s.default.Footer;
       (t.default = function() {
@@ -3648,7 +3651,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    582: function(e, t) {
+    584: function(e, t) {
       e.exports = {
         footer: 'footer___3E6F3',
         text: 'text___3N47T',
@@ -3658,7 +3661,7 @@ webpackJsonp(
         icon: 'icon___2IAFt',
       };
     },
-    583: function(e, t, n) {
+    585: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3673,7 +3676,7 @@ webpackJsonp(
         c = n(73),
         d = r(c),
         f = n(20),
-        p = n(584),
+        p = n(586),
         h = r(p);
       (t.default = function(e) {
         var t = e.className,
@@ -3698,14 +3701,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    584: function(e, t) {
+    586: function(e, t) {
       e.exports = {
         a: 'a___3ozTR',
         desc: 'desc___3odeK',
         title: 'title___2slEc',
       };
     },
-    585: function(e, t, n) {
+    587: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3714,7 +3717,7 @@ webpackJsonp(
       var a = n(0),
         o = r(a),
         i = n(20),
-        s = n(586),
+        s = n(588),
         l = r(s);
       (t.default = function(e) {
         var t = e.content;
@@ -3736,7 +3739,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    586: function(e, t) {
+    588: function(e, t) {
       e.exports = {
         header: 'header___V3SXm',
         icon: 'icon___2kDkh',
@@ -3744,7 +3747,7 @@ webpackJsonp(
         desc: 'desc___3oMWO',
       };
     },
-    587: function(e, t, n) {
+    589: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3752,7 +3755,7 @@ webpackJsonp(
       Object.defineProperty(t, '__esModule', { value: !0 });
       var a = n(0),
         o = r(a),
-        i = n(588),
+        i = n(590),
         s = r(i);
       (t.default = function(e) {
         var t = e.content;
@@ -3779,7 +3782,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    588: function(e, t) {
+    590: function(e, t) {
       e.exports = {
         showcase: 'showcase___VMedK',
         item: 'item___k3_H9',
@@ -3787,7 +3790,7 @@ webpackJsonp(
         desc: 'desc___dtTly',
       };
     },
-    589: function(e, t, n) {
+    591: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3796,7 +3799,7 @@ webpackJsonp(
       var a = n(0),
         o = r(a),
         i = n(20),
-        s = n(590),
+        s = n(592),
         l = r(s);
       (t.default = function(e) {
         var t = e.content,
@@ -3826,14 +3829,14 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    590: function(e, t) {
+    592: function(e, t) {
       e.exports = {
         list: 'list___3KrbT',
         item: 'item___2QF94',
         desc: 'desc___Me-Qx',
       };
     },
-    591: function(e, t, n) {
+    593: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
@@ -3855,7 +3858,7 @@ webpackJsonp(
       var o = n(0),
         i = r(o),
         s = n(20),
-        l = n(592),
+        l = n(594),
         u = r(l);
       (t.default = function(e) {
         var t = e.content,
@@ -3901,7 +3904,7 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    592: function(e, t) {
+    594: function(e, t) {
       e.exports = {
         item: 'item___6J1AM',
         img: 'img___1aFHt',
@@ -3911,20 +3914,20 @@ webpackJsonp(
         desc: 'desc___mAPao',
       };
     },
-    593: function(e, t, n) {
+    595: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = (n(254), n(255)),
+      var a = (n(257), n(258)),
         o = r(a),
         i = n(0),
         s = r(i),
         l = n(99),
         u = r(l),
         c = n(20),
-        d = n(602),
+        d = n(604),
         f = r(d),
         p = o.default.Panel;
       (t.default = function(e) {
@@ -3985,97 +3988,94 @@ webpackJsonp(
       }),
         (e.exports = t.default);
     },
-    602: function(e, t) {
+    604: function(e, t) {
       e.exports = { title: 'title___3jlEc', num: 'num___wSf6O' };
     },
-    603: function(e, t, n) {
+    605: function(e, t, n) {
       'use strict';
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var a = (n(257), n(258)),
+      var a = (n(95), n(96)),
         o = r(a),
-        i = (n(95), n(96)),
+        i = n(0),
         s = r(i),
-        l = n(0),
+        l = n(606),
         u = r(l),
-        c = n(606),
-        d = r(c),
-        f = n(34),
-        p = n(20),
-        h = n(611),
+        c = n(34),
+        d = n(20),
+        f = n(611),
+        p = r(f),
+        h = n(613),
         m = r(h),
-        g = n(613),
-        y = r(g),
-        b = s.default.Content;
+        g = o.default.Content;
       (t.default = function(e) {
         var t = e.location,
-          r = (0, d.default)({
+          r = (0, u.default)({
             component: function() {
               return n.e(0).then(n.bind(null, 620));
             },
           }),
-          a = (0, d.default)({
+          a = (0, u.default)({
             component: function() {
               return n.e(1).then(n.bind(null, 621));
             },
           }),
-          i = (0, d.default)({
+          i = (0, u.default)({
             component: function() {
               return n.e(2).then(n.bind(null, 622));
             },
           }),
-          l = (0, d.default)({
+          l = (0, u.default)({
             component: function() {
               return n.e(4).then(n.bind(null, 623));
             },
           }),
-          c = (0, d.default)({
+          f = (0, u.default)({
             component: function() {
               return n.e(3).then(n.bind(null, 624));
             },
           });
-        return u.default.createElement(
-          s.default,
-          { className: y.default.layout },
-          u.default.createElement(o.default, { style: { zIndex: 999 } }),
-          u.default.createElement(p.Header, { location: t }),
-          u.default.createElement(
-            b,
-            { className: y.default.content },
-            u.default.createElement(
-              f.Switch,
+        return s.default.createElement(
+          o.default,
+          { className: m.default.layout },
+          s.default.createElement(d.Header, { location: t }),
+          s.default.createElement(
+            g,
+            { className: m.default.content },
+            s.default.createElement(
+              c.Switch,
               null,
-              u.default.createElement(f.Route, {
+              s.default.createElement(c.Route, {
                 exact: !0,
                 path: '/about',
                 component: r,
               }),
-              u.default.createElement(f.Route, {
+              s.default.createElement(c.Route, {
                 exact: !0,
                 path: '/blog',
                 component: l,
               }),
-              u.default.createElement(f.Route, {
+              s.default.createElement(c.Route, {
                 exact: !0,
                 path: '/blog/:name',
-                component: c,
+                component: f,
               }),
-              u.default.createElement(f.Route, {
+              s.default.createElement(c.Route, {
                 exact: !0,
                 path: '/project',
                 component: a,
               }),
-              u.default.createElement(f.Route, {
+              s.default.createElement(c.Route, {
                 exact: !0,
                 path: '/contact',
                 component: i,
               }),
-              u.default.createElement(f.Route, { component: m.default })
+              s.default.createElement(c.Route, { component: p.default })
             )
           ),
-          u.default.createElement(p.Footer, null)
+          s.default.createElement(d.Footer, null)
         );
       }),
         (e.exports = t.default);
@@ -4741,7 +4741,7 @@ webpackJsonp(
       })();
     },
     75: function(e, t, n) {
-      e.exports = { default: n(517), __esModule: !0 };
+      e.exports = { default: n(522), __esModule: !0 };
     },
     94: function(e, t, n) {
       'use strict';
