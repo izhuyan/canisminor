@@ -1,5 +1,5 @@
-import { DocTitle, SvgIcon, LazyLoad } from '../../components';
-import { feSkillList, homeToc } from '../../config';
+import {DocTitle, SvgIcon, LazyLoad} from '../../components';
+import {feSkillList, homeToc} from '../../config';
 import styles from './intro_8.scss';
 
 export default () => {
@@ -12,7 +12,13 @@ export default () => {
   return (
     <div className={styles.intro}>
       <DocTitle content={homeToc[5]} />
-      <LazyLoad className={styles.box}>{feSkillList.map(Item)}</LazyLoad>
+      <LazyLoad className={styles.box}>
+        {feSkillList.map(Item)}
+        <div className={styles.item}>
+          <span className={styles.emoji} role="img" aria-label="nail_care">💅</span>
+          Styled Components
+        </div>
+      </LazyLoad>
     </div>
   );
 };

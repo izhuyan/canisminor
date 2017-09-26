@@ -1,11 +1,11 @@
-import { Layout, Popover } from 'antd';
-import { Icon } from '../../components';
+import {Layout, Popover} from 'antd';
+import {Icon} from '../../components';
 import styles from './index.scss';
 
-const { Footer } = Layout;
+const {Footer} = Layout;
 
 export default () => {
-  const SocialIcon = ({ type, href }) => {
+  const SocialIcon = ({type, href}) => {
     return (
       <a href={href} target="_blank" rel="noopener">
         <Icon className={styles.icon} type={`social-${type}`} />

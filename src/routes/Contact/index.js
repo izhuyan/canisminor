@@ -1,4 +1,4 @@
-import { Comment, Title } from '../../components';
+import {Comment, Title} from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 

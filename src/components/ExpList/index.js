@@ -1,7 +1,7 @@
-import { LazyLoad } from '../';
+import {LazyLoad} from '../';
 import styles from './index.scss';
 
-export default ({ content }) => {
+export default ({content}) => {
   const Item = (item, key) => (
     <LazyLoad className={styles.item} key={key}>
       <div

@@ -1,6 +1,6 @@
 import fetch from 'dva/fetch';
 import wx from 'weixin-jsapi';
-import { checkStatus, parseJSON } from './request';
+import {checkStatus, parseJSON} from './request';
 
 function wxConfig(data) {
   wx.config({
@@ -54,7 +54,7 @@ const wxSign = () => {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ url: window.location.href.split('#')[0] }),
+    body: JSON.stringify({url: window.location.href.split('#')[0]}),
   };
 
   fetch('https://canisminor.cc/api/wechat/sign', fetchOpt)

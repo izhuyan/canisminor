@@ -129,17 +129,16 @@ const feSkillList = [
   { icon: 'webpack', title: 'Webpack' },
   { icon: 'react', title: 'React' },
   { icon: 'vue', title: 'Vue' },
-  { icon: 'angular', title: 'Angular' },
   { icon: 'es6', title: 'ES6' },
-  { icon: 'sass', title: 'SASS' },
-  { icon: 'less', title: 'LESS' },
-  { icon: 'postCss', title: 'postCSS' },
   { icon: 'gulp', title: 'Gulp' },
   { icon: 'yarn', title: 'Yarn' },
   { icon: 'makdown', title: 'Markdown' },
   { icon: 'nodeJs', title: 'NodeJS' },
   { icon: 'jekyll', title: 'Jekyll' },
   { icon: 'hexo', title: 'Hexp' },
+  { icon: 'sass', title: 'SASS' },
+  { icon: 'less', title: 'LESS' },
+  { icon: 'postCss', title: 'postCSS' },
 ];
 
 const gitment = {

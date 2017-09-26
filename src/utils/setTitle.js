@@ -1,3 +1,3 @@
-export default title => {
+export default (title) => {
   document.title = `${title} - CanisMinor`;
 };

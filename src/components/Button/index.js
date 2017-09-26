@@ -1,8 +1,8 @@
-import { Button, Icon } from 'antd';
-import { Link } from 'dva/router';
+import {Button, Icon} from 'antd';
+import {Link} from 'dva/router';
 import styles from './index.scss';
 
-export default ({ children, url, to, ...other }) => {
+export default ({children, url, to, ...other}) => {
   let Btn = (
     <Button
       className={styles.btn}

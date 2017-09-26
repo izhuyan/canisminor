@@ -1,5 +1,5 @@
-import { IntroIcon, LazyLoad } from '../../components';
-import { homeToc } from '../../config';
+import {IntroIcon, LazyLoad} from '../../components';
+import {homeToc} from '../../config';
 import styles from './intro_2.scss';
 
 export default () => {

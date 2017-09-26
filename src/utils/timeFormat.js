@@ -13,7 +13,7 @@ const monthEN = [
   'Dec',
 ];
 
-export default str => {
+export default (str) => {
   if (str === '') return;
   let date;
 

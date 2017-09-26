@@ -6,7 +6,7 @@ export default () => {
       <h1>404</h1>
       <div>
         Ops, page not found{' '}
-        <span role="img" aria-label="ROFL">
+        <span role="img" aria-label="rolling_on_the_floor_laughing">
           🤣
         </span>
       </div>

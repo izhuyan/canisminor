@@ -1,5 +1,5 @@
-import { DocTitle, LazyLoad } from '../../components';
-import { homeToc, vdSkillList } from '../../config';
+import {DocTitle, LazyLoad} from '../../components';
+import {homeToc, vdSkillList} from '../../config';
 import styles from './intro_7.scss';
 
 export default () => {

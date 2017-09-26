@@ -1,7 +1,7 @@
-import { Icon, LazyLoad } from '../';
+import {Icon, LazyLoad} from '../';
 import styles from './index.scss';
 
-export default ({ content }) => {
+export default ({content}) => {
   return (
     <LazyLoad className={styles.header}>
       <div className={styles.icon}>

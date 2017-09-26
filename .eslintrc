@@ -22,6 +22,7 @@
 		"react/no-array-index-key": [0],
 		"react/no-multi-comp": [0],
 		// no
+		"no-mixed-spaces-and-tabs": [0],
 		"no-prototype-builtins": [0],
 		"no-unused-expressions": [0],
 		"no-plusplus": [0],
@@ -60,6 +61,7 @@
 	},
 	"globals": {
 		"window": true,
-		"document": true
+		"document": true,
+		"navigator": true
 	}
 }
