@@ -1,5 +1,8 @@
 import 'classnames';
 import 'dva';
+import 'dva/router';
+import 'dva/fetch';
+import 'mobx-react';
 import 'dva-loading';
 import 'history';
 import 'path';
