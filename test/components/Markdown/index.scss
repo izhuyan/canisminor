@@ -1,0 +1,48 @@
+@import "var";
+
+:global {
+  @import "prism";
+
+  .lang-white {
+    background: #fff !important;
+    box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
+    color: #666 !important;
+
+    * {
+      color: #666 !important;
+    }
+  }
+}
+
+.title {
+  border: none !important;
+  color: #222;
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: center;
+  @include media($m-middle) {
+    font-size: 1.8rem;
+  }
+}
+
+.time {
+  color: #999;
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+
+  > span {
+    font-size: .9em;
+  }
+}
+
+.markdown {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: relative;
+  width: 100%;
+  @import "markdown";
+  @import "extra";
+}

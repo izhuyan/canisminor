@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+> * {
+  @include showup;
+}
+
+a {
+  color: darken($c-primary, 15%);
+  translate: color .5s ease-out;
+
+  &:hover {
+    color: $c-primary;
+  }
+}
+
+> p,
+pre,
+img,
+blockquote,
+ul,
+ol {
+  margin-bottom: 1.5rem;
+}
+
+p,
+li {
+  line-height: 1.8;
+}
+
+li {
+  padding-left: 1.5rem;
+
+  &:before {
+    content: "◆";
+    font-size: .5em;
+    margin-left: -1.5rem;
+    margin-top: .3rem;
+    opacity: .5;
+    position: absolute;
+  }
+
+  & + li {
+    margin-top: .5rem;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  > p {
+    display: inline;
+  }
+}
+
+strong {
+  color: #333;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+code {
+  $code-color: desaturate($c-primary, 60%);
+  background: rgba($code-color, 0.12);
+  border-radius: 3px;
+  color: darken($code-color, 40%);
+  font-family: $font-code;
+  font-size: .8em;
+  font-weight: 400;
+  padding: .2em .4em;
+}
+
+blockquote {
+  border-left: 4px solid $c-primary;
+  padding-left: 1.5rem;
+  width: 100%;
+
+  * {
+    color: #888;
+  }
+}
+
+pre {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  > code {
+    background: #222;
+    border-radius: 0;
+    color: #ddd;
+    line-height: 1.8;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    padding: 1.5rem 1rem;
+    width: 100%;
+
+    > * {
+      display: inline;
+      white-space: nowrap;
+    }
+  }
+  @include media($m-middle) {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  margin-top: 6rem;
+}
+
+h3,
+h4 {
+  margin-top: 4rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+
+  &:after {
+    color: #e3e3e3;
+    content: " #";
+  }
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 2px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-family: $font-code;
+  font-size: .9em;
+  height: 1.2em;
+  line-height: 1.2em;
+  padding: 0 .4em 1.3em;
+}
+
+table {
+  border: 2px solid #eee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+thead {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+  color: #333;
+}
+
+th {
+  font-weight: 600;
+}
+
+th,
+td {
+  border: .5px solid #f8f8f8;
+  padding: 1rem;
+}

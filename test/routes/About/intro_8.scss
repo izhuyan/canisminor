@@ -1,0 +1,37 @@
+@import "var";
+
+.intro {
+  border-bottom: 1px solid $c-split;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 8rem;
+  max-width: 900px;
+}
+
+.item {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  font-size: 20px;
+  height: 54px;
+  margin: 20px 12px;
+  padding-left: .5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  height: 48px;
+  margin-right: .5rem;
+  width: 48px;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin: .5rem;
+}

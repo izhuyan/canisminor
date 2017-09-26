@@ -1,0 +1,72 @@
+@import "var";
+
+.intro {
+  border-bottom: 1px solid $c-split;
+}
+
+.school {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  @include media($m-middle) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  color: $c-primary;
+  font-size: 72px;
+  margin-right: 3rem;
+  @include media($m-middle) {
+    font-size: 70px;
+    margin-right: 0;
+  }
+  @include media($m-small) {
+    font-size: 60px;
+  }
+}
+
+.content {
+  @include media($m-middle) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  color: #222;
+  font-size: 2rem;
+}
+
+.desc {
+  letter-spacing: .2px;
+  line-height: 1.4;
+  margin-top: .5rem;
+  max-width: 450px;
+  @include media($m-middle) {
+    text-align: center;
+  }
+}
+
+.awards {
+  border-top: 1px solid $c-split;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  padding-top: 6rem;
+  width: 80%;
+  @include media($m-middle) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

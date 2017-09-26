@@ -1,0 +1,63 @@
+@import "var";
+
+.header {
+  align-items: center;
+  background: transparent;
+  color: #222;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  width: 100%;
+  @include media($m-large) {
+    padding: 0 24px;
+  }
+  @include media($m-middle) {
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 0 16px;
+  }
+}
+
+.logo {
+  font-size: 88px !important;
+  @include media($m-middle) {
+    font-size: 72px !important;
+  }
+}
+
+.item {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #222;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 48px;
+  line-height: 48px;
+  margin-left: -1px;
+  padding: 0 32px;
+
+  &:last-child {
+    background: $c-primary;
+    border-color: transparent;
+  }
+
+  &__active,
+  &:hover {
+    background: #222 !important;
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.showDesktop {
+  @include media($m-middle) {
+    display: none !important;
+  }
+}
+
+.showPhone {
+  display: none;
+  @include media($m-middle) {
+    display: block;
+  }
+}

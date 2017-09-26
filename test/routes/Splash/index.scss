@@ -1,0 +1,58 @@
+@import "var";
+
+.splash {
+  @include showup;
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  background: url("/img/loader.gif") no-repeat center 0;
+  background-size: 100% auto;
+  cursor: pointer;
+  height: 155px;
+  width: 120px;
+
+  &:hover {
+    .splash-text-glow:before {
+      opacity: 1;
+    }
+  }
+}
+
+.text {
+  color: #222;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 3rem;
+  line-height: 120%;
+  margin-top: 4rem;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    .shape:before {
+      opacity: 1;
+    }
+  }
+}
+
+.shape:before {
+  color: $c-primary;
+  content: "〃";
+  display: block;
+  font-size: 3rem;
+  opacity: 0;
+  position: absolute;
+  right: 0.8rem;
+  top: 1.5rem;
+  transition: 0.25s ease-in-out;
+}

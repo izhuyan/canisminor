@@ -1,0 +1,11 @@
+@import "var";
+
+:global {
+  @import "plyr";
+}
+
+.video {
+  background: #222;
+  margin-bottom: 4rem;
+  max-width: 100%;
+}
