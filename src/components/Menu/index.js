@@ -21,14 +21,14 @@ export default class extends Component {
 				children={item.title}
 			/>
 		));
-
-		const classConfig = classnames.bind(styles)(
-			{[styles.opened]: this.state.open}
-		);
+		const classConfig = classnames.bind(styles)({
+				[styles.opened]: this.state.open,
+				[styles.os] : /(iPhone|iPad|iPod|iOS|Safari)/i.test(navigator.userAgent)
+			});
 
 		return (
 			<div className={classConfig} onClick={this.onClick}>
-				<div className={styles.menu}>{this.state.open?menuList:''}</div>
+				<div className={styles.menu}>{menuList}</div>
 				<div className={styles.icon}>
 					<div className={styles.cls}/>
 					<div className={styles.cls}/>
