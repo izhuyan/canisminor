@@ -37,144 +37,97 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [
-  ['common.25a110f6.css', '25a110f6f8434d1e9737bb563790818c'],
-  ['common.ea2b12b193ecf908ffd1.js', '24e7164aafa681afe124828244b7ed68'],
-  ['favicons/android-chrome-192x192.png', '0701c735171badf204c9f2b2846b6107'],
-  ['favicons/android-chrome-256x256.png', 'd5bb0f033fc146bdc4a5f00279f251ed'],
-  ['favicons/apple-touch-icon.png', 'e65ea0a45b194e770e86fbdcee3f9b24'],
-  ['favicons/browserconfig.xml', 'a493ba0aa0b8ec8068d786d7248bb92c'],
-  ['favicons/favicon-16x16.png', 'a0d005a8b7e0811d8e95dfd600792923'],
-  ['favicons/favicon-32x32.png', '0085f6da5965d8aba512404c8bda4624'],
-  ['favicons/favicon.ico', '9f0bfcb5cd11383bf5032beee6fcddff'],
-  ['favicons/mstile-150x150.png', 'cc46908fbcd3b4df83066cdf9d4e1e72'],
-  ['favicons/safari-pinned-tab.svg', '62d15dc72f9819393ce4c11e048f975e'],
-  ['font/Futura.eot', '5ff863b5d8a7319a48a00cdd7c609dc3'],
-  ['font/Futura.svg', 'c7626a61c9f68c8035df2dfea5905a9f'],
-  ['font/Futura.ttf', '00ae294b4368101110b5bd02f4d958b0'],
-  ['font/Futura.woff', 'ed5846396d72ba22fd4ee2198c1accd6'],
-  ['font/Futura.woff2', '8c49dd54c5b3171078a6068414991208'],
-  ['font/FuturaBold.eot', 'aa2cb9a2264862e5d0f01c504c9a1f27'],
-  ['font/FuturaBold.svg', 'e3ecdfb582b07aee8d90f6996390d461'],
-  ['font/FuturaBold.ttf', '87b13627efa05905c8f6a594cf475c98'],
-  ['font/FuturaBold.woff', '347897c258691852ef464b33e98497a3'],
-  ['font/FuturaBold.woff2', '172481a5ba7ac24861fbcfbb9af0e627'],
-  ['font/font-spider.html', '47f89c25eace56425969ff15b3dffbb8'],
-  ['img/exp-1.png', '7c0ccda004b67706e9f4ebe4b6339045'],
-  ['img/exp-2.png', '4350cc9f4d771256dac153f449b2388d'],
-  ['img/exp-3.png', '263bba057cb4188ebca74bf69ce79f87'],
-  ['img/loader.gif', '7170f0d9bc74b828703a76bac3ef98d0'],
-  ['img/logo.gif', 'fa0ed7847faef1fcec8f1b938bb8bec3'],
-  ['img/por-1.png', '6dff3da514c59bf468e50517539f3737'],
-  ['img/pro-1.png', '917a4ea7807d46e514fef442a14c64ab'],
-  ['img/pro-avatar.png', '4c76eb689e7437133fd4cd472b95342c'],
-  ['img/spec-1.png', 'd7110d1fa8d0c8bf710bc8a725de5949'],
-  ['img/spec-2.png', 'da14a3389cf7582cef82be36c46acb0f'],
-  ['img/spec-3-1.png', 'af007a6ec9837c54247fcd077c88e730'],
-  ['img/spec-3-2.png', 'abf1120e724730dfa78f026b95b37f6c'],
-  ['img/wechat.png', '37ac864c9d4c56ca2e863feb46db5248'],
-];
-var cacheName =
-  'sw-precache-v3-sw-precache-' +
-  (self.registration ? self.registration.scope : '');
+var precacheConfig = [["common.25a110f6.css","25a110f6f8434d1e9737bb563790818c"],["common.b0856d03b1f4eaf329aa.js","31c069a5f9b6c43d4e946085148f2ef6"],["favicons/android-chrome-192x192.png","0701c735171badf204c9f2b2846b6107"],["favicons/android-chrome-256x256.png","d5bb0f033fc146bdc4a5f00279f251ed"],["favicons/apple-touch-icon.png","e65ea0a45b194e770e86fbdcee3f9b24"],["favicons/browserconfig.xml","a493ba0aa0b8ec8068d786d7248bb92c"],["favicons/favicon-16x16.png","a0d005a8b7e0811d8e95dfd600792923"],["favicons/favicon-32x32.png","0085f6da5965d8aba512404c8bda4624"],["favicons/favicon.ico","9f0bfcb5cd11383bf5032beee6fcddff"],["favicons/mstile-150x150.png","cc46908fbcd3b4df83066cdf9d4e1e72"],["favicons/safari-pinned-tab.svg","62d15dc72f9819393ce4c11e048f975e"],["font/Futura.eot","5ff863b5d8a7319a48a00cdd7c609dc3"],["font/Futura.svg","c7626a61c9f68c8035df2dfea5905a9f"],["font/Futura.ttf","00ae294b4368101110b5bd02f4d958b0"],["font/Futura.woff","ed5846396d72ba22fd4ee2198c1accd6"],["font/Futura.woff2","8c49dd54c5b3171078a6068414991208"],["font/FuturaBold.eot","aa2cb9a2264862e5d0f01c504c9a1f27"],["font/FuturaBold.svg","e3ecdfb582b07aee8d90f6996390d461"],["font/FuturaBold.ttf","87b13627efa05905c8f6a594cf475c98"],["font/FuturaBold.woff","347897c258691852ef464b33e98497a3"],["font/FuturaBold.woff2","172481a5ba7ac24861fbcfbb9af0e627"],["font/font-spider.html","47f89c25eace56425969ff15b3dffbb8"],["img/exp-1.png","7c0ccda004b67706e9f4ebe4b6339045"],["img/exp-2.png","4350cc9f4d771256dac153f449b2388d"],["img/exp-3.png","263bba057cb4188ebca74bf69ce79f87"],["img/loader.gif","7170f0d9bc74b828703a76bac3ef98d0"],["img/logo.gif","fa0ed7847faef1fcec8f1b938bb8bec3"],["img/por-1.png","6dff3da514c59bf468e50517539f3737"],["img/pro-1.png","917a4ea7807d46e514fef442a14c64ab"],["img/pro-avatar.png","4c76eb689e7437133fd4cd472b95342c"],["img/spec-1.png","d7110d1fa8d0c8bf710bc8a725de5949"],["img/spec-2.png","da14a3389cf7582cef82be36c46acb0f"],["img/spec-3-1.png","af007a6ec9837c54247fcd077c88e730"],["img/spec-3-2.png","abf1120e724730dfa78f026b95b37f6c"],["img/wechat.png","37ac864c9d4c56ca2e863feb46db5248"]];
+var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
+
 
 var ignoreUrlParametersMatching = [/^utm_/];
 
-var addDirectoryIndex = function(originalUrl, index) {
-  var url = new URL(originalUrl);
-  if (url.pathname.slice(-1) === '/') {
-    url.pathname += index;
-  }
-  return url.toString();
-};
 
-var cleanResponse = function(originalResponse) {
-  // If this is not a redirected response, then we don't have to do anything.
-  if (!originalResponse.redirected) {
-    return Promise.resolve(originalResponse);
-  }
 
-  // Firefox 50 and below doesn't support the Response.body stream, so we may
-  // need to read the entire body to memory as a Blob.
-  var bodyPromise =
-    'body' in originalResponse
-      ? Promise.resolve(originalResponse.body)
-      : originalResponse.blob();
+var addDirectoryIndex = function (originalUrl, index) {
+    var url = new URL(originalUrl);
+    if (url.pathname.slice(-1) === '/') {
+      url.pathname += index;
+    }
+    return url.toString();
+  };
 
-  return bodyPromise.then(function(body) {
-    // new Response() is happy when passed either a stream or a Blob.
-    return new Response(body, {
-      headers: originalResponse.headers,
-      status: originalResponse.status,
-      statusText: originalResponse.statusText,
-    });
-  });
-};
+var cleanResponse = function (originalResponse) {
+    // If this is not a redirected response, then we don't have to do anything.
+    if (!originalResponse.redirected) {
+      return Promise.resolve(originalResponse);
+    }
 
-var createCacheKey = function(
-  originalUrl,
-  paramName,
-  paramValue,
-  dontCacheBustUrlsMatching
-) {
-  // Create a new URL object to avoid modifying originalUrl.
-  var url = new URL(originalUrl);
+    // Firefox 50 and below doesn't support the Response.body stream, so we may
+    // need to read the entire body to memory as a Blob.
+    var bodyPromise = 'body' in originalResponse ?
+      Promise.resolve(originalResponse.body) :
+      originalResponse.blob();
 
-  // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
-  // then add in the extra cache-busting URL parameter.
-  if (
-    !dontCacheBustUrlsMatching ||
-    !url.pathname.match(dontCacheBustUrlsMatching)
-  ) {
-    url.search +=
-      (url.search ? '&' : '') +
-      encodeURIComponent(paramName) +
-      '=' +
-      encodeURIComponent(paramValue);
-  }
-
-  return url.toString();
-};
-
-var isPathWhitelisted = function(whitelist, absoluteUrlString) {
-  // If the whitelist is empty, then consider all URLs to be whitelisted.
-  if (whitelist.length === 0) {
-    return true;
-  }
-
-  // Otherwise compare each path regex to the path of the URL passed in.
-  var path = new URL(absoluteUrlString).pathname;
-  return whitelist.some(function(whitelistedPathRegex) {
-    return path.match(whitelistedPathRegex);
-  });
-};
-
-var stripIgnoredUrlParameters = function(
-  originalUrl,
-  ignoreUrlParametersMatching
-) {
-  var url = new URL(originalUrl);
-  // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
-  url.hash = '';
-
-  url.search = url.search
-    .slice(1) // Exclude initial '?'
-    .split('&') // Split into an array of 'key=value' strings
-    .map(function(kv) {
-      return kv.split('='); // Split each 'key=value' string into a [key, value] array
-    })
-    .filter(function(kv) {
-      return ignoreUrlParametersMatching.every(function(ignoredRegex) {
-        return !ignoredRegex.test(kv[0]); // Return true iff the key doesn't match any of the regexes.
+    return bodyPromise.then(function(body) {
+      // new Response() is happy when passed either a stream or a Blob.
+      return new Response(body, {
+        headers: originalResponse.headers,
+        status: originalResponse.status,
+        statusText: originalResponse.statusText
       });
-    })
-    .map(function(kv) {
-      return kv.join('='); // Join each [key, value] array into a 'key=value' string
-    })
-    .join('&'); // Join the array of 'key=value' strings into a string with '&' in between each
+    });
+  };
 
-  return url.toString();
-};
+var createCacheKey = function (originalUrl, paramName, paramValue,
+                           dontCacheBustUrlsMatching) {
+    // Create a new URL object to avoid modifying originalUrl.
+    var url = new URL(originalUrl);
+
+    // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
+    // then add in the extra cache-busting URL parameter.
+    if (!dontCacheBustUrlsMatching ||
+        !(url.pathname.match(dontCacheBustUrlsMatching))) {
+      url.search += (url.search ? '&' : '') +
+        encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
+    }
+
+    return url.toString();
+  };
+
+var isPathWhitelisted = function (whitelist, absoluteUrlString) {
+    // If the whitelist is empty, then consider all URLs to be whitelisted.
+    if (whitelist.length === 0) {
+      return true;
+    }
+
+    // Otherwise compare each path regex to the path of the URL passed in.
+    var path = (new URL(absoluteUrlString)).pathname;
+    return whitelist.some(function(whitelistedPathRegex) {
+      return path.match(whitelistedPathRegex);
+    });
+  };
+
+var stripIgnoredUrlParameters = function (originalUrl,
+    ignoreUrlParametersMatching) {
+    var url = new URL(originalUrl);
+    // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
+    url.hash = '';
+
+    url.search = url.search.slice(1) // Exclude initial '?'
+      .split('&') // Split into an array of 'key=value' strings
+      .map(function(kv) {
+        return kv.split('='); // Split each 'key=value' string into a [key, value] array
+      })
+      .filter(function(kv) {
+        return ignoreUrlParametersMatching.every(function(ignoredRegex) {
+          return !ignoredRegex.test(kv[0]); // Return true iff the key doesn't match any of the regexes.
+        });
+      })
+      .map(function(kv) {
+        return kv.join('='); // Join each [key, value] array into a 'key=value' string
+      })
+      .join('&'); // Join the array of 'key=value' strings into a string with '&' in between each
+
+    return url.toString();
+  };
+
 
 var hashParamName = '_sw-precache';
 var urlsToCacheKeys = new Map(
@@ -188,59 +141,46 @@ var urlsToCacheKeys = new Map(
 );
 
 function setOfCachedUrls(cache) {
-  return cache
-    .keys()
-    .then(function(requests) {
-      return requests.map(function(request) {
-        return request.url;
-      });
-    })
-    .then(function(urls) {
-      return new Set(urls);
+  return cache.keys().then(function(requests) {
+    return requests.map(function(request) {
+      return request.url;
     });
+  }).then(function(urls) {
+    return new Set(urls);
+  });
 }
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches
-      .open(cacheName)
-      .then(function(cache) {
-        return setOfCachedUrls(cache).then(function(cachedUrls) {
-          return Promise.all(
-            Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
-              // If we don't have a key matching url in the cache already, add it.
-              if (!cachedUrls.has(cacheKey)) {
-                var request = new Request(cacheKey, {
-                  credentials: 'same-origin',
-                });
-                return fetch(request).then(function(response) {
-                  // Bail out of installation unless we get back a 200 OK for
-                  // every request.
-                  if (!response.ok) {
-                    throw new Error(
-                      'Request for ' +
-                        cacheKey +
-                        ' returned a ' +
-                        'response with status ' +
-                        response.status
-                    );
-                  }
+    caches.open(cacheName).then(function(cache) {
+      return setOfCachedUrls(cache).then(function(cachedUrls) {
+        return Promise.all(
+          Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
+            // If we don't have a key matching url in the cache already, add it.
+            if (!cachedUrls.has(cacheKey)) {
+              var request = new Request(cacheKey, {credentials: 'same-origin'});
+              return fetch(request).then(function(response) {
+                // Bail out of installation unless we get back a 200 OK for
+                // every request.
+                if (!response.ok) {
+                  throw new Error('Request for ' + cacheKey + ' returned a ' +
+                    'response with status ' + response.status);
+                }
 
-                  return cleanResponse(response).then(function(
-                    responseToCache
-                  ) {
-                    return cache.put(cacheKey, responseToCache);
-                  });
+                return cleanResponse(response).then(function(responseToCache) {
+                  return cache.put(cacheKey, responseToCache);
                 });
-              }
-            })
-          );
-        });
-      })
-      .then(function() {
-        // Force the SW to transition from installing -> active state
-        return self.skipWaiting();
-      })
+              });
+            }
+          })
+        );
+      });
+    }).then(function() {
+      
+      // Force the SW to transition from installing -> active state
+      return self.skipWaiting();
+      
+    })
   );
 });
 
@@ -248,24 +188,24 @@ self.addEventListener('activate', function(event) {
   var setOfExpectedUrls = new Set(urlsToCacheKeys.values());
 
   event.waitUntil(
-    caches
-      .open(cacheName)
-      .then(function(cache) {
-        return cache.keys().then(function(existingRequests) {
-          return Promise.all(
-            existingRequests.map(function(existingRequest) {
-              if (!setOfExpectedUrls.has(existingRequest.url)) {
-                return cache.delete(existingRequest);
-              }
-            })
-          );
-        });
-      })
-      .then(function() {
-        return self.clients.claim();
-      })
+    caches.open(cacheName).then(function(cache) {
+      return cache.keys().then(function(existingRequests) {
+        return Promise.all(
+          existingRequests.map(function(existingRequest) {
+            if (!setOfExpectedUrls.has(existingRequest.url)) {
+              return cache.delete(existingRequest);
+            }
+          })
+        );
+      });
+    }).then(function() {
+      
+      return self.clients.claim();
+      
+    })
   );
 });
+
 
 self.addEventListener('fetch', function(event) {
   if (event.request.method === 'GET') {
@@ -276,10 +216,7 @@ self.addEventListener('fetch', function(event) {
 
     // First, remove all the ignored parameters and hash fragment, and see if we
     // have that URL in our cache. If so, great! shouldRespond will be true.
-    var url = stripIgnoredUrlParameters(
-      event.request.url,
-      ignoreUrlParametersMatching
-    );
+    var url = stripIgnoredUrlParameters(event.request.url, ignoreUrlParametersMatching);
     shouldRespond = urlsToCacheKeys.has(url);
 
     // If shouldRespond is false, check again, this time with 'index.html'
@@ -293,12 +230,10 @@ self.addEventListener('fetch', function(event) {
     // If shouldRespond is still false, check to see if this is a navigation
     // request, and if so, whether the URL matches navigateFallbackWhitelist.
     var navigateFallback = '';
-    if (
-      !shouldRespond &&
-      navigateFallback &&
-      event.request.mode === 'navigate' &&
-      isPathWhitelisted([], event.request.url)
-    ) {
+    if (!shouldRespond &&
+        navigateFallback &&
+        (event.request.mode === 'navigate') &&
+        isPathWhitelisted([], event.request.url)) {
       url = new URL(navigateFallback, self.location).toString();
       shouldRespond = urlsToCacheKeys.has(url);
     }
@@ -307,31 +242,27 @@ self.addEventListener('fetch', function(event) {
     // event.respondWith(), using the appropriate cache key.
     if (shouldRespond) {
       event.respondWith(
-        caches
-          .open(cacheName)
-          .then(function(cache) {
-            return cache
-              .match(urlsToCacheKeys.get(url))
-              .then(function(response) {
-                if (response) {
-                  return response;
-                }
-                throw Error(
-                  'The cached response that was expected is missing.'
-                );
-              });
-          })
-          .catch(function(e) {
-            // Fall back to just fetch()ing the request if some unexpected error
-            // prevented the cached response from being valid.
-            console.warn(
-              'Couldn\'t serve response for "%s" from cache: %O',
-              event.request.url,
-              e
-            );
-            return fetch(event.request);
-          })
+        caches.open(cacheName).then(function(cache) {
+          return cache.match(urlsToCacheKeys.get(url)).then(function(response) {
+            if (response) {
+              return response;
+            }
+            throw Error('The cached response that was expected is missing.');
+          });
+        }).catch(function(e) {
+          // Fall back to just fetch()ing the request if some unexpected error
+          // prevented the cached response from being valid.
+          console.warn('Couldn\'t serve response for "%s" from cache: %O', event.request.url, e);
+          return fetch(event.request);
+        })
       );
     }
   }
 });
+
+
+
+
+
+
+
