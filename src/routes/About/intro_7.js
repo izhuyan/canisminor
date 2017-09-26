@@ -1,4 +1,4 @@
-import { DocTitle } from '../../components';
+import { DocTitle, LazyLoad } from '../../components';
 import { homeToc, vdSkillList } from '../../config';
 import styles from './intro_7.scss';
 
@@ -14,13 +14,13 @@ export default () => {
   return (
     <div className={styles.intro}>
       <DocTitle content={homeToc[4]} />
-      <div className={styles.box}>{vdSkillList.map(Item)}</div>
-      <div className={styles.color}>
+      <LazyLoad className={styles.box}>{vdSkillList.map(Item)}</LazyLoad>
+      <LazyLoad className={styles.color}>
         <div className={styles.item} />
         <div className={styles.item} />
         <div className={styles.item} />
         <div className={styles.item} />
-      </div>
+      </LazyLoad>
     </div>
   );
 };

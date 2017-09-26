@@ -31,10 +31,7 @@ export default class extends React.Component {
 
     return (
       <div className={classConfig} onClick={this.onClick}>
-        <div className={styles.list}>
-          <div className={styles.bg} />
-          {menuList}
-        </div>
+        <div className={styles.list}>{menuList}</div>
         <div className={styles.icon}>
           <div className={styles.cls} />
           <div className={styles.cls} />

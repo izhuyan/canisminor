@@ -1,5 +1,11 @@
 import React from 'react';
-import { AwardList, DocTitle, Icon, Showcase } from '../../components';
+import {
+  AwardList,
+  DocTitle,
+  Icon,
+  Showcase,
+  LazyLoad,
+} from '../../components';
 import { awardList, homeToc } from '../../config';
 import styles from './intro_4.scss';
 
@@ -23,7 +29,7 @@ export default class extends React.Component {
     return (
       <div className={styles.intro}>
         <DocTitle content={homeToc[1]} />
-        <div className={styles.school}>
+        <LazyLoad className={styles.school}>
           <Icon className={styles.logo} type="caa-logo" />
           <div className={styles.content}>
             <Icon className={styles.title} type="caa-text" />
@@ -32,17 +38,19 @@ export default class extends React.Component {
               Top Art School World Ranking: 7th
             </div>
           </div>
-        </div>
-        <Showcase content={showcaseData} />
-        {this.state.show ? (
-          <div className={styles.awards}>
-            <AwardList content={awardList} />
-          </div>
-        ) : (
-          <div className={styles.button} onClick={this.onClick}>
-            Show Awards
-          </div>
-        )}
+        </LazyLoad>
+        <LazyLoad className={styles.row}>
+          <Showcase content={showcaseData} />
+          {this.state.show ? (
+            <div className={styles.awards}>
+              <AwardList content={awardList} />
+            </div>
+          ) : (
+            <div className={styles.button} onClick={this.onClick}>
+              Show Awards
+            </div>
+          )}
+        </LazyLoad>
       </div>
     );
   }

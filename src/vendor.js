@@ -13,24 +13,21 @@ import 'react-typist';
 import 'weixin-jsapi';
 import 'plyr';
 import 'nprogress';
+import 'prismjs';
 
 // components
-import 'highlight.js';
-import 'highlight.js/styles/monokai-sublime.css';
 import 'gitment';
 import 'gitment/style/default.css';
 
 // antd
 import antd from 'antd';
-
 const {
-  Table,
+  BackTop,
   Spin,
   Icon,
   Layout,
   Button,
   Popover,
   Collapse,
-  BackTop,
   message,
 } = antd;

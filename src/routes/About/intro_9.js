@@ -1,4 +1,4 @@
-import { Button, DocTitle } from '../../components';
+import { Button, DocTitle, LazyLoad } from '../../components';
 import { homeToc } from '../../config';
 import styles from './intro_9.scss';
 
@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className={styles.intro}>
       <DocTitle content={homeToc[6]} />
-      <div className={styles.box}>
+      <LazyLoad className={styles.box}>
         <img
           alt="Project"
           className={styles.img}
@@ -14,7 +14,7 @@ export default () => {
           width="940"
         />
         <Button to="/project">Discover project story</Button>
-      </div>
+      </LazyLoad>
     </div>
   );
 };

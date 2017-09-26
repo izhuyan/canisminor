@@ -4,25 +4,16 @@
 	flex-direction: column;
 	align-items: center;
 }
-.table {
+.list {
 	max-width: 800px;
 	width: 100%;
 	padding: 1rem;
 }
-.row {
-	display: flex;
-	flex-direction: column;
-	padding: 1rem 0;
-	margin: 2rem 0;
-	background: transparent !important;
-	> td {
-		background: transparent !important;
-		padding: 0 !important;
-	}
 
-}
 .post {
-	border-bottom: 1px solid $c-split !important;
+	border-bottom: 1px solid $c-split;
+	margin-top: 3rem;
+	margin-bottom: 6rem;
 }
 .footer {
 	display: flex;
@@ -50,17 +41,25 @@
 	}
 }
 .tag {
+	&:before{
+		content: 'Tags:';
+		margin-right: 1rem;
+	}
 	> span {
 		display: inline-block;
 		background: #fff;
 		height: 44px;
 		line-height: 44px;
 		padding: 0 1.5rem;
-		margin-left: 1rem;
+		margin-right: 1rem;
 		box-shadow: 0 2px 12px 0 rgba(#000, .08);
 	}
 	@include media($m-middle){
 		margin-bottom: 2rem;
+		&:before{
+			content: '';
+			margin-right: 0;
+		}
 	}
 }
 :global {

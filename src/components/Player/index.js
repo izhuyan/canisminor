@@ -1,6 +1,6 @@
 import Plyr from 'plyr';
 import React from 'react';
-import './index.scss';
+import styles from './index.scss';
 
 export default class extends React.Component {
   componentDidMount() {
@@ -10,7 +10,7 @@ export default class extends React.Component {
   render() {
     const { src } = this.props;
     return (
-      <video controls>
+      <video className={styles.video} controls>
         <source src={`http://qn-video.canisminor.cc/${src}`} type="video/mp4" />
       </video>
     );

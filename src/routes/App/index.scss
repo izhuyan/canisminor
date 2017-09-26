@@ -8,18 +8,5 @@
 	width: 100%;
 	z-index: 1;
 }
-:global {
-	.ant-back-top {
-		right: 4rem;
-		bottom: 4rem;
-		@include media($m-middle) {
-			display: none !important;
-		}
-	}
-	.ant-back-top-content {
-		background: #222;
-		border-radius: 0;
-	}
-}
 
 

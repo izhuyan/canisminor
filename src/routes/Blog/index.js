@@ -1,8 +1,8 @@
-import { Icon, Spin, Table } from 'antd';
+import { Icon, Spin } from 'antd';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
 import path from 'path';
-import { Markdown } from '../../components';
+import { Markdown, LazyLoad, Tags } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
@@ -17,51 +17,26 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps)(({ loading, blogToc }) => {
   setTitle('Blog');
-  const columns = [
-    {
-      title: 'post',
-      dataIndex: 'title',
-      className: styles.post,
-      render: (text, record) => (
-        <div>
-          <Markdown data={record} />
-          <div className={styles.footer}>
-            <div className={styles.tag}>
-              Tags:
-              {loading
-                ? ''
-                : record.tag.map((item, key) => <span key={key}>{item}</span>)}
-            </div>
-            <Link
-              to={path.join('blog', record.filename)}
-              className={styles.readmore}
-            >
-              Read More<Icon type="right" />
-            </Link>
-          </div>
-        </div>
-      ),
-    },
-  ];
+  const BlogPage = (record, key) => (
+    <LazyLoad key={key} offset={-100} className={styles.post}>
+      <Markdown data={record} />
+      <div className={styles.footer}>
+        {loading ? '' : <Tags data={record.tag} />}
+        <Link
+          to={path.join('blog', record.filename)}
+          className={styles.readmore}
+        >
+          Read More<Icon type="right" />
+        </Link>
+      </div>
+    </LazyLoad>
+  );
 
   return (
     <div className={styles.blog}>
-      {loading ? (
-        <Spin
-          spinning={loading}
-          size="large"
-          style={{ width: '100%', lineHeight: '720px' }}
-        />
-      ) : (
-        <Table
-          className={styles.table}
-          rowClassName={() => styles.row}
-          showHeader={false}
-          columns={columns}
-          dataSource={blogToc}
-          rowKey={record => record.filename}
-        />
-      )}
+      <div className={styles.list}>
+        {!loading ? blogToc.map(BlogPage) : <Spin size="large" />}
+      </div>
     </div>
   );
 });

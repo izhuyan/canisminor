@@ -1,21 +1,19 @@
 @import "var";
-@import "font";
-
+@import "root";
 html, body, :global(#root) {
 	height: 100%;
 }
-a:focus {
-	text-decoration: none;
+:global {
+	.ant-back-top {
+		right: 4rem;
+		bottom: 4rem;
+		@include media($m-middle) {
+			display: none !important;
+		}
+	}
+	.ant-back-top-content {
+		background: #222;
+		border-radius: 0;
+	}
 }
-div {
-	word-wrap: break-word
-}
-* {
-	-webkit-font-smoothing: antialiased
-}
-*:focus {
-	outline: none;
-}
-
-
 

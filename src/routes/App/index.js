@@ -1,7 +1,8 @@
-import { BackTop, Layout } from 'antd';
+import { Layout } from 'antd';
 import dynamic from 'dva/dynamic';
-import { Route } from 'dva/router';
+import { Route, Switch } from 'dva/router';
 import { Footer, Header } from '../../components';
+import NotFound from '../404';
 import styles from './index.scss';
 
 const { Content } = Layout;
@@ -15,14 +16,16 @@ export default ({ location }) => {
 
   return (
     <Layout className={styles.layout}>
-      <BackTop />
       <Header location={location} />
       <Content className={styles.content}>
-        <Route exact path="/about" component={About} />
-        <Route exact path="/blog" component={Blog} />
-        <Route path="/blog/:name" component={BlogPage} />
-        <Route exact path="/project" component={Project} />
-        <Route exact path="/contact" component={Contact} />
+        <Switch>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:name" component={BlogPage} />
+          <Route exact path="/project" component={Project} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={NotFound} />
+        </Switch>
       </Content>
       <Footer />
     </Layout>

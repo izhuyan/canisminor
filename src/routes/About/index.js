@@ -1,4 +1,3 @@
-import { LazyLoad } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 import Intro1 from './intro_1';
@@ -17,27 +16,13 @@ export default () => {
     <div className={styles.intro}>
       <Intro1 />
       <Intro2 />
-      <LazyLoad>
-        <Intro3 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro4 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro5 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro6 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro7 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro8 />
-      </LazyLoad>
-      <LazyLoad>
-        <Intro9 />
-      </LazyLoad>
+      <Intro3 />
+      <Intro4 />
+      <Intro5 />
+      <Intro6 />
+      <Intro7 />
+      <Intro8 />
+      <Intro9 />
     </div>
   );
 };

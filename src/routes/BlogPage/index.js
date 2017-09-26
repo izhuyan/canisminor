@@ -1,7 +1,7 @@
 import { Icon, Spin } from 'antd';
 import { connect } from 'dva';
 import { Link } from 'dva/router';
-import { Comment, Markdown } from '../../components';
+import { Comment, Markdown, LazyLoad, Tags } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
@@ -26,18 +26,15 @@ export default connect(mapStateToProps)(({ loading, blogPage }) => {
       ) : (
         <Markdown data={blogPage} />
       )}
-      <div className={styles.footer}>
+      <LazyLoad className={styles.footer}>
         <Link to="/blog" className={styles.back}>
           <Icon type="left" />Go Back
         </Link>
-        <div className={styles.tag}>
-          Tags:
-          {loading
-            ? ''
-            : blogPage.tag.map((item, key) => <span key={key}>{item}</span>)}
-        </div>
-      </div>
-      <Comment />
+        {loading ? '' : <Tags data={blogPage.tag} />}
+      </LazyLoad>
+      <LazyLoad>
+        <Comment />
+      </LazyLoad>
     </div>
   );
 });
