@@ -23,12 +23,12 @@ export default class extends Component {
 		));
 
 		const classConfig = classnames.bind(styles)(
-			'menu', {menu__oppenned: this.state.open}
+			{[styles.opened]: this.state.open}
 		);
 
 		return (
 			<div className={classConfig} onClick={this.onClick}>
-				<div className={styles.list}>{menuList}</div>
+				<div className={styles.menu}>{this.state.open?menuList:''}</div>
 				<div className={styles.icon}>
 					<div className={styles.cls}/>
 					<div className={styles.cls}/>
