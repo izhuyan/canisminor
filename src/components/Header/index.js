@@ -7,10 +7,10 @@ import styles from './index.scss';
 
 const { Header } = Layout;
 
-export default ({ location }) => {
+export default ()=> {
   const NavItem = ({ title, to }) => {
     const classConfig = classnames.bind(styles)('item', {
-      item__active: location.pathname.indexOf(to) !== -1,
+      item__active: window.location.pathname.indexOf(to) !== -1,
     });
     return <Link className={classConfig} to={to} children={title} />;
   };

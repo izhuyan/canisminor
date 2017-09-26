@@ -1,12 +1,11 @@
 import Plyr from 'plyr';
-import React from 'react';
+import {Component} from 'react';
 import styles from './index.scss';
 
-export default class extends React.Component {
+export default class extends Component {
   componentDidMount() {
     Plyr.setup();
   }
-
   render() {
     const { src } = this.props;
     return (

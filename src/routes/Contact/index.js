@@ -11,7 +11,7 @@ export default () => {
         title="Let's talk"
         desc="u can comment with github accounts"
       />
-      <Comment />
+      <Comment className={styles.command}/>
     </div>
   );
 };
