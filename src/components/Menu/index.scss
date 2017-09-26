@@ -13,12 +13,13 @@
 	align-items: center;
 	justify-content: center;
 	background: #fff;
-	-webkit-backdrop-filter: blur(15px);
-	backdrop-filter: blur(15px);
 	opacity: 0;
 }
 .os > .menu {
-	background: rgba(#fff,.5)
+	//Chrome 51 supports backdrop-filter via Experimental Web Platform flag.
+	-webkit-backdrop-filter: blur(2rem);
+	backdrop-filter: blur(2rem);
+	background: rgba(#fff,.75)
 }
 .item {
 	transition: all .4s cubic-bezier(.54, .16, .5, .93);
