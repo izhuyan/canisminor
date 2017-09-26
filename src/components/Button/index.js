@@ -15,12 +15,13 @@ export default ({ children, url, to, ...other }) => {
     </Button>
   );
 
-  if (to)
+  if (to) {
     Btn = (
       <Link className={styles.link} to={to}>
         {Btn}
       </Link>
     );
+  }
 
   return Btn;
 };
