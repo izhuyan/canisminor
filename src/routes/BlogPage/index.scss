@@ -20,21 +20,3 @@
 		flex-direction: column-reverse;
 	}
 }
-
-.back{
-	background: #222;
-	color: #fff;
-	height: 44px;
-	line-height: 44px;
-	text-align: center;
-	padding-left:2rem;
-	padding-right: 3rem;
-	transition: opacity .5s ease-out;
-	&:hover{
-		color: #fff;
-		opacity: .5;
-	}
-	> i {
-		margin-right: 1rem;
-	}
-}

@@ -1,8 +1,8 @@
-import {Button, Icon} from 'antd';
-import {Link} from 'dva/router';
+import { Button, Icon } from 'antd';
+import { Link } from 'dva/router';
 import styles from './index.scss';
 
-export default ({children, url, to, ...other}) => {
+export default ({ children, url, to, icon = 'right', ...other }) => {
   let Btn = (
     <Button
       className={styles.btn}
@@ -11,16 +11,12 @@ export default ({children, url, to, ...other}) => {
       {...other}
     >
       {children}
-      <Icon type="caret-right" />
+      {icon ? <Icon type={icon} /> : null}
     </Button>
   );
 
   if (to) {
-    Btn = (
-      <Link className={styles.link} to={to}>
-        {Btn}
-      </Link>
-    );
+    Btn = <Link to={to}>{Btn}</Link>;
   }
 
   return Btn;

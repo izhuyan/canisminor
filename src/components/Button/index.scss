@@ -1,22 +1,26 @@
 @import "var";
 .btn {
+	@include showup;
+	background: #222;
+	border-color: #222;
 	display: inline-block;
 	line-height: 44px;
 	height: 44px;
-	border-radius: 22px;
 	padding: 0 24px;
-	margin: .5rem 1rem;
-	.anticon{
+	+ .btn{
+		margin-left: 1rem;
+	}
+	:global(.anticon){
 		font-size: .9em;
+	}
+	&:global(.ant-btn-background-ghost){
+		color: #222;
+		border-color: #222;
 	}
 	@include media($m-small){
 		width: 100%;
+		+ .btn{
+			margin: .5rem 0;
+		}
 	}
-}
-
-.link{
-	flex: 1;
-	width: 100%;
-	display: flex;
-	justify-content: center;
 }

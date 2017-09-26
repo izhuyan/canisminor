@@ -1,8 +1,8 @@
-import {Icon, Spin} from 'antd';
-import {connect} from 'dva';
-import {Link} from 'dva/router';
+import { Icon, Spin } from 'antd';
+import { connect } from 'dva';
+import { Link } from 'dva/router';
 import path from 'path';
-import {LazyLoad, Markdown, Tags} from '../../components';
+import { LazyLoad, Markdown, Tags, Button } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
@@ -13,26 +13,21 @@ const State = state => ({
   blogToc: state.blogToc,
 });
 
-export default connect(State)(({loading, blogToc}) => {
+export default connect(State)(({ loading, blogToc }) => {
   setTitle('Blog');
   const BlogPage = (record, key) => (
     <LazyLoad key={key} offset={-100} className={styles.post}>
-      <Markdown data={record}/>
+      <Markdown data={record} />
       <div className={styles.footer}>
-        {loading ? '' : <Tags data={record.tag}/>}
-        <Link
-          to={path.join('blog', record.filename)}
-          className={styles.readmore}
-        >
-					Read More<Icon type="right"/>
-        </Link>
+        {loading ? '' : <Tags data={record.tag} />}
+        <Button to={path.join('blog', record.filename)}>Read More</Button>
       </div>
     </LazyLoad>
   );
   return (
     <div className={styles.blog}>
       <div className={styles.list}>
-        {!loading ? blogToc.map(BlogPage) : <Spin size="large"/>}
+        {!loading ? blogToc.map(BlogPage) : <Spin size="large" />}
       </div>
     </div>
   );
