@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro > div {
   align-items: center;
@@ -9,8 +9,7 @@
   padding-bottom: 88px;
   padding-top: 88px;
 
-  div{
-    @include showup
-	}
+  div {
+    @include showup;
+  }
 }
-

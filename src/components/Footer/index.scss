@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .footer {
   align-items: center;
@@ -23,19 +23,19 @@
   margin-top: 0.6rem;
   text-align: center;
   @include media($m-small) {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
 .note {
-  font-size: .9em;
-  margin-left: .8rem;
+  font-size: 0.9em;
+  margin-left: 0.8rem;
 }
 
 .logo {
   display: block;
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .social {

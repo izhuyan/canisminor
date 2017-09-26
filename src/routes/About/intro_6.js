@@ -1,5 +1,5 @@
-import {Button, DocTitle, LazyLoad} from '../../components';
-import {homeToc, specList} from '../../config';
+import { Button, DocTitle, LazyLoad } from '../../components';
+import { homeToc, specList } from '../../config';
 import styles from './intro_6.scss';
 
 export default () => {

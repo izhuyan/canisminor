@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 :global {
   /* Make clicks pass-through */
@@ -23,7 +23,7 @@
     box-shadow: 0 0 10px $c-primary, 0 0 5px $c-primary;
     display: block;
     height: 100%;
-    opacity: 1.0;
+    opacity: 1;
     position: absolute;
     right: 0px;
 
@@ -43,7 +43,6 @@
   }
 
   #nprogress .spinner-icon {
-
     -webkit-animation: nprogress-spinner 400ms linear infinite;
     animation: nprogress-spinner 400ms linear infinite;
 

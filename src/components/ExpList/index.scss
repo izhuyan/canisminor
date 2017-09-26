@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .item {
   display: flex;
@@ -22,8 +22,8 @@
 
 .content {
   > div {
-    letter-spacing: .5px;
-    margin-bottom: .75rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
     @include media($m-middle) {
       margin-top: 1rem;
       text-align: center;
@@ -38,22 +38,22 @@
 }
 
 .time {
-  font-size: .9rem;
+  font-size: 0.9rem;
   @include media($m-middle) {
     margin-bottom: 2rem;
   }
 }
 
 .desc {
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   > p {
     line-height: 1.8;
-    @include media("<=800px") {
+    @include media('<=800px') {
       display: inline;
 
       & + p:before {
-        content: "; ";
+        content: '; ';
       }
     }
   }

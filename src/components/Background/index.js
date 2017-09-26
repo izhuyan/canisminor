@@ -1,9 +1,9 @@
 import classnames from 'classnames/bind';
 import React from 'react';
-import {SvgIcon} from '../../components';
+import { SvgIcon } from '../../components';
 import styles from './index.scss';
 
-export default ({location}) => {
+export default ({ location }) => {
   const pathname = location.pathname;
   const classConfig = classnames.bind(styles)('shape', {
     shape__animation: pathname !== '/',

@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro {
   border-bottom: 1px solid $c-split;
@@ -21,17 +21,17 @@
   font-size: 20px;
   height: 54px;
   margin: 20px 12px;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   padding-right: 1.5rem;
 }
 
 .icon {
   height: 48px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   width: 48px;
 }
 
-.emoji{
+.emoji {
   font-size: 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }

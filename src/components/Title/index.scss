@@ -1,11 +1,12 @@
-@import "var";
+@import 'var';
 
 :global(.contact) {
   justify-content: center;
-  @include showup
+  @include showup;
 }
 
-.title, .desc {
+.title,
+.desc {
   color: #222;
   text-align: center;
   width: 100%;
@@ -18,13 +19,13 @@
   letter-spacing: -2px;
   margin-bottom: 1rem;
   @include media ($m-large) {
-    font-size: $font-size * .7;
+    font-size: $font-size * 0.7;
   }
   @include media ($m-middle) {
-    font-size: $font-size * .55;
+    font-size: $font-size * 0.55;
   }
   @include media ($m-small) {
-    font-size: $font-size * .45;
+    font-size: $font-size * 0.45;
   }
 }
 
@@ -33,9 +34,9 @@
   font-size: $font-size;
   margin-bottom: 75px;
   @include media ($m-large) {
-    font-size: $font-size * .9;
+    font-size: $font-size * 0.9;
   }
   @include media ($m-small) {
-    font-size: $font-size * .8;
+    font-size: $font-size * 0.8;
   }
 }

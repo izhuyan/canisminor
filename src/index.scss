@@ -1,7 +1,9 @@
-@import "var";
-@import "root";
+@import 'var';
+@import 'root';
 
-html, body, :global(#root) {
+html,
+body,
+:global(#root) {
   height: 100%;
 }
 
@@ -19,4 +21,3 @@ html, body, :global(#root) {
     border-radius: 0;
   }
 }
-

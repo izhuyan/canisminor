@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .btn {
   @include showup;
@@ -9,23 +9,23 @@
   line-height: 44px;
   padding: 0 24px;
 
-  + .btn{
+  + .btn {
     margin-left: 1rem;
   }
 
-  :global(.anticon){
-    font-size: .9em;
+  :global(.anticon) {
+    font-size: 0.9em;
   }
 
-  &:global(.ant-btn-background-ghost){
+  &:global(.ant-btn-background-ghost) {
     border-color: #222;
     color: #222;
   }
-  @include media($m-small){
+  @include media($m-small) {
     width: 100%;
 
-    + .btn{
-      margin: .5rem 0;
+    + .btn {
+      margin: 0.5rem 0;
     }
   }
 }

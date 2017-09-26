@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .header {
   align-items: center;
@@ -27,7 +27,7 @@
 
 .item {
   background: #fff;
-  border:1px solid #eee;
+  border: 1px solid #eee;
   color: #222;
   display: inline-block;
   font-size: 1.2rem;
@@ -36,14 +36,15 @@
   margin-left: -1px;
   padding: 0 32px;
 
-  &:last-child{
+  &:last-child {
     background: $c-primary;
-    border-color:transparent;
+    border-color: transparent;
   }
 
-  &__active, &:hover {
+  &__active,
+  &:hover {
     background: #222 !important;
-    border-color:transparent;
+    border-color: transparent;
     color: #fff;
   }
 }

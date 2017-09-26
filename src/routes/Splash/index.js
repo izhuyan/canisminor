@@ -1,6 +1,6 @@
-import {Link} from 'dva/router';
-import {Typist} from '../../components';
-import {indexPage} from '../../config';
+import { Link } from 'dva/router';
+import { Typist } from '../../components';
+import { indexPage } from '../../config';
 import styles from './index.scss';
 
 export default () => {

@@ -1,18 +1,16 @@
-@import "var";
+@import 'var';
 
-.placeholder{
+.placeholder {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.lazyload{
-  margin-bottom: -.3rem;
+.lazyload {
+  margin-bottom: -0.3rem;
 
-  @include showup
-
+  @include showup;
 }
-
 
 @keyframes showup {
   0% {

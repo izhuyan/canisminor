@@ -1,10 +1,10 @@
-import {connect} from 'dva';
+import { connect } from 'dva';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
-import {Component} from 'react';
+import { Component } from 'react';
 import './index.scss';
 
-const State = state => ({loading: state.loading.global});
+const State = state => ({ loading: state.loading.global });
 
 class Root extends Component {
   componentWillMount() {
@@ -16,7 +16,7 @@ class Root extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const {loading} = nextProps;
+    const { loading } = nextProps;
     loading ? NProgress.start() : NProgress.done();
   }
 
@@ -25,7 +25,7 @@ class Root extends Component {
   }
 
   render() {
-    const {loading} = this.props;
+    const { loading } = this.props;
     loading ? NProgress.start() : NProgress.done();
     return null;
   }

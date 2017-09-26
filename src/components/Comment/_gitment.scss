@@ -1,7 +1,7 @@
-@import "var";
+@import 'var';
 
 .gitment-container {
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   * {
     box-sizing: border-box;
@@ -34,7 +34,8 @@
   }
 }
 
-.gitment-root-container, .gitment-header-container {
+.gitment-root-container,
+.gitment-header-container {
   margin: 1rem 0;
 }
 
@@ -49,10 +50,10 @@
 
 .gitment-comment-like-btn {
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: absolute;
   right: 1rem;
-  top: .8rem;
+  top: 0.8rem;
 
   &.liked {
     color: $c-primary;
@@ -138,10 +139,11 @@
   border: 1px solid $c-split;
   position: relative;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     border-color: transparent;
     border-style: solid solid outset;
-    content: "";
+    content: '';
     display: block;
     height: 0;
     left: -1rem;
@@ -165,7 +167,8 @@
 }
 
 .gitment-editor-main {
-  &:before, &:after {
+  &:before,
+  &:after {
     @include media($m-small) {
       display: none;
     }
@@ -175,8 +178,8 @@
 .gitment-comment-header {
   background-color: #fff;
   color: $c-font-normal;
-  font-size: .6rem;
-  margin: .75rem 3rem .75rem 1rem;
+  font-size: 0.6rem;
+  margin: 0.75rem 3rem 0.75rem 1rem;
 }
 
 .gitment-editor-header {
@@ -202,7 +205,7 @@
   color: #666;
   cursor: pointer;
   display: inline-block;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 20px;
   outline: none;
   padding: 11px 12px;
@@ -242,9 +245,13 @@
   cursor: pointer;
 
   &::before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9)
+    );
     bottom: 50px;
-    content: "";
+    content: '';
     display: block !important;
     left: 0;
     pointer-events: none;
@@ -257,7 +264,7 @@
     background: rgba(255, 255, 255, 0.9);
     bottom: 0;
     color: #666;
-    content: "Click to Expand" !important;
+    content: 'Click to Expand' !important;
     display: block !important;
     height: 50px;
     left: 0;
@@ -273,8 +280,10 @@
   margin: 0;
 }
 
-.gitment-comment-body > *:first-child, .gitment-editor-preview > * {
-  &:first-child, &:last-child {
+.gitment-comment-body > *:first-child,
+.gitment-editor-preview > * {
+  &:first-child,
+  &:last-child {
     margin-top: 0 !important;
   }
 }
@@ -305,7 +314,7 @@
 
 .gitment-editor-preview {
   background-color: transparent;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   min-height: 150px;
   padding: 16px;
@@ -319,7 +328,7 @@
 
   &::after {
     clear: both;
-    content: "";
+    content: '';
     display: table;
   }
 }
@@ -345,9 +354,10 @@
   cursor: pointer;
   display: inline-block;
   margin-left: -1px;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
 
-  &:hover, &.gitment-selected {
+  &:hover,
+  &.gitment-selected {
     background-color: #f8f8f8;
   }
 }
@@ -374,8 +384,9 @@
 
 .gitment-comments-init-btn,
 .gitment-editor-submit {
-  &:hover, &:disabled {
-    opacity: .5;
+  &:hover,
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
@@ -393,7 +404,7 @@
 .gitment-markdown {
   color: #222;
   font-size: 1rem;
-  @import "../Markdown/markdown";
+  @import '../Markdown/markdown';
 
   pre * {
     color: $c-white !important;

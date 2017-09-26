@@ -1,14 +1,14 @@
-import {Layout} from 'antd';
+import { Layout } from 'antd';
 import classnames from 'classnames/bind';
-import {Link} from 'dva/router';
-import {Icon, Menu} from '../../components';
-import {navBar} from '../../config';
+import { Link } from 'dva/router';
+import { Icon, Menu } from '../../components';
+import { navBar } from '../../config';
 import styles from './index.scss';
 
-const {Header} = Layout;
+const { Header } = Layout;
 
 export default () => {
-  const NavItem = ({title, to}) => {
+  const NavItem = ({ title, to }) => {
     const classConfig = classnames.bind(styles)('item', {
       item__active: window.location.pathname.indexOf(to) !== -1,
     });
@@ -20,7 +20,7 @@ export default () => {
     <NavItem key={key} title={item.title} to={item.to} />
   ));
   return (
-    <Header className={styles.header} style={{zIndex: 999}}>
+    <Header className={styles.header} style={{ zIndex: 999 }}>
       <Icon className={styles.logo} type="logo" />
       <div className={styles.nav}>
         <div className={styles.showPhone} children={showPhone} />

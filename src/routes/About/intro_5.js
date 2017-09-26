@@ -1,5 +1,5 @@
-import {DocTitle, ExpList} from '../../components';
-import {expList, homeToc} from '../../config';
+import { DocTitle, ExpList } from '../../components';
+import { expList, homeToc } from '../../config';
 import styles from './intro_5.scss';
 
 export default () => {

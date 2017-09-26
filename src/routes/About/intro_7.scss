@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro {
   border-bottom: 1px solid $c-split;
@@ -36,7 +36,7 @@
   font-size: 18px;
 
   > p {
-    margin-bottom: .6rem;
+    margin-bottom: 0.6rem;
   }
 }
 
@@ -63,15 +63,15 @@
   }
 
   &:nth-child(1) {
-    background: $c-primary
+    background: $c-primary;
   }
 
   &:nth-child(2) {
-    background: $c-font-dark
+    background: $c-font-dark;
   }
 
   &:nth-child(3) {
-    background: $c-font-normal
+    background: $c-font-normal;
   }
 
   &:nth-child(4) {

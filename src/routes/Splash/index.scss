@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .splash {
   @include showup;
@@ -14,7 +14,7 @@
 }
 
 .logo {
-  background: url("/img/loader.gif") no-repeat center 0;
+  background: url('/img/loader.gif') no-repeat center 0;
   background-size: 100% auto;
   cursor: pointer;
   height: 155px;
@@ -47,7 +47,7 @@
 
 .shape:before {
   color: $c-primary;
-  content: "〃";
+  content: '〃';
   display: block;
   font-size: 3rem;
   opacity: 0;

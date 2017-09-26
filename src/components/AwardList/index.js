@@ -1,7 +1,7 @@
-import {Icon} from '../';
+import { Icon } from '../';
 import styles from './index.scss';
 
-export default ({content}) => {
+export default ({ content }) => {
   const Item = (item, k) => (
     <div className={styles.item} key={k}>
       <Icon type={k === 0 ? 'point-main' : 'point'} />

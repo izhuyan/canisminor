@@ -1,11 +1,11 @@
-import {Collapse} from 'antd';
+import { Collapse } from 'antd';
 import path from 'path';
-import {Button, LazyLoad, Player} from '../../components';
+import { Button, LazyLoad, Player } from '../../components';
 import styles from './index.scss';
 
 const Panel = Collapse.Panel;
 
-export default ({activeKey = ['0'], content}) => {
+export default ({ activeKey = ['0'], content }) => {
   const loadImg = (src, key) => (
     <LazyLoad
       key={key}

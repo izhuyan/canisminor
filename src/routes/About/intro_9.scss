@@ -1,19 +1,19 @@
-@import "var";
+@import 'var';
 
 .intro {
   border-bottom: 1px solid $c-split;
 }
 
-.box{
+.box {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
 }
 
-.img{
+.img {
   @include showup;
-  box-shadow: 0 24px 48px 0 rgba(0,0,0,.12);
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 4rem;
   margin-top: 2rem;
   max-width: 90%;

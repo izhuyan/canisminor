@@ -2,15 +2,18 @@
   color: #969896;
 }
 
-.pl-c1, .pl-s .pl-v {
+.pl-c1,
+.pl-s .pl-v {
   color: #0086b3;
 }
 
-.pl-e, .pl-en {
+.pl-e,
+.pl-en {
   color: #795da3;
 }
 
-.pl-smi, .pl-s .pl-s1 {
+.pl-smi,
+.pl-s .pl-s1 {
   color: #333;
 }
 
@@ -22,7 +25,9 @@
   color: #a71d5d;
 }
 
-.pl-s, .pl-pds, .pl-s .pl-pse .pl-s1 {
+.pl-s,
+.pl-pds,
+.pl-s .pl-pse .pl-s1 {
   color: #183691;
 }
 
@@ -30,11 +35,14 @@
   color: #183691;
 }
 
-.pl-cce, .pl-sre, .pl-sra {
+.pl-cce,
+.pl-sre,
+.pl-sra {
   color: #183691;
 }
 
-.pl-v, .pl-smw {
+.pl-v,
+.pl-smw {
   color: #ed6a43;
 }
 
@@ -52,7 +60,7 @@
   color: #f8f8f8;
 
   &::before {
-    content: "^M";
+    content: '^M';
   }
 }
 

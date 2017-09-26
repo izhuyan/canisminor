@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .title {
   font-size: 2rem;
@@ -10,7 +10,7 @@
   &:before {
     background: $c-primary;
     bottom: 0;
-    content: "";
+    content: '';
     height: 4px;
     position: absolute;
     right: 0;
@@ -23,7 +23,7 @@
     padding-right: 1rem;
 
     &:before {
-      right: 1rem
+      right: 1rem;
     }
   }
 
@@ -64,9 +64,9 @@
 
         > .arrow:before {
           color: $c-font-normal;
-          content: "+" !important;
+          content: '+' !important;
           font-size: 2rem;
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
@@ -113,4 +113,3 @@
     }
   }
 }
-

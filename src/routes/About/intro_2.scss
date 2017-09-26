@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro {
   background: $c-primary !important;
@@ -34,7 +34,7 @@
   margin-bottom: 54px;
   max-width: 375px - 32px;
   @include media($m-small) {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 

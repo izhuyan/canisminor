@@ -19,7 +19,7 @@
   box-sizing: border-box;
   height: $plyr-range-thumb-height;
   position: relative;
-  transition: background .2s ease, border .2s ease, transform .2s ease;
+  transition: background 0.2s ease, border 0.2s ease, transform 0.2s ease;
   width: $plyr-range-thumb-width;
 }
 @mixin plyr-range-thumb-active() {

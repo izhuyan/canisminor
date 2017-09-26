@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro {
   border-bottom: 1px solid $c-split;
@@ -17,7 +17,7 @@
 }
 
 .img {
-  background-image: url("/img/pro-avatar.png");
+  background-image: url('/img/pro-avatar.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 202px;
@@ -41,7 +41,7 @@
 }
 
 .desc {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 1.8;
   margin-top: 1.2rem;
   max-width: 450px;
@@ -58,22 +58,22 @@
 }
 
 .logo {
-  background-image: url("/img/logo.gif"), url("/img/pro-1.png");
+  background-image: url('/img/logo.gif'), url('/img/pro-1.png');
   background-position: 420px center, center;
   background-repeat: no-repeat;
   background-size: 92px auto, 600px auto;
   height: 300px;
   width: 600px;
   @include media($m-middle) {
-    background-position: 420px * .8 center, center;
-    background-size: 92px * .8 auto, 600px * .8 auto;
-    height: 300px * .8;
-    width: 600px * .8;
+    background-position: 420px * 0.8 center, center;
+    background-size: 92px * 0.8 auto, 600px * 0.8 auto;
+    height: 300px * 0.8;
+    width: 600px * 0.8;
   }
   @include media($m-small) {
-    background-position: 420px * .6 center, center;
-    background-size: 92px * .6 auto, 600px * .6 auto;
-    height: 300px * .6;
-    width: 600px * .6;
+    background-position: 420px * 0.6 center, center;
+    background-size: 92px * 0.6 auto, 600px * 0.6 auto;
+    height: 300px * 0.6;
+    width: 600px * 0.6;
   }
 }

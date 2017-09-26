@@ -3,13 +3,15 @@
 // https://github.com/selz/plyr
 // ==========================================================================
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 // Animation
 // ---------------------------------------
 @keyframes plyr-progress {
-  to { background-position: $plyr-progress-loading-size 0; }
+  to {
+    background-position: $plyr-progress-loading-size 0;
+  }
 }
 
 // Styles
@@ -35,7 +37,10 @@
 
   @if $plyr-touch-action == true {
     // Fix 300ms delay
-    a, button, input, label {
+    a,
+    button,
+    input,
+    label {
       touch-action: manipulation;
     }
   }
@@ -57,7 +62,6 @@
   // Range inputs
   // Specificity is for bootstrap compatibility
   input[type='range'] {
-
     appearance: none;
     background: transparent;
     border: none;
@@ -148,12 +152,12 @@
 
 // Video range inputs
 .plyr--video input[type='range'].tab-focus:focus {
-  outline: 1px dotted transparentize($plyr-video-control-color, .5);
+  outline: 1px dotted transparentize($plyr-video-control-color, 0.5);
 }
 
 // Audio range inputs
 .plyr--audio input[type='range'].tab-focus:focus {
-  outline: 1px dotted transparentize($plyr-audio-control-color, .5);
+  outline: 1px dotted transparentize($plyr-audio-control-color, 0.5);
 }
 
 // Screen reader only elements
@@ -234,7 +238,7 @@
   position: absolute;
   text-align: center;
   transform: translateY(-($plyr-control-spacing * 6));
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   width: 100%;
 
   span {
@@ -297,7 +301,7 @@
     margin-left: ($plyr-control-spacing / 2);
   }
 
-  [data-plyr="pause"] {
+  [data-plyr='pause'] {
     margin-left: 0;
   }
 
@@ -311,9 +315,9 @@
     display: inline-block;
     flex-shrink: 0;
     overflow: visible; // IE11
-    padding: ($plyr-control-spacing * .7);
+    padding: ($plyr-control-spacing * 0.7);
     position: relative;
-    transition: background .3s ease, color .3s ease, opacity .3s ease;
+    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
     vertical-align: middle;
 
     svg {
@@ -352,16 +356,20 @@
 
 // Video controls
 .plyr--video .plyr__controls {
-  background: linear-gradient(transparentize($plyr-video-controls-bg, 1), transparentize($plyr-video-controls-bg, .5));
+  background: linear-gradient(
+    transparentize($plyr-video-controls-bg, 1),
+    transparentize($plyr-video-controls-bg, 0.5)
+  );
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   bottom: 0;
   color: $plyr-video-control-color;
   left: 0;
-  padding: ($plyr-control-spacing * 5) $plyr-control-spacing $plyr-control-spacing;
+  padding: ($plyr-control-spacing * 5) $plyr-control-spacing
+    $plyr-control-spacing;
   position: absolute;
   right: 0;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 
   button {
     // Hover and tab focus
@@ -396,7 +404,7 @@
   background: $plyr-video-control-bg-hover;
   border: 4px solid currentColor;
   border-radius: 100%;
-  box-shadow: 0 1px 1px transparentize(#000, .85);
+  box-shadow: 0 1px 1px transparentize(#000, 0.85);
   color: $plyr-video-control-color;
   display: none;
   left: 50%;
@@ -404,7 +412,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   z-index: 1;
 
   svg {
@@ -417,7 +425,7 @@
   }
 
   &:focus {
-    outline: 1px dotted transparentize($plyr-video-control-color, .5);
+    outline: 1px dotted transparentize($plyr-video-control-color, 0.5);
   }
 }
 
@@ -483,9 +491,9 @@
   pointer-events: none;
   position: absolute;
 
-  transform: translate(-50%, 10px) scale(.8);
+  transform: translate(-50%, 10px) scale(0.8);
   transform-origin: 50% 100%;
-  transition: transform .2s .1s ease, opacity .2s .1s ease;
+  transition: transform 0.2s 0.1s ease, opacity 0.2s 0.1s ease;
   z-index: 2;
 
   &::before {
@@ -520,7 +528,7 @@
 // First tooltip
 .plyr__controls button:first-child .plyr__tooltip {
   left: 0;
-  transform: translate(0, 10px) scale(.8);
+  transform: translate(0, 10px) scale(0.8);
   transform-origin: 0 100%;
 
   &::before {
@@ -531,7 +539,7 @@
 // Last tooltip
 .plyr__controls button:last-child .plyr__tooltip {
   right: 0;
-  transform: translate(0, 10px) scale(.8);
+  transform: translate(0, 10px) scale(0.8);
   transform-origin: 100% 100%;
 
   &::before {
@@ -558,7 +566,7 @@
   flex: 1;
   position: relative;
 
-  input[type="range"] {
+  input[type='range'] {
     position: relative;
     z-index: 2;
 
@@ -651,15 +659,15 @@
 
 .plyr__progress--buffer {
   &::-webkit-progress-value {
-    transition: width .2s ease;
+    transition: width 0.2s ease;
   }
 
   &::-moz-progress-bar {
-    transition: width .2s ease;
+    transition: width 0.2s ease;
   }
 
   &::-ms-fill {
-    transition: width .2s ease;
+    transition: width 0.2s ease;
   }
 }
 
@@ -692,7 +700,8 @@
     $plyr-progress-loading-bg 50%,
     $plyr-progress-loading-bg 75%,
     transparent 75%,
-    transparent);
+    transparent
+  );
   background-repeat: repeat-x;
   background-size: $plyr-progress-loading-size $plyr-progress-loading-size;
   color: transparent;
@@ -738,7 +747,7 @@
   flex: 1;
   position: relative;
 
-  input[type="range"] {
+  input[type='range'] {
     position: relative;
     z-index: 2;
   }

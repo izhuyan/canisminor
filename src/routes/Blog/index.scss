@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .blog {
   align-items: center;
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   margin: 4rem 0;
-  @include media($m-middle){
+  @include media($m-middle) {
     flex-direction: column;
   }
 }

@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .intro {
   border-bottom: 1px solid $c-split;
@@ -40,13 +40,12 @@
 .title {
   color: #222;
   font-size: 2rem;
-
 }
 
 .desc {
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   line-height: 1.4;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   max-width: 450px;
   @include media($m-middle) {
     text-align: center;
@@ -67,8 +66,8 @@
   }
 }
 
-.row{
+.row {
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import {Comment, Title} from '../../components';
+import { Comment, Title } from '../../components';
 import setTitle from '../../utils/setTitle';
 import styles from './index.scss';
 
@@ -11,7 +11,7 @@ export default () => {
         title="Let's talk"
         desc="u can comment with github accounts"
       />
-      <Comment className={styles.command}/>
+      <Comment className={styles.command} />
     </div>
   );
 };

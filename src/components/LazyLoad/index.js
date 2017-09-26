@@ -1,5 +1,5 @@
 import React from 'react';
-import {Spin} from 'antd';
+import { Spin } from 'antd';
 import LazyLoad from 'react-lazyload';
 import styles from './index.scss';
 
@@ -15,7 +15,7 @@ export default ({
   const placeholder = (
     <div
       className={styles.placeholder}
-      style={{width, height: `${height}px`, background}}
+      style={{ width, height: `${height}px`, background }}
       children={<Spin size="large" />}
     />
   );

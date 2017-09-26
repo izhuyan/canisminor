@@ -1,24 +1,24 @@
-@import "var";
+@import 'var';
 
 .tag {
-  &:before{
+  &:before {
     content: 'Tags:';
     margin-right: 1rem;
   }
 
   > span {
     background: #fff;
-    box-shadow: 0 2px 12px 0 rgba(#000, .08);
+    box-shadow: 0 2px 12px 0 rgba(#000, 0.08);
     display: inline-block;
     height: 44px;
     line-height: 44px;
     margin-right: 1rem;
     padding: 0 1.5rem;
   }
-  @include media($m-middle){
+  @include media($m-middle) {
     margin-bottom: 2rem;
 
-    &:before{
+    &:before {
       content: '';
       margin-right: 0;
     }

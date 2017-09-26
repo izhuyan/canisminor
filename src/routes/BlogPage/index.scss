@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .page {
   align-items: center;
@@ -14,11 +14,11 @@
   }
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
-  @include media($m-middle){
+  @include media($m-middle) {
     flex-direction: column-reverse;
   }
 }

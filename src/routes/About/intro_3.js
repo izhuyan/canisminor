@@ -1,12 +1,12 @@
-import {DocTitle, Icon, Showcase, LazyLoad} from '../../components';
-import {homeToc} from '../../config';
+import { DocTitle, Icon, Showcase, LazyLoad } from '../../components';
+import { homeToc } from '../../config';
 import styles from './intro_3.scss';
 
 export default () => {
   const showcaseData = [
-    {title: 'born:', desc: '1990.9.30'},
-    {title: 'mobile:', desc: '153-0585-3008'},
-    {title: 'e-mail:', desc: 'i@canisminor.cc'},
+    { title: 'born:', desc: '1990.9.30' },
+    { title: 'mobile:', desc: '153-0585-3008' },
+    { title: 'e-mail:', desc: 'i@canisminor.cc' },
   ];
   return (
     <div className={styles.intro}>

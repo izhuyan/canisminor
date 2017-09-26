@@ -7,7 +7,7 @@ import json from 'prismjs/components/prism-json';
 import jsx from 'prismjs/components/prism-jsx';
 import md from 'prismjs/components/prism-markdown';
 import yaml from 'prismjs/components/prism-yaml';
-import {Link} from 'dva/router';
+import { Link } from 'dva/router';
 import timeFormat from '../../utils/timeFormat';
 import styles from './index.scss';
 
@@ -44,7 +44,7 @@ marked.setOptions({
   },
 });
 
-export default ({data = {title: '', body: '', filename: ''}, ...other}) => {
+export default ({ data = { title: '', body: '', filename: '' }, ...other }) => {
   const body = data.body;
   return (
     <div {...other}>
@@ -60,7 +60,7 @@ export default ({data = {title: '', body: '', filename: ''}, ...other}) => {
       </div>
       <div
         className={styles.markdown}
-        dangerouslySetInnerHTML={{__html: marked(body)}}
+        dangerouslySetInnerHTML={{ __html: marked(body) }}
       />
     </div>
   );

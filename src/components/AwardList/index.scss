@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 .list {
   margin-bottom: 2rem;
@@ -12,25 +12,25 @@
 
   > span {
     color: $c-primary;
-    font-size: 24px
+    font-size: 24px;
   }
 }
 
 .desc {
   color: #666;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 1px;
   margin-left: 3rem;
 
   > p {
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
   }
   @include media($m-middle) {
-    font-size: .85rem;
+    font-size: 0.85rem;
     margin-left: 1rem;
   }
   @include media($m-small) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }

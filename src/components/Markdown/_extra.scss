@@ -1,5 +1,5 @@
 img {
-  &[alt=full] {
+  &[alt='full'] {
     @include media($m-middle) {
       margin-left: -1rem;
       margin-right: -1rem;
@@ -8,15 +8,14 @@ img {
     }
   }
 
-  &[alt=center] {
-
+  &[alt='center'] {
   }
 
-  &[alt=shadow] {
+  &[alt='shadow'] {
     box-shadow: 0 4px 20px 0 rgba(#000, 0.08);
   }
 
-  &[alt=pixel] {
+  &[alt='pixel'] {
     image-rendering: pixelated; //像素不模糊
   }
 }

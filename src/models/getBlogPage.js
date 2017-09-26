@@ -4,12 +4,12 @@ export default {
   namespace: 'blogPage',
   state: {},
   reducers: {
-    save(state, {payload: data}) {
-      return {...state, data}.data;
+    save(state, { payload: data }) {
+      return { ...state, data }.data;
     },
   },
   effects: {
-    *GET(action, {call, put}) {
+    *GET(action, { call, put }) {
       const path = window.location.pathname.split('/')[2];
       const data = yield call(() => request(`/api/blog/${path}`));
       yield put({
@@ -19,10 +19,10 @@ export default {
     },
   },
   subscriptions: {
-    setup({dispatch, history}) {
-      return history.listen((location) => {
+    setup({ dispatch, history }) {
+      return history.listen(location => {
         const path = location.pathname.split('/');
-        if (path[1] === 'blog' && path[2]) dispatch({type: 'GET'});
+        if (path[1] === 'blog' && path[2]) dispatch({ type: 'GET' });
       });
     },
   },

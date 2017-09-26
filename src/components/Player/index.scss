@@ -1,10 +1,10 @@
-@import "var";
+@import 'var';
 
 :global {
-  @import "plyr";
+  @import 'plyr';
 }
 
-.video{
+.video {
   background: #222;
   margin-bottom: 4rem;
   max-width: 100%;
