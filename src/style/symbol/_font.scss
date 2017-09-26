@@ -1,26 +1,25 @@
-@font-face {
-	font-family: "cm-font";
-	src: url('/font/Futura.eot');
-	src:
-			url('/font/Futura.eot?#font-spider') format('embedded-opentype'),
-			url('/font/Futura.woff2') format('woff2'),
-			url('/font/Futura.woff') format('woff'),
-			url('/font/Futura.ttf') format('truetype'),
-			url('/font/Futura.svg') format('svg');
-	font-weight: normal;
-}
-@font-face {
-	font-family: "cm-font";
-	src: url('/font/FuturaBold.eot');
-	src:
-			url('/font/FuturaBold.eot?#font-spider') format('embedded-opentype'),
-			url('/font/FuturaBold.woff2') format('woff2'),
-			url('/font/FuturaBold.woff') format('woff'),
-			url('/font/FuturaBold.ttf') format('truetype'),
-			url('/font/FuturaBold.svg') format('svg');
-	font-weight: bold;
+@import "var";
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  background: rgba(#ccc, .1);
+  height: .4rem;
+  width: .4rem;
 }
 
-body {
-	font-family: "cm-font", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  background: rgba(#ccc, .5);
+  border-radius: 0;
+  box-shadow: none;
+
+  &:hover {
+    background: $c-primary;
+  }
 }

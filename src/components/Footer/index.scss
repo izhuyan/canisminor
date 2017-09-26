@@ -1,45 +1,54 @@
 @import "var";
+
 .footer {
-	z-index: 1;
-	height: 300px;
-	width: 100%;
-	color: $c-font-normal;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	a {
-		color: $c-font-normal;
-		&:hover {
-			color: $c-primary;
-		}
-	}
+  align-items: center;
+  color: $c-font-normal;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+
+  a {
+    color: $c-font-normal;
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
 }
+
 .text {
-	margin-top: 0.6rem;
-	text-align: center;
-	@include media($m-small) {
-		font-size: .9rem;
-	}
+  margin-top: 0.6rem;
+  text-align: center;
+  @include media($m-small) {
+    font-size: .9rem;
+  }
 }
+
 .note {
-	font-size: .9em;
-	margin-left: .8rem;
+  font-size: .9em;
+  margin-left: .8rem;
 }
+
 .logo {
-	display: block;
-	font-size: 1.5rem;
-	margin-bottom: .5rem;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
 }
+
 .social {
-	margin-top: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	a + a {
-		margin-left: 1rem;
-	}
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  a + a {
+    margin-left: 1rem;
+  }
 }
+
 .icon {
-	font-size: 32px;
+  font-size: 32px;
 }

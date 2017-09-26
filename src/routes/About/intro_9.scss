@@ -1,18 +1,20 @@
 @import "var";
+
 .intro {
-	border-bottom: 1px solid $c-split;
+  border-bottom: 1px solid $c-split;
 }
+
 .box{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 .img{
-	@include showup;
-	max-width: 90%;
-	box-shadow: 0 24px 48px 0 rgba(0,0,0,.12);
-	margin-top: 2rem;
-	margin-bottom: 4rem;
+  @include showup;
+  box-shadow: 0 24px 48px 0 rgba(0,0,0,.12);
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  max-width: 90%;
 }

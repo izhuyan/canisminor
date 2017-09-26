@@ -1,104 +1,116 @@
 @import "var";
 
 .title {
-	padding-bottom: 2rem;
-	margin-bottom: 4rem;
-	font-size: 2rem;
-	text-align: right;
-	position: relative;
-	&:before {
-		content: "";
-		width: 2rem;
-		height: 4px;
-		position: absolute;
-		background: $c-primary;
-		right: 0;
-		bottom: 0;
-	}
-	@include media($m-small) {
-		font-size: 1.5rem;
-		padding-left: 1rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: right;
 
-		padding-right: 1rem;
-		&:before {
-			right: 1rem
-		}
-	}
-	.num {
-		color: #ddd;
-		font-weight: 700;
-		font-size: 1.15em;
-		margin-right: 1rem;
-	}
+  &:before {
+    background: $c-primary;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    position: absolute;
+    right: 0;
+    width: 2rem;
+  }
+  @include media($m-small) {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    &:before {
+      right: 1rem
+    }
+  }
+
+  .num {
+    color: #ddd;
+    font-size: 1.15em;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
 }
 
 :global {
-	.ant-collapse {
-		background: transparent;
-		border-radius: 0;
-		border: 0;
-		@include media($m-small) {
-			padding-bottom: 0 !important;
-			margin-bottom: 0 !important;
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-		> .ant-collapse-item {
-			width: 100%;
-			border: 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			> .ant-collapse-header {
-				width: 100%;
-				max-width: 960px;
-				&:active {
-					background-color: transparent !important;
-				}
-				> .arrow:before {
-					content: "+" !important;
-					color: $c-font-normal;
-					font-size: 2rem;
-					opacity: .5;
-				}
-			}
-		}
-	}
-	.ant-collapse-content {
-		width: 100%;
-		background: transparent;
-		padding: 0;
-	}
-	.ant-collapse-content-box {
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		max-width: 960px;
-		border: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 15rem !important;
-		margin-bottom: 5rem;
-		border-bottom: 1px solid $c-split;
-		.ant-btn {
-			margin-top: 4rem;
-		}
-		img {
-			max-width: 100%;
-			min-height: 100px;
-		}
-		@include media($m-small) {
-			padding-bottom: 0 !important;
-			margin-bottom: 2 !important;
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-			.ant-btn {
-				display: block;
-				margin: 4rem auto;
-				width: 90%;
-			}
-		}
-	}
+  .ant-collapse {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    @include media($m-small) {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    > .ant-collapse-item {
+      align-items: center;
+      border: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      > .ant-collapse-header {
+        max-width: 960px;
+        width: 100%;
+
+        &:active {
+          background-color: transparent !important;
+        }
+
+        > .arrow:before {
+          color: $c-font-normal;
+          content: "+" !important;
+          font-size: 2rem;
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  .ant-collapse-content {
+    background: transparent;
+    padding: 0;
+    width: 100%;
+  }
+
+  .ant-collapse-content-box {
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid $c-split;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-bottom: 15rem !important;
+    width: 100%;
+
+    .ant-btn {
+      margin-top: 4rem;
+    }
+
+    img {
+      max-width: 100%;
+      min-height: 100px;
+    }
+    @include media($m-small) {
+      margin-bottom: 2 !important;
+      padding-bottom: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      .ant-btn {
+        display: block;
+        margin: 4rem auto;
+        width: 90%;
+      }
+    }
+  }
 }
 

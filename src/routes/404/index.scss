@@ -1,20 +1,23 @@
 @import "var";
+
 .view {
-	height: 40vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	> h1 {
-		font-weight: 700;
-		color: $c-primary;
-		font-size: 8rem;
-		text-align: center;
-		@include showup;
-	}
-	> div {
-		font-size: 2rem;
-		text-align: center;
-		@include showup;
-	}
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+
+  > h1 {
+    color: $c-primary;
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    @include showup;
+  }
+
+  > div {
+    font-size: 2rem;
+    text-align: center;
+    @include showup;
+  }
 }

@@ -1,14 +1,16 @@
 @import "var";
+
 .intro > div {
-	padding: 0 5%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 88px;
-	padding-bottom: 88px;
-	background: #fff;
-	div{
-		@include showup
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  padding-bottom: 88px;
+  padding-top: 88px;
+
+  div{
+    @include showup
 	}
 }
 

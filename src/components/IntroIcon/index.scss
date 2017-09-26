@@ -1,25 +1,29 @@
 @import "var";
+
 .box {
-	@include showup;
-	width: 120px;
-	margin: 1.5rem 1rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  @include showup;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1rem;
+  width: 120px;
 }
+
 .icon {
-	width: 80px;
-	height: 80px;
-	border: 3px solid #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 24px;
-	> span {
-		font-size: 64px;
-	}
+  align-items: center;
+  border: 3px solid #fff;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 80px;
+
+  > span {
+    font-size: 64px;
+  }
 }
+
 .text {
-	font-weight: 700;
-	letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }

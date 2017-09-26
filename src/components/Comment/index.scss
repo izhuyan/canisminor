@@ -1,16 +1,19 @@
 @import "var";
+
 :global{
-@import "gitment";
+  @import "gitment";
 }
+
 .command {
-	@include showup;
-	width: 100%;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  @include showup;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
 }
+
 .item {
-	width: 100%;
-	margin: 0;
+  margin: 0;
+  width: 100%;
 }

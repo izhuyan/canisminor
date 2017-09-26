@@ -1,14 +1,16 @@
 @import "var";
+
 .project{
-	min-height: calc(100vh - 250px);
-	> div {
-		padding: 0 5%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 88px;
-		padding-bottom: 88px;
-		color: #222;
-		justify-content: center;
-	}
+  min-height: calc(100vh - 250px);
+
+  > div {
+    align-items: center;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    padding-bottom: 88px;
+    padding-top: 88px;
+  }
 }
