@@ -1,4 +1,7 @@
 @import "var";
+:global{
+@import "gitment";
+}
 .command {
 	@include showup;
 	width: 100%;
@@ -10,42 +13,4 @@
 .item {
 	width: 100%;
 	margin: 0;
-}
-:global {
-	.gitment-comments-init-btn,
-	.gitment-editor-submit {
-		background-color: $c-primary !important;
-		@include media($m-small) {
-			width: 100%;
-		}
-	}
-	.gitment-comment-main,
-	.gitment-editor-header {
-		background: #fff;
-	}
-	.gitment-editor-submit,
-	.gitment-comments-init-btn {
-		background-color: #222;
-	}
-	.gitment-comment-like-btn.liked {
-		color: $c-primary;
-		.gitment-heart-icon {
-			fill: $c-primary;
-		}
-	}
-	a {
-		&:hover,
-		&.gitment-footer-project-link,
-		&.gitment-footer-project-link:visited,
-		&.gitment-editor-login-link,
-		&.gitment-editor-login-link:visited {
-			color: $c-primary;
-		}
-	}
-
-	.gitment-editor-footer-tip {
-		@include media($m-small) {
-			display: none;
-		}
-	}
 }

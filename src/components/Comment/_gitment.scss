@@ -1,0 +1,344 @@
+@import "var";
+.gitment-container {
+	font-size: .9rem;
+	* {
+		box-sizing: border-box;
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	.gitment-hidden {
+		display: none;
+	}
+	.gitment-spinner-icon {
+		fill: #333;
+		-webkit-animation: gitment-spin 1s steps(12) infinite;
+		animation: gitment-spin 1s steps(12) infinite;
+	}
+}
+@-webkit-keyframes gitment-spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes gitment-spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.gitment-root-container, .gitment-header-container {
+	margin: 1rem 0;
+}
+.gitment-header-like-btn {
+	cursor: pointer;
+	svg {
+		vertical-align: middle;
+		height: 2rem;
+	}
+}
+.gitment-comment-like-btn {
+	cursor: pointer;
+	float: right;
+	&.liked {
+		color: $c-primary;
+	}
+	svg {
+		vertical-align: middle;
+		height: 1.5rem;
+	}
+}
+.gitment-header-like-btn.liked svg,
+.gitment-comment-like-btn.liked svg {
+	fill: $c-primary;
+}
+.gitment-header-issue-link {
+	float: right;
+	line-height: 2rem;
+	color: #666;
+}
+.gitment-comments-loading,
+.gitment-comments-error,
+.gitment-comments-empty {
+	background: #fff;
+	padding: 1rem;
+	border: 1px solid $c-split;
+	text-align: center;
+	margin: 3rem 0;
+}
+.gitment-comments-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0 2rem;
+}
+.gitment-comment,
+.gitment-editor-container {
+	position: relative;
+	min-height: 4rem;
+	padding-left: 4rem;
+	margin: 1rem 0;
+}
+.gitment-editor-container {
+	@include media($m-small) {
+		padding: 0;
+	}
+}
+.gitment-comment-avatar,
+.gitment-editor-avatar {
+	float: left;
+	margin-left: -4rem;
+}
+.gitment-comment-avatar,
+.gitment-comment-avatar-img,
+.gitment-comment-avatar,
+.gitment-editor-avatar-img {
+	width: 44px;
+	height: 44px;
+}
+.gitment-editor-avatar {
+	@include media($m-small) {
+		display: none;
+	}
+	svg {
+		width: 44px;
+		height: 44px;
+	}
+	.gitment-github-icon {
+		fill: #fff;
+		background-color: #333;
+	}
+}
+.gitment-comment-main,
+.gitment-editor-main {
+	background: #fff;
+	position: relative;
+	border: 1px solid $c-split;
+	&:before, &:after {
+		position: absolute;
+		top: 11px;
+		left: -1rem;
+		display: block;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+		content: "";
+		border-color: transparent;
+		border-style: solid solid outset;
+	}
+	&:before {
+		border-width: 8px;
+		border-right-color: $c-split;
+	}
+	&:after {
+		margin-top: 1px;
+		margin-left: 2px;
+		border-width: 7px;
+		border-right-color: #fff;
+	}
+}
+.gitment-editor-main {
+	&:before, &:after {
+		@include media($m-small) {
+			display: none;
+		}
+	}
+}
+.gitment-comment-header {
+	margin: .75rem 1rem;
+	color: #666;
+	background-color: #fff;
+}
+.gitment-editor-header {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid $c-split;
+}
+.gitment-comment-name {
+	color: #666;
+}
+.gitment-editor-tabs {
+	margin-bottom: -1px;
+	margin-left: -1px;
+}
+.gitment-editor-tab {
+	display: inline-block;
+	padding: 11px 12px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+	text-decoration: none;
+	background-color: transparent;
+	border-width: 0 1px;
+	border-style: solid;
+	border-color: transparent;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+	&.gitment-selected {
+		color: #333;
+		background-color: #fff;
+		border-color: $c-split;
+	}
+}
+.gitment-editor-login {
+	float: right;
+	margin-top: -30px;
+	margin-right: 15px;
+}
+.gitment-editor-logout-link {
+	color: #666;
+	&:hover {
+		color: $c-primary;
+		text-decoration: none;
+	}
+}
+.gitment-comment-body {
+	position: relative;
+	margin: 12px 15px;
+	overflow: hidden;
+}
+.gitment-comment-body-folded {
+	cursor: pointer;
+	&::before {
+		display: block !important;
+		content: "";
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		bottom: 50px;
+		pointer-events: none;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+	}
+	&::after {
+		display: block !important;
+		content: "Click to Expand" !important;
+		text-align: center;
+		color: #666;
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		left: 0;
+		bottom: 0;
+		pointer-events: none;
+		background: rgba(255, 255, 255, 0.9);
+	}
+}
+.gitment-editor-body {
+	margin: 0;
+}
+.gitment-comment-body > *:first-child, .gitment-editor-preview > * {
+	&:first-child, &:last-child {
+		margin-top: 0 !important;
+	}
+}
+.gitment-editor-body textarea {
+	display: block;
+	width: 100%;
+	min-height: 150px;
+	max-height: 500px;
+	padding: 16px;
+	resize: vertical;
+	max-width: 100%;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.6;
+	background-color: #fff;
+	color: #333;
+	vertical-align: middle;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	overflow: visible;
+	&:focus {
+		background-color: #fff;
+	}
+}
+.gitment-editor-preview {
+	min-height: 150px;
+	padding: 16px;
+	background-color: transparent;
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+.gitment-editor-footer {
+	padding: 0;
+	margin-top: 1rem;
+	&::after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+.gitment-editor-footer-tip {
+	display: inline-block;
+	padding-top: 1rem;
+	font-size: 12px;
+	color: #666;
+	@include media($m-small) {
+		display: none;
+	}
+}
+.gitment-comments-pagination {
+	list-style: none;
+	text-align: right;
+	margin: -1rem 0 1rem 0;
+}
+.gitment-comments-page-item {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid $c-split;
+	margin-left: -1px;
+	padding: .25rem .5rem;
+	&:hover, &.gitment-selected {
+		background-color: #f8f8f8;
+	}
+}
+.gitment-editor-submit,
+.gitment-comments-init-btn {
+	color: #fff;
+	background-color: $c-primary;
+	position: relative;
+	display: inline-block;
+	padding: 0 1rem;
+	font-size: 1rem;
+	line-height: 44px;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	border: none;
+	appearance: none;
+	float: right;
+	@include media($m-small) {
+		width: 100%;
+	}
+}
+.gitment-comments-init-btn,
+.gitment-editor-submit {
+	&:hover, &:disabled {
+		opacity: .5;
+	}
+}
+.gitment-footer-container {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	text-align: right;
+	font-size: 12px;
+}
+/*
+ * Markdown CSS
+ * Copied from https://github.com/sindresorhus/github-markdown-css
+ */
+
+.gitment-markdown {
+	@import "../Markdown/markdown";
+	pre * {
+		color: $c-white !important;
+	}
+	@import "highlight";
+}

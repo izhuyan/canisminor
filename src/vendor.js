@@ -14,10 +14,7 @@ import 'weixin-jsapi';
 import 'plyr';
 import 'nprogress';
 import 'prismjs';
-
-// components
 import 'gitment';
-import 'gitment/style/default.css';
 
 // antd
 import antd from 'antd';
