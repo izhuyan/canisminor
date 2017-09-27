@@ -1,4 +1,4 @@
-import csswring from 'csswring';
+import cssnano from 'cssnano';
 import pxtorem from 'postcss-pxtorem';
 
 export default {
@@ -50,7 +50,9 @@ export default {
 			extraBabelPlugins: ['dva-hmr']
 		},
 		production : {
-			extraPostCSSPlugins: [csswring()]
+			extraPostCSSPlugins: [cssnano(
+				{safe: true},
+				{preset: ['default', {discardComments: {removeAll: true}}]})]
 		}
 	},
 	dllPlugin          : {
