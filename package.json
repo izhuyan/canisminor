@@ -13,7 +13,7 @@
 		"build:font": "font-spider public/font/index.html",
 		"pull": "git pull; yarn; yarn build:dll; cd blog; git pull",
 		"pull:blog": "git submodule update --init",
-		"eslint": "eslint --fix --ext .js src",
+		"eslint": "eslint --ext .js src",
 		"lint": "lint-staged"
 	},
 	"pre-commit": [
