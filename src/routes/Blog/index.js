@@ -1,6 +1,5 @@
-import { Icon, Spin } from 'antd';
+import { Spin } from 'antd';
 import { connect } from 'dva';
-import { Link } from 'dva/router';
 import path from 'path';
 import { LazyLoad, Markdown, Tags, Button } from '../../components';
 import setTitle from '../../utils/setTitle';
