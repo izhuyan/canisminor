@@ -46,7 +46,6 @@ marked.setOptions({
 
 export default ({ data = { title: '', body: '', filename: '' }, ...other }) => {
   const body = data.body;
-  console.log(marked(body));
   return (
     <div {...other}>
       {window.location.pathname === '/blog' ? (
