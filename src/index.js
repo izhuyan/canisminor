@@ -20,9 +20,9 @@ const app = dva({
 app.use(createLoading());
 
 // 3. Model
-app.model(require('./models/getBlogToc'));
-app.model(require('./models/getBlogPage'));
-app.model(require('./models/getProjectToc'));
+// app.model(require('./models/getBlogToc'));
+// app.model(require('./models/getBlogPage'));
+// app.model(require('./models/getProjectToc'));
 
 // 4. Router
 app.router(require('./router'));

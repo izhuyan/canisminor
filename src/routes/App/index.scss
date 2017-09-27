@@ -1,11 +1,14 @@
 @import 'import';
-
+.view {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .layout {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
 .content {
   width: 100%;
   z-index: 1;

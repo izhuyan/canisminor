@@ -1,31 +1,55 @@
-import { Route, Router, Switch } from 'dva/router';
-import React from 'react';
-import { BackTop } from 'antd';
-import { Background } from './components';
+import dynamic from 'dva/dynamic';
+import { Route, Router } from 'dva/router';
 import App from './routes/App';
-import Loading from './routes/Loading';
-import Splash from './routes/Splash';
 
-const PrimaryLayout = () => {
-  return (
-    <div style={{ width: '100%', position: 'relative', overflow: 'hidden' }}>
-      <Route component={Loading} />
-      <BackTop style={{ zIndex: 999 }} />
-      <Background location={window.location} />
-      <Switch>
-        <Route exact path="/" component={Splash} />
-        <Route path="/:name" component={App} />
-      </Switch>
-    </div>
-  );
-};
-
-export default ({ history }) => {
+export default ({ app, history }) => {
   history.listen(() => window.scrollTo(0, 0));
+
+  const Splash = dynamic({
+    app,
+    component: () => import('./routes/Splash'),
+  });
+  const About = dynamic({
+    app,
+    component: () => import('./routes/About'),
+  });
+  const Blog = dynamic({
+    app,
+    models: () => [import('./models/getBlogToc')],
+    component: () => import('./routes/Blog'),
+  });
+  const BlogPage = dynamic({
+    app,
+    models: () => [import('./models/getBlogPage')],
+    component: () => import('./routes/BlogPage'),
+  });
+  const Project = dynamic({
+    app,
+    models: () => [import('./models/getProjectToc')],
+    component: () => import('./routes/Project'),
+  });
+  const Contact = dynamic({
+    app,
+    component: () => import('./routes/Contact'),
+  });
+  const NotFound = dynamic({
+    app,
+    component: () => import('./routes/404'),
+  });
 
   return (
     <Router history={history}>
-      <PrimaryLayout />
+      <App>
+        <Route exact path="/" component={Splash} />
+        <App.Body>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:name" component={BlogPage} />
+          <Route exact path="/project" component={Project} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={NotFound} />
+        </App.Body>
+      </App>
     </Router>
   );
 };

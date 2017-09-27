@@ -3,8 +3,8 @@ import React from 'react';
 import { SvgIcon } from '../../components';
 import styles from './index.scss';
 
-export default ({ location }) => {
-  const pathname = location.pathname;
+export default () => {
+  const pathname = window.location.pathname;
   const classConfig = classnames.bind(styles)('shape', {
     shape__animation: pathname !== '/',
     shape__about: pathname === '/about',

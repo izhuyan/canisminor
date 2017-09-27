@@ -1,32 +1,28 @@
-import { Layout } from 'antd';
-import dynamic from 'dva/dynamic';
-import { Route, Switch } from 'dva/router';
-import { Footer, Header } from '../../components';
+import { BackTop, Layout } from 'antd';
+import { Switch } from 'dva/router';
+import { Background, Footer, Header, Loading } from '../../components';
 import styles from './index.scss';
 
 const { Content } = Layout;
-const About = dynamic({ component: () => import('../About') });
-const Project = dynamic({ component: () => import('../Project') });
-const Contact = dynamic({ component: () => import('../Contact') });
-const Blog = dynamic({ component: () => import('../Blog') });
-const BlogPage = dynamic({ component: () => import('../BlogPage') });
-const NotFound = dynamic({ component: () => import('../404') });
 
-export default () => {
+const App = ({ children }) => {
   return (
-    <Layout className={styles.layout}>
-      <Header />
-      <Content className={styles.content}>
-        <Switch>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/blog/:name" component={BlogPage} />
-          <Route exact path="/project" component={Project} />
-          <Route exact path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
-      </Content>
-      <Footer />
+    <Layout className={styles.view}>
+      <Loading />
+      <BackTop style={{ zIndex: 999 }} />
+      <Background />
+      <Switch>{children}</Switch>
     </Layout>
   );
 };
+
+App.Body = ({ children }) => (
+  <Layout className={styles.layout}>
+    <Header />
+    <Content className={styles.content}>
+      <Switch>{children}</Switch>
+    </Content>
+    <Footer />
+  </Layout>
+);
+export default App;

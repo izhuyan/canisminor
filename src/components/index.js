@@ -11,6 +11,7 @@ export { default as Player } from './Player';
 export { default as Background } from './Background';
 export { default as Markdown } from './Markdown';
 export { default as Tags } from './Tags';
+export { default as Loading } from './Loading';
 // layout
 export { default as Header } from './Header';
 export { default as Footer } from './Footer';
