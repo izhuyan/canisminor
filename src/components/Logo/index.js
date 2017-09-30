@@ -13,7 +13,7 @@ export default ({
     font-size: ${size * 2}rem;
     color: transparent;
     display: flex;
-    hegiht: ${size * 2}rem;
+    height: ${size * 2}rem;
     position: relative;
   `;
   let ShadowGroup = styled.div`
@@ -41,7 +41,7 @@ export default ({
   if (animation) {
     const Logo1 = keyframes`
 		0% {margin-left: ${size}rem;}
-		100% {margin-left: 0rem;}
+		100% {margin-left: 0;}
 		`;
     const Logo2 = keyframes`
 		0% {margin-left: -${2 * size}rem;}
