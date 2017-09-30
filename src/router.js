@@ -1,44 +1,44 @@
-import dynamic from 'dva/dynamic';
-import { Route, Router } from 'dva/router';
-import App from './routes/App';
+import dynamic from "dva/dynamic";
+import { Route, Router } from "dva/router";
+import App from "./routes/App";
 
 export default ({ app, history }) => {
   history.listen(() => window.scrollTo(0, 0));
 
   const Splash = dynamic({
     app,
-    component: () => import('./routes/Splash'),
+    component: () => import("./routes/Splash")
   });
   const About = dynamic({
     app,
-    component: () => import('./routes/About'),
+    component: () => import("./routes/About")
   });
   const Blog = dynamic({
     app,
-    models: () => [import('./models/getBlogToc')],
-    component: () => import('./routes/Blog'),
+    models: () => [import("./models/getBlogToc")],
+    component: () => import("./routes/Blog")
   });
   const BlogPage = dynamic({
     app,
-    models: () => [import('./models/getBlogPage')],
-    component: () => import('./routes/BlogPage'),
+    models: () => [import("./models/getBlogPage")],
+    component: () => import("./routes/BlogPage")
   });
   const Project = dynamic({
     app,
-    models: () => [import('./models/getProjectToc')],
-    component: () => import('./routes/Project'),
+    models: () => [import("./models/getProjectToc")],
+    component: () => import("./routes/Project")
   });
   const Contact = dynamic({
     app,
-    component: () => import('./routes/Contact'),
+    component: () => import("./routes/Contact")
   });
   const Dev = dynamic({
     app,
-    component: () => import('./routes/Dev'),
+    component: () => import("./routes/Dev")
   });
   const NotFound = dynamic({
     app,
-    component: () => import('./routes/404'),
+    component: () => import("./routes/404")
   });
 
   return (

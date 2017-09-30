@@ -1,10 +1,10 @@
-import { message } from 'antd';
-import dva from 'dva';
-import createLoading from 'dva-loading';
-import createHistory from 'history/createBrowserHistory';
-import './index.scss';
-import Console from './utils/console';
-import Wechat from './utils/wechat';
+import { message } from "antd";
+import dva from "dva";
+import createLoading from "dva-loading";
+import createHistory from "history/createBrowserHistory";
+import "./index.scss";
+import Console from "./utils/console";
+import Wechat from "./utils/wechat";
 
 const ERROR_MSG_DURATION = 3; // 3 秒
 
@@ -13,7 +13,7 @@ const app = dva({
   history: createHistory(),
   onError(e) {
     message.error(e.message, ERROR_MSG_DURATION);
-  },
+  }
 });
 
 // 2. Plugins
@@ -25,13 +25,13 @@ app.use(createLoading());
 // app.model(require('./models/getProjectToc'));
 
 // 4. Router
-app.router(require('./router'));
+app.router(require("./router"));
 
 // 5. Start
-app.start('#root');
+app.start("#root");
 
 // 6. Other
-if (process.env.NODE_ENV !== 'development') {
+if (process.env.NODE_ENV !== "development") {
   Wechat();
   Console();
 }

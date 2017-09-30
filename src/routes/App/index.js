@@ -1,7 +1,7 @@
-import { BackTop, Layout } from 'antd';
-import { Switch } from 'dva/router';
-import { Background, Footer, Header, Loading } from '../../components';
-import styles from './index.scss';
+import { BackTop, Layout } from "antd";
+import { Switch } from "dva/router";
+import { Background, Footer, Header, Loading } from "../../components";
+import styles from "./index.scss";
 
 const { Content } = Layout;
 

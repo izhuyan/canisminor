@@ -1,12 +1,12 @@
-import { Icon } from '../';
-import styles from './index.scss';
+import { Icon } from "../";
+import styles from "./index.scss";
 
 export default ({ content }) => {
   const Item = (item, k) => (
     <div className={styles.item} key={k}>
-      <Icon type={k === 0 ? 'point-main' : 'point'} />
+      <Icon type={k === 0 ? "point-main" : "point"} />
       <div className={styles.desc}>
-        {item.split('|').map((str, i) => <p key={i}>{str}</p>)}
+        {item.split("|").map((str, i) => <p key={i}>{str}</p>)}
       </div>
     </div>
   );

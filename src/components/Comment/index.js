@@ -1,15 +1,15 @@
-import classnames from 'classnames';
-import Gitment from 'gitment';
-import { Component } from 'react';
-import { gitment as config } from '../../config';
-import styles from './index.scss';
+import classnames from "classnames";
+import Gitment from "gitment";
+import { Component } from "react";
+import { gitment as config } from "../../config";
+import styles from "./index.scss";
 
 export default class extends Component {
   componentDidMount() {
     const Config = { id: window.location.pathname, ...config };
     const gitment = new Gitment(Config);
-    gitment.renderComments('comments');
-    gitment.renderEditor('editor');
+    gitment.renderComments("comments");
+    gitment.renderEditor("editor");
   }
 
   render() {

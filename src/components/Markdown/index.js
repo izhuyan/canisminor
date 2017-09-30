@@ -1,15 +1,15 @@
-import marked from 'marked';
-import path from 'path';
-import prism from 'prismjs';
-import bash from 'prismjs/components/prism-bash';
-import sass from 'prismjs/components/prism-sass';
-import json from 'prismjs/components/prism-json';
-import jsx from 'prismjs/components/prism-jsx';
-import md from 'prismjs/components/prism-markdown';
-import yaml from 'prismjs/components/prism-yaml';
-import { Link } from 'dva/router';
-import timeFormat from '../../utils/timeFormat';
-import styles from './index.scss';
+import marked from "marked";
+import path from "path";
+import prism from "prismjs";
+import bash from "prismjs/components/prism-bash";
+import sass from "prismjs/components/prism-sass";
+import json from "prismjs/components/prism-json";
+import jsx from "prismjs/components/prism-jsx";
+import md from "prismjs/components/prism-markdown";
+import yaml from "prismjs/components/prism-yaml";
+import { Link } from "dva/router";
+import timeFormat from "../../utils/timeFormat";
+import styles from "./index.scss";
 
 const extensions = {
   bash,
@@ -19,12 +19,12 @@ const extensions = {
   json,
   md,
   yaml,
-  html: 'markup',
-  ejs: 'markup',
-  svg: 'markup',
-  xml: 'markup',
-  py: 'python',
-  rb: 'ruby',
+  html: "markup",
+  ejs: "markup",
+  svg: "markup",
+  xml: "markup",
+  py: "python",
+  rb: "ruby"
 };
 
 marked.setOptions({
@@ -38,18 +38,18 @@ marked.setOptions({
   smartypants: false,
   highlight: (code, lang) => {
     const language = !prism.languages.hasOwnProperty(lang)
-      ? extensions[lang] || 'markup'
+      ? extensions[lang] || "markup"
       : lang;
     return prism.highlight(code, prism.languages[language]);
-  },
+  }
 });
 
-export default ({ data = { title: '', body: '', filename: '' }, ...other }) => {
+export default ({ data = { title: "", body: "", filename: "" }, ...other }) => {
   const body = data.body;
   return (
     <div {...other}>
-      {window.location.pathname === '/blog' ? (
-        <Link className={styles.title} to={path.join('blog', data.filename)}>
+      {window.location.pathname === "/blog" ? (
+        <Link className={styles.title} to={path.join("blog", data.filename)}>
           {data.title}
         </Link>
       ) : (

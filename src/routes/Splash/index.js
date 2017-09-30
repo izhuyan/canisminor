@@ -1,11 +1,11 @@
-import { Link } from 'dva/router';
-import { Typist } from '../../components';
-import { indexPage } from '../../config';
-import styles from './index.scss';
+import { Link } from "dva/router";
+import { Typist } from "../../components";
+import { indexPage } from "../../config";
+import styles from "./index.scss";
 
 export default () => {
   const toIndex = () => {
-    window.location.href = '/about';
+    window.location.href = "/about";
   };
 
   return (

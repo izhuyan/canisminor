@@ -1,9 +1,9 @@
-import classnames from 'classnames';
+import classnames from "classnames";
 
 export default ({ type, className, ...other }) => {
-  const classConfig = classnames('cm-iconfont', {
+  const classConfig = classnames("cm-iconfont", {
     [`icon-${type}`]: type,
-    [className]: className,
+    [className]: className
   });
   return <span className={classConfig} {...other} />;
 };

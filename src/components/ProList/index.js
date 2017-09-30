@@ -1,11 +1,11 @@
-import { Collapse } from 'antd';
-import path from 'path';
-import { Button, LazyLoad, Player } from '../../components';
-import styles from './index.scss';
+import { Collapse } from "antd";
+import path from "path";
+import { Button, LazyLoad, Player } from "../../components";
+import styles from "./index.scss";
 
 const Panel = Collapse.Panel;
 
-export default ({ activeKey = ['0'], content }) => {
+export default ({ activeKey = ["0"], content }) => {
   const loadImg = (src, key) => (
     <LazyLoad
       key={key}
@@ -31,9 +31,9 @@ export default ({ activeKey = ['0'], content }) => {
       const imgList = [];
       for (let i = 1; i <= item.imgPage; i++) {
         const imgPath = `http://${path.join(
-          'qn.canisminor.cc/project/',
+          "qn.canisminor.cc/project/",
           item.imgPath,
-          `${item.imgPath}_${i}.png`,
+          `${item.imgPath}_${i}.png`
         )}`;
         imgList.push(imgPath);
       }

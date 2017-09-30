@@ -1,5 +1,5 @@
-import { Icon } from '../';
-import styles from './index.scss';
+import { Icon } from "../";
+import styles from "./index.scss";
 
 export default ({ type, text }) => (
   <div className={styles.box}>

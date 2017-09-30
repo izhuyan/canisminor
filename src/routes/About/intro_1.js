@@ -1,5 +1,5 @@
-import { Title } from '../../components';
-import styles from './intro_1.scss';
+import { Title } from "../../components";
+import styles from "./intro_1.scss";
 
 export default () => {
   return (

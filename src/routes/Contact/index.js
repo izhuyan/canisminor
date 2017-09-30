@@ -1,9 +1,9 @@
-import { Comment, Title } from '../../components';
-import setTitle from '../../utils/setTitle';
-import styles from './index.scss';
+import { Comment, Title } from "../../components";
+import setTitle from "../../utils/setTitle";
+import styles from "./index.scss";
 
 export default () => {
-  setTitle('Contact');
+  setTitle("Contact");
   return (
     <div className={styles.contact}>
       <Title

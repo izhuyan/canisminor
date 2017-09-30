@@ -1,5 +1,5 @@
-import { LazyLoad } from '../';
-import styles from './index.scss';
+import { LazyLoad } from "../";
+import styles from "./index.scss";
 
 export default ({ content }) => {
   const Item = (item, key) => (
@@ -8,14 +8,14 @@ export default ({ content }) => {
         className={styles.img}
         style={{
           backgroundImage: `url(/img/${item.img}.png)`,
-          boxShadow: `0 12px 24px 0 ${hexToRgb(item.color)}`,
+          boxShadow: `0 12px 24px 0 ${hexToRgb(item.color)}`
         }}
       />
       <div className={styles.content}>
         <div className={styles.title}>{item.title}</div>
         <div className={styles.time}>{item.time}</div>
         <div className={styles.desc}>
-          {item.desc.split('|').map((str, i) => <p key={i}>{str}</p>)}
+          {item.desc.split("|").map((str, i) => <p key={i}>{str}</p>)}
         </div>
       </div>
     </LazyLoad>
@@ -29,7 +29,7 @@ function hexToRgb(hex) {
     parseInt(result[1], 16),
     parseInt(result[2], 16),
     parseInt(result[3], 16),
-    0.25,
+    0.25
   ];
-  return `rgba(${rgba.join(',')})`;
+  return `rgba(${rgba.join(",")})`;
 }

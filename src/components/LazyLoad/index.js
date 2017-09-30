@@ -1,15 +1,15 @@
-import React from 'react';
-import { Spin } from 'antd';
-import LazyLoad from 'react-lazyload';
-import styles from './index.scss';
+import React from "react";
+import { Spin } from "antd";
+import LazyLoad from "react-lazyload";
+import styles from "./index.scss";
 
 export default ({
   children,
   className,
   offset = 0,
-  width = '100%',
+  width = "100%",
   height = 500,
-  background = 'transparent',
+  background = "transparent",
   ...other
 }) => {
   const placeholder = (
@@ -22,7 +22,7 @@ export default ({
 
   return (
     <LazyLoad height={height} offset={offset} placeholder={placeholder} once>
-      <div className={[styles.lazyload, className].join(' ')} {...other}>
+      <div className={[styles.lazyload, className].join(" ")} {...other}>
         {children}
       </div>
     </LazyLoad>

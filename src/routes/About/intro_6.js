@@ -1,6 +1,6 @@
-import { Button, DocTitle, LazyLoad } from '../../components';
-import { homeToc, specList } from '../../config';
-import styles from './intro_6.scss';
+import { Button, DocTitle, LazyLoad } from "../../components";
+import { homeToc, specList } from "../../config";
+import styles from "./intro_6.scss";
 
 export default () => {
   const Img = (item, key) => (
@@ -8,7 +8,7 @@ export default () => {
       alt="Spec"
       key={key}
       width={item.width}
-      height={item.height || ''}
+      height={item.height || ""}
       src={item.src}
     />
   );

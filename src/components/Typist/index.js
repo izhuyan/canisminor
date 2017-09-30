@@ -1,12 +1,12 @@
-import Typist from 'react-typist';
-import './index.scss';
+import Typist from "react-typist";
+import "./index.scss";
 
 export default ({ children, className, delay = 40, ...other }) => {
   const cursor = {
     show: true,
     blink: true,
-    element: '_',
-    hideWhenDone: false,
+    element: "_",
+    hideWhenDone: false
   };
 
   return (

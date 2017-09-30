@@ -1,6 +1,6 @@
-import { Layout, Popover } from 'antd';
-import { Icon } from '../../components';
-import styles from './index.scss';
+import { Layout, Popover } from "antd";
+import { Icon } from "../../components";
+import styles from "./index.scss";
 
 const { Footer } = Layout;
 

@@ -1,4 +1,4 @@
-import styles from './index.scss';
+import styles from "./index.scss";
 
 export default ({ content }) => (
   <div className={styles.showcase}>

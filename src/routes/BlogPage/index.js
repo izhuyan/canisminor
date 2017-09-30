@@ -1,13 +1,13 @@
-import { Icon, Spin } from 'antd';
-import { connect } from 'dva';
-import { Button, Comment, LazyLoad, Markdown, Tags } from '../../components';
-import setTitle from '../../utils/setTitle';
-import styles from './index.scss';
+import { Icon, Spin } from "antd";
+import { connect } from "dva";
+import { Button, Comment, LazyLoad, Markdown, Tags } from "../../components";
+import setTitle from "../../utils/setTitle";
+import styles from "./index.scss";
 
 const State = state => ({
   loading: state.loading.global,
   // blogToc: state.blogToc,
-  blogPage: state.blogPage,
+  blogPage: state.blogPage
 });
 
 export default connect(State)(({ loading, blogPage }) => {
@@ -18,16 +18,16 @@ export default connect(State)(({ loading, blogPage }) => {
         <Spin
           spinning={loading}
           size="large"
-          style={{ width: '100%', lineHeight: '720px' }}
+          style={{ width: "100%", lineHeight: "720px" }}
         />
       ) : (
         <Markdown data={blogPage} />
       )}
       <LazyLoad className={styles.footer}>
-        <Button style={{ paddingRight: '2rem' }} to="/blog" icon={false}>
+        <Button style={{ paddingRight: "2rem" }} to="/blog" icon={false}>
           <Icon type="left" /> Go Back
         </Button>
-        {loading ? '' : <Tags data={blogPage.tag} />}
+        {loading ? "" : <Tags data={blogPage.tag} />}
       </LazyLoad>
       <LazyLoad>
         <Comment />

@@ -1,6 +1,6 @@
-import Plyr from 'plyr';
-import { Component } from 'react';
-import styles from './index.scss';
+import Plyr from "plyr";
+import { Component } from "react";
+import styles from "./index.scss";
 
 export default class extends Component {
   componentDidMount() {
