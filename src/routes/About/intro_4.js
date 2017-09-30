@@ -1,19 +1,12 @@
-import { Component } from "react";
-import {
-  AwardList,
-  Button,
-  DocTitle,
-  Icon,
-  LazyLoad,
-  Showcase
-} from "../../components";
-import { awardList, homeToc } from "../../config";
-import styles from "./intro_4.scss";
+import { Component } from 'react';
+import { AwardList, Button, DocTitle, Icon, LazyLoad, Showcase } from '../../components';
+import { awardList, homeToc } from '../../config';
+import styles from './intro_4.scss';
 
 const showcaseData = [
-  { title: "MAJOR:", desc: "Visual Design" },
-  { title: "DUR:", desc: "2009 » 13" },
-  { title: "GPA:", desc: "3.58/4" }
+  { title: 'MAJOR:', desc: 'Visual Design' },
+  { title: 'DUR:', desc: '2009 » 13' },
+  { title: 'GPA:', desc: '3.58/4' },
 ];
 
 export default class extends Component {
@@ -44,12 +37,7 @@ export default class extends Component {
               <AwardList content={awardList} />
             </div>
           ) : (
-            <Button
-              style={{ marginTop: "2rem" }}
-              onClick={this.onClick}
-              icon={false}
-              ghost
-            >
+            <Button style={{ marginTop: '2rem' }} onClick={this.onClick} icon={false} ghost>
               Show Awards
             </Button>
           )}

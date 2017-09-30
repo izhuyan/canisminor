@@ -1,4 +1,4 @@
-import styles from "./index.scss";
+import styles from './index.scss';
 
 export default ({ data, ...other }) => {
   return (

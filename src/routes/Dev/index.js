@@ -1,4 +1,4 @@
-import { Component, Logo, styled } from "../../components";
+import { Component, Logo, styled } from '../../components';
 
 export default class extends Component {
   render() {

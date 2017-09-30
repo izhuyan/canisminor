@@ -1,6 +1,6 @@
-import { DocTitle, SvgIcon, LazyLoad } from "../../components";
-import { feSkillList, homeToc } from "../../config";
-import styles from "./intro_8.scss";
+import { DocTitle, SvgIcon, LazyLoad } from '../../components';
+import { feSkillList, homeToc } from '../../config';
+import styles from './intro_8.scss';
 
 export default () => {
   const Item = (item, key) => (

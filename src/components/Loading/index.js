@@ -1,8 +1,8 @@
-import { connect } from "dva";
-import NProgress from "nprogress";
-import "nprogress/nprogress.css";
-import { Component } from "react";
-import "./index.scss";
+import { connect } from 'dva';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+import { Component } from 'react';
+import './index.scss';
 
 const State = state => ({ loading: state.loading.global });
 

@@ -1,5 +1,5 @@
-import { Icon, LazyLoad } from "../";
-import styles from "./index.scss";
+import { Icon, LazyLoad } from '../';
+import styles from './index.scss';
 
 export default ({ content }) => {
   return (

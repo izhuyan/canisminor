@@ -1,16 +1,16 @@
-import { Layout } from "antd";
-import classnames from "classnames/bind";
-import { Link } from "dva/router";
-import { Icon, Menu } from "../../components";
-import { navBar } from "../../config";
-import styles from "./index.scss";
+import { Layout } from 'antd';
+import classnames from 'classnames/bind';
+import { Link } from 'dva/router';
+import { Icon, Menu } from '../../components';
+import { navBar } from '../../config';
+import styles from './index.scss';
 
 const { Header } = Layout;
 
 export default () => {
   const NavItem = ({ title, to }) => {
-    const classConfig = classnames.bind(styles)("item", {
-      item__active: window.location.pathname.indexOf(to) !== -1
+    const classConfig = classnames.bind(styles)('item', {
+      item__active: window.location.pathname.indexOf(to) !== -1,
     });
     return <Link className={classConfig} to={to} children={title} />;
   };

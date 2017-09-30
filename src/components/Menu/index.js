@@ -1,7 +1,7 @@
-import classnames from "classnames/bind";
-import { Link } from "dva/router";
-import { Component } from "react";
-import styles from "./index.scss";
+import classnames from 'classnames/bind';
+import { Link } from 'dva/router';
+import { Component } from 'react';
+import styles from './index.scss';
 
 export default class extends Component {
   state = { open: false };
@@ -13,16 +13,11 @@ export default class extends Component {
   render() {
     const { content } = this.props;
     const menuList = content.map((item, key) => (
-      <Link
-        key={key}
-        className={styles.item}
-        to={item.to}
-        children={item.title}
-      />
+      <Link key={key} className={styles.item} to={item.to} children={item.title} />
     ));
     const classConfig = classnames.bind(styles)({
       [styles.opened]: this.state.open,
-      [styles.os]: /(iPhone|iPad|iPod|iOS|Safari)/i.test(navigator.userAgent)
+      [styles.os]: /(iPhone|iPad|iPod|iOS|Safari)/i.test(navigator.userAgent),
     });
 
     return (

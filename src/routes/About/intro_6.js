@@ -1,16 +1,10 @@
-import { Button, DocTitle, LazyLoad } from "../../components";
-import { homeToc, specList } from "../../config";
-import styles from "./intro_6.scss";
+import { Button, DocTitle, LazyLoad } from '../../components';
+import { homeToc, specList } from '../../config';
+import styles from './intro_6.scss';
 
 export default () => {
   const Img = (item, key) => (
-    <img
-      alt="Spec"
-      key={key}
-      width={item.width}
-      height={item.height || ""}
-      src={item.src}
-    />
+    <img alt="Spec" key={key} width={item.width} height={item.height || ''} src={item.src} />
   );
 
   const Btn = (item, key) => (

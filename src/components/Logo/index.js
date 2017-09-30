@@ -1,8 +1,8 @@
-import { Icon, keyframes, rgba, styled } from "../";
+import { Icon, keyframes, rgba, styled } from '../';
 
 export default ({
   size = 4,
-  color = "linear-gradient(45deg, #111, #555)",
+  color = 'linear-gradient(45deg, #111, #555)',
   alpha = 0.5,
   speed = 1,
   delay = 1,
@@ -29,24 +29,15 @@ export default ({
   const Shadow = styled(Icon)`
     font-size: inherit;
     &:nth-child(1) {
-      background: linear-gradient(
-        -90deg,
-        ${rgba("#000", alpha)} 0%,
-        transparent 30%
-      );
+      background: linear-gradient(-90deg, ${rgba('#000', alpha)} 0%, transparent 30%);
       -webkit-background-clip: text;
     }
     &:nth-child(2) {
-      background: linear-gradient(
-        -90deg,
-        ${rgba("#000", alpha)} 0%,
-        transparent 40%
-      );
+      background: linear-gradient(-90deg, ${rgba('#000', alpha)} 0%, transparent 40%);
       -webkit-background-clip: text;
       margin-left: -${size}rem;
     }
   `;
-
   if (animation) {
     const Logo1 = keyframes`
 		0% {margin-left: ${size}rem;}
