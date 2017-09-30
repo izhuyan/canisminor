@@ -15,6 +15,8 @@ import 'plyr';
 import 'nprogress';
 import 'prismjs';
 import 'gitment';
+import 'styled-components';
+import 'polished';
 
 // antd
 import antd from 'antd';

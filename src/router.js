@@ -32,6 +32,10 @@ export default ({ app, history }) => {
     app,
     component: () => import('./routes/Contact'),
   });
+  const Dev = dynamic({
+    app,
+    component: () => import('./routes/Dev'),
+  });
   const NotFound = dynamic({
     app,
     component: () => import('./routes/404'),
@@ -47,6 +51,7 @@ export default ({ app, history }) => {
           <Route exact path="/blog/:name" component={BlogPage} />
           <Route exact path="/project" component={Project} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/dev" component={Dev} />
           <Route component={NotFound} />
         </App.Body>
       </App>
