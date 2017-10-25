@@ -5,7 +5,7 @@ export default {
   state: {},
   reducers: {
     save(state, { payload: data }) {
-      return { ...state, data }.data;
+      return data;
     },
   },
   effects: {

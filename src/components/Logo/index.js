@@ -25,7 +25,9 @@ export default ({
     background: ${color};
     -webkit-background-clip: text;
   `;
-  let Logo = styled(Icon)`font-size: inherit;`;
+  let Logo = styled(Icon)`
+    font-size: inherit;
+  `;
   const Shadow = styled(Icon)`
     font-size: inherit;
     &:nth-child(1) {
