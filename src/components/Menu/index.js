@@ -16,8 +16,8 @@ export default class extends Component {
       <Link key={key} className={styles.item} to={item.to} children={item.title} />
     ));
     const classConfig = classnames.bind(styles)({
-      [styles.opened]: this.state.open,
-      [styles.os]: /(iPhone|iPad|iPod|iOS|Safari)/i.test(navigator.userAgent),
+      opened: this.state.open,
+      os: /(iPhone|iPad|iPod|iOS|Safari)/i.test(navigator.userAgent),
     });
 
     return (

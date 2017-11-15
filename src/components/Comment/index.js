@@ -15,7 +15,7 @@ export default class extends Component {
   render() {
     const { className, ...other } = this.props;
     return (
-      <div className={classnames.bind(styles)(className, styles.command)} {...other}>
+      <div className={classnames.bind(styles)(className, 'command')} {...other}>
         <div id="comments" className={styles.item} />
         <div id="editor" className={styles.item} />
       </div>
