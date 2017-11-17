@@ -32,7 +32,12 @@ const awardList = [
     'International Photographic Festival|11th Shanghai International|2012, Communication Award',
     'Third BrotherWin Cup|International Originality Design Contest|2012, Excellence Award',
   ],
-  ['中国浙江省|2013，省优秀毕业生', '中国美术学院|2013，校优秀毕业生', '中国美术学院|2013，毕业设计金奖', '中国美术学院|2013，优秀毕业论文'],
+  [
+    '中国浙江省|2013，省优秀毕业生',
+    '中国美术学院|2013，校优秀毕业生',
+    '中国美术学院|2013，毕业设计金奖',
+    '中国美术学院|2013，优秀毕业论文',
+  ],
 ];
 
 const expList = [
@@ -138,7 +143,7 @@ const feSkillList = [
 
 const gitment = {
   owner: 'canisminor1990',
-  repo: 'canisminor-comments',
+  repo: 'canisminor',
   oauth: {
     client_id: '2d269c8224f46f260966',
     client_secret: '0cd026bec02b1cd2adb9616d3f2ceba395bcf939',
