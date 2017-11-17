@@ -1,6 +1,7 @@
 # CanisMinor
 
 <img src="https://canisminor.cc/img/loader.gif" width="120" />
+
 [![](https://img.shields.io/badge/canisminor.cc-online-brightgreen.svg)](https://canisminor.cc)
 
 - **website:** <https://canisminor.cc>
