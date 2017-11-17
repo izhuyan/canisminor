@@ -20,7 +20,7 @@ $ yarn build:img
 
 ### Comments system
 
-- **repo:** <https://github.com/canisminor1990/canisminor-comments>
+- **repo:** <https://github.com/canisminor1990/canisminor/issues>
 - **gitment:** <https://github.com/imsun/gitment>
 
 ### Link
