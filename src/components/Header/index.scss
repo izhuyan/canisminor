@@ -18,13 +18,6 @@
   }
 }
 
-.logo {
-  font-size: 88px !important;
-  @include media ($m-middle) {
-    font-size: 72px !important;
-  }
-}
-
 .item {
   background: #fff;
   border: 1px solid #eee;

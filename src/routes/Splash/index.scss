@@ -1,5 +1,4 @@
 @import 'import';
-
 .splash {
   @include showup;
   align-items: center;
@@ -12,17 +11,20 @@
   width: 100%;
   z-index: 999;
 }
-
 .logo {
-  background: url('/img/loader.gif') no-repeat center 0;
-  background-size: 100% auto;
   cursor: pointer;
   height: 155px;
   width: 120px;
-
-  &:hover {
-    .splash-text-glow:before {
-      opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  :global(.icon-logo-text-combine) {
+    &:before {
+      color: #222;
+      font-size: 2.4rem;
+      margin-top: 0.2rem;
+      display: block;
     }
   }
 }
@@ -44,7 +46,6 @@
     }
   }
 }
-
 .shape:before {
   color: $c-primary;
   content: '〃';

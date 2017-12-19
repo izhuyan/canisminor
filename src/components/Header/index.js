@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import classnames from 'classnames/bind';
 import { Link } from 'dva/router';
-import { Icon, Menu } from '../../components';
+import { Menu, Logo } from '../../components';
 import { navBar } from '../../config';
 import styles from './index.scss';
 
@@ -21,7 +21,7 @@ export default () => {
   ));
   return (
     <Header className={styles.header} style={{ zIndex: 999 }}>
-      <Icon className={styles.logo} type="logo" />
+      <Logo size={1.2} color={['#000', '#444']} />
       <div className={styles.nav}>
         <div className={styles.showPhone} children={showPhone} />
         <div className={styles.showDesktop} children={showDesktop} />
