@@ -21,7 +21,7 @@ export default () => {
   ));
   return (
     <Header className={styles.header} style={{ zIndex: 999 }}>
-      <Logo size={1.2} color={['#000', '#444']} />
+      <Logo size={1.2} color={['#111', '#555']} />
       <div className={styles.nav}>
         <div className={styles.showPhone} children={showPhone} />
         <div className={styles.showDesktop} children={showDesktop} />
