@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 a {
   color: darken($c-primary, 15%);
   translate: color 0.5s ease-out;
@@ -10,7 +9,6 @@ a {
     color: $c-primary;
   }
 }
-
 > p,
 pre,
 img,
@@ -19,12 +17,13 @@ ul,
 ol {
   margin-bottom: 1.5rem;
 }
-
+img + img {
+  margin-top: -2.1rem;
+}
 p,
 li {
   line-height: 1.8;
 }
-
 li {
   padding-left: 1.5rem;
 
@@ -51,17 +50,14 @@ li {
     display: inline;
   }
 }
-
 strong {
   color: #333;
 }
-
 img {
   height: auto;
   max-width: 100%;
   zoom: 0.5;
 }
-
 code {
   $code-color: desaturate($c-primary, 60%);
   background: rgba($code-color, 0.12);
@@ -72,7 +68,6 @@ code {
   font-weight: 400;
   padding: 0.2em 0.4em;
 }
-
 blockquote {
   border-left: 4px solid $c-primary;
   padding-left: 1.5rem;
@@ -82,7 +77,6 @@ blockquote {
     color: #888;
   }
 }
-
 pre {
   display: flex;
   flex-direction: column;
@@ -104,7 +98,6 @@ pre {
     margin-right: -1rem;
   }
 }
-
 h1,
 h2,
 h3,
@@ -115,21 +108,17 @@ h6 {
   font-weight: 600;
   margin-bottom: 2rem;
 }
-
 h1,
 h2 {
   margin-top: 6rem;
 }
-
 h3,
 h4 {
   margin-top: 4rem;
 }
-
 h1 {
   font-size: 2.1rem;
 }
-
 h2 {
   font-size: 1.9rem;
 
@@ -138,23 +127,18 @@ h2 {
     content: ' #';
   }
 }
-
 h3 {
   font-size: 1.6rem;
 }
-
 h4 {
   font-size: 1.4rem;
 }
-
 h5 {
   font-size: 1.2rem;
 }
-
 h6 {
   font-size: 1rem;
 }
-
 kbd {
   background-color: #fafbfc;
   border: solid 1px #c6cbd1;
@@ -168,23 +152,19 @@ kbd {
   line-height: 1.2em;
   padding: 0 0.4em 1.3em;
 }
-
 table {
   border: 2px solid #eee;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
-
 thead {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
   color: #333;
 }
-
 th {
   font-weight: 600;
 }
-
 th,
 td {
   border: 0.5px solid #f8f8f8;
