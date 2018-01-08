@@ -9,14 +9,12 @@
   ],
   "scripts": {
     "start": "roadhog dev",
-    "build": "roadhog build ; yarn build:precache",
+    "build": "roadhog build && rm dist/vendor.*.js && yarn build:precache",
     "build:dll": "roadhog buildDll",
     "build:precache": "sw-precache --config=.precache.js",
-    "build:blog": "cd blog; yarn build",
+    "build:blog": "cd blog && yarn build",
     "build:img": "gulp build:img",
     "build:font": "font-spider public/font/index.html",
-    "pull": "git pull; yarn; yarn build:dll; cd blog; git pull",
-    "pull:blog": "git submodule update --init",
     "lint": "lint-staged",
     "lint:style": "stylelint 'src/**/*.js'",
     "lint:es": "eslint --fix --ext .js src"
