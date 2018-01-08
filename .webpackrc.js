@@ -2,10 +2,14 @@ import cssnano from 'cssnano';
 import pxtorem from 'postcss-pxtorem';
 
 export default {
-	entry              : './src/index.js',
+	entry              : {
+		index : './src/index.js',
+		vendor: './src/vendor.js'
+	},
 	publicPath         : '/',
 	disableCSSModules  : false,
 	hash               : true,
+	ignoreMomentLocale : true,
 	sass               : {
 		includePaths: ['node_modules', 'src/style']
 	},
@@ -19,8 +23,12 @@ export default {
 	},
 	commons            : [
 		{
-			async    : '__common',
-			children : true,
+			name     : 'common',
+			chunks   : [
+				'index',
+				'vendor'
+			],
+			filename : 'common.[chunkhash].js',
 			minChunks: 2
 		}
 	],

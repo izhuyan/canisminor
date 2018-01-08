@@ -1,1 +1,0 @@
-webpackJsonp([0],{342:function(n,t,c){"use strict";t.a=function(n){document.title="".concat(n," - CanisMinor")}},343:function(n,t,c){n.exports=c(160)}});
