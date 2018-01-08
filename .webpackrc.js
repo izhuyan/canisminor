@@ -21,17 +21,6 @@ export default {
 		'$dirname': __dirname,
 		'$isDev'  : process.env.NODE_ENV === 'development'
 	},
-	commons            : [
-		{
-			name     : 'common',
-			chunks   : [
-				'index',
-				'vendor'
-			],
-			filename : 'common.[chunkhash].js',
-			minChunks: 2
-		}
-	],
 	proxy              : {
 		'/api': {
 			target      : 'https://canisminor.cc',
@@ -62,6 +51,22 @@ export default {
 			]
 		},
 		production : {
+			commons            : [
+				{
+					name     : 'common',
+					chunks   : [
+						'index',
+						'vendor'
+					],
+					filename : 'common.[chunkhash].js',
+					minChunks: 2
+				},
+				{
+					async    : 'common',
+					children : true,
+					minChunks: 2
+				}
+			],
 			extraPostCSSPlugins: [
 				cssnano(
 					{safe: true},
