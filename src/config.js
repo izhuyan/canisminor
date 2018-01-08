@@ -150,7 +150,7 @@ const gitment = {
   },
 };
 
-export default {
+export {
   indexPage,
   navBar,
   homeToc,

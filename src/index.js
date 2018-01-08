@@ -2,9 +2,10 @@ import { message } from 'antd';
 import dva from 'dva';
 import createLoading from 'dva-loading';
 import createHistory from 'history/createBrowserHistory';
-import './index.scss';
+import router from './router';
 import Console from './utils/console';
 import Wechat from './utils/wechat';
+import './index.scss';
 
 const ERROR_MSG_DURATION = 3; // 3 秒
 
@@ -19,18 +20,13 @@ const app = dva({
 // 2. Plugins
 app.use(createLoading());
 
-// 3. Model
-// app.model(require('./models/getBlogToc'));
-// app.model(require('./models/getBlogPage'));
-// app.model(require('./models/getProjectToc'));
+// 3. Router
+app.router(router);
 
-// 4. Router
-app.router(require('./router'));
-
-// 5. Start
+// 4. Start
 app.start('#root');
 
-// 6. Other
+// 5. Other
 if (process.env.NODE_ENV !== 'development') {
   Wechat();
   Console();
