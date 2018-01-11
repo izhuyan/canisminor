@@ -38,12 +38,6 @@ export default {
 		'$dirname': __dirname,
 		'$isDev'  : process.env.NODE_ENV === 'development'
 	},
-	commons            : [
-		{
-			name     : 'vendor',
-			filename : 'vendor.[chunkhash].js',
-		}
-	],
 	proxy              : {
 		'/api': {
 			target      : 'https://canisminor.cc',
@@ -74,6 +68,12 @@ export default {
 			]
 		},
 		production : {
+			commons            : [
+				{
+					name     : 'vendor',
+					filename : 'vendor.[chunkhash].js',
+				}
+			],
 			extraPostCSSPlugins: [
 				cssnano(
 					{safe: true},
