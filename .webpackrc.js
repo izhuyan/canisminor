@@ -4,7 +4,24 @@ import pxtorem from 'postcss-pxtorem';
 export default {
 	entry              : {
 		index : './src/index.js',
-		vendor: './src/vendor.js'
+		vendor: ['classnames',
+		         'dva',
+		         'dva/router',
+		         'dva/fetch',
+		         'dva/dynamic',
+		         'dva-loading',
+		         'path',
+		         'react',
+		         'react-dom',
+		         'react-lazyload',
+		         'react-typist',
+		         'weixin-jsapi',
+		         'plyr',
+		         'nprogress',
+		         'prismjs',
+		         'gitment',
+		         'styled-components',
+		         'polished']
 	},
 	publicPath         : '/',
 	disableCSSModules  : false,
@@ -21,6 +38,12 @@ export default {
 		'$dirname': __dirname,
 		'$isDev'  : process.env.NODE_ENV === 'development'
 	},
+	commons            : [
+		{
+			name     : 'vendor',
+			filename : 'vendor.[chunkhash].js',
+		}
+	],
 	proxy              : {
 		'/api': {
 			target      : 'https://canisminor.cc',
@@ -51,22 +74,6 @@ export default {
 			]
 		},
 		production : {
-			commons            : [
-				{
-					name     : 'common',
-					chunks   : [
-						'index',
-						'vendor'
-					],
-					filename : 'common.[chunkhash].js',
-					minChunks: 2
-				},
-				{
-					async    : 'common',
-					children : true,
-					minChunks: 2
-				}
-			],
 			extraPostCSSPlugins: [
 				cssnano(
 					{safe: true},
