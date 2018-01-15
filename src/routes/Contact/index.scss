@@ -12,13 +12,19 @@
   padding: 1rem;
 }
 .box {
-  box-shadow: 0 4px 16px rgba(#000, 0.08);
+  @include showup;
+
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   max-width: 720px - 32px;
-  background: #fff;
   margin-bottom: 4rem;
+  @include media($m-small) {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    background: transparent;
+  }
 }
 .info {
   padding: 1rem;
@@ -26,7 +32,17 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(#000, 0.08);
+  transition-duration: 0.3s;
+  &:hover {
+    box-shadow: 0 4px 16px rgba(#000, 0.08);
+    z-index: 999;
+  }
+  @include media($m-small) {
+    box-shadow: 0 4px 16px rgba(#000, 0.08);
+    width: 70%;
+  }
   > span:before {
     font-size: 1.5rem;
   }
