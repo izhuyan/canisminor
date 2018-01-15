@@ -150,6 +150,19 @@ const gitment = {
   },
 };
 
+const contactData = [
+  ['github', 'canisminor1990', 'https://github.com/canisminor1990'],
+  ['coding', 'canisminor1990', 'https://coding.net/u/canisminor1990/project'],
+  ['steam', 'canisminor1990', 'http://steamcommunity.com/id/canisminor'],
+  ['ns', 'sw-6612-3326-1230', false],
+  ['xbox', 'canisminor1990', false],
+  ['playstation', 'CanisMinor1990', false],
+  ['nga', 'CanisMinor', 'http://bbs.ngacn.cc/read.php?tid=12689516'],
+  ['v2ex', 'canisminor', 'https://www.v2ex.com/member/canisminor'],
+  ['bilibili', 'Canis_Minor', 'https://space.bilibili.com/410372/#/'],
+  ['qq', '40073838', false],
+];
+
 export {
   indexPage,
   navBar,
@@ -159,5 +172,6 @@ export {
   specList,
   vdSkillList,
   feSkillList,
+  contactData,
   gitment,
 };

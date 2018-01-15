@@ -1,16 +1,40 @@
 @import 'import';
-
 .contact {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-
 .title {
   margin: 2rem 0;
 }
-
 .command {
   max-width: 720px;
   padding: 1rem;
+}
+.box {
+  box-shadow: 0 4px 16px rgba(#000, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px - 32px;
+  background: #fff;
+  margin-bottom: 4rem;
+}
+.info {
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  > span:before {
+    font-size: 1.5rem;
+  }
+  > div {
+    margin-left: 1rem;
+    transition-duration: 0.3s;
+    &:hover {
+      color: $c-primary;
+    }
+  }
 }
