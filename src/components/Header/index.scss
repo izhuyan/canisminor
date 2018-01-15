@@ -43,14 +43,14 @@
 }
 
 .showDesktop {
-  @include media ($m-middle) {
+  @include media ($m-large) {
     display: none !important;
   }
 }
 
 .showPhone {
   display: none;
-  @include media ($m-middle) {
+  @include media ($m-large) {
     display: block;
   }
 }
