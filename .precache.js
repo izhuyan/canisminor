@@ -4,7 +4,7 @@ module.exports = {
 		'dist/img/**/*',
 		'dist/favicons/*',
 		'dist/font/*',
-		'dist/*common*'
+		'dist/*vendor*'
 	],
 	dontCacheBustUrlsMatching: /./,
 	swFilePath: 'dist/precache.js'
