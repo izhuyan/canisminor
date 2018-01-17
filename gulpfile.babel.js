@@ -1,11 +1,13 @@
 import gulp from 'gulp';
+import htmlbeautify from 'gulp-html-beautify';
 import img from './scripts/img';
-import stylefmt from 'gulp-stylefmt'
 
 gulp.task('build:img', img);
 
-gulp.task('stylefmt',  () => {
-	return gulp.src('src/**/*.scss')
-						 .pipe(stylefmt())
-						 .pipe(gulp.dest('test'));
+gulp.task('html', () => {
+  const options = { indentSize: 2 };
+  gulp
+    .src('./dist/*.html')
+    .pipe(htmlbeautify(options))
+    .pipe(gulp.dest('./dist/'));
 });
