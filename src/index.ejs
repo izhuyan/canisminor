@@ -32,13 +32,21 @@
 <div id="root"></div>
 <!-- script -->
 <% if (process.env.NODE_ENV === 'production') { %>
-<!-- baidu -->
-<script type="text/javascript" src="//zz.bdstatic.com/linksubmit/push.js"></script>
-<script type="text/javascript" src="//hm.baidu.com/hm.js?7085397f155d2c882d7a996e5042b14d"></script>
+<!-- google-analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112617256-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-112617256-1');
+</script>
+<!-- baidu-tongji -->
+<script async src="//zz.bdstatic.com/linksubmit/push.js"></script>
+<script async src="//hm.baidu.com/hm.js?7085397f155d2c882d7a996e5042b14d"></script>
 <!-- precache -->
 <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/precache.js');</script>
 <% } %>
 <!-- iconfont -->
-<script src="//at.alicdn.com/t/font_431397_cjei0y4nsd9dlsor.js"></script>
+<script async src="//at.alicdn.com/t/font_431397_cjei0y4nsd9dlsor.js"></script>
 </body>
 </html>
