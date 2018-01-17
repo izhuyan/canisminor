@@ -9,3 +9,4 @@ module.exports = {
 	dontCacheBustUrlsMatching: /./,
 	swFilePath: 'dist/precache.js'
 };
+
