@@ -4,7 +4,6 @@ import createLoading from 'dva-loading';
 import createHistory from 'history/createBrowserHistory';
 import router from './router';
 import Console from './utils/console';
-import Wechat from './utils/wechat';
 import './index.scss';
 
 const ERROR_MSG_DURATION = 3; // 3 秒
@@ -28,6 +27,5 @@ app.start('#root');
 
 // 5. Other
 if (process.env.NODE_ENV !== 'development') {
-  Wechat();
   Console();
 }

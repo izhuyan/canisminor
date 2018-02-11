@@ -29,11 +29,11 @@
       "prettier --trailing-comma all --single-quote --write",
       "git add"
     ],
-    "package.json": [
+    "./package.json": [
       "prettier --trailing-comma all --single-quote --write",
       "git add"
     ],
-    "*.js": ["eslint --fix", "git add"],
+    "./*.js": ["eslint --fix", "git add"],
     "src/**/*.scss": [
       "prettier --trailing-comma all --single-quote --write",
       "git add"
