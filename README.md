@@ -1,11 +1,16 @@
 # CanisMinor
 
-<br />
-[<img src="http://qn.canisminor.cc/2018-02-11-icon-1.png" width="120" />](https://canisminor.cc)
+<a href="https://canisminor.cc">
+<img src="http://qn.canisminor.cc/2018-02-11-icon-1.png" width="120" />
+</a>
 
 [![](https://img.shields.io/badge/canisminor.cc-online-brightgreen.svg)](https://canisminor.cc)
 
-🔗 <https://canisminor.cc>
+### 🖤 Website
+
+<https://canisminor.cc>
+
+### 🔧 Dev
 
 ```bash
 $ yarn start
@@ -20,12 +25,12 @@ $ yarn build:dll
 $ yarn build:img
 ```
 
-### Comments system
+### 🎙 Comments system
 
 * **repo:** <https://github.com/canisminor1990/canisminor/issues>
 * **gitment:** <https://github.com/imsun/gitment>
 
-### Link
+### 📺 Link
 
 * **iconfont:** [iconfont.cn](http://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=399961)
 * **dva:** <https://github.com/dvajs/dva>
