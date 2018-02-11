@@ -86,7 +86,7 @@ pre {
   display: flex;
   flex-direction: column;
   position: relative;
-
+  overflow: visible;
   > code {
     background: #222;
     border-radius: 0;
