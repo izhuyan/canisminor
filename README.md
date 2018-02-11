@@ -1,10 +1,11 @@
 # CanisMinor
 
-<img src="http://qn.canisminor.cc/2018-02-11-icon-1.png" width="120" />
+<br />
+[<img src="http://qn.canisminor.cc/2018-02-11-icon-1.png" width="120" />](https://canisminor.cc)
 
 [![](https://img.shields.io/badge/canisminor.cc-online-brightgreen.svg)](https://canisminor.cc)
 
-* **website:** <https://canisminor.cc>
+🔗 <https://canisminor.cc>
 
 ```bash
 $ yarn start
