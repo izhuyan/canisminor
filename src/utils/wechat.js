@@ -33,7 +33,7 @@ function wxShareInfo() {
     title: 'CanisMinor',
     desc: 'UI/UX Designer & FE Developer',
     link: window.location.href,
-    imgUrl: 'https://canisminor.cc/share.png',
+    imgUrl: 'https://canisminor.cc/img/share-cover.png',
     success: () => {},
     cancel: () => {},
   };
