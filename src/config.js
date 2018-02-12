@@ -135,7 +135,7 @@ const feSkillList = [
   { icon: 'makdown', title: 'Markdown' },
   { icon: 'nodeJs', title: 'NodeJS' },
   { icon: 'jekyll', title: 'Jekyll' },
-  { icon: 'hexo', title: 'Hexp' },
+  { icon: 'hexo', title: 'Hexo' },
   { icon: 'sass', title: 'SASS' },
   { icon: 'less', title: 'LESS' },
   { icon: 'postCss', title: 'postCSS' },
