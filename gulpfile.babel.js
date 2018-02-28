@@ -3,11 +3,13 @@ import fs from 'fs-extra';
 import htmlbeautify from 'gulp-html-beautify';
 import swPrecache from 'sw-precache';
 import img from './scripts/img';
-import * as config from './src/config';
+import * as raw from './src/config';
 
 gulp.task('opt:img', img);
 
-gulp.task('build:raw', () => fs.writeFileSync('dist/raw-data', JSON.stringify(config)));
+gulp.task('build:raw', () => fs.writeFileSync(
+	'dist/raw-data', JSON.stringify(raw))
+);
 
 gulp.task('opt:html', ['build:raw'], () =>
 	gulp

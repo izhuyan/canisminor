@@ -1,13 +1,7 @@
 import { Component } from 'react';
 import { AwardList, Button, DocTitle, Icon, LazyLoad, Showcase } from '../../components';
-import { awardList, homeToc } from '../../config';
+import { awardList, homeToc, showcase, introduction } from '../../config';
 import styles from './intro_4.scss';
-
-const showcaseData = [
-  { title: 'MAJOR:', desc: 'Visual Design' },
-  { title: 'DUR:', desc: '2009 » 13' },
-  { title: 'GPA:', desc: '3.58/4' },
-];
 
 export default class extends Component {
   state = { show: false };
@@ -24,14 +18,11 @@ export default class extends Component {
           <Icon className={styles.logo} type="caa-logo" />
           <div className={styles.content}>
             <Icon className={styles.title} type="caa-text" />
-            <div className={styles.desc}>
-              China Academy of Art<br />
-              Top Art School World Ranking: 7th
-            </div>
+            <div className={styles.desc}>{introduction[1]}</div>
           </div>
         </LazyLoad>
         <LazyLoad className={styles.row}>
-          <Showcase content={showcaseData} />
+          <Showcase content={showcase[1]} />
           {this.state.show ? (
             <div className={styles.awards}>
               <AwardList content={awardList} />
