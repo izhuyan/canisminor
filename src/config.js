@@ -69,6 +69,7 @@ const expList = [
 const specList = [
   {
     img: [{ width: '826', src: 'img/spec-1.png' }],
+    shadow: false,
     desc:
       'XMUED Design Flow，目前熊猫金库UED团队设计流程技术选型，Atomic Design 原子设计模式项目实践，通过Airbnb开源插件react-sketchapp维护及迭代sketch/react/react-native三端组件库，并引入真实数据进行设计。',
     btn: [
@@ -80,6 +81,7 @@ const specList = [
   },
   {
     img: [{ width: '495', src: 'img/spec-2.png' }],
+    shadow: false,
     desc:
       'Sketch插件开发者，独立开发sketch-name-organizer/sketch-select/sketch-move-half-pixel，均被Sketc官方收录，marketch代码贡献者，阿里sketch插件开发讨论组成员。',
     btn: [
@@ -95,6 +97,7 @@ const specList = [
       { width: '324', height: '324', src: 'img/spec-3-1.png' },
       { width: '324', height: '324', src: 'img/spec-3-2.png' },
     ],
+    shadow: true,
     desc:
       'Minecraft第三方开发者，Canisminor Craft 资源包作者，迭代7个大版本，累计32w次下载，2012年设计Minecraft全球最大皮肤站skinme，注册用户破5000万，皮肤库存150万份，日均上传2000份，现已被收购。',
     btn: [
