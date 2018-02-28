@@ -178,7 +178,7 @@ const showcase = [
 
 const introduction = [
   '现居北京，UED全栈设计师，毕业于CAA中国美术学院09级视觉传达。>5年从业经验，专注于 Design » Code 设计流程管理和UI原子设计模式(Atomic Design)及自动化设计，具备流行前端技术栈React/Vue，阿里开源项目重度用户Antd/Dva/Roadhog，Sketch第三方插件作者。',
-  'China Academy of Art \n Top Art School World Ranking: 7th',
+  `China Academy of Art<br />Top Art School World Ranking: 7th`,
 ];
 
 export {
