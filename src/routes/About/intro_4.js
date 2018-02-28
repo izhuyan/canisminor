@@ -18,7 +18,7 @@ export default class extends Component {
           <Icon className={styles.logo} type="caa-logo" />
           <div className={styles.content}>
             <Icon className={styles.title} type="caa-text" />
-            <div className={styles.desc}>{introduction[1]}</div>
+            <div className={styles.desc}>{introduction[1].replace('\n', <br />)}</div>
           </div>
         </LazyLoad>
         <LazyLoad className={styles.row}>
