@@ -11,6 +11,7 @@ export default class extends Component {
   };
 
   render() {
+    const Intro = introduction[1].split('\n');
     return (
       <div className={styles.intro}>
         <DocTitle content={homeToc[1]} />
@@ -18,7 +19,11 @@ export default class extends Component {
           <Icon className={styles.logo} type="caa-logo" />
           <div className={styles.content}>
             <Icon className={styles.title} type="caa-text" />
-            <div className={styles.desc}>{introduction[1].replace('\n', <br />)}</div>
+            <div className={styles.desc}>
+              {Intro[0]}
+              <br />
+              {Intro[1]}
+            </div>
           </div>
         </LazyLoad>
         <LazyLoad className={styles.row}>
