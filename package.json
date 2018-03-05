@@ -17,7 +17,7 @@
     "start": "roadhog dev",
     "build": "roadhog build && gulp opt:html && yarn build:sw",
     "build:sw": "gulp build:sw",
-    "build:api": "gulp build:img",
+    "build:api": "gulp build:api",
     "build:font": "font-spider public/font/index.html",
     "opt:img": "gulp opt:img",
     "lint": "lint-staged",
