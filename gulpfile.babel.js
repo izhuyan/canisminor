@@ -7,11 +7,11 @@ import * as raw from './src/config';
 
 gulp.task('opt:img', img);
 
-gulp.task('build:raw', () => fs.writeFileSync(
+gulp.task('build:api', () => fs.writeFileSync(
 	'dist/raw-data', JSON.stringify(raw))
 );
 
-gulp.task('opt:html', ['build:raw'], () =>
+gulp.task('opt:html', () =>
 	gulp
 		.src('./dist/*.html')
 		.pipe(htmlbeautify({indentSize: 2}))

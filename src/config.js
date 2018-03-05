@@ -116,15 +116,15 @@ const specList = [
 const vdSkillList = [
   {
     title: 'Graphic Design',
-    item: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'],
+    item: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Affinity Designer'],
   },
   {
     title: 'UI / UX',
-    item: ['Sketch', 'Figma', 'Origami', 'Framer'],
+    item: ['Sketch', 'Figma', 'Origami', 'Flinto'],
   },
   {
     title: '3D / Animation',
-    item: ['Cinema4D', 'Adobe AfterEffects', 'Live2D'],
+    item: ['Cinema4D', 'Framer', 'Adobe AfterEffects', 'Live2D'],
   },
 ];
 
@@ -132,6 +132,8 @@ const feSkillList = [
   { icon: 'webpack', title: 'Webpack' },
   { icon: 'react', title: 'React' },
   { icon: 'vue', title: 'Vue' },
+  { icon: 'electron', title: 'Electron' },
+  { icon: 'wxapp', title: 'WxApp' },
   { icon: 'es6', title: 'ES6' },
   { icon: 'gulp', title: 'Gulp' },
   { icon: 'yarn', title: 'Yarn' },
