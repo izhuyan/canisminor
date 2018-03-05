@@ -8,6 +8,7 @@
   height: 150px;
   justify-content: space-between;
   width: 100%;
+  @include showdown;
   @include media ($m-large) {
     padding: 0 24px;
   }

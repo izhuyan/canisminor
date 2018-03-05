@@ -7,12 +7,7 @@ const Panel = Collapse.Panel;
 
 export default ({ activeKey = ['0'], content }) => {
   const loadImg = (src, key) => (
-    <LazyLoad
-      key={key}
-      width="960px"
-      offset={-100}
-      children={<img alt="Project" width="960" src={src} />}
-    />
+    <LazyLoad key={key} width="960px" children={<img alt="Project" width="960" src={src} />} />
   );
 
   const ImgLib = (item, key) => {

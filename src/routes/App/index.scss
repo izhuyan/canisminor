@@ -10,6 +10,9 @@
   flex-direction: column;
 }
 .content {
+  > div {
+    @include showup;
+  }
   width: 100%;
   z-index: 1;
 }

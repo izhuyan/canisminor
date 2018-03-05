@@ -43,9 +43,6 @@
   letter-spacing: 1px;
   position: relative;
   width: 100%;
-  > * {
-    @include showup;
-  }
   @import 'markdown';
   @import 'extra';
 }

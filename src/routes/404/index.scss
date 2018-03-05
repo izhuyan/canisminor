@@ -12,12 +12,10 @@
     font-size: 8rem;
     font-weight: 700;
     text-align: center;
-    @include showup;
   }
 
   > div {
     font-size: 2rem;
     text-align: center;
-    @include showup;
   }
 }

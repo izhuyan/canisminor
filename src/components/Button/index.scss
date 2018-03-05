@@ -1,7 +1,6 @@
 @import 'import';
 
 .btn {
-  @include showup;
   background: #222;
   border-color: #222;
   display: inline-block;

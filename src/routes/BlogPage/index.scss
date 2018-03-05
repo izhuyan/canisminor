@@ -1,19 +1,16 @@
 @import 'import';
-
 .page {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-
+  @include showup;
   > div {
-    @include showup;
     max-width: 800px;
     padding: 1rem;
     width: 100%;
   }
 }
-
 .footer {
   display: flex;
   justify-content: space-between;

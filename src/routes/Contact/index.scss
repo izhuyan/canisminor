@@ -12,8 +12,6 @@
   padding: 1rem;
 }
 .box {
-  @include showup;
-
   display: flex;
   flex-wrap: wrap;
   width: 100%;
