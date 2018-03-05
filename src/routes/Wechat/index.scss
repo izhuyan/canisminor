@@ -1,0 +1,26 @@
+@import 'import';
+
+.page {
+  width: 100%;
+  max-width: 1024px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qrcode {
+  padding: 0.5rem 0.5rem 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 4px 24px rgba(#000, 0.08);
+  > img {
+    width: 240px;
+    height: auto;
+    margin: 1rem;
+  }
+  > p {
+    text-align: center;
+  }
+}

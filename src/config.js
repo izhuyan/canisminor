@@ -161,11 +161,11 @@ const contactData = [
   ['steam', 'canisminor1990', 'http://steamcommunity.com/id/canisminor'],
   ['ns', 'sw-6612-3326-1230', false],
   ['xbox', 'canisminor1990', false],
-  ['playstation', 'CanisMinor1990', false],
+  ['playstation', 'CanisMinor1990', 'http://psnine.com/psnid/canisminor1990'],
   ['nga', 'CanisMinor', 'http://bbs.ngacn.cc/read.php?tid=12689516'],
-  ['v2ex', 'canisminor', 'https://www.v2ex.com/member/canisminor'],
+  ['linkedin', 'canisminor', 'https://www.linkedin.com/in/canisminor/'],
   ['bilibili', 'Canis_Minor', 'https://space.bilibili.com/410372/#/'],
-  ['qq', '40073838', false],
+  ['wechat', '40073838', 'https://canisminor.cc/wechat'],
 ];
 
 const showcase = [

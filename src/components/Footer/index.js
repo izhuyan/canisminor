@@ -1,4 +1,5 @@
-import { Layout, Popover } from 'antd';
+import { Layout } from 'antd';
+import { Link } from 'dva/router';
 import { Icon } from '../../components';
 import styles from './index.scss';
 
@@ -13,6 +14,14 @@ export default () => {
     );
   };
 
+  const SocialIconLink = ({ type, href }) => {
+    return (
+      <Link to={href}>
+        <Icon className={styles.icon} type={`social-${type}`} />
+      </Link>
+    );
+  };
+
   return (
     <Footer className={styles.footer}>
       <Icon className={styles.logo} type="logo-text" />
@@ -20,15 +29,7 @@ export default () => {
         © CanisMinor 2017<span className={styles.note}>京ICP备16055942号-1</span>
       </div>
       <div className={styles.social}>
-        <Popover
-          content={<img alt="wechat" width="325" src="/img/wechat.png" />}
-          trigger="click"
-          placement="top"
-        >
-          <a>
-            <Icon className={styles.icon} type="social-wechat" />
-          </a>
-        </Popover>
+        <SocialIconLink type="wechat" href="/wechat" />
         <SocialIcon
           type="linkedin"
           href="https://www.linkedin.com/in/%E6%98%B1%E5%B8%86-%E6%9D%A8-269087124/"
