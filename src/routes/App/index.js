@@ -8,8 +8,11 @@ import styles from './index.scss';
 const { Content } = Layout;
 
 class App extends Component {
-  componentDidMount() {
+  componentWillMount() {
     window.addEventListener('scroll', scrollHandler);
+  }
+  componentDidMount() {
+    scrollHandler();
   }
   render() {
     return (
