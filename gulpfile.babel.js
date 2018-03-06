@@ -8,7 +8,7 @@ import * as raw from './src/config';
 gulp.task('opt:img', img);
 
 gulp.task('build:api', () => fs.writeFileSync(
-	'dist/raw-data', JSON.stringify(raw))
+	'public/raw-data', JSON.stringify(raw))
 );
 
 gulp.task('opt:html', () =>
