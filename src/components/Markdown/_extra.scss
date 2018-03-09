@@ -1,7 +1,6 @@
 img {
   &[alt='full'] {
     width: 100%;
-    zoom: 1 !important;
     @include media($m-middle) {
       margin-left: -1rem;
       margin-right: -1rem;
@@ -10,13 +9,15 @@ img {
     }
   }
   &[alt='GitHub release'] {
-    zoom: 1 !important;
     display: inline-block;
   }
 
   &[alt='nozoom'] {
-    zoom: 1 !important;
     display: inline-block;
+  }
+
+  &[alt='zoom'] {
+    zoom: 0.5;
   }
 
   &[alt='center'] {

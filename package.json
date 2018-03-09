@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "roadhog dev",
-    "build": "roadhog build && gulp opt:html && yarn build:sw",
+    "build": "roadhog build && gulp opt:html && yarn build:sw && yarn build:api",
     "build:sw": "gulp build:sw",
     "build:api": "gulp build:api",
     "build:font": "font-spider public/font/index.html",
@@ -24,7 +24,9 @@
     "lint:style": "stylelint 'src/**/*.js'",
     "lint:es": "eslint --fix --ext .js src"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "lint-staged": {
     "README.md": [
       "prettier --trailing-comma all --single-quote --write",
@@ -34,12 +36,19 @@
       "prettier --trailing-comma all --single-quote --write",
       "git add"
     ],
-    "./*.js": ["eslint --fix", "git add"],
+    "./*.js": [
+      "eslint --fix",
+      "git add"
+    ],
     "src/**/*.scss": [
       "prettier --trailing-comma all --single-quote --write",
       "git add"
     ],
-    "src/**/*.js": ["eslint --fix", "lint:style", "git add"]
+    "src/**/*.js": [
+      "eslint --fix",
+      "lint:style",
+      "git add"
+    ]
   },
   "dependencies": {
     "antd": "^3.1.0",

@@ -1,20 +1,20 @@
 import _ from 'lodash';
 
-const classname = ['img', '.showup > div >div', '.showup > div > div > div'].join(',');
+const classname = ['img', '.showup > div > div', '.showup > div > div > div'].join(',');
 
-export default () => onload(document.querySelectorAll(classname));
-
-function onload(eles) {
+const onload = eles => {
   _.forEach(eles, ele => {
     if (hasClass(ele, 'load')) return;
-    const ifVisible = document.documentElement.clientHeight - ele.getBoundingClientRect().top > 0;
+    const ifVisible = window.screen.height - ele.getBoundingClientRect().top >= 0;
     if (ifVisible) {
       addClass(ele, 'load');
     } else if (!hasClass(ele, 'unload')) {
       addClass(ele, 'unload');
     }
   });
-}
+};
+
+export default () => onload(document.querySelectorAll(classname));
 
 function hasClass(ele, cls) {
   cls = cls || '';
