@@ -8,18 +8,10 @@ function onload(eles) {
   _.forEach(eles, ele => {
     if (hasClass(ele, 'load')) return;
     const ifVisible = document.documentElement.clientHeight - ele.getBoundingClientRect().top > 0;
-    if (ele.localName === 'img') {
-      if (ifVisible && ele.complete) {
-        addClass(ele, 'load');
-      } else if (!hasClass(ele, 'unload')) {
-        addClass(ele, 'unload');
-      }
-    } else {
-      if (ifVisible) {
-        addClass(ele, 'load');
-      } else if (!hasClass(ele, 'unload')) {
-        addClass(ele, 'unload');
-      }
+    if (ifVisible) {
+      addClass(ele, 'load');
+    } else if (!hasClass(ele, 'unload')) {
+      addClass(ele, 'unload');
     }
   });
 }
