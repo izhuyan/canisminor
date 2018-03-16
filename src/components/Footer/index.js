@@ -35,7 +35,7 @@ export default () => {
           href="https://www.linkedin.com/in/%E6%98%B1%E5%B8%86-%E6%9D%A8-269087124/"
         />
         <SocialIcon type="github" href="https://github.com/canisminor1990" />
-        <SocialIcon type="coding" href="https://coding.net/u/canisminor1990" />
+        <SocialIcon type="rss" href="https://canisminor.cc/rss.xml" />
         <SocialIcon type="mail" href="mailto:i@canisminor.cc" />
       </div>
     </Footer>
