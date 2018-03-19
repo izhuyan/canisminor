@@ -1,27 +1,11 @@
 import cssnano from 'cssnano';
 import pxtorem from 'postcss-pxtorem';
+import vendor from './src/vendor'
 
 export default {
 	entry              : {
 		index : './src/index.js',
-		vendor: ['classnames',
-		         'dva',
-		         'dva/router',
-		         'dva/fetch',
-		         'dva/dynamic',
-		         'dva-loading',
-		         'path',
-		         'react',
-		         'react-dom',
-		         'react-lazyload',
-		         'react-typist',
-		         'weixin-jsapi',
-		         'plyr',
-		         'nprogress',
-		         'prismjs',
-		         'gitment',
-		         'styled-components',
-		         'polished']
+		vendor: vendor
 	},
 	publicPath         : '/',
 	disableCSSModules  : false,
@@ -48,7 +32,9 @@ export default {
 	},
 	extraPostCSSPlugins: [
 		pxtorem({
-			        rootValue: 16
+			        rootValue: 16,
+			        propList: ['*'],
+			        minPixelValue: 2,
 		        })
 	],
 	extraBabelPlugins  : [
@@ -56,7 +42,6 @@ export default {
 		'lodash',
 		['import', {libraryName: 'antd', libraryDirectory: 'es', style: true}]
 	],
-	browserslist       : ['iOS >= 8', 'Android >= 4'],
 	env                : {
 		development: {
 			extraBabelPlugins: [
@@ -68,6 +53,7 @@ export default {
 			]
 		},
 		production : {
+			browserslist       : ['iOS >= 8', 'Android >= 4'],
 			commons            : [
 				{
 					name     : 'vendor',

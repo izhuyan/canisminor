@@ -2,10 +2,7 @@ import gulp from 'gulp';
 import fs from 'fs-extra';
 import htmlbeautify from 'gulp-html-beautify';
 import swPrecache from 'sw-precache';
-import img from './scripts/img';
 import * as raw from './src/config';
-
-gulp.task('opt:img', img);
 
 gulp.task('build:api', () => fs.writeFileSync(
 	'public/raw-data', JSON.stringify(raw))

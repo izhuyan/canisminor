@@ -1,3 +1,4 @@
+import moment from 'moment';
 import { Layout } from 'antd';
 import { Link } from 'dva/router';
 import { Icon } from '../../components';
@@ -26,7 +27,8 @@ export default () => {
     <Footer className={styles.footer}>
       <Icon className={styles.logo} type="logo-text" />
       <div className={styles.text}>
-        © CanisMinor 2017<span className={styles.note}>京ICP备16055942号-1</span>
+        © CanisMinor {moment().format('YYYY')}
+        <span className={styles.note}>京ICP备16055942号-1</span>
       </div>
       <div className={styles.social}>
         <SocialIconLink type="wechat" href="/wechat" />
